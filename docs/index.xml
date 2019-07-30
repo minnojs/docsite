@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation for minnoSuite</title>
+    <link>minnojs.github.io/docsite/</link>
+    <description>Recent content on Documentation for minnoSuite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="minnojs.github.io/docsite/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Credits</title>
+      <link>minnojs.github.io/docsite/credits.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>minnojs.github.io/docsite/credits.html</guid>
+      <description>Contributors Thanks to them  for making Open Source Software a better place !
+.ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start }
+.ghContributors &amp;gt; div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors &amp;gt; div label{ padding-left: 4px ; } .ghContributors &amp;gt; div span{ font-size: x-small; padding-left: 4px ; }
+  @matcornic 154 commits 
+ @matalo33 37 commits 
+ @lierdakil 16 commits 
+ @coliff 15 commits</description>
+    </item>
+    
+    <item>
+      <title>Showcase</title>
+      <link>minnojs.github.io/docsite/showcase.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>minnojs.github.io/docsite/showcase.html</guid>
+      <description> TAT by OVH </description>
+    </item>
+    
+  </channel>
+</rss>

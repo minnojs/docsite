@@ -1,0 +1,58 @@
+version: '2'
+
+
+
+# Define the services/containers to be run
+
+services:
+
+  minnoserver:  #name of your service
+
+    image: adzikiewicz/minnoserver # specify the directory of the Dockerfile
+    command: >
+    command: >
+      sh -c "/wait &&
+             node server/setup.js && 
+             nodemon server/index.js --ignore data/"
+    ports:
+      - "8000:8000" #specify ports forwarding
+      - "8443:8443" #specify ports forwarding 
+    links:
+
+      - database # link this service to the database service
+    depends_on:
+      - database
+    environment:
+      WAIT_HOSTS: database:27017
+      PORT: 8000
+      SSLPORT: 8443
+      CERTFILE: /usr/src/minnoserver/localhost.crt' #path to certfile for https server type
+      KEYFILE: '/usr/src/minnoserver/localhost.key'  #path to keyfile for https server type
+      OWNER_EMAIL: 'YOUR_EMAIL'  #needed for creating ssl key in greenlock server type
+      DOMAINS: '["yourdomain.com", "www.yourdomain.com"]'  #domains to register for greenlock type
+      SERVER_TYPE: "http" #"http", "https", or "greenlock"
+      MINNO_BASE_FOLDER: '/usr/src/minnoserver'
+      MINNO_MONGO_URL: 'mongodb://database:27017/minnodb'
+      MINNO_SERVER_URL: 'http://localhost:8000'
+      MINNO_DASHBOARD_URL: '//cdn.jsdelivr.net/gh/minnojs/minno-dashboard@1'
+      MINNO_PLAYER_URL : '//cdn.jsdelivr.net/gh/minnojs/minno-quest@0.2/dist/'
+    volumes:
+
+      - ../openserver/user:/usr/src/minnoserver/user
+      - ./localhost.crt:/usr/src/minnoserver/localhost.crt 
+      - ./localhost.key:/usr/src/minnoserver/localhost.key 
+    depends_on:
+
+      - database
+
+      
+
+  database: # name of the service
+
+    image: mongo # specify image to build container from
+    container_name: database
+    restart: always
+    volumes:
+         - ./db:/data/db
+    ports:
+          - "27017:27017"

@@ -1,0 +1,25 @@
+{
+  "name": "minnodocsite",
+  "version": "1.0.0",
+  "description": "This is an example site for [Hugo](https://gohugo.io/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gohugoio/hugoBasicExample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gohugoio/hugoBasicExample/issues"
+  },
+  "homepage": "https://github.com/gohugoio/hugoBasicExample#readme",
+  "dependencies": {
+    "lunr-hugo": "^0.1.2"
+  },
+  "scripts": {
+      "index": "lunr-hugo -i \"content/**/*.md\" -o static/json/search.json -l toml"
+    }
+}
