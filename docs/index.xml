@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documentation for minnoSuite</title>
-    <link>minnojs.github.io/docsite/</link>
+    <link>/docsite/</link>
     <description>Recent content on Documentation for minnoSuite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="minnojs.github.io/docsite/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/docsite/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Credits</title>
-      <link>minnojs.github.io/docsite/credits.html</link>
+      <link>/docsite/credits.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>minnojs.github.io/docsite/credits.html</guid>
+      <guid>/docsite/credits.html</guid>
       <description>Contributors Thanks to them  for making Open Source Software a better place !
 .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start }
 .ghContributors &amp;gt; div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors &amp;gt; div label{ padding-left: 4px ; } .ghContributors &amp;gt; div span{ font-size: x-small; padding-left: 4px ; }
@@ -27,10 +27,10 @@
     
     <item>
       <title>Showcase</title>
-      <link>minnojs.github.io/docsite/showcase.html</link>
+      <link>/docsite/showcase.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>minnojs.github.io/docsite/showcase.html</guid>
+      <guid>/docsite/showcase.html</guid>
       <description> TAT by OVH </description>
     </item>
     

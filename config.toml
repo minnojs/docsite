@@ -1,6 +1,6 @@
 #baseURL = "/implicit/user/andy/docsite/"
 #baseURL = "/"
-baseURL="minnojs.github.io/docsite"
+baseURL="/docsite"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 

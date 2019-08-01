@@ -1,167 +1,167 @@
 [
 {
-	"uri": "minnojs.github.io/docsite/minnosuitedashboard/useage.html",
+	"uri": "/docsite/minnosuitedashboard/useage.html",
 	"title": "Using the Dashboard",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/overview/minnosuite.html",
+	"uri": "/docsite/overview/minnosuite.html",
 	"title": "About minnoSuite",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/minnojsstudydevelopment/documentation.html",
+	"uri": "/docsite/minnojsstudydevelopment/documentation.html",
 	"title": "Documentation",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/overview.html",
+	"uri": "/docsite/overview.html",
 	"title": "Overview",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/overview/quickstart.html",
+	"uri": "/docsite/overview/quickstart.html",
 	"title": "Quickstart",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/installation.html",
+	"uri": "/docsite/installation.html",
 	"title": "Installation",
 	"tags": [],
 	"description": "",
 	"content": "This guide covers the installation process for the Minnosuite Dashboard.\nThe requirements page covers the basic requiremnts for your machine needed to install the application and have participants be able to access it from the web. This page is something that you can show to your IT department to get your machine configured for it.\nOur Easy Installation With Docker page gives a brief guide on installing the system that should work for modern Windows, Mac, and Linux operating systems.\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/installation/requirements.html",
+	"uri": "/docsite/installation/requirements.html",
 	"title": "Requirements",
 	"tags": [],
 	"description": "",
 	"content": " This page will cover the minimum requirements to install the Minnosuite Dashboard.\nCommon Requirements For all installs you need a computer, with a recomended 2 GB of disc space free.\nIf you want people to be able to connect to it from the internet, you will need to be able to listen to port 80 on the computer, which may require administrator access, and have port 80 open to the world and not blocked by your firewall. If you want people to be able to connect securely to your machine, you will need the same for port 443 also. Additionally, you should have a static IP address on the machine.\nYou will probably also want to have a domain for your server. We have a guide for setting up one with Freenom here. Or you may already have a domain for your machine, or be able to have your IT department set up a domain for you.\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/overview/demonstrations.html",
+	"uri": "/docsite/overview/demonstrations.html",
 	"title": "Demonstrations",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/overview/aboutpi.html",
+	"uri": "/docsite/overview/aboutpi.html",
 	"title": "About Project Implicit",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/minnojsstudydevelopment/dataanalysis.html",
+	"uri": "/docsite/minnojsstudydevelopment/dataanalysis.html",
 	"title": "Data Analysis",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/minnosuitedashboard.html",
+	"uri": "/docsite/minnosuitedashboard.html",
 	"title": "The minnoSuite Dashboard",
 	"tags": [],
 	"description": "",
 	"content": " Chapter 1 Basics Discover what this Hugo theme is all about and the core-concepts behind it.\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/installation/basicinstallation.html",
+	"uri": "/docsite/installation/basicinstallation.html",
 	"title": "Easy Installation With Docker",
 	"tags": [],
 	"description": "",
 	"content": "This page will cover the general way to get the MinnoSuite Dashboard installed using Docker, a tool designed to make it easier to create, deploy, and run applications.\n Check our requirements page and make sure that the machine that you want to use meets the requirements.\n Install Docker on your machine, using the Docker CE download link on the right of the page here for windows, here for MacOs, or here for Ubuntu Linux,and following the instructions that they give you.\n create a new folder in your file system to hold your minnoSuite server, and download this docker-compose file into it.\n You can update the configuration for your server by editing the docker-compose file with a text editor. Read about the docker-compose file here.\n Open the command prompt (windows) or terminal (Linux/Mac) for your machine, and navigate to the folder that you downloaded the docker-compose file to, and type: docker-compose up\nTo stop the server you can type Control/Command+C\nIf you are using a Mac or Linux machine and binding to port 80 or 443, you may get an error unless you start the server as an administrator by typing: sudo docker-compose up\n You should see a message about the server being up, and be given a port and URL to use. Enter that URL in your browser and you will be connected. The default user is username : admin and password: admin123\n To get HTTPS working, first follow the guide to setting up your domain. Then open up the docker-compose file and edit the OWNER_EMAIL and DOMAINS fields. Enter your email, and the domain you registered. Change the SERVER_TYPE field to \u0026ldquo;greenlock\u0026rdquo;. Change the ports to \u0026ldquo;80:8000\u0026rdquo; and \u0026ldquo;443:8443\u0026rdquo;. \u0026ldquo;Now when you run docker-compose up it should automatically run with https. Now connect to the site using the domain you registered and you should have https working.\n  "
 },
 {
-	"uri": "minnojs.github.io/docsite/minnojsstudydevelopment/examples.html",
+	"uri": "/docsite/minnojsstudydevelopment/examples.html",
 	"title": "Examples",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/minnosuitedashboard/useage/configfile.html",
+	"uri": "/docsite/minnosuitedashboard/useage/configfile.html",
 	"title": "The Docker Configuration File",
 	"tags": [],
 	"description": "",
 	"content": " The Docker Configuration File This page will describe the parts of the docker-compose configuration file that you might want to edit.\nports: - \u0026quot;8000:8000\u0026quot; #specify ports forwarding - \u0026quot;8443:8443\u0026quot; #specify ports forwarding  By default the server will run on port 8000 for http requests and 8443 for https requests. If you want to change it then you\u0026rsquo;d do something like \u0026ldquo;80:8000\u0026rdquo; to make it run on port 80 for http requests.\nSERVER_TYPE: \u0026ldquo;http\u0026rdquo; \u0026ldquo;http\u0026rdquo;, \u0026ldquo;https\u0026rdquo;, or \u0026ldquo;greenlock\u0026rdquo;\n\u0026ldquo;http\u0026rdquo; will make it only run with a http service. \u0026ldquo;https\u0026rdquo; will make it run on https also using a certificate and key file that you provide. \u0026ldquo;greenlock\u0026rdquo; will make it automatically aquire certificates for you using Greenlock. When using https, update the part of the config file under \u0026ldquo;volumes\u0026rdquo; with \u0026ldquo;./localhost.crt\u0026rdquo; and \u0026ldquo;/localhost.key\u0026rdquo; to point to the file path of the crt and key files for your domain. It is up to you to aquire them. When using greenlock, update the OWNER_EMAIL and DOMAINS field with your email and domain, and also make sure that the DNS for your domain points to the machine you are running this on.\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/minnojsstudydevelopment.html",
+	"uri": "/docsite/minnojsstudydevelopment.html",
 	"title": "minnoJs Study Development",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/installation/awsinstallation.html",
+	"uri": "/docsite/installation/awsinstallation.html",
 	"title": "AWS Cloud Installation",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/installation/domain.html",
+	"uri": "/docsite/installation/domain.html",
 	"title": "Setting up your domain",
 	"tags": [],
 	"description": "",
 	"content": " Setting up your domain  Go to http://www.freenom.com/ Go to Services -\u0026gt; Register a new domain. Pick the domain you want and register it (You will register to freenom in the process of obtaining the domain). Click \u0026ldquo;manage domain\u0026rdquo; on the domain you registered Click on \u0026ldquo;manage freenom DNS\u0026rdquo; Add a record for your site. Set the name as the domain name that you registered, the target as your static IP address, and the type as \u0026ldquo;A\u0026rdquo; if your IP address is IPv4 (like 123.11.22.33, or \u0026ldquo;AAAA\u0026rdquo; if your IP address is IPv6 (like 2001:0db8:85a3:0000:0000:8a2e:0370:7334). Then click \u0026ldquo;save changes\u0026rdquo;. Note that it may take 1-2 hours for the changes to go live, so you will need to wait at this point.  "
 },
 {
-	"uri": "minnojs.github.io/docsite/installation/windowsinstallation.html",
+	"uri": "/docsite/installation/windowsinstallation.html",
 	"title": "Windows Installation",
 	"tags": [],
 	"description": "",
 	"content": " Install Docker on your machine, using the guide here .\n create a new folder in your file system to hold your minnoSuite server, and download this docker-compose file into it.\n You can update the configuration for your server by editing the config file with a text editor. Read about the config file here.\n Open the command prompt, and navigate to the folder that you downloaded the docker-compose file to, and type: docker-compose up\n You should see a message about the server being up, and be given a port and URL to use. Enter that URL in your browser and you will be connected. The default user is username : admin and password: admin123\n To get HTTPS working, first follow the guide to setting up your domain. Then open up the docker-compose file and edit the OWNER_EMAIL and DOMAINS fields. Enter your email, and the domain you registered. Change the SERVER_TYPE field to \u0026ldquo;greenlock\u0026rdquo;. Change the ports to \u0026ldquo;80:8000\u0026rdquo; and \u0026ldquo;443:8443\u0026rdquo;. \u0026ldquo;Now when you run docker-compose up it should automatically run with https. Now connect to the site using the domain you registered and you should have https working.\n  "
 },
 {
-	"uri": "minnojs.github.io/docsite/installation/advanced.html",
+	"uri": "/docsite/installation/advanced.html",
 	"title": "Server Installation",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
 },
 {
-	"uri": "minnojs.github.io/docsite/categories.html",
+	"uri": "/docsite/categories.html",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "minnojs.github.io/docsite/credits.html",
+	"uri": "/docsite/credits.html",
 	"title": "Credits",
 	"tags": [],
 	"description": "",
-	"content": " Contributors Thanks to them  for making Open Source Software a better place !\n.ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start }\n.ghContributors \u0026gt; div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors \u0026gt; div label{ padding-left: 4px ; } .ghContributors \u0026gt; div span{ font-size: x-small; padding-left: 4px ; }\n  @matcornic 154 commits \n @matalo33 37 commits \n @lierdakil 16 commits \n @coliff 15 commits \n @gwleclerc 13 commits \n @mdavids 10 commits \n @ozobi 5 commits \n @Xipas 5 commits \n @pdelaby 4 commits \n @Chris-Greaves 3 commits \n @mreithub 3 commits \n @massimeddu 3 commits \n @dptelecom 3 commits \n @willwade 3 commits \n @denisvm 2 commits \n @gpospelov 2 commits \n @tanzaho 2 commits \n @wikijm 2 commits \n @lfalin 2 commits \n @alexvargasbenamburg 1 commits \n @afs2015 1 commits \n @arifpedia 1 commits \n @berryp 1 commits \n @MrMoio 1 commits \n @ChrisLasar 1 commits \n @giuliov 1 commits \n @haitch 1 commits \n @ImgBotApp 1 commits \n @RealOrangeOne 1 commits \n @JohnBlood 1 commits \n @JohnAllen2tgt 1 commits \n @kamilchm 1 commits \n @lloydbenson 1 commits \n @massimocireddu 1 commits \n @sykesm 1 commits \n @nvasudevan 1 commits \n @654wak654 1 commits \n @PierreAdam 1 commits \n @ripienaar 1 commits \n @EnigmaCurry 1 commits \n @taiidani 1 commits \n @exKAZUu 1 commits \n @Oddly 1 commits \n @shelane 1 commits \n @tedyoung 1 commits \n @Thiht 1 commits \n @editicalu 1 commits \n @fossabot 1 commits \n @kamar535 1 commits \n @nonumeros 1 commits \n @pgorod 1 commits \n @proelbtn 1 commits \n\nAnd a special thanks to @vjeantet for his work on docdock, a fork of hugo-theme-learn. v2.0.0 of this theme is inspired by his work.\nPackages and libraries  mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; horsey - Progressive and customizable autocomplete component clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support  Tooling  Netlify - Continuous deployement and hosting of this documentation Hugo  "
+	"content": " Contributors Thanks to them  for making Open Source Software a better place !\n.ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start }\n.ghContributors \u0026gt; div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors \u0026gt; div label{ padding-left: 4px ; } .ghContributors \u0026gt; div span{ font-size: x-small; padding-left: 4px ; }\n  @matcornic 154 commits \n @matalo33 37 commits \n @lierdakil 16 commits \n @coliff 15 commits \n @gwleclerc 13 commits \n @mdavids 10 commits \n @ozobi 5 commits \n @Xipas 5 commits \n @pdelaby 4 commits \n @Chris-Greaves 3 commits \n @mreithub 3 commits \n @massimeddu 3 commits \n @dptelecom 3 commits \n @willwade 3 commits \n @denisvm 2 commits \n @gpospelov 2 commits \n @jamesbooker 2 commits \n @tanzaho 2 commits \n @wikijm 2 commits \n @lfalin 2 commits \n @alexvargasbenamburg 1 commits \n @afs2015 1 commits \n @arifpedia 1 commits \n @berryp 1 commits \n @MrMoio 1 commits \n @ChrisLasar 1 commits \n @giuliov 1 commits \n @haitch 1 commits \n @ImgBotApp 1 commits \n @RealOrangeOne 1 commits \n @JohnBlood 1 commits \n @JohnAllen2tgt 1 commits \n @kamilchm 1 commits \n @lloydbenson 1 commits \n @massimocireddu 1 commits \n @sykesm 1 commits \n @nvasudevan 1 commits \n @654wak654 1 commits \n @PierreAdam 1 commits \n @ripienaar 1 commits \n @EnigmaCurry 1 commits \n @taiidani 1 commits \n @exKAZUu 1 commits \n @Oddly 1 commits \n @shelane 1 commits \n @tedyoung 1 commits \n @Thiht 1 commits \n @editicalu 1 commits \n @fossabot 1 commits \n @kamar535 1 commits \n @nonumeros 1 commits \n @pgorod 1 commits \n @proelbtn 1 commits \n\nAnd a special thanks to @vjeantet for his work on docdock, a fork of hugo-theme-learn. v2.0.0 of this theme is inspired by his work.\nPackages and libraries  mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; horsey - Progressive and customizable autocomplete component clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support  Tooling  Netlify - Continuous deployement and hosting of this documentation Hugo  "
 },
 {
-	"uri": "minnojs.github.io/docsite/",
+	"uri": "/docsite/",
 	"title": "Documentation for minnoSuite",
 	"tags": [],
 	"description": "",
 	"content": " Documentation for minnoSuite "
 },
 {
-	"uri": "minnojs.github.io/docsite/showcase.html",
+	"uri": "/docsite/showcase.html",
 	"title": "Showcase",
 	"tags": [],
 	"description": "",
 	"content": " TAT by OVH "
 },
 {
-	"uri": "minnojs.github.io/docsite/tags.html",
+	"uri": "/docsite/tags.html",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

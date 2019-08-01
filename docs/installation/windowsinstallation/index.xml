@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows Installation on Documentation for minnoSuite</title>
-    <link>minnojs.github.io/docsite/installation/windowsinstallation.html</link>
+    <link>/docsite/installation/windowsinstallation.html</link>
     <description>Recent content in Windows Installation on Documentation for minnoSuite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="minnojs.github.io/docsite/installation/windowsinstallation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/docsite/installation/windowsinstallation/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
