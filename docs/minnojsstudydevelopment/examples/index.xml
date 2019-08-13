@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Examples on Documentation for minnoSuite</title>
-    <link>/docsite/minnojsstudydevelopment/examples.html</link>
+    <link>/docsite/minnojsstudydevelopment/examples/</link>
     <description>Recent content in Examples on Documentation for minnoSuite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>

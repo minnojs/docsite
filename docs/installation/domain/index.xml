@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Setting up your domain on Documentation for minnoSuite</title>
-    <link>/docsite/installation/domain.html</link>
+    <link>/docsite/installation/domain/</link>
     <description>Recent content in Setting up your domain on Documentation for minnoSuite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>

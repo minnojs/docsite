@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Easy Installation With Docker on Documentation for minnoSuite</title>
-    <link>/docsite/installation/basicinstallation.html</link>
+    <link>/docsite/installation/basicinstallation/</link>
     <description>Recent content in Easy Installation With Docker on Documentation for minnoSuite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>

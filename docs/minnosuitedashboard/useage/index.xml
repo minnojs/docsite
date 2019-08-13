@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Using the Dashboard on Documentation for minnoSuite</title>
-    <link>/docsite/minnosuitedashboard/useage.html</link>
+    <link>/docsite/minnosuitedashboard/useage/</link>
     <description>Recent content in Using the Dashboard on Documentation for minnoSuite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>

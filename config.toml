@@ -10,12 +10,12 @@ themesdir = "themes/"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 search = true
-uglyURLs = true
+#uglyURLs = true
 canonifyURLs = true
 publishDir = "docs"
 
 [params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
+  editURL = "/"
   description = "Documentation for minnoSuite"
   author = "Andrew Dzikiewicz"
   showVisitedLinks = false

@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="description" content="Documentation for minnoSuite">
+<meta name="author" content="Andrew Dzikiewicz">
+
+    <link rel="icon" href="/docsite/images/favicon.png" type="image/png">
+
+    <title>Setting up Dropbox :: Documentation for minnoSuite</title>
+
+    
+    <link href="/docsite/css/nucleus.css?1565664598" rel="stylesheet">
+    <link href="/docsite/css/fontawesome-all.min.css?1565664598" rel="stylesheet">
+    <link href="/docsite/css/hybrid.css?1565664598" rel="stylesheet">
+    <link href="/docsite/css/featherlight.min.css?1565664598" rel="stylesheet">
+    <link href="/docsite/css/perfect-scrollbar.min.css?1565664598" rel="stylesheet">
+    <link href="/docsite/css/auto-complete.css?1565664598" rel="stylesheet">
+    <link href="/docsite/css/atom-one-dark-reasonable.css?1565664598" rel="stylesheet">
+    <link href="/docsite/css/theme.css?1565664598" rel="stylesheet">
+    <link href="/docsite/css/hugo-theme.css?1565664598" rel="stylesheet">
+    
+
+    <script src="/docsite/js/jquery-3.3.1.min.js?1565664598"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/minnosuitedashboard/useage/dropbox/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src='/docsite/images/header-logo.png'><a id="logo" href="/docsite/"></a> </img>
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/docsite/js/lunr.min.js?1565664598"></script>
+<script type="text/javascript" src="/docsite/js/auto-complete.js?1565664598"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/docsite";
+    
+</script>
+<script type="text/javascript" src="/docsite/js/search.js?1565664598"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/overview/" title="Overview" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/overview/">
+          Overview
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/overview/minnosuite/" title="About minnoSuite" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/overview/minnosuite/">
+          About minnoSuite
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/overview/quickstart/" title="Quickstart" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/overview/quickstart/">
+          Quickstart
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/overview/demonstrations/" title="Demonstrations" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/overview/demonstrations/">
+          Demonstrations
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/overview/aboutpi/" title="About Project Implicit" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/overview/aboutpi/">
+          About Project Implicit
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/installation/" title="Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/installation/">
+          Installation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installation/requirements/" title="Requirements" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/installation/requirements/">
+          Requirements
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installation/basicinstallation/" title="Easy Installation With Docker" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/installation/basicinstallation/">
+          Easy Installation With Docker
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installation/awsinstallation/" title="AWS Cloud Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/installation/awsinstallation/">
+          AWS Cloud Installation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installation/awsinstallation/awsfreessl/" title="AWS Free SSL" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/installation/awsinstallation/awsfreessl/">
+          AWS Free SSL
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installation/domain/" title="Setting up your domain" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/installation/domain/">
+          Setting up your domain
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installation/windowsinstallation/" title="Windows Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/installation/windowsinstallation/">
+          Windows Installation
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installation/advanced/" title="Server Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/installation/advanced/">
+          Server Installation
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/minnosuitedashboard/" title="The minnoSuite Dashboard" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/docsite/minnosuitedashboard/">
+          The minnoSuite Dashboard
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/minnosuitedashboard/useage/" title="Using the Dashboard" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/docsite/minnosuitedashboard/useage/">
+          Using the Dashboard
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/minnosuitedashboard/useage/configfile/" title="The Docker Configuration File" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/minnosuitedashboard/useage/configfile/">
+          The Docker Configuration File
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/minnosuitedashboard/useage/dropbox/" title="Setting up Dropbox" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/docsite/minnosuitedashboard/useage/dropbox/">
+          Setting up Dropbox
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/minnojsstudydevelopment/" title="minnoJs Study Development" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/minnojsstudydevelopment/">
+          minnoJs Study Development
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/minnojsstudydevelopment/documentation/" title="Documentation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/minnojsstudydevelopment/documentation/">
+          Documentation
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/minnojsstudydevelopment/dataanalysis/" title="Data Analysis" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/minnojsstudydevelopment/dataanalysis/">
+          Data Analysis
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/minnojsstudydevelopment/examples/" title="Examples" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docsite/minnojsstudydevelopment/examples/">
+          Examples
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <center>
+
+</center>
+
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/docsite/'>Documentation for minnoSuite</a> > <a href='/docsite/minnosuitedashboard/'>The minnoSuite Dashboard</a> > <a href='/docsite/minnosuitedashboard/useage/'>Using the Dashboard</a> > Setting up Dropbox
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#setting-up-dropbox">Setting up Dropbox</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Setting up Dropbox
+            </h1>
+          
+
+        
+
+
+
+
+	
+
+<h2 id="setting-up-dropbox">Setting up Dropbox</h2>
+
+<p>This page describes how to connect your minnoDashboard to Dropbox.  Synchronization with Dropbox allows users to backup their studies on their own dropbox account. After you enable this feature, each user can request to sync their own Dashboard account with their own Dropbox account.</p>
+
+<p>The synchronization is on one direction only: any change in the Dashboard will be updated in the user’s Dropbox account. Changing those files outside of the Dashboard, however, will not influence the Dashboard. That is, modifying the files in the Dashboard can be done only through the Dashboard.</p>
+
+<p><u>Note</u>: Because the files are synchronized by each user separately with their own Dropbox account, enabling this feature does not mean that admins will have access to those files.</p>
+
+<p><b>How to enable this feature:</b> To enable this feature on this Dashboard, you should create a dropbox application. To do so, you need a <a href="https://help.dropbox.com/accounts-billing/create-delete/create-account">dropbox account</a>. The basic free package includes 2GB (see more information about the basic package <a href="https://www.dropbox.com/basic">here</a>.</p>
+
+<p>Once the admin has a working Dropbox account the creation of the application should be done as follows:
+1.  Login to Dropbox developers: <a href="https://www.dropbox.com/developers">https://www.dropbox.com/developers</a>
+2.  Click on Create apps.
+3.  Choose an API: Dropbox API.
+4.  Choose The type of access you need: App folder
+5.   Choose any name you want to the application
+6.   That’s it - click on Create app to create the application
+7.  The application will appear under the <a href="https://www.dropbox.com/developers/apps">App console</a>. Click on the icon to get access to the application details.
+8.  Two important parameters should be provided to the researcher dashboard:
+* App key (public key that is used for the users)
+* App secret (public key that is used for the server to get access to the Dropbox - don’t share this key!!!).
+These two parameters are located in your Dropbox application page:
+9.  To avoid security issues, Dropbox asks developers to provide list of URIs that will be used by the application. This list is located in your Dropbox application page:
+The URL will be with the format [http/https]://[domain]/dropbox/set.
+When [http/https] depends on the certification authority of the dashboard and [domain] is the full URI of the dashboard (e.g <a href="https://mydomain/dropbox/set">https://mydomain/dropbox/set</a>).
+Please note: the extension of /dropbox/set is mandatory.
+So if you dashboard is hosted at mydomain.com using https, the url you&rsquo;d enter would be <a href="https://mydomain.com/dropbox/set">https://mydomain.com/dropbox/set</a>
+10.  Log in to the dashboard with an admin account
+11.  From the dropdown menu&rsquo;s at the top of the screen, select Admin -&gt; edit configuration
+12.  In the dropbox section, click the &ldquo;Enable Dropbox Syncronization&rdquo; radio button and enter in the app key and app secret key in the text boxes, and then click &ldquo;save changes&rdquo;.
+13.  You are now done.  Users will be able to connect to dropbox now by going to their settings page by clicking on the gear icon to the right of the &ldquo;Logout&rdquo; button in the dashboard, and then clicking the &ldquo;Syncronize with your Dropbox Account&rdquo; button.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/docsite/minnosuitedashboard/useage/configfile/" title="The Docker Configuration File"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/docsite/minnojsstudydevelopment/" title="minnoJs Study Development" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/docsite/js/clipboard.min.js?1565664598"></script>
+    <script src="/docsite/js/perfect-scrollbar.min.js?1565664598"></script>
+    <script src="/docsite/js/perfect-scrollbar.jquery.min.js?1565664598"></script>
+    <script src="/docsite/js/jquery.sticky.js?1565664598"></script>
+    <script src="/docsite/js/featherlight.min.js?1565664598"></script>
+    <script src="/docsite/js/html5shiv-printshiv.min.js?1565664598"></script>
+    <script src="/docsite/js/highlight.pack.js?1565664598"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/docsite/js/modernizr.custom-3.6.0.js?1565664598"></script>
+    <script src="/docsite/js/learn.js?1565664598"></script>
+    <script src="/docsite/js/hugo-learn.js?1565664598"></script>
+
+    <link href="/docsite/mermaid/mermaid.css?1565664598" type="text/css" rel="stylesheet" />
+    <script src="/docsite/mermaid/mermaid.js?1565664598"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105947713-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

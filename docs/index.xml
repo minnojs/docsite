@@ -12,25 +12,25 @@
     
     <item>
       <title>Credits</title>
-      <link>/docsite/credits.html</link>
+      <link>/docsite/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/credits.html</guid>
+      <guid>/docsite/credits/</guid>
       <description>Contributors Thanks to them  for making Open Source Software a better place !
 .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start }
 .ghContributors &amp;gt; div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors &amp;gt; div label{ padding-left: 4px ; } .ghContributors &amp;gt; div span{ font-size: x-small; padding-left: 4px ; }
   @matcornic 154 commits 
  @matalo33 37 commits 
- @lierdakil 16 commits 
- @coliff 15 commits</description>
+ @coliff 17 commits 
+ @lierdakil 16 commits</description>
     </item>
     
     <item>
       <title>Showcase</title>
-      <link>/docsite/showcase.html</link>
+      <link>/docsite/showcase/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/showcase.html</guid>
+      <guid>/docsite/showcase/</guid>
       <description> TAT by OVH </description>
     </item>
     
