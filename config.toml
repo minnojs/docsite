@@ -1,10 +1,10 @@
 #baseURL = "/implicit/user/andy/docsite/"
-#baseURL = "/"
-baseURL="/docsite"
+baseURL = "/"
+#baseURL="/docsite"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "HDocumentation for minnoSuite"
+title = "Documentation for minnoSuite"
 theme = "learn"
 themesdir = "themes/"
 metaDataFormat = "yaml"
