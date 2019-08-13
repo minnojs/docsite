@@ -1,6 +1,6 @@
 #baseURL = "/implicit/user/andy/docsite/"
-baseURL = "/"
-#baseURL="/docsite"
+#baseURL = "/"
+baseURL="/docsite"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
