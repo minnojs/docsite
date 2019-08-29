@@ -91,6 +91,10 @@
   </url>
   
   <url>
+    <loc>/docsite/installation/digitalocean/</loc>
+  </url>
+  
+  <url>
     <loc>/docsite/categories/</loc>
     <priority>0</priority>
   </url>
