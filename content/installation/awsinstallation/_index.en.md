@@ -10,7 +10,7 @@ This guide will cover getting a minnoServer instance running on AWS using docker
 1. [Sign up for AWS](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 
 2. [Login](https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin), and from the EC2 console left menu chose Images -> AMIs
-3.  Change the filter to public images, and then search for AMI by id ami-0f8ae0fb13b1f7bc7 .  
+3.  Change the filter to public images, and then search for AMI by id ami-059bdb8e83f392bbd .  
 4.  It should show up, with name minnoServer.  Right click on it and select "launch"
 6.  Chose whatever processor you want (the free tier one probably), then click "next: configure instance details"
 7.  Keep clicking next until you get to the "configure security group" page.
