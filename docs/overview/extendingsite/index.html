@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/docsite/images/favicon.png" type="image/png">
 
-    <title>Setting up Dropbox :: Documentation for minnoSuite</title>
+    <title>Extending This Doc Site :: Documentation for minnoSuite</title>
 
     
     <link href="/docsite/css/nucleus.css?1569889600" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/minnosuitedashboard/useage/dropbox/">
+  <body class="" data-url="/overview/extendingsite/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/overview/" title="Overview" class="dd-item 
-        
+        parent
         
         
         ">
@@ -199,8 +199,8 @@
   
     
     <li data-nav-id="/overview/extendingsite/" title="Extending This Doc Site" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/docsite/overview/extendingsite/">
@@ -468,7 +468,7 @@
   
     
     <li data-nav-id="/minnosuitedashboard/" title="The minnoSuite Dashboard" class="dd-item 
-        parent
+        
         
         
         ">
@@ -495,7 +495,7 @@
   
     
     <li data-nav-id="/minnosuitedashboard/useage/" title="Using the Dashboard" class="dd-item 
-        parent
+        
         
         
         ">
@@ -546,8 +546,8 @@
   
     
     <li data-nav-id="/minnosuitedashboard/useage/dropbox/" title="Setting up Dropbox" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/docsite/minnosuitedashboard/useage/dropbox/">
@@ -726,8 +726,6 @@
                         </a>
                     </span>
                   
-                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
-                  
                   <span class="links">
                  
                  
@@ -742,13 +740,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/docsite/'>Documentation for minnoSuite</a> > <a href='/docsite/minnosuitedashboard/'>The minnoSuite Dashboard</a> > <a href='/docsite/minnosuitedashboard/useage/'>Using the Dashboard</a> > Setting up Dropbox
-          
-         
+            <a href='/docsite/'>Documentation for minnoSuite</a> > <a href='/docsite/overview/'>Overview</a> > Extending This Doc Site
           
          
           
@@ -758,20 +750,6 @@
                  
                   </span>
                 </div>
-                
-                    <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#setting-up-dropbox">Setting up Dropbox</a></li>
-</ul></li>
-</ul>
-</nav>
-    </div>
-</div>
-
                 
               </div>
             </div>
@@ -784,7 +762,7 @@
           
             <h1>
               
-              Setting up Dropbox
+              Extending This Doc Site
             </h1>
           
 
@@ -793,51 +771,26 @@
 
 
 
-	
-
-<h2 id="setting-up-dropbox">Setting up Dropbox</h2>
-
-<p>This page describes how to connect your minnoDashboard to Dropbox.  Synchronization with Dropbox allows users to backup their studies on their own dropbox account. After you enable this feature, each user can request to sync their own Dashboard account with their own Dropbox account.</p>
-
-<p>The synchronization is on one direction only: any change in the Dashboard will be updated in the user’s Dropbox account. Changing those files outside of the Dashboard, however, will not influence the Dashboard. That is, modifying the files in the Dashboard can be done only through the Dashboard.</p>
-
-<p><u>Note</u>: Because the files are synchronized by each user separately with their own Dropbox account, enabling this feature does not mean that admins will have access to those files.</p>
-
-<p><b>How to enable this feature:</b> To enable this feature on this Dashboard, you should create a dropbox application. To do so, you need a <a href="https://help.dropbox.com/accounts-billing/create-delete/create-account">dropbox account</a>. The basic free package includes 2GB (see more information about the basic package <a href="https://www.dropbox.com/basic">here</a>.</p>
-
-<p>Once the admin has a working Dropbox account the creation of the application should be done as follows:</p>
+	<p>This page will cover editing and extending this doc site.</p>
 
 <ol>
-<li><p>Login to Dropbox developers: <a href="https://www.dropbox.com/developers">https://www.dropbox.com/developers</a></p></li>
+<li><p>Get a copy of the docsite <a href="https://github.com/minnojs/docsite">here</a>.</p></li>
 
-<li><p>Click on Create apps.</p></li>
+<li><p>You can read a guide on using the Hugo learn theme that our doc site makes use of <a href="https://learn.netlify.com/en/">here</a>.  In general you will be editing files in the content subfolder.  Each folder in that is one layer of the nested sidebar menu, with the _index.en.md file inside it for the html that appears when you click on that menu item.  Those files will have a weight at the top that determines their order in the menu: the pages with the lowest weight appear first.</p></li>
 
-<li><p>Choose an API: Dropbox API.</p></li>
+<li><p>To start the server, from the command line in the docsite folder, run <code>hugo server -t learn --baseURL=localhost/docsite</code> .  Then you should be able to go to <code>http://localhost:1313/docsite/</code> in your browser and view the site.  press ctrl/command+c in the command line window when you are ready to shut it down.</p></li>
 
-<li><p>Choose The type of access you need: App folder</p></li>
+<li><p>Run <code>hugo</code> in the command line in the docsite folder to compile it when you are finished.  Then the generated site will appear in the docs folder in the docsite directory.</p></li>
+</ol>
 
-<li><p>Choose any name you want to the application</p></li>
+<p>Using git:</p>
 
-<li><p>That’s it - click on Create app to create the application</p></li>
+<ol>
+<li><p>run `git checkout <a href="https://github.com/minnojs/docsite.git'">https://github.com/minnojs/docsite.git'</a></p></li>
 
-<li><p>The application will appear under the <a href="https://www.dropbox.com/developers/apps">App console</a>. Click on the icon to get access to the application details.</p></li>
+<li><p>Make your edits and test them.</p></li>
 
-<li><p>Two important parameters should be provided to the researcher dashboard.  These two parameters are located in your Dropbox application page:</p>
-
-<ul>
-<li>App key (public key that is used for the users)</li>
-<li>App secret (public key that is used for the server to get access to the Dropbox - don’t share this key!!!).</li>
-</ul></li>
-
-<li><p>To avoid security issues, Dropbox asks developers to provide list of URIs that will be used by the application. This list is located in your Dropbox application page.  The URL will be with the format [http/https]://[domain]/dropbox/set.  When [http/https] depends on the certification authority of the dashboard and [domain] is the full URI of the dashboard (e.g <a href="https://mydomain/dropbox/set">https://mydomain/dropbox/set</a>).  Please note: the extension of /dropbox/set is mandatory.  So if you dashboard is hosted at mydomain.com using https, the url you&rsquo;d enter would be <a href="https://mydomain.com/dropbox/set">https://mydomain.com/dropbox/set</a></p></li>
-
-<li><p>Log in to the dashboard with an admin account</p></li>
-
-<li><p>From the dropdown menu&rsquo;s at the top of the screen, select Admin -&gt; edit configuration</p></li>
-
-<li><p>In the dropbox section, click the &ldquo;Enable Dropbox Syncronization&rdquo; radio button and enter in the app key and app secret key in the text boxes, and then click &ldquo;save changes&rdquo;.</p></li>
-
-<li><p>You are now done.  Users will be able to connect to dropbox now by going to their settings page by clicking on the gear icon to the right of the &ldquo;Logout&rdquo; button in the dashboard, and then clicking the &ldquo;Syncronize with your Dropbox Account&rdquo; button.</p></li>
+<li><p>In your docsite folder, run <code>git pull</code> to make sure that there are no other remote updates to the docsite, then run <code>git add .</code>, followed by <code>git commit -m &quot;comment describing your updates to the docsite&quot;</code> and finally <code>git push origin master</code> .</p></li>
 </ol>
 
 
@@ -879,6 +832,109 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -891,6 +947,72 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
                     
                         
             
@@ -956,22 +1078,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1000,93 +1106,10 @@
 
                     
                     
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                         
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1123,54 +1146,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
             
         
                     
@@ -1178,32 +1153,6 @@
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1275,10 +1224,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/docsite/minnosuitedashboard/useage/configfile/" title="The Docker Configuration File"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/docsite/overview/aboutpi/" title="About Project Implicit"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/docsite/minnojsstudydevelopment/" title="minnoJs Study Development" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/docsite/installation/" title="Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
