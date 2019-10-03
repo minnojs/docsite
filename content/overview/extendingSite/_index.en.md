@@ -6,6 +6,7 @@ disableToc: true
 ---
 This page will cover editing and extending this doc site.
 
+0.  Install Hugo, folling the instructions [here](https://gohugo.io/getting-started/installing/).
 
 1.  Get a copy of the docsite [here](https://github.com/minnojs/docsite).
 
