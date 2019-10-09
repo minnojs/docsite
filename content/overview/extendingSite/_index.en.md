@@ -6,9 +6,11 @@ disableToc: true
 ---
 This page will cover editing and extending this doc site.
 
-0.  Install Hugo, folling the instructions [here](https://gohugo.io/getting-started/installing/).
+0.  Install Hugo, folling the instructions [here](https://gohugo.io/getting-started/installing/).  Also [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if you need to.
 
-1.  Get a copy of the docsite [here](https://github.com/minnojs/docsite).
+1.  Get a copy of the docsite [here](https://github.com/minnojs/docsite).  Download it using git, such as with `git clone https://github.com/minnojs/docsite.git`
+
+2.  From the command line in the docsite folder, run `git submodule update --init --recursive` to download the Hugo theme used by the docsite.
 
 2.  You can read a guide on using the Hugo learn theme that our doc site makes use of [here](https://learn.netlify.com/en/).  In general you will be editing files in the content subfolder.  Each folder in that is one layer of the nested sidebar menu, with the _index.en.md file inside it for the html that appears when you click on that menu item.  Those files will have a weight at the top that determines their order in the menu: the pages with the lowest weight appear first.
 
