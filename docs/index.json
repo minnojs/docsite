@@ -1,10 +1,17 @@
 [
 {
-	"uri": "/docsite/minnosuitedashboard/useage/",
+	"uri": "/docsite/minnosuitedashboard/admin/",
+	"title": "Getting started (admin account)",
+	"tags": [],
+	"description": "",
+	"content": "As an admin, we recommend that you first make sure the Dashboard works over https (i.e., provides secure connection to all the users). Please refer to the relevant help page in this website to learn how to do that.\nNext, create user accounts for the researchers who will use the system. Even if you are the only user of your system, it is better if you separate between the admin account and the researcher account. To create a new user account, go to Admin-\u0026gt;User Management and Add a new user.\nIf you want the Dashboard to send emails to users (e.g., when creating new accounts, or when one user adds another user as a collaborator on a study), go to Admin-\u0026gt;Edit Configuration and Enable Gmail. Because the Dashboard needs the email password for sending emails, we recommend you create a new Gmail account for the Dashboard.\n"
+},
+{
+	"uri": "/docsite/minnosuitedashboard/",
 	"title": "Using the Dashboard",
 	"tags": [],
 	"description": "",
-	"content": "under construction\n"
+	"content": "MinnoSuite allows creating web studies, running them, and downloading their data. It includes three components. MinnoDashboard is a web application that operates researcher accounts. The researchers use their accounts to create studies, run them, and read their data. MinnoPlayer is a JavaScript-based languages that allows creating studies with questionnaires, reaction-time tasks, and simple message pages. MinnoServer collects the data and provides researchers access to the data.\nYou can install MinnoSuite on your own server, by following the installation guides on this website. If you want (paid) help installing MinnoSuite, creating studies, and analyzing their data, you can contact Project Implicit at services@projectimplicit.net.\nAfter installing MinnoSuite on your own server, the only account in the system is the admin account. The admin creates accounts for the researchers who use the website (e.g., the grad students in your lab). The researchers use those accounts to create studies, run them, and download their data. This website explains how to do that.\nWhat the MinnoSuite does not support?\n There is no graphical user interface for a point-and-clicking authoring of the studies. Researchers write code (in MinnoPlayer\u0026rsquo;s simple language). MinnoSuite does not include a participant-pool website. You get a link to each study and use that link in your own participant pool (including Sona System, MTurk, Prolific, etc.). MinnoPlayer does not support live interaction between different participants. You can add video and audio stimuli to MinnoPlayer studies, but that might require some advanced programming. MinnoPlayer does not require the participants to install anything. That means that its time precision is limited, in comparison to desktop programs. Currently, there is no millisecond-precision solutions in web studies that do not require the participants to install the program on their own computer.  "
 },
 {
 	"uri": "/docsite/overview/minnosuite/",
@@ -56,13 +63,6 @@
 	"content": "under construction\n"
 },
 {
-	"uri": "/docsite/overview/aboutpi/",
-	"title": "About Project Implicit",
-	"tags": [],
-	"description": "",
-	"content": "under construction\n"
-},
-{
 	"uri": "/docsite/minnojsstudydevelopment/dataanalysis/",
 	"title": "Data Analysis",
 	"tags": [],
@@ -70,11 +70,11 @@
 	"content": "under construction\n"
 },
 {
-	"uri": "/docsite/minnosuitedashboard/",
-	"title": "The minnoSuite Dashboard",
+	"uri": "/docsite/minnosuitedashboard/researcher/",
+	"title": "Getting started (researcher)",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 1 Basics Discover what this Hugo theme is all about and the core-concepts behind it.\n"
+	"content": "To get to know the system, we recommend you first duplicate a study from the bank of studies. After you log-in, click Studies, click on the dropdown menu that shows \u0026ldquo;Show all my studies\u0026rdquo; and select \u0026ldquo;Show bank studies\u0026rdquo;. You will see all the example studies in the system, and an \u0026ldquo;Actions\u0026rdquo; button next to each of thse studies. Decide which of those studies you want to duplicate (e.g., race.demo), click Actions-\u0026gt;Duplicate study, set the name of the study (e.g., \u0026ldquo;example\u0026rdquo;), and click OK.\nNow you see a list of the study files on the left. You can click those files to see the code of each file. You can change the code, but don\u0026rsquo;t do that yet. Let\u0026rsquo;s first see you can run the study ok. For that, right click on the file \u0026lsquo;mgr.js\u0026rsquo; and select \u0026ldquo;Make Experiment\u0026rdquo;. Set the name of the experiment (e.g., \u0026ldquo;example\u0026rdquo;). Now you can run the study. Right click the \u0026ldquo;mgr.js\u0026rdquo; file, select Experiment options -\u0026gt; Play this task. We recommend you run the whole study to learn how the typical study looks in MinnoPlayer.\nNext, go to the files and try to change minor details, to see how they change the study. For instance, go to explicit.js, and change the text for some of the questions. After you change a file, sometimes you will not see the change in your study because the browser reads the study from the cache. You can clear the browser\u0026rsquo;s cache each time you run a study. Or, you can right click the \u0026ldquo;mgr.js\u0026rdquo; file, go to Experiment options -\u0026gt; Copy Launch URL. You can copy the link and paste it within an incognito Chrome browser window (use ctrl-shift-n to open an incognito window) or a private Firefox browser window (ctrl-shift-p). Or, you can right click on the HERE link and select \u0026ldquo;Open in incognito window\u0026rdquo; (Chrome) or \u0026ldquo;Open in Private window\u0026rdquo; (Firefox), to run the study directly in a browser window that does read files from the cache.\nIf you want to skip a task in the study, Esc+right arrow will skip to the next task. Within the IAT, Esc+Enter will skip a block.\nAfter you run the study a couple of times, it is time to look at the data. In the same page (the one that shows you the study files), click on the three rows icon at the top left, to open the Study menu, and select Data. Have a look at the window that opens to learn about your options when downloading data. Then, without changing anything, click the \u0026ldquo;Download\u0026rdquo; button. Soon the data file will appear and you would be able to click the Download icon (below Actions) to download the data file. It will be a zip folder. Extract the files and open them to learn how the data look.\n"
 },
 {
 	"uri": "/docsite/installation/basicinstallation/",
@@ -91,18 +91,18 @@
 	"content": "under construction\n"
 },
 {
-	"uri": "/docsite/minnosuitedashboard/useage/configfile/",
-	"title": "The Docker Configuration File",
-	"tags": [],
-	"description": "",
-	"content": " The Docker Configuration File This page will describe the parts of the docker-compose configuration file that you might want to edit.\nports: - \u0026quot;8000:8000\u0026quot; #specify ports forwarding - \u0026quot;8443:8443\u0026quot; #specify ports forwarding  By default the server will run on port 8000 for http requests and 8443 for https requests. If you want to change it then you\u0026rsquo;d do something like \u0026ldquo;80:8000\u0026rdquo; to make it run on port 80 for http requests.\nSERVER_TYPE: \u0026ldquo;http\u0026rdquo; \u0026ldquo;http\u0026rdquo;, \u0026ldquo;https\u0026rdquo;, or \u0026ldquo;greenlock\u0026rdquo;\n\u0026ldquo;http\u0026rdquo; will make it only run with a http service. \u0026ldquo;https\u0026rdquo; will make it run on https also using a certificate and key file that you provide. \u0026ldquo;greenlock\u0026rdquo; will make it automatically aquire certificates for you using Greenlock. When using https, update the part of the config file under \u0026ldquo;volumes\u0026rdquo; with \u0026ldquo;./localhost.crt\u0026rdquo; and \u0026ldquo;/localhost.key\u0026rdquo; to point to the file path of the crt and key files for your domain. It is up to you to aquire them. When using greenlock, update the OWNER_EMAIL and DOMAINS field with your email and domain, and also make sure that the DNS for your domain points to the machine you are running this on.\n"
-},
-{
 	"uri": "/docsite/minnojsstudydevelopment/",
 	"title": "minnoJs Study Development",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
+},
+{
+	"uri": "/docsite/minnosuitedashboard/configfile/",
+	"title": "The Docker Configuration File",
+	"tags": [],
+	"description": "",
+	"content": " The Docker Configuration File This page will describe the parts of the docker-compose configuration file that you might want to edit.\nports: - \u0026quot;8000:8000\u0026quot; #specify ports forwarding - \u0026quot;8443:8443\u0026quot; #specify ports forwarding  By default the server will run on port 8000 for http requests and 8443 for https requests. If you want to change it then you\u0026rsquo;d do something like \u0026ldquo;80:8000\u0026rdquo; to make it run on port 80 for http requests.\nSERVER_TYPE: \u0026ldquo;http\u0026rdquo; \u0026ldquo;http\u0026rdquo;, \u0026ldquo;https\u0026rdquo;, or \u0026ldquo;greenlock\u0026rdquo;\n\u0026ldquo;http\u0026rdquo; will make it only run with a http service. \u0026ldquo;https\u0026rdquo; will make it run on https also using a certificate and key file that you provide. \u0026ldquo;greenlock\u0026rdquo; will make it automatically aquire certificates for you using Greenlock. When using https, update the part of the config file under \u0026ldquo;volumes\u0026rdquo; with \u0026ldquo;./localhost.crt\u0026rdquo; and \u0026ldquo;/localhost.key\u0026rdquo; to point to the file path of the crt and key files for your domain. It is up to you to aquire them. When using greenlock, update the OWNER_EMAIL and DOMAINS field with your email and domain, and also make sure that the DNS for your domain points to the machine you are running this on.\n"
 },
 {
 	"uri": "/docsite/installation/awsinstallation/",
@@ -112,7 +112,7 @@
 	"content": "This guide will cover getting a minnoServer instance running on AWS using docker.\n Sign up for AWS\n Login, and from the EC2 console left menu chose Images -\u0026gt; AMIs\n Change the filter to public images, and then search for AMI by id ami-0d63edd85506b758a .\n It should show up, with name minnoServer. Right click on it and select \u0026ldquo;launch\u0026rdquo;\n Chose whatever processor you want (the free tier one probably), then click \u0026ldquo;next: configure instance details\u0026rdquo;\n Keep clicking next until you get to the \u0026ldquo;configure security group\u0026rdquo; page.\n Click the \u0026ldquo;add rule\u0026rdquo; button twice, and set the 2 new rules to \u0026ldquo;HTTPS\u0026rdquo; and \u0026ldquo;HTTP\u0026rdquo;, so in total you will have those 2 and \u0026ldquo;SSH\u0026rdquo; rules. You don\u0026rsquo;t have to mess with any of the details of the rules.\n Then you can click \u0026ldquo;review and launch\u0026rdquo; and then \u0026ldquo;launch\u0026rdquo; from the next screen.\n On the next screen (a pop-up) you will have to create and download a key pair pem file. In the first drop-down list, select “Create a new key pair”. Give it whatever name you would like. This file is what you will use to log into the server. Don\u0026rsquo;t lose it- you will not be able to log in without it. Then, click “Launch instances”. You will see a page indicating that “Your instance are now launching”.\n On the bottom-right, click the button “View instances”. It will now appear in the \u0026ldquo;instances-\u0026gt;instances\u0026rdquo; tab in the console. Go there and click on it to get the details. You will need to use the IPv4 Public IP and Public DNS (IPv4) later. Write them down.\n Go to the url in your browsr: Public DNS (IPv4) + \u0026ldquo;/dashboard/\u0026rdquo;, such as ec2-18-218-121-155.us-east-2.compute.amazonaws.com/dashboard/ . This will be the dashboard. the default admin user is username:admin , pw: admin123\n To be able to connect using https and make your server much more secure, follow the guide here.\n  "
 },
 {
-	"uri": "/docsite/minnosuitedashboard/useage/dropbox/",
+	"uri": "/docsite/minnosuitedashboard/dropbox/",
 	"title": "Setting up Dropbox",
 	"tags": [],
 	"description": "",
@@ -154,11 +154,18 @@
 	"content": " Register / sign in to DigitalOcean here .\n Click on the \u0026ldquo;Droplets\u0026rdquo; tab and create a new Droplet, using Ubuntu as the OS.\n Pick which price tier to use, probably the cheapest one at $5/month. The defaults are probably fine for other options. Go through everything until your droplet is created.\n Connect to the droplet using SSH.\n Follow Step 1 and 2 of this guide on installing Docker\n Follow Step 1 of this guide on installing Docker-Compose\n Follow the basic docker installation guide starting on step 3.\n  "
 },
 {
-	"uri": "/docsite/overview/extendingsite/",
+	"uri": "/docsite/extendingsite/",
 	"title": "Extending This Doc Site",
 	"tags": [],
 	"description": "",
 	"content": "This page will cover editing and extending this doc site.\n Install Hugo, folling the instructions here. Also install git if you need to.\n Get a copy of the docsite here. Download it using git, such as with git clone https://github.com/minnojs/docsite.git\n From the command line in the docsite folder, run git submodule update --init --recursive to download the Hugo theme used by the docsite.\n You can read a guide on using the Hugo learn theme that our doc site makes use of here. In general you will be editing files in the content subfolder. Each folder in that is one layer of the nested sidebar menu, with the _index.en.md file inside it for the html that appears when you click on that menu item. Those files will have a weight at the top that determines their order in the menu: the pages with the lowest weight appear first.\n To start the server, from the command line in the docsite folder, run hugo server -t learn --baseURL=localhost/docsite . Then you should be able to go to http://localhost:1313/docsite/ in your browser and view the site. It should auto update the pages when you edit them, although you may have to restart to see changes to the sidebar menu. press ctrl/command+c in the command line window when you are ready to shut it down.\n Run hugo in the command line in the docsite folder to compile it when you are finished. Then the generated site will appear in the docs folder in the docsite directory.\n  Using git:\n After you have installed git, run git checkout https://github.com/minnojs/docsite.git\n Make your edits and test them.\n In your docsite folder, run git pull to make sure that there are no other remote updates to the docsite, then run git add ., followed by git commit -m \u0026quot;comment describing your updates to the docsite\u0026quot; and finally git push origin master .\n  "
+},
+{
+	"uri": "/docsite/aboutpi/",
+	"title": "About Project Implicit",
+	"tags": [],
+	"description": "",
+	"content": "under construction\n"
 },
 {
 	"uri": "/docsite/categories/",

@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/docsite/minnosuitedashboard/useage/</loc>
+    <loc>/docsite/minnosuitedashboard/admin/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/minnosuitedashboard/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
@@ -37,17 +42,13 @@
   </url>
   
   <url>
-    <loc>/docsite/overview/aboutpi/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/docsite/minnojsstudydevelopment/dataanalysis/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/docsite/minnosuitedashboard/</loc>
+    <loc>/docsite/minnosuitedashboard/researcher/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
@@ -59,11 +60,11 @@
   </url>
   
   <url>
-    <loc>/docsite/minnosuitedashboard/useage/configfile/</loc>
+    <loc>/docsite/minnojsstudydevelopment/</loc>
   </url>
   
   <url>
-    <loc>/docsite/minnojsstudydevelopment/</loc>
+    <loc>/docsite/minnosuitedashboard/configfile/</loc>
   </url>
   
   <url>
@@ -71,7 +72,7 @@
   </url>
   
   <url>
-    <loc>/docsite/minnosuitedashboard/useage/dropbox/</loc>
+    <loc>/docsite/minnosuitedashboard/dropbox/</loc>
   </url>
   
   <url>
@@ -95,13 +96,17 @@
   </url>
   
   <url>
-    <loc>/docsite/overview/extendingsite/</loc>
+    <loc>/docsite/extendingsite/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/aboutpi/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -110,7 +115,6 @@
   
   <url>
     <loc>/docsite/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
