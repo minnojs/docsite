@@ -7,7 +7,7 @@ This page will cover the general way to get the MinnoSuite Dashboard installed u
 
 1.  Check our [requirements](./requirements) page and make sure that the machine that you want to use meets the requirements.  
 
-2.  Install Docker on your machine, using the Docker CE download link on the right of the page [here for windows](https://docs.docker.com/docker-for-windows/install/), [here for MacOs](https://docs.docker.com/docker-for-mac/install/), or [here for Ubuntu Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/),and following the instructions that they give you.
+2.  Install Docker on your machine, using the Docker CE download link on the right of the page [here for windows 8+](https://docs.docker.com/docker-for-windows/install/), [here for MacOs](https://docs.docker.com/docker-for-mac/install/), or [here for Ubuntu Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/),and following the instructions that they give you.
 
 3.  create a new folder in your file system to hold your minnoSuite server, and download [this](./docker-compose.yml) docker-compose file into it.
 

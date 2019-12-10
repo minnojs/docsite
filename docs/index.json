@@ -81,18 +81,11 @@
 	"title": "Easy Installation With Docker",
 	"tags": [],
 	"description": "",
-	"content": "This page will cover the general way to get the MinnoSuite Dashboard installed using Docker, a tool designed to make it easier to create, deploy, and run applications.\n Check our requirements page and make sure that the machine that you want to use meets the requirements.\n Install Docker on your machine, using the Docker CE download link on the right of the page here for windows, here for MacOs, or here for Ubuntu Linux,and following the instructions that they give you.\n create a new folder in your file system to hold your minnoSuite server, and download this docker-compose file into it.\n You can update the configuration for your server by editing the docker-compose file with a text editor. Read about the docker-compose file here.\n Open the command prompt (windows) or terminal (Linux/Mac) for your machine, and navigate to the folder that you downloaded the docker-compose file to, and type: docker-compose up\nTo stop the server you can type Control/Command+C\nIf you are using a Mac or Linux machine and binding to port 80 or 443, you may get an error unless you start the server as an administrator by typing: sudo docker-compose up\n You should see a message about the server being up, and be given a port and URL to use. Enter that URL in your browser and you will be connected. The default user is username : admin and password: admin123\n To get HTTPS working, first follow the guide to setting up your domain. Then open up the docker-compose file and edit the OWNER_EMAIL and DOMAINS fields. Enter your email, and the domain you registered. Change the SERVER_TYPE field to \u0026ldquo;greenlock\u0026rdquo;. Change the ports to \u0026ldquo;80:8000\u0026rdquo; and \u0026ldquo;443:8443\u0026rdquo;. \u0026ldquo;Now when you run docker-compose up it should automatically run with https. Now connect to the site using the domain you registered and you should have https working.\n  "
+	"content": "This page will cover the general way to get the MinnoSuite Dashboard installed using Docker, a tool designed to make it easier to create, deploy, and run applications.\n Check our requirements page and make sure that the machine that you want to use meets the requirements.\n Install Docker on your machine, using the Docker CE download link on the right of the page here for windows 8+, here for MacOs, or here for Ubuntu Linux,and following the instructions that they give you.\n create a new folder in your file system to hold your minnoSuite server, and download this docker-compose file into it.\n You can update the configuration for your server by editing the docker-compose file with a text editor. Read about the docker-compose file here.\n Open the command prompt (windows) or terminal (Linux/Mac) for your machine, and navigate to the folder that you downloaded the docker-compose file to, and type: docker-compose up\nTo stop the server you can type Control/Command+C\nIf you are using a Mac or Linux machine and binding to port 80 or 443, you may get an error unless you start the server as an administrator by typing: sudo docker-compose up\n You should see a message about the server being up, and be given a port and URL to use. Enter that URL in your browser and you will be connected. The default user is username : admin and password: admin123\n To get HTTPS working, first follow the guide to setting up your domain. Then open up the docker-compose file and edit the OWNER_EMAIL and DOMAINS fields. Enter your email, and the domain you registered. Change the SERVER_TYPE field to \u0026ldquo;greenlock\u0026rdquo;. Change the ports to \u0026ldquo;80:8000\u0026rdquo; and \u0026ldquo;443:8443\u0026rdquo;. \u0026ldquo;Now when you run docker-compose up it should automatically run with https. Now connect to the site using the domain you registered and you should have https working.\n  "
 },
 {
 	"uri": "/docsite/minnojsstudydevelopment/examples/",
 	"title": "Examples",
-	"tags": [],
-	"description": "",
-	"content": "under construction\n"
-},
-{
-	"uri": "/docsite/minnojsstudydevelopment/",
-	"title": "minnoJs Study Development",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
@@ -103,6 +96,13 @@
 	"tags": [],
 	"description": "",
 	"content": " The Docker Configuration File This page will describe the parts of the docker-compose configuration file that you might want to edit.\nports: - \u0026quot;8000:8000\u0026quot; #specify ports forwarding - \u0026quot;8443:8443\u0026quot; #specify ports forwarding  By default the server will run on port 8000 for http requests and 8443 for https requests. If you want to change it then you\u0026rsquo;d do something like \u0026ldquo;80:8000\u0026rdquo; to make it run on port 80 for http requests.\nSERVER_TYPE: \u0026ldquo;http\u0026rdquo; \u0026ldquo;http\u0026rdquo;, \u0026ldquo;https\u0026rdquo;, or \u0026ldquo;greenlock\u0026rdquo;\n\u0026ldquo;http\u0026rdquo; will make it only run with a http service. \u0026ldquo;https\u0026rdquo; will make it run on https also using a certificate and key file that you provide. \u0026ldquo;greenlock\u0026rdquo; will make it automatically aquire certificates for you using Greenlock. When using https, update the part of the config file under \u0026ldquo;volumes\u0026rdquo; with \u0026ldquo;./localhost.crt\u0026rdquo; and \u0026ldquo;/localhost.key\u0026rdquo; to point to the file path of the crt and key files for your domain. It is up to you to aquire them. When using greenlock, update the OWNER_EMAIL and DOMAINS field with your email and domain, and also make sure that the DNS for your domain points to the machine you are running this on.\n"
+},
+{
+	"uri": "/docsite/minnojsstudydevelopment/",
+	"title": "minnoJs Study Development",
+	"tags": [],
+	"description": "",
+	"content": "under construction\n"
 },
 {
 	"uri": "/docsite/installation/awsinstallation/",
@@ -127,10 +127,10 @@
 },
 {
 	"uri": "/docsite/installation/windowsinstallation/",
-	"title": "Windows Installation",
+	"title": "Windows 7 Installation",
 	"tags": [],
 	"description": "",
-	"content": " Install Docker on your machine, using the guide here .\n create a new folder in your file system to hold your minnoSuite server, and download this docker-compose file into it.\n You can update the configuration for your server by editing the config file with a text editor. Read about the config file here.\n Open the command prompt, and navigate to the folder that you downloaded the docker-compose file to, and type: docker-compose up\n You should see a message about the server being up, and be given a port and URL to use. Enter that URL in your browser and you will be connected. The default user is username : admin and password: admin123\n To get HTTPS working, first follow the guide to setting up your domain. Then open up the docker-compose file and edit the OWNER_EMAIL and DOMAINS fields. Enter your email, and the domain you registered. Change the SERVER_TYPE field to \u0026ldquo;greenlock\u0026rdquo;. Change the ports to \u0026ldquo;80:8000\u0026rdquo; and \u0026ldquo;443:8443\u0026rdquo;. \u0026ldquo;Now when you run docker-compose up it should automatically run with https. Now connect to the site using the domain you registered and you should have https working.\n  "
+	"content": " Install Docker Toolbox on your machine, using the guide here . During the installation process, install all optional components.\n    Reboot your system.\n create a new folder in your file system to hold your minnoSuite server, and download this docker-compose file into it.\n You can update the configuration for your server by editing the config file with a text editor. Read about the config file here.\n Go to the start menu and run Virtualbox. From there:\n Click the appropriate machine (probably the one labeled \u0026ldquo;default\u0026rdquo;) Settings Network \u0026gt; Adapter 1 \u0026gt; Advanced \u0026gt; Port Forwarding Click \u0026ldquo;+\u0026rdquo; to add a new Rule Set Host Port 80 \u0026amp; Guest Port 80; be sure to leave Host IP and Guest IP empty Also add port 443 and guest port 443 in another row if you want to use https.   Open the docker quickstart terminal that was included in the Docker Toolbox installation, and navigate to the folder that you downloaded the docker-compose file to, and type: docker-compose up\n You should see a message about the server being up, and be given a port and URL to use. Enter that URL in your browser and you will be connected. The default user is username : admin and password: admin123\n To get HTTPS working, first follow the guide to setting up your domain. Then open up the docker-compose file and edit the OWNER_EMAIL and DOMAINS fields. Enter your email, and the domain you registered. Change the SERVER_TYPE field to \u0026ldquo;greenlock\u0026rdquo;. Change the ports to \u0026ldquo;80:8000\u0026rdquo; and \u0026ldquo;443:8443\u0026rdquo;. \u0026ldquo;Now when you run docker-compose up it should automatically run with https. Now connect to the site using the domain you registered and you should have https working.\n  "
 },
 {
 	"uri": "/docsite/installation/awsinstallation/awsfreessl/",

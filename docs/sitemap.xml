@@ -60,11 +60,11 @@
   </url>
   
   <url>
-    <loc>/docsite/minnojsstudydevelopment/</loc>
+    <loc>/docsite/minnosuitedashboard/configfile/</loc>
   </url>
   
   <url>
-    <loc>/docsite/minnosuitedashboard/configfile/</loc>
+    <loc>/docsite/minnojsstudydevelopment/</loc>
   </url>
   
   <url>
@@ -107,6 +107,7 @@
   
   <url>
     <loc>/docsite/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -115,6 +116,7 @@
   
   <url>
     <loc>/docsite/tags/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

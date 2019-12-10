@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.55.6" />
     <meta name="description" content="Documentation for minnoSuite">
 <meta name="author" content="Andrew Dzikiewicz">
 
     <link rel="icon" href="/docsite/images/favicon.png" type="image/png">
 
-    <title>Windows Installation :: Documentation for minnoSuite</title>
+    <title>Windows 7 Installation :: Documentation for minnoSuite</title>
 
     
-    <link href="/docsite/css/nucleus.css?1572110714" rel="stylesheet">
-    <link href="/docsite/css/fontawesome-all.min.css?1572110714" rel="stylesheet">
-    <link href="/docsite/css/hybrid.css?1572110714" rel="stylesheet">
-    <link href="/docsite/css/featherlight.min.css?1572110714" rel="stylesheet">
-    <link href="/docsite/css/perfect-scrollbar.min.css?1572110714" rel="stylesheet">
-    <link href="/docsite/css/auto-complete.css?1572110714" rel="stylesheet">
-    <link href="/docsite/css/atom-one-dark-reasonable.css?1572110714" rel="stylesheet">
-    <link href="/docsite/css/theme.css?1572110714" rel="stylesheet">
-    <link href="/docsite/css/hugo-theme.css?1572110714" rel="stylesheet">
+    <link href="/docsite/css/nucleus.css?1575949382" rel="stylesheet">
+    <link href="/docsite/css/fontawesome-all.min.css?1575949382" rel="stylesheet">
+    <link href="/docsite/css/hybrid.css?1575949382" rel="stylesheet">
+    <link href="/docsite/css/featherlight.min.css?1575949382" rel="stylesheet">
+    <link href="/docsite/css/perfect-scrollbar.min.css?1575949382" rel="stylesheet">
+    <link href="/docsite/css/auto-complete.css?1575949382" rel="stylesheet">
+    <link href="/docsite/css/atom-one-dark-reasonable.css?1575949382" rel="stylesheet">
+    <link href="/docsite/css/theme.css?1575949382" rel="stylesheet">
+    <link href="/docsite/css/hugo-theme.css?1575949382" rel="stylesheet">
     
 
-    <script src="/docsite/js/jquery-3.3.1.min.js?1572110714"></script>
+    <script src="/docsite/js/jquery-3.3.1.min.js?1575949382"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -108,14 +108,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/docsite/js/lunr.min.js?1572110714"></script>
-<script type="text/javascript" src="/docsite/js/auto-complete.js?1572110714"></script>
+<script type="text/javascript" src="/docsite/js/lunr.min.js?1575949382"></script>
+<script type="text/javascript" src="/docsite/js/auto-complete.js?1575949382"></script>
 <script type="text/javascript">
     
         var baseurl = "\/docsite";
     
 </script>
-<script type="text/javascript" src="/docsite/js/search.js?1572110714"></script>
+<script type="text/javascript" src="/docsite/js/search.js?1575949382"></script>
 
     
   </div>
@@ -526,13 +526,13 @@
  
   
     
-    <li data-nav-id="/installation/windowsinstallation/" title="Windows Installation" class="dd-item 
+    <li data-nav-id="/installation/windowsinstallation/" title="Windows 7 Installation" class="dd-item 
         parent
         active
         
         ">
       <a href="/docsite/installation/windowsinstallation/">
-          Windows Installation
+          Windows 7 Installation
           
       </a>
       
@@ -812,7 +812,7 @@
             
           
           
-            <a href='/docsite/'>Documentation for minnoSuite</a> > <a href='/docsite/installation/'>Installation</a> > Windows Installation
+            <a href='/docsite/'>Documentation for minnoSuite</a> > <a href='/docsite/installation/'>Installation</a> > Windows 7 Installation
           
          
           
@@ -841,7 +841,7 @@
           
             <h1>
               
-              Windows Installation
+              Windows 7 Installation
             </h1>
           
 
@@ -851,13 +851,32 @@
 
 
 	<ol>
-<li><p>Install Docker on your machine, using the guide  <a href="https://docs.docker.com/docker-for-windows/install/">here</a> .</p></li>
+<li><p>Install Docker Toolbox on your machine, using the guide  <a href="https://docs.docker.com/toolbox/toolbox_install_windows/">here</a> .  During the installation process, install all optional components.</p>
+
+<ul>
+<li><img src="1.png" alt="Install" /></li>
+<li><img src="2.png" alt="Install" /></li>
+</ul></li>
+
+<li><p>Reboot your system.</p></li>
 
 <li><p>create a new folder in your file system to hold your minnoSuite server, and download <a href="./docker-compose.yml">this</a> docker-compose file into it.</p></li>
 
 <li><p>You can update the configuration for your server by editing the config file with a text editor.  Read about the config file <a href="/docsite/minnosuitedashboard/useage/configfile">here</a>.</p></li>
 
-<li><p>Open the <a href="https://www.makeuseof.com/tag/a-beginners-guide-to-the-windows-command-line/">command prompt</a>, and navigate to the folder that you downloaded the docker-compose file to, and type:
+<li><p>Go to the start menu and run Virtualbox.  From there:</p>
+
+<ul>
+<li>Click the appropriate machine (probably the one labeled &ldquo;default&rdquo;)</li>
+<li>Settings</li>
+<li>Network &gt; Adapter 1 &gt; Advanced &gt; Port Forwarding</li>
+<li>Click &ldquo;+&rdquo; to add a new Rule</li>
+<li>Set Host Port 80 &amp; Guest Port 80; be sure to leave Host IP and Guest IP empty</li>
+<li>Also add port 443 and guest port 443 in another row if you want to use https.
+<img src="3.png" alt="Install" /></li>
+</ul></li>
+
+<li><p>Open the <a href="https://programminghistorian.org/en/lessons/intro-to-bash">docker quickstart terminal</a> that was included in the Docker Toolbox installation, and navigate to the folder that you downloaded the docker-compose file to, and type:
 docker-compose up</p></li>
 
 <li><p>You should see a message about the server being up, and be given a port and URL to use.  Enter that URL in your browser and you will be connected.  The default user is username : admin and password: admin123</p></li>
@@ -1326,19 +1345,19 @@ docker-compose up</p></li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/docsite/js/clipboard.min.js?1572110714"></script>
-    <script src="/docsite/js/perfect-scrollbar.min.js?1572110714"></script>
-    <script src="/docsite/js/perfect-scrollbar.jquery.min.js?1572110714"></script>
-    <script src="/docsite/js/jquery.sticky.js?1572110714"></script>
-    <script src="/docsite/js/featherlight.min.js?1572110714"></script>
-    <script src="/docsite/js/highlight.pack.js?1572110714"></script>
+    <script src="/docsite/js/clipboard.min.js?1575949382"></script>
+    <script src="/docsite/js/perfect-scrollbar.min.js?1575949382"></script>
+    <script src="/docsite/js/perfect-scrollbar.jquery.min.js?1575949382"></script>
+    <script src="/docsite/js/jquery.sticky.js?1575949382"></script>
+    <script src="/docsite/js/featherlight.min.js?1575949382"></script>
+    <script src="/docsite/js/highlight.pack.js?1575949382"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/docsite/js/modernizr.custom-3.6.0.js?1572110714"></script>
-    <script src="/docsite/js/learn.js?1572110714"></script>
-    <script src="/docsite/js/hugo-learn.js?1572110714"></script>
+    <script src="/docsite/js/modernizr.custom-3.6.0.js?1575949382"></script>
+    <script src="/docsite/js/learn.js?1575949382"></script>
+    <script src="/docsite/js/hugo-learn.js?1575949382"></script>
 
-    <link href="/docsite/mermaid/mermaid.css?1572110714" rel="stylesheet" />
-    <script src="/docsite/mermaid/mermaid.js?1572110714"></script>
+    <link href="/docsite/mermaid/mermaid.css?1575949382" rel="stylesheet" />
+    <script src="/docsite/mermaid/mermaid.js?1575949382"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
