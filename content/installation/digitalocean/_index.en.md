@@ -7,14 +7,20 @@ weight: 50
 
 1.  Register / sign in to DigitalOcean [here](https://www.digitalocean.com/) .
 
-2.  Click on the "Droplets" tab and create a new Droplet, using Ubuntu as the OS.
+
+
+2.  Go [here](https://marketplace.digitalocean.com/apps/docker) and click the "Create Docker Droplet" button.
 
 3.  Pick which price tier to use, probably the cheapest one at $5/month.  The defaults are probably fine for other options.  Go through everything until your droplet is created.
 
-4.  [Connect to the droplet using SSH](https://www.digitalocean.com/docs/droplets/how-to/connect-with-ssh/).
+4.  [Connect to the droplet using SSH](https://www.digitalocean.com/docs/droplets/how-to/connect-with-ssh/).  You should have an email from DigitalOcean with the ip address, username, and password to use.
 
-5.  Follow Step 1 and 2 of [this guide on installing Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
+7.  From the command line, run:  `wget "https://minnojs.github.io/docsite/installation/basicinstallation/docker-compose.yml"`
 
-6.  Follow Step 1 of [this guide on installing Docker-Compose](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04)
+8.  Next run:  `docker-compose up -d`
 
-7.  Follow the [basic docker installation guide](/installation/basicinstallation) starting on step 3.
+9.  You should now be able to enter the IP address of your droplet into your browser bar and connect to the dashboard.
+
+10.  To set up your domain with it and enable SSL, follow our guide [here](../domain/).
+
+11.  If you need to shutdown the docker server, from the command line run `docker-compose down`.

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/docsite/images/favicon.png" type="image/png">
 
-    <title>Requirements :: Documentation for minnoSuite</title>
+    <title>AWS Paid SSL :: Documentation for minnoSuite</title>
 
     
     <link href="/docsite/css/nucleus.css?1578541565" rel="stylesheet">
@@ -89,7 +89,7 @@
 	}
 </style>
   </head>
-  <body class="" data-url="/installation/requirements/">
+  <body class="" data-url="/installation/awsinstallation/awspayssl/">
     <nav id="sidebar" class="">
 
 
@@ -395,8 +395,8 @@
   
     
     <li data-nav-id="/installation/requirements/" title="Requirements" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/docsite/installation/requirements/">
@@ -443,7 +443,7 @@
   
     
     <li data-nav-id="/installation/awsinstallation/" title="AWS Cloud Installation" class="dd-item 
-        
+        parent
         
         
         ">
@@ -470,8 +470,8 @@
   
     
     <li data-nav-id="/installation/awsinstallation/awspayssl/" title="AWS Paid SSL" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/docsite/installation/awsinstallation/awspayssl/">
@@ -781,7 +781,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="/docsite/installation/requirements/_index.en.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="/docsite/installation/awsinstallation/awspayssl/_index.en.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -810,7 +810,13 @@
             
           
           
-            <a href='/docsite/'>Documentation for minnoSuite</a> > <a href='/docsite/installation/'>Installation</a> > Requirements
+            
+            
+          
+          
+            <a href='/docsite/'>Documentation for minnoSuite</a> > <a href='/docsite/installation/'>Installation</a> > <a href='/docsite/installation/awsinstallation/'>AWS Cloud Installation</a> > AWS Paid SSL
+          
+         
           
          
           
@@ -832,7 +838,7 @@
           
             <h1>
               
-              Requirements
+              AWS Paid SSL
             </h1>
           
 
@@ -841,17 +847,42 @@
 
 
 
-	
+	<p>This guide will cover how to enable SSL on your running AWS server through purchasing a domain and services from Amazon. Set up your dashboard server first from our guide <a href="../">here</a>.</p>
 
-<p>This page will cover the minimum requirements to install the Minnosuite Dashboard.</p>
-
-<h3 id="common-requirements">Common Requirements</h3>
-
-<p>For all installs you need a computer, with a recomended 2 GB of disc space free.</p>
-
-<p>If you want people to be able to connect to it from the internet, you will need to be able to listen to port 80 on the computer, which may require administrator access, and have port 80 open to the world and not blocked by your firewall.  If you want people to be able to connect securely to your machine, you will need the same for port 443 also.  Additionally, you should have a static IP address on the machine.</p>
-
-<p>You will probably also want to have a domain for your server.  We have a guide for setting up one with Freenom <a href="../domain">here</a>.  Or you may already have a domain for your machine, or be able to have your IT department set up a domain for you.</p>
+<ol>
+<li>Go to <a href="https://console.aws.amazon.com/route53/home">https://console.aws.amazon.com/route53/home</a></li>
+<li>Click the &ldquo;Register Domain&rdquo; button<br /></li>
+<li>Type in the domain name you want and the suffix you want and click the &ldquo;Check&rdquo; button.  Amazon you will then be able to click &ldquo;add to cart&rdquo; to purchase the domain if it is available, or will be given suggestions for alternatives that are open for purchase if not. Scroll to the bottom of the page and click the &ldquo;continue&rdquo; button once it is in your cart</li>
+<li>The next page will have a lot of personal info that you will have to fill out.  This is to register you as owner of the domain, and make sure that changes to it have to go through you.  Click the button to continue when you are done</li>
+<li>Click the checkbox to agree to their Registration Agreement, and then the &ldquo;Complete Purchase&rdquo; button.<br /></li>
+<li>You will be emailed about the domain at the email you entered.  If you don&rsquo;t click the link in the email within 15 days to verify that you provided a valid email address, the registrar will suspend your domain. A suspended domain is not available on the Internet.</li>
+<li>After you click the link in the email, in a day or 2 you will get another email saying that your domain was successfully registered with Route 53</li>
+<li>Go to the Amazon certificate manager at <a href="https://us-east-2.console.aws.amazon.com/acm">https://us-east-2.console.aws.amazon.com/acm</a> and request a certificate.  If this is your first time there then click provisioning a certificates -&gt; get started.</li>
+<li>request a public certificate and click the request a certificate button</li>
+<li>type in your domain name in the text box, then click “add another domain to this certificate”, and then &ldquo;www&rdquo; + your domain name in the next box, and click next.  So for example if your domain is test.com, the 2 boxes would have test.com and www.test.com</li>
+<li>Leave it as DNS validation and click Rreview.  Then click “Cconfirm and request” on the next page</li>
+<li>Click the arrow by the domain to expand the view.<br /></li>
+<li>Click the &ldquo;create record in route 53&rdquo; button, and then click the “Create” button in the window that pops up.</li>
+<li>Wait 30 minutes - 2 hours for the change to propagate</li>
+<li>The certificate manager will list the status as &ldquo;issued&rdquo; once it is ready for you to complete.  If it fails after 24 hours you can try deleting it and resubmitting.</li>
+<li>Go back to the EC2 dashboard at <a href="https://us-east-2.console.aws.amazon.com/ec2">https://us-east-2.console.aws.amazon.com/ec2</a> and then click on the &ldquo;Load Balancers&rdquo; link</li>
+<li>Click on the &ldquo;Create Load Balancer&rdquo; button</li>
+<li>Choose &ldquo;Application Load Balancer&rdquo; by clicking on the &ldquo;Create&rdquo; button for it</li>
+<li>Type in a name for it</li>
+<li>Click the &ldquo;add listener&rdquo; button and then select &ldquo;HTTPS&rdquo; from the &ldquo;choose a protocol&rdquo; dropdown</li>
+<li>Check the boxes for at least 2 subnets under the &ldquo;availability zones&rdquo; area</li>
+<li>Click the &ldquo;Next: configure security settings&rdquo; button at the bottom right</li>
+<li>The next page lets you set up a certificate.  It should default to the one that you create and got issued earlier (the name will appear in the Certificate name, and the selected Certificate type would be “Choose a certificate from ACM”).  If yes, you can, just click the “Next: Configure Security Group” button at the bottom right again.  Otherwise choose &ldquo;Choose a certificate from ACM&rdquo; and then from the &ldquo;certificate name&rdquo; dropdown choose the one with your domain name.</li>
+<li>Choose the security group you made in part 7 of the initial guide (you can see the name of that security group if you go to EC2 Dashboard-&gt;Running Instances, on the far right of the records you have for the relevant instance), and click “Next: Configure Routing”.  Or if you don&rsquo;t see that then choose to create a new security group, and then Click the &ldquo;add rule&rdquo; button twice, and set the 2 new rules to &ldquo;HTTPS&rdquo; and &ldquo;HTTP&rdquo;, so in total you will have those 2 and &ldquo;SSH&rdquo; rules.  You don&rsquo;t have to mess with any of the details of the rules.<br /></li>
+<li>You should be on the &ldquo;Configure routing&rdquo; page now.  From the &ldquo;target group&rdquo; dropdown, select &ldquo;existing target group&rdquo;, and then select the name from the dropdown that you previously entered. I chose “New target group” entered a name, selected the Instance tha matached the Instance ID on your EC2 page, clicked “Add to registered”, clicked Next:Review, clicked “Create”,</li>
+<li>Now you are done configuring it, so just keep clicking the next button, and then finally &ldquo;create&rdquo; one you get that button.  You should get a message saying &ldquo;Successfully created load balancer&rdquo;.<br /></li>
+<li>Close the dialogue and now you should see a page showing you your load balancers, with the one you just created appearing.</li>
+<li>Click on the row with your load balancer, and then from the details page write down the DNS name that it gives.<br /></li>
+<li>Go back to the Route 53 dashboard at <a href="https://console.aws.amazon.com/route53/home">https://console.aws.amazon.com/route53/home</a> , or from Services-&gt;Route53and click on the &ldquo;Hosted zones&rdquo; link</li>
+<li>Click the radio button for your hosted zone and then click the &ldquo;go to record sets&rdquo; button.</li>
+<li>You should see 2 rows with type &ldquo;A&rdquo;.  Click on each of them to highlight them, and then from the &ldquo;edit record set&rdquo; box that appears on the right, Click the Alias &ldquo;Yes&rdquo; radio button, then for the alias target type in the DNS name that you saved in step 37, and finally click the &ldquo;save record set&rdquo; button.</li>
+<li>Now after waiting for up to 5 minutes, you should be able to access the minnoSuite dashboard at your domain + &ldquo;/static&rdquo;, such as www.implicit.ga/static .  Https will work also.  This will be the dashboard.  the default admin user is username:admin , pw: admin123</li>
+</ol>
 
 
 
@@ -1059,23 +1090,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -1100,6 +1114,23 @@
 
                     
                     
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
                         
                     
                     
@@ -1109,6 +1140,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1128,6 +1160,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1298,10 +1333,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/docsite/installation/" title="Installation"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/docsite/installation/awsinstallation/" title="AWS Cloud Installation"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/docsite/installation/basicinstallation/" title="Easy Installation With Docker" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/docsite/installation/domain/" title="Setting up your domain" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

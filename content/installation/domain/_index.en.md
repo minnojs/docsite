@@ -4,10 +4,18 @@ weight: 15
 ---
 
 
-## Setting up your domain
+This guide will cover how to enable SSL on your running dashboard server.
+
 1.  Go to http://www.freenom.com/ 
 2.  Go to Services -> Register a new domain.
 3.  Pick the domain you want and register it (You will register to freenom in the process of obtaining the domain).
-4.  Click "manage domain" on the domain you registered
-5.  Click on "manage freenom DNS"
-6.  Add a record for your site.  Set the name as the domain name that you registered, the target as your static IP address, and the type as "A" if your IP address is IPv4 (like 123.11.22.33, or "AAAA" if your IP address is IPv6 (like 2001:0db8:85a3:0000:0000:8a2e:0370:7334).  Then click "save changes".  Note that it may take 1-2 hours for the changes to go live, so you will need to wait at this point. 
+4.  Go to services->my domains
+5.  Click "manage domain" on the domain you registered
+6.  Click "manage freenom DNS"
+7.  Add a record with type "A" and IP Address that you copied down earlier for your server, and then click "save changes"
+8.  Wait ~1 hour for the DNS changes to propogate
+9.  You should now be able to go to the domain name you registered and be sent to your docker server, such as "http://mydomain.com/dashboard"
+10.  Log in to the dashboard with an admin account
+11.  From the dropdown menu's at the top of the screen, select Admin -> edit configuration
+12.  Use the dropdown to change the server type to 'Greenlock'.  Enter your email in the box provided, and the domain you registered in the next box, i.e. mydomain.com
+13.  Click save, and now it should work.  You'll have to connect using https, such as https://mydomain.com/dashboard from here on out.

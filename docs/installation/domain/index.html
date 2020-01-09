@@ -12,18 +12,18 @@
     <title>Setting up your domain :: Documentation for minnoSuite</title>
 
     
-    <link href="/docsite/css/nucleus.css?1575949382" rel="stylesheet">
-    <link href="/docsite/css/fontawesome-all.min.css?1575949382" rel="stylesheet">
-    <link href="/docsite/css/hybrid.css?1575949382" rel="stylesheet">
-    <link href="/docsite/css/featherlight.min.css?1575949382" rel="stylesheet">
-    <link href="/docsite/css/perfect-scrollbar.min.css?1575949382" rel="stylesheet">
-    <link href="/docsite/css/auto-complete.css?1575949382" rel="stylesheet">
-    <link href="/docsite/css/atom-one-dark-reasonable.css?1575949382" rel="stylesheet">
-    <link href="/docsite/css/theme.css?1575949382" rel="stylesheet">
-    <link href="/docsite/css/hugo-theme.css?1575949382" rel="stylesheet">
+    <link href="/docsite/css/nucleus.css?1578541565" rel="stylesheet">
+    <link href="/docsite/css/fontawesome-all.min.css?1578541565" rel="stylesheet">
+    <link href="/docsite/css/hybrid.css?1578541565" rel="stylesheet">
+    <link href="/docsite/css/featherlight.min.css?1578541565" rel="stylesheet">
+    <link href="/docsite/css/perfect-scrollbar.min.css?1578541565" rel="stylesheet">
+    <link href="/docsite/css/auto-complete.css?1578541565" rel="stylesheet">
+    <link href="/docsite/css/atom-one-dark-reasonable.css?1578541565" rel="stylesheet">
+    <link href="/docsite/css/theme.css?1578541565" rel="stylesheet">
+    <link href="/docsite/css/hugo-theme.css?1578541565" rel="stylesheet">
     
 
-    <script src="/docsite/js/jquery-3.3.1.min.js?1575949382"></script>
+    <script src="/docsite/js/jquery-3.3.1.min.js?1578541565"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -108,14 +108,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/docsite/js/lunr.min.js?1575949382"></script>
-<script type="text/javascript" src="/docsite/js/auto-complete.js?1575949382"></script>
+<script type="text/javascript" src="/docsite/js/lunr.min.js?1578541565"></script>
+<script type="text/javascript" src="/docsite/js/auto-complete.js?1578541565"></script>
 <script type="text/javascript">
     
         var baseurl = "\/docsite";
     
 </script>
-<script type="text/javascript" src="/docsite/js/search.js?1575949382"></script>
+<script type="text/javascript" src="/docsite/js/search.js?1578541565"></script>
 
     
   </div>
@@ -469,13 +469,13 @@
  
   
     
-    <li data-nav-id="/installation/awsinstallation/awsfreessl/" title="AWS Free SSL" class="dd-item 
+    <li data-nav-id="/installation/awsinstallation/awspayssl/" title="AWS Paid SSL" class="dd-item 
         
         
         
         ">
-      <a href="/docsite/installation/awsinstallation/awsfreessl/">
-          AWS Free SSL
+      <a href="/docsite/installation/awsinstallation/awspayssl/">
+          AWS Paid SSL
           
       </a>
       
@@ -825,14 +825,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#setting-up-your-domain">Setting up your domain</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -857,17 +850,22 @@
 
 
 
-	
-
-<h2 id="setting-up-your-domain">Setting up your domain</h2>
+	<p>This guide will cover how to enable SSL on your running dashboard server.</p>
 
 <ol>
 <li>Go to <a href="http://www.freenom.com/">http://www.freenom.com/</a></li>
 <li>Go to Services -&gt; Register a new domain.</li>
 <li>Pick the domain you want and register it (You will register to freenom in the process of obtaining the domain).</li>
+<li>Go to services-&gt;my domains</li>
 <li>Click &ldquo;manage domain&rdquo; on the domain you registered</li>
-<li>Click on &ldquo;manage freenom DNS&rdquo;</li>
-<li>Add a record for your site.  Set the name as the domain name that you registered, the target as your static IP address, and the type as &ldquo;A&rdquo; if your IP address is IPv4 (like 123.11.22.33, or &ldquo;AAAA&rdquo; if your IP address is IPv6 (like 2001:0db8:85a3:0000:0000:8a2e:0370:7334).  Then click &ldquo;save changes&rdquo;.  Note that it may take 1-2 hours for the changes to go live, so you will need to wait at this point.</li>
+<li>Click &ldquo;manage freenom DNS&rdquo;</li>
+<li>Add a record with type &ldquo;A&rdquo; and IP Address that you copied down earlier for your server, and then click &ldquo;save changes&rdquo;</li>
+<li>Wait ~1 hour for the DNS changes to propogate</li>
+<li>You should now be able to go to the domain name you registered and be sent to your docker server, such as &ldquo;<a href="http://mydomain.com/dashboard&quot;">http://mydomain.com/dashboard&quot;</a></li>
+<li>Log in to the dashboard with an admin account</li>
+<li>From the dropdown menu&rsquo;s at the top of the screen, select Admin -&gt; edit configuration</li>
+<li>Use the dropdown to change the server type to &lsquo;Greenlock&rsquo;.  Enter your email in the box provided, and the domain you registered in the next box, i.e. mydomain.com</li>
+<li>Click save, and now it should work.  You&rsquo;ll have to connect using https, such as <a href="https://mydomain.com/dashboard">https://mydomain.com/dashboard</a> from here on out.</li>
 </ol>
 
 
@@ -1318,7 +1316,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/docsite/installation/awsinstallation/awsfreessl/" title="AWS Free SSL"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/docsite/installation/awsinstallation/awspayssl/" title="AWS Paid SSL"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/docsite/installation/windowsinstallation/" title="Windows 7 Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1331,19 +1329,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/docsite/js/clipboard.min.js?1575949382"></script>
-    <script src="/docsite/js/perfect-scrollbar.min.js?1575949382"></script>
-    <script src="/docsite/js/perfect-scrollbar.jquery.min.js?1575949382"></script>
-    <script src="/docsite/js/jquery.sticky.js?1575949382"></script>
-    <script src="/docsite/js/featherlight.min.js?1575949382"></script>
-    <script src="/docsite/js/highlight.pack.js?1575949382"></script>
+    <script src="/docsite/js/clipboard.min.js?1578541565"></script>
+    <script src="/docsite/js/perfect-scrollbar.min.js?1578541565"></script>
+    <script src="/docsite/js/perfect-scrollbar.jquery.min.js?1578541565"></script>
+    <script src="/docsite/js/jquery.sticky.js?1578541565"></script>
+    <script src="/docsite/js/featherlight.min.js?1578541565"></script>
+    <script src="/docsite/js/highlight.pack.js?1578541565"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/docsite/js/modernizr.custom-3.6.0.js?1575949382"></script>
-    <script src="/docsite/js/learn.js?1575949382"></script>
-    <script src="/docsite/js/hugo-learn.js?1575949382"></script>
+    <script src="/docsite/js/modernizr.custom-3.6.0.js?1578541565"></script>
+    <script src="/docsite/js/learn.js?1578541565"></script>
+    <script src="/docsite/js/hugo-learn.js?1578541565"></script>
 
-    <link href="/docsite/mermaid/mermaid.css?1575949382" rel="stylesheet" />
-    <script src="/docsite/mermaid/mermaid.js?1575949382"></script>
+    <link href="/docsite/mermaid/mermaid.css?1578541565" rel="stylesheet" />
+    <script src="/docsite/mermaid/mermaid.js?1578541565"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
