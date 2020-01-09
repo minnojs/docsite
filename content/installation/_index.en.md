@@ -6,6 +6,6 @@ weight: 2
 
 This guide covers the installation process for the Minnosuite Dashboard.  
 
-The [requirements](/installation/requirements) page covers the basic requiremnts for your machine needed to install the application and have participants be able to access it from the web.  This page is something that you can show to your IT department to get your machine configured for it.
+The [requirements](/installation/requirements) page covers the basic requiremnts your machine needs in order to install the application and allow participants access it from the web. You can show that page to your IT department to get your machine configured.
 
-Our [Easy Installation With Docker](/installation/basicinstallation) page gives a brief guide on installing the system that should work for modern Windows, Mac, and Linux operating systems.
+Our [Easy Installation With Docker](/installation/basicinstallation) page is a brief guide for installing the system that should work for Linux, Windows 10, and Mac.
