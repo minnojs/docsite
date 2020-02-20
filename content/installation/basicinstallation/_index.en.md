@@ -26,8 +26,3 @@ This page will cover the general way to get the MinnoSuite Dashboard installed u
 6.  You should see a message about the server being up, and be given a port and URL to use.  Enter that URL in your browser and you will be connected.  The default user is username : admin and password: admin123
 
 7.  To get HTTPS working, first follow the guide to [setting up your domain](./domain).  Then while logged to the open dashboard as an admin go to the admin-> edit configation page.  Change the server type to "greenlock" and enter in your domain, without the http:// part.  Press the update button and the server should switch to using https.
-
-		* Or to set it up from the file system open up the docker-compose file and edit the OWNER_EMAIL and DOMAINS fields.  
-		Enter your email, and the domain you registered.  Change the SERVER_TYPE field to "greenlock".  Change the ports to "80:8000" and "443:8443".  
-		"Now when you run docker-compose up it should automatically run with https.  
-		Now connect to the site using the domain you registered and you should have https working.
