@@ -12,18 +12,18 @@
     <title>Easy Installation With Docker :: Documentation for minnoSuite</title>
 
     
-    <link href="/docsite/css/nucleus.css?1580961839" rel="stylesheet">
-    <link href="/docsite/css/fontawesome-all.min.css?1580961839" rel="stylesheet">
-    <link href="/docsite/css/hybrid.css?1580961839" rel="stylesheet">
-    <link href="/docsite/css/featherlight.min.css?1580961839" rel="stylesheet">
-    <link href="/docsite/css/perfect-scrollbar.min.css?1580961839" rel="stylesheet">
-    <link href="/docsite/css/auto-complete.css?1580961839" rel="stylesheet">
-    <link href="/docsite/css/atom-one-dark-reasonable.css?1580961839" rel="stylesheet">
-    <link href="/docsite/css/theme.css?1580961839" rel="stylesheet">
-    <link href="/docsite/css/hugo-theme.css?1580961839" rel="stylesheet">
+    <link href="/docsite/css/nucleus.css?1582171192" rel="stylesheet">
+    <link href="/docsite/css/fontawesome-all.min.css?1582171192" rel="stylesheet">
+    <link href="/docsite/css/hybrid.css?1582171192" rel="stylesheet">
+    <link href="/docsite/css/featherlight.min.css?1582171192" rel="stylesheet">
+    <link href="/docsite/css/perfect-scrollbar.min.css?1582171192" rel="stylesheet">
+    <link href="/docsite/css/auto-complete.css?1582171192" rel="stylesheet">
+    <link href="/docsite/css/atom-one-dark-reasonable.css?1582171192" rel="stylesheet">
+    <link href="/docsite/css/theme.css?1582171192" rel="stylesheet">
+    <link href="/docsite/css/hugo-theme.css?1582171192" rel="stylesheet">
     
 
-    <script src="/docsite/js/jquery-3.3.1.min.js?1580961839"></script>
+    <script src="/docsite/js/jquery-3.3.1.min.js?1582171192"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -108,14 +108,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/docsite/js/lunr.min.js?1580961839"></script>
-<script type="text/javascript" src="/docsite/js/auto-complete.js?1580961839"></script>
+<script type="text/javascript" src="/docsite/js/lunr.min.js?1582171192"></script>
+<script type="text/javascript" src="/docsite/js/auto-complete.js?1582171192"></script>
 <script type="text/javascript">
     
         var baseurl = "\/docsite";
     
 </script>
-<script type="text/javascript" src="/docsite/js/search.js?1580961839"></script>
+<script type="text/javascript" src="/docsite/js/search.js?1582171192"></script>
 
     
   </div>
@@ -855,23 +855,31 @@
 <ol>
 <li><p>Check our <a href="./requirements">requirements</a> page and make sure that the machine that you want to use meets the requirements.</p></li>
 
-<li><p>Install Docker on your machine, using the Docker CE download link on the right of the page <a href="https://docs.docker.com/docker-for-windows/install/">here for windows 8+</a>, <a href="https://docs.docker.com/docker-for-mac/install/">here for MacOs</a>, or <a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">here for Ubuntu Linux</a>,and following the instructions that they give you.</p></li>
+<li><p>Install Docker on your machine, using the Docker CE download link on the right of the page <a href="https://docs.docker.com/docker-for-windows/install/">here for windows 8+</a>, <a href="https://docs.docker.com/docker-for-mac/install/">here for MacOs</a>, or <a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">here for Ubuntu Linux</a>,and following the instructions that they give you.  Make sure to continue to the <a href="https://docs.docker.com/install/linux/linux-postinstall/">post installaion steps page</a> and follow the instructions there too.</p></li>
+
+<li><p>Install Docker-compose on your machine, using the guide <a href="https://docs.docker.com/compose/install/">here</a>.</p></li>
 
 <li><p>create a new folder in your file system to hold your minnoSuite server, and download <a href="./docker-compose.yml">this</a> docker-compose file into it.</p></li>
 
 <li><p>You can update the configuration for your server by editing the docker-compose file with a text editor.  Read about the docker-compose file <a href="/docsite/minnosuitedashboard/useage/configfile">here</a>.</p></li>
 
 <li><p>Open the command prompt (windows) or terminal (Linux/Mac) for your machine, and navigate to the folder that you downloaded the docker-compose file to, and type:
-docker-compose up</p>
+<code>docker-compose up -d</code></p>
 
-<p>To stop the server you can type Control/Command+C</p>
+<p>To stop the server you can type <code>docker-compose down</code></p>
 
 <p>If you are using a Mac or Linux machine and binding to port 80 or 443, you may get an error unless you start the server as an administrator by typing:
-sudo docker-compose up</p></li>
+<code>sudo docker-compose up</code></p></li>
 
 <li><p>You should see a message about the server being up, and be given a port and URL to use.  Enter that URL in your browser and you will be connected.  The default user is username : admin and password: admin123</p></li>
 
-<li><p>To get HTTPS working, first follow the guide to <a href="./domain">setting up your domain</a>.  Then open up the docker-compose file and edit the OWNER_EMAIL and DOMAINS fields.  Enter your email, and the domain you registered.  Change the SERVER_TYPE field to &ldquo;greenlock&rdquo;.  Change the ports to &ldquo;80:8000&rdquo; and &ldquo;443:8443&rdquo;.  &ldquo;Now when you run docker-compose up it should automatically run with https.  Now connect to the site using the domain you registered and you should have https working.</p></li>
+<li><p>To get HTTPS working, first follow the guide to <a href="./domain">setting up your domain</a>.  Then while logged to the open dashboard as an admin go to the admin-&gt; edit configation page.  Change the server type to &ldquo;greenlock&rdquo; and enter in your domain, without the http:// part.  Press the update button and the server should switch to using https.</p>
+
+<pre><code>* Or to set it up from the file system open up the docker-compose file and edit the OWNER_EMAIL and DOMAINS fields.  
+Enter your email, and the domain you registered.  Change the SERVER_TYPE field to &quot;greenlock&quot;.  Change the ports to &quot;80:8000&quot; and &quot;443:8443&quot;.  
+&quot;Now when you run docker-compose up it should automatically run with https.  
+Now connect to the site using the domain you registered and you should have https working.
+</code></pre></li>
 </ol>
 
 
@@ -1335,19 +1343,19 @@ sudo docker-compose up</p></li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/docsite/js/clipboard.min.js?1580961839"></script>
-    <script src="/docsite/js/perfect-scrollbar.min.js?1580961839"></script>
-    <script src="/docsite/js/perfect-scrollbar.jquery.min.js?1580961839"></script>
-    <script src="/docsite/js/jquery.sticky.js?1580961839"></script>
-    <script src="/docsite/js/featherlight.min.js?1580961839"></script>
-    <script src="/docsite/js/highlight.pack.js?1580961839"></script>
+    <script src="/docsite/js/clipboard.min.js?1582171192"></script>
+    <script src="/docsite/js/perfect-scrollbar.min.js?1582171192"></script>
+    <script src="/docsite/js/perfect-scrollbar.jquery.min.js?1582171192"></script>
+    <script src="/docsite/js/jquery.sticky.js?1582171192"></script>
+    <script src="/docsite/js/featherlight.min.js?1582171192"></script>
+    <script src="/docsite/js/highlight.pack.js?1582171192"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/docsite/js/modernizr.custom-3.6.0.js?1580961839"></script>
-    <script src="/docsite/js/learn.js?1580961839"></script>
-    <script src="/docsite/js/hugo-learn.js?1580961839"></script>
+    <script src="/docsite/js/modernizr.custom-3.6.0.js?1582171192"></script>
+    <script src="/docsite/js/learn.js?1582171192"></script>
+    <script src="/docsite/js/hugo-learn.js?1582171192"></script>
 
-    <link href="/docsite/mermaid/mermaid.css?1580961839" rel="stylesheet" />
-    <script src="/docsite/mermaid/mermaid.js?1580961839"></script>
+    <link href="/docsite/mermaid/mermaid.css?1582171192" rel="stylesheet" />
+    <script src="/docsite/mermaid/mermaid.js?1582171192"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
