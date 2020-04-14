@@ -36,6 +36,7 @@ services:
       MINNO_SERVER_URL: 'http://localhost:8000'
       MINNO_DASHBOARD_URL: '//cdn.jsdelivr.net/gh/minnojs/minno-dashboard@1'
       MINNO_PLAYER_URL : '//cdn.jsdelivr.net/gh/minnojs/minno-quest@0.3/dist/'
+      KEEP_ALIVE_TIMEOUT : 1800000
     volumes:
       - ../openserver/user:/usr/src/minnoserver/user
       - ./localhost.crt:/usr/src/minnoserver/localhost.crt 
