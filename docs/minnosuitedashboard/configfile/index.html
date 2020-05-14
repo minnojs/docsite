@@ -12,18 +12,18 @@
     <title>The Docker Configuration File :: Documentation for minnoSuite</title>
 
     
-    <link href="/docsite/css/nucleus.css?1588950357" rel="stylesheet">
-    <link href="/docsite/css/fontawesome-all.min.css?1588950357" rel="stylesheet">
-    <link href="/docsite/css/hybrid.css?1588950357" rel="stylesheet">
-    <link href="/docsite/css/featherlight.min.css?1588950357" rel="stylesheet">
-    <link href="/docsite/css/perfect-scrollbar.min.css?1588950357" rel="stylesheet">
-    <link href="/docsite/css/auto-complete.css?1588950357" rel="stylesheet">
-    <link href="/docsite/css/atom-one-dark-reasonable.css?1588950357" rel="stylesheet">
-    <link href="/docsite/css/theme.css?1588950357" rel="stylesheet">
-    <link href="/docsite/css/hugo-theme.css?1588950357" rel="stylesheet">
+    <link href="/docsite/css/nucleus.css?1589475647" rel="stylesheet">
+    <link href="/docsite/css/fontawesome-all.min.css?1589475647" rel="stylesheet">
+    <link href="/docsite/css/hybrid.css?1589475647" rel="stylesheet">
+    <link href="/docsite/css/featherlight.min.css?1589475647" rel="stylesheet">
+    <link href="/docsite/css/perfect-scrollbar.min.css?1589475647" rel="stylesheet">
+    <link href="/docsite/css/auto-complete.css?1589475647" rel="stylesheet">
+    <link href="/docsite/css/atom-one-dark-reasonable.css?1589475647" rel="stylesheet">
+    <link href="/docsite/css/theme.css?1589475647" rel="stylesheet">
+    <link href="/docsite/css/hugo-theme.css?1589475647" rel="stylesheet">
     
 
-    <script src="/docsite/js/jquery-3.3.1.min.js?1588950357"></script>
+    <script src="/docsite/js/jquery-3.3.1.min.js?1589475647"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -108,14 +108,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/docsite/js/lunr.min.js?1588950357"></script>
-<script type="text/javascript" src="/docsite/js/auto-complete.js?1588950357"></script>
+<script type="text/javascript" src="/docsite/js/lunr.min.js?1589475647"></script>
+<script type="text/javascript" src="/docsite/js/auto-complete.js?1589475647"></script>
 <script type="text/javascript">
     
         var baseurl = "\/docsite";
     
 </script>
-<script type="text/javascript" src="/docsite/js/search.js?1588950357"></script>
+<script type="text/javascript" src="/docsite/js/search.js?1589475647"></script>
 
     
   </div>
@@ -512,12 +512,15 @@
           
       </a>
       
-              
-    </li>
-  
- 
-
+      
+        <ul>
+          
+          
             
+          
+          
+          
+        
           
             
             
@@ -526,16 +529,25 @@
  
   
     
-    <li data-nav-id="/installation/windowsinstallation/" title="Windows 7 Installation" class="dd-item 
+    <li data-nav-id="/installation/domain/freedomain/" title="Free domain with Freenom" class="dd-item 
         
         
         
         ">
-      <a href="/docsite/installation/windowsinstallation/">
-          Windows 7 Installation
+      <a href="/docsite/installation/domain/freedomain/">
+          Free domain with Freenom
           
       </a>
       
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -863,16 +875,32 @@
 
 <p>This page will describe the parts of the docker-compose configuration file that you might want to edit.</p>
 
+<hr />
+
 <pre><code>ports:
-  - &quot;8000:8000&quot; #specify ports forwarding
-  - &quot;8443:8443&quot; #specify ports forwarding 
+  - &quot;80:80&quot; #specify ports forwarding
+  - &quot;443:443&quot; #specify ports forwarding
+  - &quot;27018:27017&quot;  # specify ports forwarding
 </code></pre>
 
-<p>By default the server will run on port 8000 for http requests and 8443 for https requests.  If you want to change it then you&rsquo;d do something like &ldquo;80:8000&rdquo; to make it run on port 80 for http requests.</p>
+<p>By default the server will run on port 80 for http requests and 443 for https requests and 27018 for DB requests.  If you want to change it then you&rsquo;d do something like &ldquo;81:80&rdquo; to make it run on port 81 for http requests.</p>
 
-<p>SERVER_TYPE: &ldquo;http&rdquo; &ldquo;http&rdquo;, &ldquo;https&rdquo;, or &ldquo;greenlock&rdquo;</p>
+<hr />
+
+<pre><code>-SERVER_TYPE: &quot;http&quot; &quot;http&quot;, &quot;https&quot;, or &quot;greenlock&quot;
+</code></pre>
 
 <p>&ldquo;http&rdquo; will make it only run with a http service.  &ldquo;https&rdquo; will make it run on https also using a certificate and key file that you provide.  &ldquo;greenlock&rdquo; will make it automatically aquire certificates for you using Greenlock.  When using https, update the part of the config file under &ldquo;volumes&rdquo; with &ldquo;./localhost.crt&rdquo; and &ldquo;/localhost.key&rdquo; to point to the file path of the crt and key files for your domain.  It is up to you to aquire them.  When using greenlock, update the OWNER_EMAIL and DOMAINS field with your email and domain, and also make sure that the DNS for your domain points to the machine you are running this on.</p>
+
+<hr />
+
+<pre><code> volumes:
+   - ./data/user:/usr/src/minnoserver/user
+   - ./data/localhost.crt:/usr/src/minnoserver/localhost.crt 
+   - ./data/localhost.key:/usr/src/minnoserver/localhost.key
+</code></pre>
+
+<p>This sets the location on your local file system that will be used by the docker container to store dynamic content.  So if you want the user files for their studies to be somewhere else, you would change the ./data/user part.  The crt and key files are for SSL certificates.  If you want to have your dashboard be running SSL from the start, you can supply the crt and key files and set the server type to https.</p>
 
 
 
@@ -1155,11 +1183,10 @@
 
                     
                     
+                        
+                    
                     
 
-                    
-            
-        
                     
                         
             
@@ -1173,6 +1200,9 @@
                     
                     
 
+                    
+            
+        
                     
             
         
@@ -1332,19 +1362,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/docsite/js/clipboard.min.js?1588950357"></script>
-    <script src="/docsite/js/perfect-scrollbar.min.js?1588950357"></script>
-    <script src="/docsite/js/perfect-scrollbar.jquery.min.js?1588950357"></script>
-    <script src="/docsite/js/jquery.sticky.js?1588950357"></script>
-    <script src="/docsite/js/featherlight.min.js?1588950357"></script>
-    <script src="/docsite/js/highlight.pack.js?1588950357"></script>
+    <script src="/docsite/js/clipboard.min.js?1589475647"></script>
+    <script src="/docsite/js/perfect-scrollbar.min.js?1589475647"></script>
+    <script src="/docsite/js/perfect-scrollbar.jquery.min.js?1589475647"></script>
+    <script src="/docsite/js/jquery.sticky.js?1589475647"></script>
+    <script src="/docsite/js/featherlight.min.js?1589475647"></script>
+    <script src="/docsite/js/highlight.pack.js?1589475647"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/docsite/js/modernizr.custom-3.6.0.js?1588950357"></script>
-    <script src="/docsite/js/learn.js?1588950357"></script>
-    <script src="/docsite/js/hugo-learn.js?1588950357"></script>
+    <script src="/docsite/js/modernizr.custom-3.6.0.js?1589475647"></script>
+    <script src="/docsite/js/learn.js?1589475647"></script>
+    <script src="/docsite/js/hugo-learn.js?1589475647"></script>
 
-    <link href="/docsite/mermaid/mermaid.css?1588950357" rel="stylesheet" />
-    <script src="/docsite/mermaid/mermaid.js?1588950357"></script>
+    <link href="/docsite/mermaid/mermaid.css?1589475647" rel="stylesheet" />
+    <script src="/docsite/mermaid/mermaid.js?1589475647"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

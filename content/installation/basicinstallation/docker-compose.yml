@@ -24,6 +24,9 @@ services:
       - database
     environment:
       WAIT_HOSTS: database:27017
+      WAIT_HOSTS_TIMEOUT: 300
+      WAIT_SLEEP_INTERVAL: 10
+      WAIT_HOST_CONNECT_TIMEOUT: 30
       PORT: 80
       SSLPORT: 443
       CERTFILE: /usr/src/minnoserver/localhost.crt' #path to certfile for https server type
@@ -33,14 +36,14 @@ services:
       SERVER_TYPE: "http" #"http", "https", or "greenlock"
       MINNO_BASE_FOLDER: '/usr/src/minnoserver'
       MINNO_MONGO_URL: 'mongodb://database:27017/minnodb'
-      MINNO_SERVER_URL: 'http://localhost:8000'
+      MINNO_SERVER_URL: 'http://localhost:80'
       MINNO_DASHBOARD_URL: '//cdn.jsdelivr.net/gh/minnojs/minno-dashboard@1'
       MINNO_PLAYER_URL : '//cdn.jsdelivr.net/gh/minnojs/minno-quest@0.3/dist/'
       KEEP_ALIVE_TIMEOUT : 1800000
     volumes:
-      - ../openserver/user:/usr/src/minnoserver/user
-      - ./localhost.crt:/usr/src/minnoserver/localhost.crt 
-      - ./localhost.key:/usr/src/minnoserver/localhost.key 
+      - ./data/user:/usr/src/minnoserver/user
+      - ./data/localhost.crt:/usr/src/minnoserver/localhost.crt 
+      - ./data/localhost.key:/usr/src/minnoserver/localhost.key 
     depends_on:
 
       - database
@@ -53,6 +56,6 @@ services:
     container_name: database
     restart: always
     volumes:
-         - ./db:/data/db
+         - ./data/db:/data/db
     ports:
-          - "27018:27017"
+          - "27018:27017"  # specify ports forwarding

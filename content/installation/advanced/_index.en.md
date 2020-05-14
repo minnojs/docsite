@@ -3,4 +3,7 @@ title: Server Installation
 weight: 20
 disableToc: true
 ---
-under construction
+
+This page will cover manually installing the minnoSuite Dashboard onto a server.  
+
+In general you will need to download it from [here](https://github.com/minnojs/minno-server), and install [mongoDB](https://docs.mongodb.com/manual/installation/) and [nodeJs](https://www.taniarascia.com/how-to-install-and-use-node-js-and-npm-mac-and-windows/) onto your system.  The [installation.sh](https://github.com/minnojs/minno-server/blob/master/installation.sh) file provides some sample scripts for installing on a Linux system.  The [readme](https://github.com/minnojs/minno-server/blob/master/readme.md) file tells you what to run from your install directory to get the minnoSuite Dashboard running after all dependencies have been installed.

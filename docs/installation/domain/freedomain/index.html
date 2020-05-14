@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/docsite/images/favicon.png" type="image/png">
 
-    <title>Requirements :: Documentation for minnoSuite</title>
+    <title>Free domain with Freenom :: Documentation for minnoSuite</title>
 
     
     <link href="/docsite/css/nucleus.css?1589475647" rel="stylesheet">
@@ -89,7 +89,7 @@
 	}
 </style>
   </head>
-  <body class="" data-url="/installation/requirements/">
+  <body class="" data-url="/installation/domain/freedomain/">
     <nav id="sidebar" class="">
 
 
@@ -395,8 +395,8 @@
   
     
     <li data-nav-id="/installation/requirements/" title="Requirements" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/docsite/installation/requirements/">
@@ -503,7 +503,7 @@
   
     
     <li data-nav-id="/installation/domain/" title="Setting up your domain" class="dd-item 
-        
+        parent
         
         
         ">
@@ -530,8 +530,8 @@
   
     
     <li data-nav-id="/installation/domain/freedomain/" title="Free domain with Freenom" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/docsite/installation/domain/freedomain/">
@@ -793,7 +793,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="/docsite/installation/requirements/_index.en.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="/docsite/installation/domain/freedomain/_index.en.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -822,7 +822,13 @@
             
           
           
-            <a href='/docsite/'>Documentation for minnoSuite</a> > <a href='/docsite/installation/'>Installation</a> > Requirements
+            
+            
+          
+          
+            <a href='/docsite/'>Documentation for minnoSuite</a> > <a href='/docsite/installation/'>Installation</a> > <a href='/docsite/installation/domain/'>Setting up your domain</a> > Free domain with Freenom
+          
+         
           
          
           
@@ -844,7 +850,7 @@
           
             <h1>
               
-              Requirements
+              Free domain with Freenom
             </h1>
           
 
@@ -853,17 +859,19 @@
 
 
 
-	
+	<p>This guide will cover how to set up a free domain using Freenom.  Afterwords you can continue <a href="../">setting up your domain</a>.</p>
 
-<p>This page will cover the minimum requirements to install the Minnosuite Dashboard.</p>
-
-<h3 id="common-requirements">Common Requirements</h3>
-
-<p>Make sure to install the software on a computer that has <strong>at least 2 GB</strong> free disc space. We recommend more space (e.g., 10 Gb), to make sure you have enough for many participants and many studies.</p>
-
-<p>Although you can restrict the platform to local usage (i.e., participants will complete the experiments on the same computer that runs this software), the platform was developed to enable running studies over the Internet. For that, make sure you are able to <strong>listen to port 80</strong> on the computer, which may require administrator access, and have <strong>port 80 open to the world and not blocked by your firewall</strong>. We strongly recommend <strong>opening port 443</strong> as well (listen and allow access), to allow secure (SSL) connection over the Internet. Additionally, the machine should have a <strong>static IP address</strong>.</p>
-
-<p>You will probably also want to have a domain for your server.  We have a guide for setting up one with Freenom <a href="../domain">here</a>.  However, you do not need to do that if you already have a domain for your machine, or if your IT department can set up a domain for you.</p>
+<ol>
+<li>Go to <a href="http://www.freenom.com/">http://www.freenom.com/</a></li>
+<li>Go to Services -&gt; Register a new domain.</li>
+<li>Pick the domain you want and register it (You will register to freenom in the process of obtaining the domain).</li>
+<li>Go to services-&gt;my domains</li>
+<li>Click &ldquo;manage domain&rdquo; on the domain you registered</li>
+<li>Click &ldquo;manage freenom DNS&rdquo;</li>
+<li>Add a record with type &ldquo;A&rdquo; and IP Address that you copied down earlier for your server, and then click &ldquo;save changes&rdquo;</li>
+<li>Wait ~1 hour for the DNS changes to propogate</li>
+<li>You should now be able to go to the domain name you registered and be sent to your docker server, such as &ldquo;<a href="http://mydomain.com/dashboard&quot;">http://mydomain.com/dashboard&quot;</a></li>
+</ol>
 
 
 
@@ -1071,23 +1079,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -1112,26 +1103,8 @@
 
                     
                     
-                        
-                    
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1174,6 +1147,45 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1312,10 +1324,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/docsite/installation/" title="Installation"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/docsite/installation/domain/" title="Setting up your domain"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/docsite/installation/basicinstallation/" title="Easy Installation With Docker" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/docsite/installation/advanced/" title="Server Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

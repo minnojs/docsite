@@ -4,7 +4,7 @@ weight: 20
 disableToc: true
 ---
 
-This guide will cover how to enable SSL on your running AWS server through purchasing a domain and services from Amazon. Set up your dashboard server first from our guide [here](../).
+This guide will cover how to enable SSL on your running AWS server through purchasing a domain and services from Amazon. Set up your dashboard server first from our guide [here](../../awsinstallation).
 
 1.  Go to https://console.aws.amazon.com/route53/home
 2.  Click the "Register Domain" button                                          
