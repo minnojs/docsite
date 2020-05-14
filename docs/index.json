@@ -14,29 +14,8 @@
 	"content": "MinnoSuite allows creating web studies, running them, and downloading their data. It includes three components. MinnoDashboard is a web application that operates researcher accounts. The researchers use their accounts to create studies, run them, and read their data. MinnoPlayer is a JavaScript-based languages that allows creating studies with questionnaires, reaction-time tasks, and simple message pages. MinnoServer collects the data and provides researchers access to the data.\nYou can install MinnoSuite on your own server, by following the installation guides on this website. If you want (paid) help installing MinnoSuite, creating studies, and analyzing their data, you can contact Project Implicit at services@projectimplicit.net.\nAfter installing MinnoSuite on your own server, the only account in the system is the admin account. The admin creates accounts for the researchers who use the website (e.g., the grad students in your lab). The researchers use those accounts to create studies, run them, and download their data. This website explains how to do that.\nWhat the MinnoSuite does not support?\n There is no graphical user interface for a point-and-clicking authoring of the studies. Researchers write code (in MinnoPlayer\u0026rsquo;s simple language). MinnoSuite does not include a participant-pool website. You get a link to each study and use that link in your own participant pool (including Sona System, MTurk, Prolific, etc.). MinnoPlayer does not support live interaction between different participants. You can add video and audio stimuli to MinnoPlayer studies, but that might require some advanced programming. MinnoPlayer does not require the participants to install anything. That means that its time precision is limited, in comparison to desktop programs. Currently, there is no millisecond-precision solutions in web studies that do not require the participants to install the program on their own computer.  "
 },
 {
-	"uri": "/docsite/overview/minnosuite/",
-	"title": "About minnoSuite",
-	"tags": [],
-	"description": "",
-	"content": "under construction\n"
-},
-{
 	"uri": "/docsite/minnojsstudydevelopment/documentation/",
 	"title": "Documentation",
-	"tags": [],
-	"description": "",
-	"content": "under construction\n"
-},
-{
-	"uri": "/docsite/overview/",
-	"title": "Overview",
-	"tags": [],
-	"description": "",
-	"content": "under construction\n"
-},
-{
-	"uri": "/docsite/overview/quickstart/",
-	"title": "Quickstart",
 	"tags": [],
 	"description": "",
 	"content": "under construction\n"
@@ -54,13 +33,6 @@
 	"tags": [],
 	"description": "",
 	"content": " This page will cover the minimum requirements to install the Minnosuite Dashboard.\nCommon Requirements Make sure to install the software on a computer that has at least 2 GB free disc space. We recommend more space (e.g., 10 Gb), to make sure you have enough for many participants and many studies.\nAlthough you can restrict the platform to local usage (i.e., participants will complete the experiments on the same computer that runs this software), the platform was developed to enable running studies over the Internet. For that, make sure you are able to listen to port 80 on the computer, which may require administrator access, and have port 80 open to the world and not blocked by your firewall. We strongly recommend opening port 443 as well (listen and allow access), to allow secure (SSL) connection over the Internet. Additionally, the machine should have a static IP address.\nYou will probably also want to have a domain for your server. We have a guide for setting up one with Freenom here. However, you do not need to do that if you already have a domain for your machine, or if your IT department can set up a domain for you.\n"
-},
-{
-	"uri": "/docsite/overview/demonstrations/",
-	"title": "Demonstrations",
-	"tags": [],
-	"description": "",
-	"content": "under construction\n"
 },
 {
 	"uri": "/docsite/minnojsstudydevelopment/dataanalysis/",
