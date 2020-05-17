@@ -8,7 +8,8 @@ To get to know the system, we recommend you first duplicate a study from the ban
 
 Now you see a list of the study files on the left. You can click those files to see the code of each file. You can change the code, but don't do that yet. Let's first see you can run the study ok. For that, right click on the file 'mgr.js' and select "Make Experiment". Set the name of the experiment (e.g., "example"). Now you can run the study. Right click the "mgr.js" file, select Experiment options -> Play this task. We recommend you run the whole study to learn how the typical study looks in MinnoPlayer. 
 
-Next, go to the files and try to change minor details, to see how they change the study. For instance, go to explicit.js, and change the text for some of the questions. 
+Next, go to the files and try to change minor details, to see how they change the study. For instance, go to explicit.js, and change the text for some of the questions.  Details on how our studies work can be found [here](../studydevelopment).
+ 
 After you change a file, sometimes you will not see the change in your study because the browser reads the study from the cache. You can clear the browser's cache each time you run a study. Or, you can right click the "mgr.js" file, go to Experiment options -> Copy Launch URL. You can copy the link and paste it within an incognito Chrome browser window (use ctrl-shift-n to open an incognito window) or a private Firefox browser window (ctrl-shift-p). Or, you can right click on the HERE link and select "Open in incognito window" (Chrome) or "Open in Private window" (Firefox), to run the study directly in a browser window that does read files from the cache. 
 
 If you want to skip a task in the study, Esc+right arrow will skip to the next task. Within the IAT, Esc+Enter will skip a block.

@@ -1,6 +1,6 @@
 ---
-title: DigitalOcean Install Guide
-weight: 50
+title: DigitalOcean Installation
+weight: 16
 ---
 
 

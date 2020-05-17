@@ -1,6 +1,6 @@
 ---
 title: Setting up your domain
-weight: 15
+weight: 40
 ---
 
 

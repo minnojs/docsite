@@ -13,20 +13,11 @@
   </url>
   
   <url>
-    <loc>/docsite/minnojsstudydevelopment/documentation/</loc>
-  </url>
-  
-  <url>
     <loc>/docsite/installation/</loc>
   </url>
   
   <url>
     <loc>/docsite/installation/requirements/</loc>
-  </url>
-  
-  <url>
-    <loc>/docsite/minnojsstudydevelopment/dataanalysis/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
@@ -39,15 +30,7 @@
   </url>
   
   <url>
-    <loc>/docsite/minnojsstudydevelopment/examples/</loc>
-  </url>
-  
-  <url>
-    <loc>/docsite/minnosuitedashboard/configfile/</loc>
-  </url>
-  
-  <url>
-    <loc>/docsite/minnojsstudydevelopment/</loc>
+    <loc>/docsite/installation/basicinstallation/configfile/</loc>
   </url>
   
   <url>
@@ -59,7 +42,7 @@
   </url>
   
   <url>
-    <loc>/docsite/installation/domain/</loc>
+    <loc>/docsite/installation/digitalocean/</loc>
   </url>
   
   <url>
@@ -75,7 +58,15 @@
   </url>
   
   <url>
-    <loc>/docsite/installation/digitalocean/</loc>
+    <loc>/docsite/minnosuitedashboard/studydevelopment/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minnosuitedashboard/data/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/installation/domain/</loc>
   </url>
   
   <url>

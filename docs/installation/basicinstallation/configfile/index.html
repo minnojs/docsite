@@ -9,21 +9,21 @@
 
     <link rel="icon" href="/docsite/images/favicon.png" type="image/png">
 
-    <title>Categories :: Documentation for minnoSuite</title>
+    <title>The Docker Configuration File :: Documentation for minnoSuite</title>
 
     
-    <link href="/docsite/css/nucleus.css?1589679146" rel="stylesheet">
-    <link href="/docsite/css/fontawesome-all.min.css?1589679146" rel="stylesheet">
-    <link href="/docsite/css/hybrid.css?1589679146" rel="stylesheet">
-    <link href="/docsite/css/featherlight.min.css?1589679146" rel="stylesheet">
-    <link href="/docsite/css/perfect-scrollbar.min.css?1589679146" rel="stylesheet">
-    <link href="/docsite/css/auto-complete.css?1589679146" rel="stylesheet">
-    <link href="/docsite/css/atom-one-dark-reasonable.css?1589679146" rel="stylesheet">
-    <link href="/docsite/css/theme.css?1589679146" rel="stylesheet">
-    <link href="/docsite/css/hugo-theme.css?1589679146" rel="stylesheet">
+    <link href="/docsite/css/nucleus.css?1589679145" rel="stylesheet">
+    <link href="/docsite/css/fontawesome-all.min.css?1589679145" rel="stylesheet">
+    <link href="/docsite/css/hybrid.css?1589679145" rel="stylesheet">
+    <link href="/docsite/css/featherlight.min.css?1589679145" rel="stylesheet">
+    <link href="/docsite/css/perfect-scrollbar.min.css?1589679145" rel="stylesheet">
+    <link href="/docsite/css/auto-complete.css?1589679145" rel="stylesheet">
+    <link href="/docsite/css/atom-one-dark-reasonable.css?1589679145" rel="stylesheet">
+    <link href="/docsite/css/theme.css?1589679145" rel="stylesheet">
+    <link href="/docsite/css/hugo-theme.css?1589679145" rel="stylesheet">
     
 
-    <script src="/docsite/js/jquery-3.3.1.min.js?1589679146"></script>
+    <script src="/docsite/js/jquery-3.3.1.min.js?1589679145"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -89,7 +89,7 @@
 	}
 </style>
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/installation/basicinstallation/configfile/">
     <nav id="sidebar" class="">
 
 
@@ -108,14 +108,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/docsite/js/lunr.min.js?1589679146"></script>
-<script type="text/javascript" src="/docsite/js/auto-complete.js?1589679146"></script>
+<script type="text/javascript" src="/docsite/js/lunr.min.js?1589679145"></script>
+<script type="text/javascript" src="/docsite/js/auto-complete.js?1589679145"></script>
 <script type="text/javascript">
     
         var baseurl = "\/docsite";
     
 </script>
-<script type="text/javascript" src="/docsite/js/search.js?1589679146"></script>
+<script type="text/javascript" src="/docsite/js/search.js?1589679145"></script>
 
     
   </div>
@@ -286,7 +286,7 @@
   
     
     <li data-nav-id="/installation/" title="Installation" class="dd-item 
-        
+        parent
         
         
         ">
@@ -337,7 +337,7 @@
   
     
     <li data-nav-id="/installation/basicinstallation/" title="Docker Installation" class="dd-item 
-        
+        parent
         
         
         ">
@@ -364,8 +364,8 @@
   
     
     <li data-nav-id="/installation/basicinstallation/configfile/" title="The Docker Configuration File" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/docsite/installation/basicinstallation/configfile/">
@@ -637,6 +637,17 @@
               <div>
                 <div id="top-bar">
                 
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="/docsite/installation/basicinstallation/configfile/_index.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -653,7 +664,25 @@
                     
           
           
-            Categories
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/docsite/'>Documentation for minnoSuite</a> > <a href='/docsite/installation/'>Installation</a> > <a href='/docsite/installation/basicinstallation/'>Docker Installation</a> > The Docker Configuration File
+          
+         
+          
+         
+          
+         
           
         
                  
@@ -662,7 +691,14 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#the-docker-configuration-file">The Docker Configuration File</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -678,7 +714,7 @@
           
             <h1>
               
-              Categories
+              The Docker Configuration File
             </h1>
           
 
@@ -687,11 +723,41 @@
 
 
 
-
-
-<ul>
 	
-</ul>
+
+<h2 id="the-docker-configuration-file">The Docker Configuration File</h2>
+
+<p>This page will describe the parts of the docker-compose configuration file that you might want to edit.</p>
+
+<hr />
+
+<pre><code>ports:
+  - &quot;80:80&quot; #specify ports forwarding
+  - &quot;443:443&quot; #specify ports forwarding
+  - &quot;27018:27017&quot;  # specify ports forwarding
+</code></pre>
+
+<p>By default the server will run on port 80 for http requests and 443 for https requests and 27018 for DB requests.  If you want to change it then you&rsquo;d do something like &ldquo;81:80&rdquo; to make it run on port 81 for http requests.</p>
+
+<hr />
+
+<pre><code>-SERVER_TYPE: &quot;http&quot; &quot;http&quot;, &quot;https&quot;, or &quot;greenlock&quot;
+</code></pre>
+
+<p>&ldquo;http&rdquo; will make it only run with a http service.  &ldquo;https&rdquo; will make it run on https also using a certificate and key file that you provide.  &ldquo;greenlock&rdquo; will make it automatically aquire certificates for you using Greenlock.  When using https, update the part of the config file under &ldquo;volumes&rdquo; with &ldquo;./localhost.crt&rdquo; and &ldquo;/localhost.key&rdquo; to point to the file path of the crt and key files for your domain.  It is up to you to aquire them.  When using greenlock, update the OWNER_EMAIL and DOMAINS field with your email and domain, and also make sure that the DNS for your domain points to the machine you are running this on.</p>
+
+<hr />
+
+<pre><code> volumes:
+   - ./data/user:/usr/src/minnoserver/user
+   - ./data/localhost.crt:/usr/src/minnoserver/localhost.crt 
+   - ./data/localhost.key:/usr/src/minnoserver/localhost.key
+</code></pre>
+
+<p>This sets the location on your local file system that will be used by the docker container to store dynamic content.  So if you want the user files for their studies to be somewhere else, you would change the ./data/user part.  The crt and key files are for SSL certificates.  If you want to have your dashboard be running SSL from the start, you can supply the crt and key files and set the server type to https.</p>
+
+
+
 
 
 <footer class=" footline" >
@@ -830,6 +896,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -844,6 +911,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -861,6 +931,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -875,6 +946,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -894,6 +966,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1034,8 +1109,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/docsite/installation/basicinstallation/" title="Docker Installation"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/docsite/minnosuitedashboard/" title="Using the Dashboard" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/docsite/installation/awsinstallation/" title="AWS Cloud Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1045,19 +1122,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/docsite/js/clipboard.min.js?1589679146"></script>
-    <script src="/docsite/js/perfect-scrollbar.min.js?1589679146"></script>
-    <script src="/docsite/js/perfect-scrollbar.jquery.min.js?1589679146"></script>
-    <script src="/docsite/js/jquery.sticky.js?1589679146"></script>
-    <script src="/docsite/js/featherlight.min.js?1589679146"></script>
-    <script src="/docsite/js/highlight.pack.js?1589679146"></script>
+    <script src="/docsite/js/clipboard.min.js?1589679145"></script>
+    <script src="/docsite/js/perfect-scrollbar.min.js?1589679145"></script>
+    <script src="/docsite/js/perfect-scrollbar.jquery.min.js?1589679145"></script>
+    <script src="/docsite/js/jquery.sticky.js?1589679145"></script>
+    <script src="/docsite/js/featherlight.min.js?1589679145"></script>
+    <script src="/docsite/js/highlight.pack.js?1589679145"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/docsite/js/modernizr.custom-3.6.0.js?1589679146"></script>
-    <script src="/docsite/js/learn.js?1589679146"></script>
-    <script src="/docsite/js/hugo-learn.js?1589679146"></script>
+    <script src="/docsite/js/modernizr.custom-3.6.0.js?1589679145"></script>
+    <script src="/docsite/js/learn.js?1589679145"></script>
+    <script src="/docsite/js/hugo-learn.js?1589679145"></script>
 
-    <link href="/docsite/mermaid/mermaid.css?1589679146" rel="stylesheet" />
-    <script src="/docsite/mermaid/mermaid.js?1589679146"></script>
+    <link href="/docsite/mermaid/mermaid.css?1589679145" rel="stylesheet" />
+    <script src="/docsite/mermaid/mermaid.js?1589679145"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

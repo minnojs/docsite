@@ -1,5 +1,5 @@
 ---
-title: Easy Installation With Docker
+title: Docker Installation
 weight: 10
 ---
 
@@ -13,7 +13,7 @@ This page will cover the general way to get the MinnoSuite Dashboard installed u
 
 3.  create a new folder in your file system to hold your minnoSuite server, and download [this](./docker-compose.yml) docker-compose file into it.
 
-4.  You can update the configuration for your server by editing the docker-compose file with a text editor.  Read about the docker-compose file [here](/minnosuitedashboard/useage/configfile).
+4.  You can update the configuration for your server by editing the docker-compose file with a text editor.  Read about the docker-compose file [here](./configfile).
 
 5.  Open the command prompt (windows) or terminal (Linux/Mac) for your machine, and navigate to the folder that you downloaded the docker-compose file to, and type: 
 	`docker-compose up -d`
