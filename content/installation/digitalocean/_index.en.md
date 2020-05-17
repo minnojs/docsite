@@ -3,7 +3,7 @@ title: DigitalOcean Installation
 weight: 16
 ---
 
-
+Installing MinnoSuite on DigitalOcean is extremely easy. Using DigitalOcean is not free, but probably the cheapest option would be enough for most labs. 
 
 1.  Register / sign in to DigitalOcean [here](https://www.digitalocean.com/) .
 

@@ -1,10 +1,10 @@
 ---
-title: Setting up your domain
+title: A secure connection (https)
 weight: 40
 ---
 
 
-This guide will cover how to enable SSL on your running dashboard server.
+It is highly recommended to run MinnoDashboard using a secure connection (i.e., https, using SSL). If you do ont use a secure connection, the data sent by your study participants to our server would not be encrypted. The same is also true for the cummunication sent by the researchers who build the study, including the password to their account. It is the norm to encrypt such communication online. This guide will cover how to enable SSL on your running dashboard server.
 
 1.  Get a domain connected to the IP address of your server, such as using our [guide to do so with Freenom](./freedomain)
 2.  Log in to the dashboard with an admin account

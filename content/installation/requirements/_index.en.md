@@ -3,7 +3,7 @@ title: Requirements
 weight: 2
 disableToc: true
 ---
-This page will cover the minimum requirements to install the Minnosuite Dashboard.
+This page contains the minimum requirements to install the Minnosuite Dashboard.
 
 ### Common Requirements
 

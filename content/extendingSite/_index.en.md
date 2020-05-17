@@ -4,7 +4,7 @@ title: Extending This Doc Site
 weight: 99
 disableToc: true
 ---
-This page will cover editing and extending this doc site.
+This page covers editing and extending this doc site.
 
 0.  Install Hugo, folling the instructions [here](https://gohugo.io/getting-started/installing/).  Also [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if you need to.
 

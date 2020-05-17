@@ -4,7 +4,7 @@ weight: 15
 disableToc: true
 ---
 
-This guide will cover getting a minnoServer instance running on AWS using docker.
+This page covers getting a minnoServer instance running on AWS using docker. In short, all that it requires is duplicating an image of the server we already created on AWS, and configuring it and launching it.
 
 
 1. [Sign up for AWS](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
