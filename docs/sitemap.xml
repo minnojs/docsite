@@ -81,6 +81,7 @@
   
   <url>
     <loc>/docsite/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -89,6 +90,7 @@
   
   <url>
     <loc>/docsite/tags/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
