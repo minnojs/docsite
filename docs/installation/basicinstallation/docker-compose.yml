@@ -41,7 +41,11 @@ services:
       MINNO_PLAYER_URL : '//cdn.jsdelivr.net/gh/minnojs/minno-quest@0.3/dist/'
       KEEP_ALIVE_TIMEOUT : 1800000
     volumes:
-      - ./data/user:/usr/src/minnoserver/user
+	  - ./user:/usr/src/minnoserver/user
+      - ./data:/usr/src/minnoserver/data
+      - ./tmp:/src/minnoserver/tmp
+      - ./.well-known:/src/minnoserver/.well-known
+      - ./logs:/src/minnoserver/logs	
       - ./data/localhost.crt:/usr/src/minnoserver/localhost.crt 
       - ./data/localhost.key:/usr/src/minnoserver/localhost.key 
     depends_on:
