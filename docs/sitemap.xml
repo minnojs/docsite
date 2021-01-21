@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -84,17 +84,72 @@
   </url>
   
   <url>
-    <loc>/docsite/categories/</loc>
-    <priority>0</priority>
+    <loc>/docsite/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/docsite/</loc>
+    <loc>/docsite/minno-manager/api/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/injectstyle/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/istouch/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/messages/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/post/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/postcsv/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/quest/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/redirect/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/setvalue/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/time/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/yesno/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/allowleaving/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/menu/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/</loc>
   </url>
   
   <url>
     <loc>/docsite/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

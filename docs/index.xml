@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documentation for minnoSuite</title>
@@ -6,9 +6,144 @@
     <description>Recent content on Documentation for minnoSuite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
+    <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate>
     
 	<atom:link href="/docsite/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>/docsite/minno-manager/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/api/</guid>
+      <description>API  Tasks  Task types Task properties   Custom tasks  Plugging in Activator function Custom Task Example   Settings  canvas injectStyle onPreTask onEnd title preloadImages skip skin rtl logger DEBUG   Inheritance Project Implicit Build  logger.url mTurk    The miManager is responsible for managing several MinnoJS tasks sequentially.
+Tasks The basic unit in miManager is the task. There are many types of tasks available, and you can also create custom tasks of your own.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docsite/minno-manager/injectstyle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/injectstyle/</guid>
+      <description>Inject Style The injectStyle task allows you to change the style of Minno throught a study. The style of web pages is determined by their CSS. injectStyle allows you to add any CSS that you like into your study.
+{ type:&amp;#39;injectStyle&amp;#39;, css: &amp;#39;[piq-page] .page-buttons .page-submit {background-color:#d9534f; border:#d43f3a}&amp;#39; } If you have a lot of CSS that you want to add, it makes sense to break the string down as follows:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docsite/minno-manager/istouch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/istouch/</guid>
+      <description>Is Touch Detecting when users are using a touch interface on the way is notoriously difficult. It is reasonably easy to detect touch features (such as the existance of a touch screen), but many devices allow the use of both a touch screen and a keyboard and the player can not know which of these the user prefers to use.
+isTouch is a task that allows you to identify users that are using touch interfaces.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docsite/minno-manager/messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/messages/</guid>
+      <description>Messages The message tasks are built to be as simple as possible, all they do is present simple html templates. In order to load a template simply set it into the template property as a string, or set the appropriate URL into templateUrl. That&amp;rsquo;s it. (This is not relevant for most users, but the templates are rendered using angularjs $compile and therefore all the relevant directives are available).
+The context for the template has the following variables available: {global, current, task}.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docsite/minno-manager/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/post/</guid>
+      <description>Post  Save from the Global object Send data directly API  The post task posts plain data to the server. You can use it to either send data that has been saved in the Global object or directly set the data that you want to send. This is a good way to keep track of conditions within your tasks.
+Save from the Global object In your code, you can save data to the Global object.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docsite/minno-manager/postcsv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/postcsv/</guid>
+      <description>Post CSV The postCsv task is responsible for posting CSV data to the server. It is a good way to save data in a simple easy to use format. In fact, you can use this simple server in order to save it.
+In order to use the postCsv task, you should set up csv logging in the task settings:
+API.addSettings(&amp;#39;logger&amp;#39;, {type:&amp;#39;csv&amp;#39;, url:&amp;#39;csv.php&amp;#39;}); Then, whenever you want in your task you can send the data using the postCsv task.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docsite/minno-manager/quest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/quest/</guid>
+      <description>Quest The quest task activates a minno-quest task. These are tasks allow you to create complex questionnaires for your experiments. You will probably load the task from a file (use scriptUrl). Note that it is almost always imperative to use the name property, as it is used to refer to data gathered by the task, and to identify it in the results.
+{ type: &amp;#39;quest&amp;#39;, name: &amp;#39;my-quest`, scriptUrl: &amp;#39;my-quest.js&amp;#39; } The API is as follows:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docsite/minno-manager/redirect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/redirect/</guid>
+      <description>Redirect The redirect task is responsible for redirecting users to an external url. It is
+A typical redirect task looks like this:
+{ type:&amp;#39;redirect&amp;#39;, url: &amp;#39;my/redirect/url&amp;#39; } The API is as follows:
+   property description     url The url we intend to redirect to.   condition The redirect will occur if condition is not defined or evaluates to true. If condition is a function it will be invoked and its result will be used instead.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docsite/minno-manager/setvalue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/setvalue/</guid>
+      <description>setValue  API Basic use Experiment conditions  The setValue task allows setting a value to environmental variables (e.g., variables stored in the global object). It is useful for implementing experiment conditions.
+API    property description     variableName The name of the variable to which the value is set within the global object. For assigning variables nested within global, use the following format: iat.feedback would assign the value to the variable feedback under global.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docsite/minno-manager/time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/time/</guid>
+      <description>Time The time task activates a minno-time task. These are tasks focused on time-sensitive activities. You will probably load the task from a file (use scriptUrl). Note that it is almost always imperative to use the name property, as it is used to refer to data gathered by the task, and to identify it in the results.
+{ type: &amp;#39;time&amp;#39;, name: &amp;#39;my-task`, scriptUrl: &amp;#39;my-task.js&amp;#39; } The API is as follows:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docsite/minno-manager/yesno/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/yesno/</guid>
+      <description>Yes/No yesNo is a task that allows you to ask your users simple yes/no questions without resorting to a full fledged questionnaire.
+A typical yesNo task may look like this:
+{ type:&amp;#39;yesNo&amp;#39;, heading: &amp;#39;Task length&amp;#39;, text: &amp;#39;Would you like to participate in the long task (15min), or in the short one (5min)&amp;#39;, yesText: &amp;#39;The long one&amp;#39;, noText: &amp;#39;The short one&amp;#39;, path: &amp;#39;longOrShort&amp;#39; } After completing the task, the global property longOrShort will be set with true or false according to the response of the user.</description>
+    </item>
+    
+    <item>
+      <title>AllowLeaving</title>
+      <link>/docsite/minno-manager/allowleaving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/allowleaving/</guid>
+      <description>By default, each time users attempt to leave the page, minno-manager inquires whether they actually mean it. The allowLeave task cancels this inquiry, and allows easily leaving the player.. It is usefull if you want to allow users to browse away from a page, for example toward the end of a task in a debriefing page. It makes debugging a bit easier as well.
+The API is as follows:
+   property description     preventLeaving Whether to prevent users from leaving the page (default is false).</description>
+    </item>
+    
+    <item>
+      <title>menu</title>
+      <link>/docsite/minno-manager/menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/minno-manager/menu/</guid>
+      <description> Core #- Overview]overview.md)  API Creating a task Playground   Tasks  Time sensitive Questionnaire Allow Leaving Inject Style Is Touch Messages Post Post CSV Redirect Set Value Yes/No   Examples  Weight experiment Displaying Video    </description>
+    </item>
     
   </channel>
 </rss>
