@@ -13,11 +13,39 @@
   </url>
   
   <url>
+    <loc>/docsite/minno-manager/playground/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/api/tasks/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/api/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/api/custom-tasks/</loc>
+  </url>
+  
+  <url>
     <loc>/docsite/installation/</loc>
   </url>
   
   <url>
     <loc>/docsite/installation/requirements/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/api/settings/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/tasks/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/examples/</loc>
   </url>
   
   <url>
@@ -89,11 +117,71 @@
   </url>
   
   <url>
+    <loc>/docsite/minno-manager/tasks/allowleaving/</loc>
+  </url>
+  
+  <url>
     <loc>/docsite/categories/</loc>
   </url>
   
   <url>
+    <loc>/docsite/minno-manager/tasks/injectstyle/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/tasks/istouch/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/tasks/messages/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/tasks/post/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/tasks/postcsv/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/api/pibuild/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/tasks/quest/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/tasks/redirect/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/tasks/setvalue/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/examples/video/</loc>
+  </url>
+  
+  <url>
     <loc>/docsite/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/tasks/time/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/examples/weight/</loc>
+  </url>
+  
+  <url>
+    <loc>/docsite/minno-manager/tasks/yesno/</loc>
   </url>
   
 </urlset>
