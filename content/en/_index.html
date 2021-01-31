@@ -1,80 +1,110 @@
 ---
 title: MinnoJS Suite
 linkTitle: MinnoJS Suite
+credit: <span>Photo by <a href="https://unsplash.com/@nknezevic?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nikola Knezevic</a> on <a href="https://unsplash.com/s/photos/gate?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-{{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" color="orange" >}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.59.2/lib/codemirror.css" integrity="sha256-ylWkFzi+pmuVQm80SJjUJvNjzXmRc6+naSkH2xWL5+8=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.59.2/theme/monokai.css" integrity="sha256-JGPcb9kgGaDHyiqqAdAxFrKA+nxq4BvyHffBB9m2g+g=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/codemirror@5.59.2/lib/codemirror.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/codemirror@5.59.2/mode/javascript/javascript.js" integrity="sha256-XxB90cNdnOuUFQjAE56w4OBTdMu5SHChSz02/Ki3oAQ=" crossorigin="anonymous"></script>
+
+{{< blocks/cover title="Welcome to Minno Suite" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
 		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/google/docsy-example">
+	<a class="btn btn-lg btn-warning mr-3 mb-4" href="https://github.com/minnojs/">
 		Download <i class="fab fa-github ml-2 "></i>
 	</a>
-	<p class="lead mt-5">Porridge temperature assessment - in the cloud!</p>
-	{{< blocks/link-down color="info" >}}
+	<p class="lead mt-5">A platform for online studies!</p>
+	{{< blocks/link-down color="primary" >}}
 </div>
 {{< /blocks/cover >}}
 
 
 {{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge temperature, chair size, and bed softness metrics! You can even find out who's been eating **your** porridge.
+## **Minno**
+**Syndarin**. *Verb*. Enter! (lit. to the inside!)
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example to create your own real websites with [Docsy](http://docsy.dev))
+Welcome!
+Minno Suite is a platform for running behaviour studies online.
+It was carefuly crafted by social scientists for social scientists with an emphasis on usability and flexability.
+
 {{% /blocks/lead %}}
 
 {{< blocks/section color="dark" >}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
+{{% blocks/feature icon="fa-stopwatch" title="Time sensitive tasks" %}}
+MinnoJS excels at running complex time-sensitive tasks.
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fa-question" title="Questionnaires" %}}
+Easily create questionnaires with full control over content randomization and interactivity.
 {{% /blocks/feature %}}
 
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
+{{% blocks/feature icon="fa-server" title="Minno server" %}}
+Manage study creation, data logging, multiple users and collaboration and much much more.
 {{% /blocks/feature %}}
-
 
 {{< /blocks/section >}}
 
+{{< blocks/section color=white type=justify-content-center >}}
 
-{{< blocks/section >}}
-<div class="col">
-<h1 class="text-center">This is the second Section</h1>
+<div class="col-6">
+        <h1 class="text-center">There is no need to install</h1>
+        <h3 class="text-center">Try it right now</h2>
+
+        <h2>Manager</h2>
+        <p> 
+            Minno manager is responsible for orchestrating multiple Minno tasks together.
+            It gives you control over the sequence of tasks presented to your participants
+            and alows you to coordinate between your various tasks.
+            <a href="{{< ref "docs/manager" >}}">Read more</a>
+        </p>
+        {{< playground filename=manager.js name=manager.js >}}
 </div>
-
 {{< /blocks/section >}}
 
 
+<script>
+    (function(){
+        var win, section;
+        var sections = document.getElementsByClassName('pg-section');
+        for (section in sections) setupSection(sections[section]);
 
-{{< blocks/section >}}
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
+        function setupSection(section){
+            var el = section.querySelector('.code-mirror');
+            var cm = CodeMirror.fromTextArea(el,{ theme:'monokai' });
+            cm.setSize(null, 500);
 
+            section.querySelector('.pg-download').addEventListener('click', function(){
+                var filename = section.id;
+                var blob = new Blob([cm.getValue()], { type: 'text/javascript' });
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
+                if (window.navigator.msSaveOrOpenBlob) window.navigator.msSaveBlob(blob, filename);
+                else {
+                    var elem = window.document.createElement('a');
+                    elem.href = window.URL.createObjectURL(blob);
+                    elem.download = filename;
+                    document.body.appendChild(elem);
+                    elem.click();
+                    document.body.removeChild(elem);
+                }
+            });
 
+            section.querySelector('.pg-play').addEventListener('click', function(){
+                var runminnoUrl = 'runminno.html';
+                if (win) win.close();
+                win = window.open(runminnoUrl, 'Playground');
+                win.onload = function(){
+                    win.addEventListener('unload', function() {
+                        window.focus();
+                    });
+                    win.activate(cm.getValue());
+                };
+            });
+        }
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{< /blocks/section >}}
-
-{{< blocks/section >}}
-
-<div class="col-12">
-<h1 class="text-center">This is another Section</h1>
-</div>
-
-{{< /blocks/section >}}
+    })();
+</script>

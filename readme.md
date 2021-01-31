@@ -1,9 +1,5 @@
----
-date: 2016-04-09T16:50:16+02:00
-title: Extending This Doc Site
-weight: 99
-disableToc: true
----
+# Minno Suire doc site
+
 This page covers editing and extending this doc site.
 
 0.  Install Hugo, folling the instructions [here](https://gohugo.io/getting-started/installing/).  Also [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if you need to.
@@ -12,9 +8,9 @@ This page covers editing and extending this doc site.
 
 2.  From the command line in the docsite folder, run `git submodule update --init --recursive` to download the Hugo theme used by the docsite.
 
-2.  You can read a guide on using the Hugo learn theme that our doc site makes use of [here](https://learn.netlify.com/en/).  In general you will be editing files in the content subfolder.  Each folder in that is one layer of the nested sidebar menu, with the _index.en.md file inside it for the html that appears when you click on that menu item.  Those files will have a weight at the top that determines their order in the menu: the pages with the lowest weight appear first.
+2.  You can read a guide on using the Hugo docsy theme that our doc site makes use of [here](https://www.docsy.dev/).  In general you will be editing files in the content subfolder.  Each folder in that is one layer of the nested sidebar menu, with the _index.md file inside it for the html that appears when you click on that menu item.  Those files will have a weight at the top that determines their order in the menu: the pages with the lowest weight appear first.
 
-3.  To start the server, from the command line in the docsite folder, run `hugo server -t learn --baseURL=localhost/docsite` .  Then you should be able to go to `http://localhost:1313/docsite/` in your browser and view the site.  It should auto update the pages when you edit them, although you may have to restart to see changes to the sidebar menu.  press ctrl/command+c in the command line window when you are ready to shut it down.
+3.  To start the server, from the command line in the docsite folder, run `hugo server -t docsy --baseURL=localhost/docsite` .  Then you should be able to go to `http://localhost:1313/docsite/` in your browser and view the site.  It should auto update the pages when you edit them, although you may have to restart to see changes to the sidebar menu.  press ctrl/command+c in the command line window when you are ready to shut it down.
 
 4.  Run `hugo` in the command line in the docsite folder to compile it when you are finished.  Then the generated site will appear in the docs folder in the docsite directory.
 

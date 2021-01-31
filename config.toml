@@ -95,7 +95,7 @@ home = [ "HTML", "RSS"]
 
 [params]
 copyright = "The Docsy Authors"
-privacy_policy = "https://policies.google.com/privacy"
+# privacy_policy = "https://policies.google.com/privacy"
   editURL = "/"
   description = "Documentation for minnoSuite"
   author = "Andrew Dzikiewicz"
