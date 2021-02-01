@@ -15,13 +15,6 @@
     </textarea>
 </section>
 
-<footer class=" footline" >
-	{{with .Params.LastModifierDisplayName}}
-	    <i class='fas fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a> {{with $.Date}} <i class='fas fa-calendar'></i> {{ .Format "02/01/2006" }}{{end}}
-	    </div>
-	{{end}}
-</footer>
-
 <script src="https://cdn.jsdelivr.net/npm/codemirror@5.59.2/lib/codemirror.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/codemirror@5.59.2/mode/javascript/javascript.js" integrity="sha256-XxB90cNdnOuUFQjAE56w4OBTdMu5SHChSz02/Ki3oAQ=" crossorigin="anonymous"></script>
 <script>
