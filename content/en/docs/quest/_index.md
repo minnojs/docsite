@@ -1,5 +1,6 @@
 ---
 title: Questionnaires
+weight: 30
 description: "*minno-quest* is part of MinnoJS, it is reponsible for running online questionnaires"
 ---
 

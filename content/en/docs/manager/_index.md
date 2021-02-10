@@ -1,5 +1,6 @@
 ---
 title: Study manager
+weight: 40
 description: "*minno-manager* is part of MinnoJS, it is reponsible for orchestrating multiple tasks within a single experiment."
 ---
 

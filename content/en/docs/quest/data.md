@@ -1,5 +1,6 @@
 ---
 title: Data
+weight: 20
 description: How minno-quest stores data
 ---
 

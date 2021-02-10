@@ -1,6 +1,6 @@
 ---
 title: Introduction
-weight: 1
+weight: 10
 description: Getting to know your way around a questionnaire script
 ---
 
