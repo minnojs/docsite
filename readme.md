@@ -12,7 +12,7 @@ This page covers editing and extending this doc site.
 
 3.  To start the server, from the command line in the docsite folder, run `hugo server -t docsy --baseURL=localhost/docsite` .  Then you should be able to go to `http://localhost:1313/docsite/` in your browser and view the site.  It should auto update the pages when you edit them, although you may have to restart to see changes to the sidebar menu.  press ctrl/command+c in the command line window when you are ready to shut it down.
 
-4.  Run `hugo` in the command line in the docsite folder to compile it when you are finished.  Then the generated site will appear in the docs folder in the docsite directory.
+4.  Run `env HUGO_ENV="production" hugo -t docsy` in the command line in the docsite folder to compile it when you are finished.  Then the generated site will appear in the docs folder in the docsite directory.
 
 
 Using git:
