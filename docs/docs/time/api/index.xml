@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – API</title>
-    <link>docsite/docs/time/api/</link>
+    <link>/docsite/docs/time/api/</link>
     <description>Recent content in API on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="docsite/docs/time/api/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsite/docs/time/api/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Settings</title>
-      <link>docsite/docs/time/api/settings/</link>
+      <link>/docsite/docs/time/api/settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/api/settings/</guid>
+      <guid>/docsite/docs/time/api/settings/</guid>
       <description>
         
         
@@ -158,10 +158,10 @@ In order to create a post with three keys: json, session_id and task_id - you wo
     
     <item>
       <title>Docs: Media</title>
-      <link>docsite/docs/time/api/media/</link>
+      <link>/docsite/docs/time/api/media/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/api/media/</guid>
+      <guid>/docsite/docs/time/api/media/</guid>
       <description>
         
         
@@ -179,10 +179,10 @@ The folowing two media definitions have the same outcome:&lt;code&gt;&#39;Wiki&#
     
     <item>
       <title>Docs: Stimulus</title>
-      <link>docsite/docs/time/api/stimuli/</link>
+      <link>/docsite/docs/time/api/stimuli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/api/stimuli/</guid>
+      <guid>/docsite/docs/time/api/stimuli/</guid>
       <description>
         
         
@@ -200,7 +200,7 @@ The folowing two media definitions have the same outcome:&lt;code&gt;&#39;Wiki&#
 &lt;p&gt;Each trial may have multiple stimuli, and they are refered to by &lt;code&gt;handle&lt;/code&gt;.
 This is how refer to this specific stimulus inside the player (i.e. if we want to hide or show it).
 If more than one stimulus (per trial) has the same handle, all actions targeted at that handle will affect all stimuli.
-You can set a stimulus handle either by setting the &lt;code&gt;handle&lt;/code&gt; property, or by setting &lt;code&gt;handle&lt;/code&gt; into the &lt;a href=&#34;docsite/minno-quest/0.1/basics/variables.html#local-variables-local-&amp;amp;-meta&#34;&gt;data object&lt;/a&gt;.
+You can set a stimulus handle either by setting the &lt;code&gt;handle&lt;/code&gt; property, or by setting &lt;code&gt;handle&lt;/code&gt; into the &lt;a href=&#34;/docsite/minno-quest/0.1/basics/variables.html#local-variables-local-&amp;amp;-meta&#34;&gt;data object&lt;/a&gt;.
 Alternatively, if a stimulus is inherited from a set, the handle is defined by default as the set that the stimulus was inherited from.&lt;/p&gt;
 &lt;h2 id=&#34;size&#34;&gt;size&lt;/h2&gt;
 &lt;p&gt;The size of the stimulus in percentage of the player canvas. By default, size is set to {height:&amp;lsquo;auto&amp;rsquo;,width:&amp;lsquo;auto&amp;rsquo;}.&lt;/p&gt;
@@ -225,10 +225,10 @@ By default nolog is set to false.&lt;/p&gt;
     
     <item>
       <title>Docs: Trial</title>
-      <link>docsite/docs/time/api/trial/</link>
+      <link>/docsite/docs/time/api/trial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/api/trial/</guid>
+      <guid>/docsite/docs/time/api/trial/</guid>
       <description>
         
         
@@ -242,10 +242,10 @@ and define the &lt;a href=&#34;interactions&#34;&gt;interactions&lt;/a&gt; that 
     
     <item>
       <title>Docs: Scorer</title>
-      <link>docsite/docs/time/api/scorer/</link>
+      <link>/docsite/docs/time/api/scorer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/api/scorer/</guid>
+      <guid>/docsite/docs/time/api/scorer/</guid>
       <description>
         
         

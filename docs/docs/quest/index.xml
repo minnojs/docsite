@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Questionnaires</title>
-    <link>docsite/docs/quest/</link>
+    <link>/docsite/docs/quest/</link>
     <description>Recent content in Questionnaires on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="docsite/docs/quest/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsite/docs/quest/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Introduction</title>
-      <link>docsite/docs/quest/introduction/</link>
+      <link>/docsite/docs/quest/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/introduction/</guid>
+      <guid>/docsite/docs/quest/introduction/</guid>
       <description>
         
         
@@ -197,10 +197,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: Data</title>
-      <link>docsite/docs/quest/data/</link>
+      <link>/docsite/docs/quest/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/data/</guid>
+      <guid>/docsite/docs/quest/data/</guid>
       <description>
         
         
@@ -251,10 +251,10 @@ or from within &lt;a href=&#34;../basics/sequencer.html#conditions&#34;&gt;branc
     
     <item>
       <title>Docs: API</title>
-      <link>docsite/docs/quest/api/</link>
+      <link>/docsite/docs/quest/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/api/</guid>
+      <guid>/docsite/docs/quest/api/</guid>
       <description>
         
         
@@ -264,10 +264,10 @@ or from within &lt;a href=&#34;../basics/sequencer.html#conditions&#34;&gt;branc
     
     <item>
       <title>Docs: Examples</title>
-      <link>docsite/docs/quest/examples/</link>
+      <link>/docsite/docs/quest/examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/examples/</guid>
+      <guid>/docsite/docs/quest/examples/</guid>
       <description>
         
         

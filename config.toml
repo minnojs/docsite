@@ -1,4 +1,4 @@
-baseURL="docsite"
+baseURL="/docsite"
 
 title = "Minno Suite"
 metaDataFormat = "yaml"

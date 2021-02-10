@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Task types</title>
-    <link>docsite/docs/manager/tasks/</link>
+    <link>/docsite/docs/manager/tasks/</link>
     <description>Recent content in Task types on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="docsite/docs/manager/tasks/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsite/docs/manager/tasks/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: AllowLeaving</title>
-      <link>docsite/docs/manager/tasks/allowleaving/</link>
+      <link>/docsite/docs/manager/tasks/allowleaving/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/allowleaving/</guid>
+      <guid>/docsite/docs/manager/tasks/allowleaving/</guid>
       <description>
         
         
@@ -57,10 +57,10 @@ It makes debugging a bit easier as well.&lt;/p&gt;
     
     <item>
       <title>Docs: Inject Style</title>
-      <link>docsite/docs/manager/tasks/injectstyle/</link>
+      <link>/docsite/docs/manager/tasks/injectstyle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/injectstyle/</guid>
+      <guid>/docsite/docs/manager/tasks/injectstyle/</guid>
       <description>
         
         
@@ -99,10 +99,10 @@ The style of web pages is determined by their &lt;a href=&#34;https://developer.
     
     <item>
       <title>Docs: Is Touch</title>
-      <link>docsite/docs/manager/tasks/istouch/</link>
+      <link>/docsite/docs/manager/tasks/istouch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/istouch/</guid>
+      <guid>/docsite/docs/manager/tasks/istouch/</guid>
       <description>
         
         
@@ -131,10 +131,10 @@ It would set the response to the question into &lt;code&gt;global.$isTouch&lt;/c
     
     <item>
       <title>Docs: Messages</title>
-      <link>docsite/docs/manager/tasks/messages/</link>
+      <link>/docsite/docs/manager/tasks/messages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/messages/</guid>
+      <guid>/docsite/docs/manager/tasks/messages/</guid>
       <description>
         
         
@@ -346,10 +346,10 @@ You can fine tune the way feedback is collected and displayed using the followin
     
     <item>
       <title>Docs: Post</title>
-      <link>docsite/docs/manager/tasks/post/</link>
+      <link>/docsite/docs/manager/tasks/post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/post/</guid>
+      <guid>/docsite/docs/manager/tasks/post/</guid>
       <description>
         
         
@@ -480,10 +480,10 @@ This way you can pull information from different parts of &lt;code&gt;global&lt;
     
     <item>
       <title>Docs: Post CSV</title>
-      <link>docsite/docs/manager/tasks/postcsv/</link>
+      <link>/docsite/docs/manager/tasks/postcsv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/postcsv/</guid>
+      <guid>/docsite/docs/manager/tasks/postcsv/</guid>
       <description>
         
         
@@ -501,10 +501,10 @@ Any properties of the task object are merged into the logger settings (so you ca
     
     <item>
       <title>Docs: Quest</title>
-      <link>docsite/docs/manager/tasks/quest/</link>
+      <link>/docsite/docs/manager/tasks/quest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/quest/</guid>
+      <guid>/docsite/docs/manager/tasks/quest/</guid>
       <description>
         
         
@@ -539,10 +539,10 @@ data gathered by the task, and to identify it in the results.&lt;/p&gt;
     
     <item>
       <title>Docs: Redirect</title>
-      <link>docsite/docs/manager/tasks/redirect/</link>
+      <link>/docsite/docs/manager/tasks/redirect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/redirect/</guid>
+      <guid>/docsite/docs/manager/tasks/redirect/</guid>
       <description>
         
         
@@ -585,10 +585,10 @@ data gathered by the task, and to identify it in the results.&lt;/p&gt;
     
     <item>
       <title>Docs: setValue</title>
-      <link>docsite/docs/manager/tasks/setvalue/</link>
+      <link>/docsite/docs/manager/tasks/setvalue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/setvalue/</guid>
+      <guid>/docsite/docs/manager/tasks/setvalue/</guid>
       <description>
         
         
@@ -719,10 +719,10 @@ We then use a branch mixer in order to choose the appropriate instructions.&lt;/
     
     <item>
       <title>Docs: Time</title>
-      <link>docsite/docs/manager/tasks/time/</link>
+      <link>/docsite/docs/manager/tasks/time/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/time/</guid>
+      <guid>/docsite/docs/manager/tasks/time/</guid>
       <description>
         
         
@@ -757,10 +757,10 @@ data gathered by the task, and to identify it in the results.&lt;/p&gt;
     
     <item>
       <title>Docs: Yes/No</title>
-      <link>docsite/docs/manager/tasks/yesno/</link>
+      <link>/docsite/docs/manager/tasks/yesno/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/yesno/</guid>
+      <guid>/docsite/docs/manager/tasks/yesno/</guid>
       <description>
         
         

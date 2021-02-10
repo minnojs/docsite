@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Documentation</title>
-    <link>docsite/docs/</link>
+    <link>/docsite/docs/</link>
     <description>Recent content in Documentation on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="docsite/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsite/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Getting started (admin account)</title>
-      <link>docsite/docs/server/dashboard/admin/</link>
+      <link>/docsite/docs/server/dashboard/admin/</link>
       <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
       
-      <guid>docsite/docs/server/dashboard/admin/</guid>
+      <guid>/docsite/docs/server/dashboard/admin/</guid>
       <description>
         
         
@@ -37,10 +37,10 @@ Because the Dashboard needs the email password for sending emails, we recommend 
     
     <item>
       <title>Docs: Body weight</title>
-      <link>docsite/docs/quest/examples/weight/</link>
+      <link>/docsite/docs/quest/examples/weight/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/examples/weight/</guid>
+      <guid>/docsite/docs/quest/examples/weight/</guid>
       <description>
         
         
@@ -594,10 +594,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: Playground</title>
-      <link>docsite/docs/manager/playground/</link>
+      <link>/docsite/docs/manager/playground/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/playground/</guid>
+      <guid>/docsite/docs/manager/playground/</guid>
       <description>
         
         
@@ -608,10 +608,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: Requirements</title>
-      <link>docsite/docs/server/installation/requirements/</link>
+      <link>/docsite/docs/server/installation/requirements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/installation/requirements/</guid>
+      <guid>/docsite/docs/server/installation/requirements/</guid>
       <description>
         
         
@@ -626,10 +626,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: Settings</title>
-      <link>docsite/docs/quest/api/settings/</link>
+      <link>/docsite/docs/quest/api/settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/api/settings/</guid>
+      <guid>/docsite/docs/quest/api/settings/</guid>
       <description>
         
         
@@ -726,10 +726,10 @@ In case the setting is an object, subsequent objects will extend each other so t
     
     <item>
       <title>Docs: Tasks</title>
-      <link>docsite/docs/manager/api/tasks/</link>
+      <link>/docsite/docs/manager/api/tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/api/tasks/</guid>
+      <guid>/docsite/docs/manager/api/tasks/</guid>
       <description>
         
         
@@ -802,10 +802,10 @@ Following is a list of such properties and a description of their behaviour.&lt;
     
     <item>
       <title>Docs: Custom tasks</title>
-      <link>docsite/docs/manager/api/custom-tasks/</link>
+      <link>/docsite/docs/manager/api/custom-tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/api/custom-tasks/</guid>
+      <guid>/docsite/docs/manager/api/custom-tasks/</guid>
       <description>
         
         
@@ -901,10 +901,10 @@ The format is fairly simple though you probably need at least some experience wi
     
     <item>
       <title>Docs: Manual Installation</title>
-      <link>docsite/docs/server/installation/manual/</link>
+      <link>/docsite/docs/server/installation/manual/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/installation/manual/</guid>
+      <guid>/docsite/docs/server/installation/manual/</guid>
       <description>
         
         
@@ -916,10 +916,10 @@ The format is fairly simple though you probably need at least some experience wi
     
     <item>
       <title>Docs: Pages</title>
-      <link>docsite/docs/quest/api/pages/</link>
+      <link>/docsite/docs/quest/api/pages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/api/pages/</guid>
+      <guid>/docsite/docs/quest/api/pages/</guid>
       <description>
         
         
@@ -1096,10 +1096,10 @@ The format is fairly simple though you probably need at least some experience wi
     
     <item>
       <title>Docs: Settings</title>
-      <link>docsite/docs/manager/api/settings/</link>
+      <link>/docsite/docs/manager/api/settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/api/settings/</guid>
+      <guid>/docsite/docs/manager/api/settings/</guid>
       <description>
         
         
@@ -1295,10 +1295,10 @@ In addition you have a button that allows you to close and open the console.&lt;
     
     <item>
       <title>Docs: Getting started (researcher)</title>
-      <link>docsite/docs/server/dashboard/researcher/</link>
+      <link>/docsite/docs/server/dashboard/researcher/</link>
       <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
       
-      <guid>docsite/docs/server/dashboard/researcher/</guid>
+      <guid>/docsite/docs/server/dashboard/researcher/</guid>
       <description>
         
         
@@ -1314,10 +1314,10 @@ In addition you have a button that allows you to close and open the console.&lt;
     
     <item>
       <title>Docs: AWS Update</title>
-      <link>docsite/docs/server/installation/awsinstallation/awsupdate/</link>
+      <link>/docsite/docs/server/installation/awsinstallation/awsupdate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/installation/awsinstallation/awsupdate/</guid>
+      <guid>/docsite/docs/server/installation/awsinstallation/awsupdate/</guid>
       <description>
         
         
@@ -1341,10 +1341,10 @@ In addition you have a button that allows you to close and open the console.&lt;
     
     <item>
       <title>Docs: Input</title>
-      <link>docsite/docs/time/api/trial/input/</link>
+      <link>/docsite/docs/time/api/trial/input/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/api/trial/input/</guid>
+      <guid>/docsite/docs/time/api/trial/input/</guid>
       <description>
         
         
@@ -1429,10 +1429,10 @@ If it is set to &lt;code&gt;false&lt;/code&gt; then the input will be used only 
     
     <item>
       <title>Docs: Introduction</title>
-      <link>docsite/docs/quest/introduction/</link>
+      <link>/docsite/docs/quest/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/introduction/</guid>
+      <guid>/docsite/docs/quest/introduction/</guid>
       <description>
         
         
@@ -1610,10 +1610,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: Javascript</title>
-      <link>docsite/docs/core/javascript/</link>
+      <link>/docsite/docs/core/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/core/javascript/</guid>
+      <guid>/docsite/docs/core/javascript/</guid>
       <description>
         
         
@@ -1727,10 +1727,10 @@ If that doesn&amp;rsquo;t work for you search your browsers menus: look for a &l
     
     <item>
       <title>Docs: Settings</title>
-      <link>docsite/docs/time/api/settings/</link>
+      <link>/docsite/docs/time/api/settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/api/settings/</guid>
+      <guid>/docsite/docs/time/api/settings/</guid>
       <description>
         
         
@@ -1869,10 +1869,10 @@ In order to create a post with three keys: json, session_id and task_id - you wo
     
     <item>
       <title>Docs: The Docker Configuration File</title>
-      <link>docsite/docs/server/installation/basicinstallation/configfile/</link>
+      <link>/docsite/docs/server/installation/basicinstallation/configfile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/installation/basicinstallation/configfile/</guid>
+      <guid>/docsite/docs/server/installation/basicinstallation/configfile/</guid>
       <description>
         
         
@@ -1902,10 +1902,10 @@ In order to create a post with three keys: json, session_id and task_id - you wo
     
     <item>
       <title>Docs: Setting up Dropbox</title>
-      <link>docsite/docs/server/dashboard/dropbox/</link>
+      <link>/docsite/docs/server/dashboard/dropbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/dashboard/dropbox/</guid>
+      <guid>/docsite/docs/server/dashboard/dropbox/</guid>
       <description>
         
         
@@ -1966,10 +1966,10 @@ In order to create a post with three keys: json, session_id and task_id - you wo
     
     <item>
       <title>Docs: AWS Paid SSL</title>
-      <link>docsite/docs/server/installation/awsinstallation/awspayssl/</link>
+      <link>/docsite/docs/server/installation/awsinstallation/awspayssl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/installation/awsinstallation/awspayssl/</guid>
+      <guid>/docsite/docs/server/installation/awsinstallation/awspayssl/</guid>
       <description>
         
         
@@ -2014,10 +2014,10 @@ In order to create a post with three keys: json, session_id and task_id - you wo
     
     <item>
       <title>Docs: Creating a task</title>
-      <link>docsite/docs/core/create/</link>
+      <link>/docsite/docs/core/create/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/core/create/</guid>
+      <guid>/docsite/docs/core/create/</guid>
       <description>
         
         
@@ -2118,10 +2118,10 @@ In order to create a post with three keys: json, session_id and task_id - you wo
     
     <item>
       <title>Docs: Data</title>
-      <link>docsite/docs/quest/data/</link>
+      <link>/docsite/docs/quest/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/data/</guid>
+      <guid>/docsite/docs/quest/data/</guid>
       <description>
         
         
@@ -2172,10 +2172,10 @@ or from within &lt;a href=&#34;../basics/sequencer.html#conditions&#34;&gt;branc
     
     <item>
       <title>Docs: Data</title>
-      <link>docsite/docs/time/data/</link>
+      <link>/docsite/docs/time/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/data/</guid>
+      <guid>/docsite/docs/time/data/</guid>
       <description>
         
         
@@ -2240,10 +2240,10 @@ If the &lt;code&gt;alias&lt;/code&gt; isn&amp;rsquo;t set, then the player attem
     
     <item>
       <title>Docs: Free domain with Freenom</title>
-      <link>docsite/docs/server/installation/domain/freedomain/</link>
+      <link>/docsite/docs/server/installation/domain/freedomain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/installation/domain/freedomain/</guid>
+      <guid>/docsite/docs/server/installation/domain/freedomain/</guid>
       <description>
         
         
@@ -2265,10 +2265,10 @@ If the &lt;code&gt;alias&lt;/code&gt; isn&amp;rsquo;t set, then the player attem
     
     <item>
       <title>Docs: Interactions</title>
-      <link>docsite/docs/time/api/trial/interactions/</link>
+      <link>/docsite/docs/time/api/trial/interactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/api/trial/interactions/</guid>
+      <guid>/docsite/docs/time/api/trial/interactions/</guid>
       <description>
         
         
@@ -2301,10 +2301,10 @@ Each of these objects has two properties: &lt;code&gt;conditions&lt;/code&gt; an
     
     <item>
       <title>Docs: Media</title>
-      <link>docsite/docs/time/api/media/</link>
+      <link>/docsite/docs/time/api/media/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/api/media/</guid>
+      <guid>/docsite/docs/time/api/media/</guid>
       <description>
         
         
@@ -2322,10 +2322,10 @@ The folowing two media definitions have the same outcome:&lt;code&gt;&#39;Wiki&#
     
     <item>
       <title>Docs: Study Development</title>
-      <link>docsite/docs/server/dashboard/studydevelopment/</link>
+      <link>/docsite/docs/server/dashboard/studydevelopment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/dashboard/studydevelopment/</guid>
+      <guid>/docsite/docs/server/dashboard/studydevelopment/</guid>
       <description>
         
         
@@ -2338,10 +2338,10 @@ The folowing two media definitions have the same outcome:&lt;code&gt;&#39;Wiki&#
     
     <item>
       <title>Docs: Data</title>
-      <link>docsite/docs/server/dashboard/data/</link>
+      <link>/docsite/docs/server/dashboard/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/dashboard/data/</guid>
+      <guid>/docsite/docs/server/dashboard/data/</guid>
       <description>
         
         
@@ -2352,10 +2352,10 @@ The folowing two media definitions have the same outcome:&lt;code&gt;&#39;Wiki&#
     
     <item>
       <title>Docs: Deploying a task</title>
-      <link>docsite/docs/core/deploy/</link>
+      <link>/docsite/docs/core/deploy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/core/deploy/</guid>
+      <guid>/docsite/docs/core/deploy/</guid>
       <description>
         
         
@@ -2435,10 +2435,10 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
     
     <item>
       <title>Docs: Stimulus</title>
-      <link>docsite/docs/time/api/stimuli/</link>
+      <link>/docsite/docs/time/api/stimuli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/api/stimuli/</guid>
+      <guid>/docsite/docs/time/api/stimuli/</guid>
       <description>
         
         
@@ -2456,7 +2456,7 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
 &lt;p&gt;Each trial may have multiple stimuli, and they are refered to by &lt;code&gt;handle&lt;/code&gt;.
 This is how refer to this specific stimulus inside the player (i.e. if we want to hide or show it).
 If more than one stimulus (per trial) has the same handle, all actions targeted at that handle will affect all stimuli.
-You can set a stimulus handle either by setting the &lt;code&gt;handle&lt;/code&gt; property, or by setting &lt;code&gt;handle&lt;/code&gt; into the &lt;a href=&#34;docsite/minno-quest/0.1/basics/variables.html#local-variables-local-&amp;amp;-meta&#34;&gt;data object&lt;/a&gt;.
+You can set a stimulus handle either by setting the &lt;code&gt;handle&lt;/code&gt; property, or by setting &lt;code&gt;handle&lt;/code&gt; into the &lt;a href=&#34;/docsite/minno-quest/0.1/basics/variables.html#local-variables-local-&amp;amp;-meta&#34;&gt;data object&lt;/a&gt;.
 Alternatively, if a stimulus is inherited from a set, the handle is defined by default as the set that the stimulus was inherited from.&lt;/p&gt;
 &lt;h2 id=&#34;size&#34;&gt;size&lt;/h2&gt;
 &lt;p&gt;The size of the stimulus in percentage of the player canvas. By default, size is set to {height:&amp;lsquo;auto&amp;rsquo;,width:&amp;lsquo;auto&amp;rsquo;}.&lt;/p&gt;
@@ -2481,10 +2481,10 @@ By default nolog is set to false.&lt;/p&gt;
     
     <item>
       <title>Docs: API</title>
-      <link>docsite/docs/core/api/</link>
+      <link>/docsite/docs/core/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/core/api/</guid>
+      <guid>/docsite/docs/core/api/</guid>
       <description>
         
         
@@ -2813,10 +2813,10 @@ Posts JSONified data to the server.&lt;/p&gt;
     
     <item>
       <title>Docs: Scorer</title>
-      <link>docsite/docs/time/api/scorer/</link>
+      <link>/docsite/docs/time/api/scorer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/api/scorer/</guid>
+      <guid>/docsite/docs/time/api/scorer/</guid>
       <description>
         
         
@@ -3085,10 +3085,10 @@ You can set the different settings using the following commands:&lt;/p&gt;
     
     <item>
       <title>Docs: Resources</title>
-      <link>docsite/docs/resources/</link>
+      <link>/docsite/docs/resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/resources/</guid>
+      <guid>/docsite/docs/resources/</guid>
       <description>
         
         
@@ -3109,10 +3109,10 @@ You can find the instructions for using them right &lt;a href=&#34;https://git.i
     
     <item>
       <title>Docs: AllowLeaving</title>
-      <link>docsite/docs/manager/tasks/allowleaving/</link>
+      <link>/docsite/docs/manager/tasks/allowleaving/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/tasks/allowleaving/</guid>
+      <guid>/docsite/docs/manager/tasks/allowleaving/</guid>
       <description>
         
         
@@ -3150,10 +3150,10 @@ It makes debugging a bit easier as well.&lt;/p&gt;
     
     <item>
       <title>Docs: bodyAwareness</title>
-      <link>docsite/docs/quest/examples/bodyawareness/</link>
+      <link>/docsite/docs/quest/examples/bodyawareness/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/examples/bodyawareness/</guid>
+      <guid>/docsite/docs/quest/examples/bodyawareness/</guid>
       <description>
         
         
@@ -3387,10 +3387,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: buttons</title>
-      <link>docsite/docs/quest/examples/buttons/</link>
+      <link>/docsite/docs/quest/examples/buttons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/examples/buttons/</guid>
+      <guid>/docsite/docs/quest/examples/buttons/</guid>
       <description>
         
         
@@ -3545,10 +3545,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: buttonsAdvanced</title>
-      <link>docsite/docs/quest/examples/buttonsadvanced/</link>
+      <link>/docsite/docs/quest/examples/buttonsadvanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/examples/buttonsadvanced/</guid>
+      <guid>/docsite/docs/quest/examples/buttonsadvanced/</guid>
       <description>
         
         
@@ -3739,10 +3739,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: buttonsOnePage</title>
-      <link>docsite/docs/quest/examples/buttonsonepage/</link>
+      <link>/docsite/docs/quest/examples/buttonsonepage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/examples/buttonsonepage/</guid>
+      <guid>/docsite/docs/quest/examples/buttonsonepage/</guid>
       <description>
         
         
@@ -3896,10 +3896,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: Current</title>
-      <link>docsite/docs/sequencer/variables/current/</link>
+      <link>/docsite/docs/sequencer/variables/current/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/sequencer/variables/current/</guid>
+      <guid>/docsite/docs/sequencer/variables/current/</guid>
       <description>
         
         
@@ -3939,10 +3939,10 @@ where &lt;code&gt;&amp;lt;taskName&amp;gt;&lt;/code&gt; stands for the &lt;a hre
     
     <item>
       <title>Docs: dependency</title>
-      <link>docsite/docs/quest/examples/dependency/</link>
+      <link>/docsite/docs/quest/examples/dependency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/examples/dependency/</guid>
+      <guid>/docsite/docs/quest/examples/dependency/</guid>
       <description>
         
         
@@ -4101,10 +4101,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: dropdown</title>
-      <link>docsite/docs/quest/api/questions/dropdown/</link>
+      <link>/docsite/docs/quest/api/questions/dropdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/api/questions/dropdown/</guid>
+      <guid>/docsite/docs/quest/api/questions/dropdown/</guid>
       <description>
         
         
@@ -4165,10 +4165,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: Global</title>
-      <link>docsite/docs/sequencer/variables/global/</link>
+      <link>/docsite/docs/sequencer/variables/global/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/sequencer/variables/global/</guid>
+      <guid>/docsite/docs/sequencer/variables/global/</guid>
       <description>
         
         
@@ -4299,10 +4299,10 @@ The global object exposes the url query string in a dedicated object called &lt;
     
     <item>
       <title>Docs: Grid</title>
-      <link>docsite/docs/quest/api/questions/grid/</link>
+      <link>/docsite/docs/quest/api/questions/grid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/api/questions/grid/</guid>
+      <guid>/docsite/docs/quest/api/questions/grid/</guid>
       <description>
         
         
@@ -4593,10 +4593,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: gridExample</title>
-      <link>docsite/docs/quest/examples/gridexample/</link>
+      <link>/docsite/docs/quest/examples/gridexample/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/examples/gridexample/</guid>
+      <guid>/docsite/docs/quest/examples/gridexample/</guid>
       <description>
         
         
@@ -4753,10 +4753,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: Hello world</title>
-      <link>docsite/docs/time/tutorials/hello/</link>
+      <link>/docsite/docs/time/tutorials/hello/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/tutorials/hello/</guid>
+      <guid>/docsite/docs/time/tutorials/hello/</guid>
       <description>
         
         
@@ -5001,10 +5001,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: helloPlay</title>
-      <link>docsite/docs/time/examples/helloplay/</link>
+      <link>/docsite/docs/time/examples/helloplay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/helloplay/</guid>
+      <guid>/docsite/docs/time/examples/helloplay/</guid>
       <description>
         
         
@@ -5114,10 +5114,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: Info</title>
-      <link>docsite/docs/quest/api/questions/info/</link>
+      <link>/docsite/docs/quest/api/questions/info/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/quest/api/questions/info/</guid>
+      <guid>/docsite/docs/quest/api/questions/info/</guid>
       <description>
         
         
@@ -5133,10 +5133,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: inheritance</title>
-      <link>docsite/docs/time/examples/inheritance/</link>
+      <link>/docsite/docs/time/examples/inheritance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/inheritance/</guid>
+      <guid>/docsite/docs/time/examples/inheritance/</guid>
       <description>
         
         
@@ -5383,10 +5383,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: inheritanceAbstraction</title>
-      <link>docsite/docs/sequencer/inheritance/inheritanceabstraction/</link>
+      <link>/docsite/docs/sequencer/inheritance/inheritanceabstraction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/sequencer/inheritance/inheritanceabstraction/</guid>
+      <guid>/docsite/docs/sequencer/inheritance/inheritanceabstraction/</guid>
       <description>
         
         
@@ -5488,10 +5488,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: inheritanceByData</title>
-      <link>docsite/docs/sequencer/inheritance/inheritancebydata/</link>
+      <link>/docsite/docs/sequencer/inheritance/inheritancebydata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/sequencer/inheritance/inheritancebydata/</guid>
+      <guid>/docsite/docs/sequencer/inheritance/inheritancebydata/</guid>
       <description>
         
         
@@ -5595,10 +5595,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: inheritanceCustom</title>
-      <link>docsite/docs/sequencer/inheritance/inheritancecustom/</link>
+      <link>/docsite/docs/sequencer/inheritance/inheritancecustom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/sequencer/inheritance/inheritancecustom/</guid>
+      <guid>/docsite/docs/sequencer/inheritance/inheritancecustom/</guid>
       <description>
         
         

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Examples</title>
-    <link>docsite/docs/manager/examples/</link>
+    <link>/docsite/docs/manager/examples/</link>
     <description>Recent content in Examples on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="docsite/docs/manager/examples/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsite/docs/manager/examples/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Show Video</title>
-      <link>docsite/docs/manager/examples/video/</link>
+      <link>/docsite/docs/manager/examples/video/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/examples/video/</guid>
+      <guid>/docsite/docs/manager/examples/video/</guid>
       <description>
         
         
@@ -31,10 +31,10 @@ After reading the documentation feel free to download the file and modify it acc
     
     <item>
       <title>Docs: Weight task</title>
-      <link>docsite/docs/manager/examples/weight/</link>
+      <link>/docsite/docs/manager/examples/weight/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/examples/weight/</guid>
+      <guid>/docsite/docs/manager/examples/weight/</guid>
       <description>
         
         

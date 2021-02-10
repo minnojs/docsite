@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Using the Dashboard</title>
-    <link>docsite/docs/server/dashboard/</link>
+    <link>/docsite/docs/server/dashboard/</link>
     <description>Recent content in Using the Dashboard on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate>
     
-	  <atom:link href="docsite/docs/server/dashboard/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsite/docs/server/dashboard/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>Docs: Getting started (admin account)</title>
-      <link>docsite/docs/server/dashboard/admin/</link>
+      <link>/docsite/docs/server/dashboard/admin/</link>
       <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
       
-      <guid>docsite/docs/server/dashboard/admin/</guid>
+      <guid>/docsite/docs/server/dashboard/admin/</guid>
       <description>
         
         
@@ -38,10 +38,10 @@ Because the Dashboard needs the email password for sending emails, we recommend 
     
     <item>
       <title>Docs: Getting started (researcher)</title>
-      <link>docsite/docs/server/dashboard/researcher/</link>
+      <link>/docsite/docs/server/dashboard/researcher/</link>
       <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
       
-      <guid>docsite/docs/server/dashboard/researcher/</guid>
+      <guid>/docsite/docs/server/dashboard/researcher/</guid>
       <description>
         
         
@@ -57,10 +57,10 @@ Because the Dashboard needs the email password for sending emails, we recommend 
     
     <item>
       <title>Docs: Setting up Dropbox</title>
-      <link>docsite/docs/server/dashboard/dropbox/</link>
+      <link>/docsite/docs/server/dashboard/dropbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/dashboard/dropbox/</guid>
+      <guid>/docsite/docs/server/dashboard/dropbox/</guid>
       <description>
         
         
@@ -121,10 +121,10 @@ Because the Dashboard needs the email password for sending emails, we recommend 
     
     <item>
       <title>Docs: Study Development</title>
-      <link>docsite/docs/server/dashboard/studydevelopment/</link>
+      <link>/docsite/docs/server/dashboard/studydevelopment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/dashboard/studydevelopment/</guid>
+      <guid>/docsite/docs/server/dashboard/studydevelopment/</guid>
       <description>
         
         
@@ -137,10 +137,10 @@ Because the Dashboard needs the email password for sending emails, we recommend 
     
     <item>
       <title>Docs: Data</title>
-      <link>docsite/docs/server/dashboard/data/</link>
+      <link>/docsite/docs/server/dashboard/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/dashboard/data/</guid>
+      <guid>/docsite/docs/server/dashboard/data/</guid>
       <description>
         
         

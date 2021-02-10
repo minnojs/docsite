@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Server</title>
-    <link>docsite/docs/server/</link>
+    <link>/docsite/docs/server/</link>
     <description>Recent content in Server on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="docsite/docs/server/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsite/docs/server/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Using the Dashboard</title>
-      <link>docsite/docs/server/dashboard/</link>
+      <link>/docsite/docs/server/dashboard/</link>
       <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
       
-      <guid>docsite/docs/server/dashboard/</guid>
+      <guid>/docsite/docs/server/dashboard/</guid>
       <description>
         
         
@@ -40,19 +40,19 @@
     
     <item>
       <title>Docs: Installation</title>
-      <link>docsite/docs/server/installation/</link>
+      <link>/docsite/docs/server/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/server/installation/</guid>
+      <guid>/docsite/docs/server/installation/</guid>
       <description>
         
         
         &lt;p&gt;We have a few guides for several different methods to install the MinnoSuite on your server.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;docsite/installation/requirements&#34;&gt;requirements&lt;/a&gt; page covers the basic requirements your machine needs in order to install the application and allow participants access it from the web. If you have help from an IT expert or an IT department, they could help configure your machine accordingly.&lt;/p&gt;
-&lt;p&gt;Our &lt;a href=&#34;docsite/installation/basicinstallation&#34;&gt;Docker Installation&lt;/a&gt; page is a brief guide for installing the MinnoSuite that should work for Linux, Windows 10, and Mac. That is the recommended installation method if you have access to a machine that meets the requirements.&lt;/p&gt;
-&lt;p&gt;Our &lt;a href=&#34;docsite/installation/awsinstallation&#34;&gt;AWS Cloud Installation&lt;/a&gt; page explains how to install the MinnoSuite using Amazon’s hosting service. It is a good option if you do not have access to a server machine that meets the requirements (e.g., at your university). Most people can do this on their own, without help from an IT expert. This option is free for a year (when AWS starts charging).&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;docsite/installation/digitalocean&#34;&gt;DigitalOcean Installation&lt;/a&gt; page explains how to install the MinnoSuite on DigitalOcean’s service. It is a good option if you do not have access to a server machine that meets the requirements (e.g., at your university). Most people can do this on their own, without help from an IT expert. This option is not free but would work on the cheapest tier.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;docsite/installation/advanced&#34;&gt;Manual Installation&lt;/a&gt; page explains how to install the MinnoSuite directly on a machine that meets the requirements if you don’t want to use the docker installation.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;/docsite/installation/requirements&#34;&gt;requirements&lt;/a&gt; page covers the basic requirements your machine needs in order to install the application and allow participants access it from the web. If you have help from an IT expert or an IT department, they could help configure your machine accordingly.&lt;/p&gt;
+&lt;p&gt;Our &lt;a href=&#34;/docsite/installation/basicinstallation&#34;&gt;Docker Installation&lt;/a&gt; page is a brief guide for installing the MinnoSuite that should work for Linux, Windows 10, and Mac. That is the recommended installation method if you have access to a machine that meets the requirements.&lt;/p&gt;
+&lt;p&gt;Our &lt;a href=&#34;/docsite/installation/awsinstallation&#34;&gt;AWS Cloud Installation&lt;/a&gt; page explains how to install the MinnoSuite using Amazon’s hosting service. It is a good option if you do not have access to a server machine that meets the requirements (e.g., at your university). Most people can do this on their own, without help from an IT expert. This option is free for a year (when AWS starts charging).&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;/docsite/installation/digitalocean&#34;&gt;DigitalOcean Installation&lt;/a&gt; page explains how to install the MinnoSuite on DigitalOcean’s service. It is a good option if you do not have access to a server machine that meets the requirements (e.g., at your university). Most people can do this on their own, without help from an IT expert. This option is not free but would work on the cheapest tier.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;/docsite/installation/advanced&#34;&gt;Manual Installation&lt;/a&gt; page explains how to install the MinnoSuite directly on a machine that meets the requirements if you don’t want to use the docker installation.&lt;/p&gt;
 
       </description>
     </item>

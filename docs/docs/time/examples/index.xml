@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Examples</title>
-    <link>docsite/docs/time/examples/</link>
+    <link>/docsite/docs/time/examples/</link>
     <description>Recent content in Examples on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="docsite/docs/time/examples/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsite/docs/time/examples/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: helloPlay</title>
-      <link>docsite/docs/time/examples/helloplay/</link>
+      <link>/docsite/docs/time/examples/helloplay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/helloplay/</guid>
+      <guid>/docsite/docs/time/examples/helloplay/</guid>
       <description>
         
         
@@ -129,10 +129,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: inheritance</title>
-      <link>docsite/docs/time/examples/inheritance/</link>
+      <link>/docsite/docs/time/examples/inheritance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/inheritance/</guid>
+      <guid>/docsite/docs/time/examples/inheritance/</guid>
       <description>
         
         
@@ -379,10 +379,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: input</title>
-      <link>docsite/docs/time/examples/input/</link>
+      <link>/docsite/docs/time/examples/input/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/input/</guid>
+      <guid>/docsite/docs/time/examples/input/</guid>
       <description>
         
         
@@ -555,10 +555,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: interactions</title>
-      <link>docsite/docs/time/examples/interactions/</link>
+      <link>/docsite/docs/time/examples/interactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/interactions/</guid>
+      <guid>/docsite/docs/time/examples/interactions/</guid>
       <description>
         
         
@@ -973,10 +973,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: sequence</title>
-      <link>docsite/docs/time/examples/sequence/</link>
+      <link>/docsite/docs/time/examples/sequence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/sequence/</guid>
+      <guid>/docsite/docs/time/examples/sequence/</guid>
       <description>
         
         
@@ -1302,10 +1302,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: settings</title>
-      <link>docsite/docs/time/examples/settings/</link>
+      <link>/docsite/docs/time/examples/settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/settings/</guid>
+      <guid>/docsite/docs/time/examples/settings/</guid>
       <description>
         
         
@@ -1482,10 +1482,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: stimulus</title>
-      <link>docsite/docs/time/examples/stimulus/</link>
+      <link>/docsite/docs/time/examples/stimulus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/stimulus/</guid>
+      <guid>/docsite/docs/time/examples/stimulus/</guid>
       <description>
         
         
@@ -1647,10 +1647,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: stroop-block</title>
-      <link>docsite/docs/time/examples/stroop-block/</link>
+      <link>/docsite/docs/time/examples/stroop-block/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/stroop-block/</guid>
+      <guid>/docsite/docs/time/examples/stroop-block/</guid>
       <description>
         
         
@@ -1957,10 +1957,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: stroop-inheritance</title>
-      <link>docsite/docs/time/examples/stroop-inheritance/</link>
+      <link>/docsite/docs/time/examples/stroop-inheritance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/stroop-inheritance/</guid>
+      <guid>/docsite/docs/time/examples/stroop-inheritance/</guid>
       <description>
         
         
@@ -2216,10 +2216,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: stroop-interactions</title>
-      <link>docsite/docs/time/examples/stroop-interactions/</link>
+      <link>/docsite/docs/time/examples/stroop-interactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/stroop-interactions/</guid>
+      <guid>/docsite/docs/time/examples/stroop-interactions/</guid>
       <description>
         
         
@@ -2466,10 +2466,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: stroop-setup</title>
-      <link>docsite/docs/time/examples/stroop-setup/</link>
+      <link>/docsite/docs/time/examples/stroop-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/stroop-setup/</guid>
+      <guid>/docsite/docs/time/examples/stroop-setup/</guid>
       <description>
         
         
@@ -2651,10 +2651,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: stroop-task</title>
-      <link>docsite/docs/time/examples/stroop-task/</link>
+      <link>/docsite/docs/time/examples/stroop-task/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/stroop-task/</guid>
+      <guid>/docsite/docs/time/examples/stroop-task/</guid>
       <description>
         
         
@@ -2912,10 +2912,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: touch</title>
-      <link>docsite/docs/time/examples/touch/</link>
+      <link>/docsite/docs/time/examples/touch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/touch/</guid>
+      <guid>/docsite/docs/time/examples/touch/</guid>
       <description>
         
         
@@ -3046,10 +3046,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: trial</title>
-      <link>docsite/docs/time/examples/trial/</link>
+      <link>/docsite/docs/time/examples/trial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/time/examples/trial/</guid>
+      <guid>/docsite/docs/time/examples/trial/</guid>
       <description>
         
         

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – MinnoJS Suite</title>
-    <link>docsite/</link>
+    <link>/docsite/</link>
     <description>Recent content in MinnoJS Suite on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="docsite/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsite/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Blog: Using MinnoJS with Pavlovia</title>
-      <link>docsite/blog/2021/01/28/using-minnojs-with-pavlovia/</link>
+      <link>/docsite/blog/2021/01/28/using-minnojs-with-pavlovia/</link>
       <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>docsite/blog/2021/01/28/using-minnojs-with-pavlovia/</guid>
+      <guid>/docsite/blog/2021/01/28/using-minnojs-with-pavlovia/</guid>
       <description>
         
         

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – API</title>
-    <link>docsite/docs/manager/api/</link>
+    <link>/docsite/docs/manager/api/</link>
     <description>Recent content in API on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="docsite/docs/manager/api/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsite/docs/manager/api/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Tasks</title>
-      <link>docsite/docs/manager/api/tasks/</link>
+      <link>/docsite/docs/manager/api/tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/api/tasks/</guid>
+      <guid>/docsite/docs/manager/api/tasks/</guid>
       <description>
         
         
@@ -92,10 +92,10 @@ Following is a list of such properties and a description of their behaviour.&lt;
     
     <item>
       <title>Docs: Custom tasks</title>
-      <link>docsite/docs/manager/api/custom-tasks/</link>
+      <link>/docsite/docs/manager/api/custom-tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/api/custom-tasks/</guid>
+      <guid>/docsite/docs/manager/api/custom-tasks/</guid>
       <description>
         
         
@@ -191,10 +191,10 @@ The format is fairly simple though you probably need at least some experience wi
     
     <item>
       <title>Docs: Settings</title>
-      <link>docsite/docs/manager/api/settings/</link>
+      <link>/docsite/docs/manager/api/settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/api/settings/</guid>
+      <guid>/docsite/docs/manager/api/settings/</guid>
       <description>
         
         
@@ -390,10 +390,10 @@ In addition you have a button that allows you to close and open the console.&lt;
     
     <item>
       <title>Docs: Project Implicit Build</title>
-      <link>docsite/docs/manager/api/pibuild/</link>
+      <link>/docsite/docs/manager/api/pibuild/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>docsite/docs/manager/api/pibuild/</guid>
+      <guid>/docsite/docs/manager/api/pibuild/</guid>
       <description>
         
         
