@@ -4,7 +4,7 @@ weight: 20
 description: How minno-time stores data
 ---
 
-The player sends all the data it has gathered to the url defined in the settings [logger](#logger).
+The player sends all the data it has gathered to the url defined in the settings [logger](../api/settings#logger).
 
 Logs are accumulated in an array (which can be found in `current.logs` or `API.getLogs`).
 Each log is an object including the following fields:

@@ -39,7 +39,7 @@ Type        | Description
 ----------- | -----------
 checkbox    | The default is "checkbox".
 text        | Display text of you choice (use the `textProperty` property to set the row property that will be used as the text).  For example `{type: 'text', textProperty:'rightStem'}` will use the `rightStem` property of each row as the text content. You can use this option to present an empty cell by leaving the text empty.
-dropdown    | Display a dropdown input. Use the `answers` property to set the options for the dropdown. For example `{type:'text', answers: ['Male', 'Female']}'. See the [dropdown](#dropdown) question for more `answers` options.
+dropdown    | Display a dropdown input. Use the `answers` property to set the options for the dropdown. For example `{type:'text', answers: ['Male', 'Female']}`. See the [dropdown](../dropdown) question for more `answers` options.
 input       | Display a text input. Note that users can input responses that may be confused with other responses (if a user inputs a 1 it may be confused with a selection of a checkbox in the first column).
 
 ##### multiGrid.rows

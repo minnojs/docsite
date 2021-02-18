@@ -22,8 +22,8 @@ progressBar 	| (text) Text for the progress bar (You might want to use a templat
 numbered 		| (true of false) Whether to  display the number of each question (default value: false).
 numberStart		| (Number) The number for the first question in the page (default: 1).
 timer 			| (Object) This property controls the page timer, its properties are documented right [here](#page-timer).
-questions 		| (Array or Object) an array of [questions](#questions) to be displayed in the page. Note that the questions may be randomized and chosen conditionally using a [mixer](#mixer). This property also accepts a single question object if you want to present only a single question per page.
-lognow 			| (true or false) Whether to log the questions on this page. This option is useful when you know that the page will not be accessed any more. It allows you to use the `pulse` option from the [logger](#logger) to send questions as they are being answered instead of sending only at the end of the task. (default: false)
+questions 		| (Array or Object) an array of [questions](questions) to be displayed in the page. Note that the questions may be randomized and chosen conditionally using a [mixer]({{< relref "docs/sequencer/mixer" >}}). This property also accepts a single question object if you want to present only a single question per page.
+lognow 			| (true or false) Whether to log the questions on this page. This option is useful when you know that the page will not be accessed any more. It allows you to use the `pulse` option from the [logger](../settings#logger) to send questions as they are being answered instead of sending only at the end of the task. (default: false)
 animate 		| (text) What types of animation to use when this page enters and leaves the screen. We currently support three animations: fade, slide, and drop-in. You can use any and all of them by adding them to the string (for example: "slide fade" will activate both of these animations).
 v1style			| (true or false or 2) Activate in order to use the version 0.1 style. Currently this only affects the way that the submit/decline buttons are presented. Set this to 2 in order to use the latest version of 0.1
 autoFocus 		| (true or false) Automatically focus on the first input in the page so that keyboard users have an easier time.
@@ -57,7 +57,7 @@ direction 		| ("up" or "down") Whether to use a countdown or to count up ("down"
 removeOnEnd 	| (true or false) Whether to remove the visual timer when the countdown ends (if you don't auto proceed when the timer ends. ).		
 message 		| (String or Object) Display a message at the end the timer duration. You can input a simple string here, but if you want finer control over the content of the message you can use the [object API](#page-messages).
 
-## Page Messages
+### Timer Message
 You may want to display a message to the users when they run out of time at the end of a timer. Messages can be simple strings, or if you want finer control over the content of the message you can use the object API, that may be used as follows:
 
 property		| description

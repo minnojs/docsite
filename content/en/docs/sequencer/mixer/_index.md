@@ -25,7 +25,7 @@ description:
 
 ### Introduction
 Mixers allow you to control the flow of your sequences within the PI tasks.
-In particular they allow you to repeat, randomize and even branch sections of your sequence according to [environmental variables](./variables.html).
+In particular they allow you to repeat, randomize and even branch sections of your sequence according to [environmental variables](../variables).
 
 #### Syntax
 Each one of the PI tasks is composed of a sequence of elements that is presented sequentially.
@@ -420,7 +420,7 @@ This will look like this:
 
 #### branch
 The branch mixer allows you to choose the flow of your sequence according to environmental conditions.
-You can learn about environmental conditions [here](./variables.html) and about how to create conditions [here](#conditions).
+You can learn about environmental conditions [here](../variables) and about how to create conditions [here](#conditions).
 This section will deal only with the stucture and use of the `branch` mixer itself.
 
 The branch mixer evaluates the `conditions` if they are true it returns the sequence in `data`, if they are false it returns the sequence in `elseData`.
@@ -483,7 +483,7 @@ You can either use them to create your elments or create elements arbitrarily.
 ```
 
 ### Conditions
-The conditional mixers ([`branch`](#branch) & [`multiBranch`](#multibranch)) allow you to change the content of your sequence depending on [environmental variables](./variables.html). 
+The conditional mixers ([`branch`](#branch) & [`multiBranch`](#multibranch)) allow you to change the content of your sequence depending on [environmental variables](../variables). 
 This is done by settings `conditions`.
 A condition is a statement that is evaluated either as `true` or `false`.
 We choose the branch we advance to according to the result.
@@ -610,7 +610,7 @@ var conds = [{or:[{and:[cond1,cond2]},cond3]}]
 #### Debugging
 Conditions are notoriously difficult to get just right.
 If they aren't working as you expected, you might want to see exactly which values you are getting for each of your conditions.
-The mixer provides you with an easy way to do this. Just set `DEBUG=true` on your condition, and you will see all the said values being printed into your [console](../basics/javascript.html#errors-and-debugging).
+The mixer provides you with an easy way to do this. Just set `DEBUG=true` on your condition, and you will see all the said values being printed into your [console](../../core/javascript#errors-and-debugging).
 
 ```javascript
 API.addGlobal({

@@ -1,6 +1,6 @@
 ---
 title: mixerRepeat
-description: mixerRepeat
+description:
 ---
 
 {{< playground filename=mixerRepeat.md >}}

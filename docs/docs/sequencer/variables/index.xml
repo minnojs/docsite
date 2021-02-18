@@ -32,8 +32,8 @@ You can extend it however you like using &lt;code&gt;API.addCurrent&lt;/code&gt;
     &lt;span style=&#34;color:#000&#34;&gt;variable&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;While a task is running, its task object is available as &lt;code&gt;current&lt;/code&gt;.
-Even when the task is not active it is available from within the &lt;a href=&#34;#global&#34;&gt;&lt;code&gt;global&lt;/code&gt;&lt;/a&gt; object, as &lt;code&gt;global.&amp;lt;taskName&amp;gt;&lt;/code&gt;,
-where &lt;code&gt;&amp;lt;taskName&amp;gt;&lt;/code&gt; stands for the &lt;a href=&#34;../manager/API.html#tasks&#34;&gt;task name&lt;/a&gt; as defined within the task manager.&lt;/p&gt;
+Even when the task is not active it is available from within the &lt;a href=&#34;../global&#34;&gt;&lt;code&gt;global&lt;/code&gt;&lt;/a&gt; object, as &lt;code&gt;global.&amp;lt;taskName&amp;gt;&lt;/code&gt;,
+where &lt;code&gt;&amp;lt;taskName&amp;gt;&lt;/code&gt; stands for the &lt;a href=&#34;/docsite/docs/manager/api/tasks/&#34;&gt;task name&lt;/a&gt; as defined within the task manager.&lt;/p&gt;
 &lt;p&gt;For your convenience, here is a table describing some of the data available within the different task objects.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -67,7 +67,7 @@ where &lt;code&gt;&amp;lt;taskName&amp;gt;&lt;/code&gt; stands for the &lt;a hre
         
         
         &lt;p&gt;The PI tasks expose one central object that serves as the hub of all of you tasks.
-The [task objects][current] get automatically registered on the &lt;code&gt;global&lt;/code&gt; object, so that you can access them all from here.
+The [task objects][../current] get automatically registered on the &lt;code&gt;global&lt;/code&gt; object, so that you can access them all from here.
 In addition, you can register any data that you want shared between your tasks onto &lt;code&gt;global&lt;/code&gt;.
 This options is useful in various cases of branching, as well as when you want a common theme to appear in multiple tasks.&lt;/p&gt;
 &lt;p&gt;The following snippet sets &lt;code&gt;global.value&lt;/code&gt; to 123, and &lt;code&gt;global.variable&lt;/code&gt; to [1,2,3].&lt;/p&gt;
@@ -205,8 +205,8 @@ We now approach variables that have a narrower scope: they have to do with speci
 These variables are called &lt;em&gt;Data&lt;/em&gt; and &lt;em&gt;Meta&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
 &lt;p&gt;The &lt;em&gt;Data&lt;/em&gt; variables allow you to manually set useful information into each element.
-Their behaviour is described fully within as part of element &lt;a href=&#34;./inheritance.html#data&#34;&gt;inheritance&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In the following example, the data set in the &amp;lsquo;default&amp;rsquo; task, is used from within a &lt;a href=&#34;../template&#34;&gt;template&lt;/a&gt; in the sequence.&lt;/p&gt;
+Their behaviour is described fully within as part of element &lt;a href=&#34;../../inheritance#data&#34;&gt;inheritance&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the following example, the data set in the &amp;lsquo;default&amp;rsquo; task, is used from within a &lt;a href=&#34;../../templates&#34;&gt;template&lt;/a&gt; in the sequence.&lt;/p&gt;
 
 
 

@@ -33,7 +33,7 @@ description:
 The inheritance system allows you to compose task elements based on previously defined prototypes. 
 It has many different uses.
 It is often used for the abstraction of tasks; having the behavior of multiple elements defined at a single location.
-Another typical use, is for advanced randomization that is not simple to achieve using the [mixer](mixer.html#radom).
+Another typical use, is for advanced randomization that is not simple to achieve using the [mixer](../mixer).
 And finally it is used as a way to keep your scripts more readable.
 
 The process of inheritance involves picking an element from a set, resolving that element and finally extending the inheriting element with the properties of the inherited element.

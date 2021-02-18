@@ -81,16 +81,6 @@
 				<a  class="nav-link" href="/docsite/docs/" ><span>Documentation</span></a>
 			</li>
 			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
-				<a  class="nav-link" href="/docsite/blog/" ><span>Blog</span></a>
-			</li>
-			
 			
 			
 		</ul>
@@ -214,7 +204,7 @@ It was carefuly crafted by social scientists for social scientists with an empha
   <h4 class="h3">Time sensitive tasks</h4>
   <p class="mb-0"><p>MinnoJS excels at running complex time-sensitive tasks.</p>
 </p>
-  
+  <p><a href="docs/time">Read more …</a></p>
 </div>
 
 
@@ -228,7 +218,7 @@ It was carefuly crafted by social scientists for social scientists with an empha
   <h4 class="h3">Questionnaires</h4>
   <p class="mb-0"><p>Easily create questionnaires with full control over content randomization and interactivity.</p>
 </p>
-  
+  <p><a href="docs/quest">Read more …</a></p>
 </div>
 
 
@@ -241,7 +231,7 @@ It was carefuly crafted by social scientists for social scientists with an empha
   <h4 class="h3">Minno server</h4>
   <p class="mb-0"><p>Manage study creation, data logging, multiple users and collaboration and much much more.</p>
 </p>
-  
+  <p><a href="docs/server">Read more …</a></p>
 </div>
 
 
@@ -255,25 +245,40 @@ It was carefuly crafted by social scientists for social scientists with an empha
 
 
 
- 
+
 <a id="td-block-3" class="td-offset-anchor"></a>
-<section class="row td-box td-box--white td-box--gradient td-box--height-auto">
+<section class="row td-box td-box--3 position-relative td-box--gradient td-box--height-auto">
+	<div class="container text-center td-arrow-down">
+		<span class="h4 mb-0">
+			
+				
+    <h1 class="text-center">There is no need to install</h1>
+    <h3 class="text-center">Try it out right now</h2>
+
+			
+		</span>
+	</div>
+</section>
+
+
+
+
+
+ 
+<a id="td-block-4" class="td-offset-anchor"></a>
+<section class="row td-box td-box--4 td-box--gradient td-box--height-auto">
 	<div class="col">
 		<div class="row justify-content-center">
 			
 				
-
-<div class="col-6">
-        <h1 class="text-center">There is no need to install</h1>
-        <h3 class="text-center">Try it right now</h2>
-
-        <h2>Manager</h2>
+    <div class="col-6">
+        <h2>Minno-time</h2>
         <p> 
-            Minno manager is responsible for orchestrating multiple Minno tasks together.
-            It gives you control over the sequence of tasks presented to your participants
-            and alows you to coordinate between your various tasks.
-            <a href="/docsite/docsite/docs/manager/">Read more</a>
+            Minno-time allows you to create rich and flexible time sensitive tasks.
+            It is fast, accurate, and extremely flexible.
+            <a href="/docsite/docsite/docs/time/">Read more</a>
         </p>
+
         
 
 
@@ -291,13 +296,235 @@ It was carefuly crafted by social scientists for social scientists with an empha
     
 
 
+<div class="pg-section" id="pg-time.js">
+    <p>
+    <a class="pg-play btn btn-secondary"><i class="fas fa-play"></i> Run </a>
+    <a class="pg-download btn btn-outline-secondary"><i class="fas fa-download"></i> Download </a>
+    </p>
+
+    <textarea class="code-mirror" rows="40">
+define(['timeAPI'], function(APIconstructor) {
+
+    var API = new APIconstructor();
+
+    API.addSequence([
+        {
+            input: [
+                {handle:'space',on:'space'}
+            ],
+            layout: [
+                {
+                    media :{word:'Hello world'},
+                    css:{fontSize:'2em',color:'#D7685A'}
+                }
+            ],
+            interactions: [
+                {
+                    conditions: [
+                        {type:'inputEquals',value:'space'}
+                    ],
+                    actions: [
+                        {type:'endTrial'}
+                    ]
+                }
+            ]
+        }
+    ]);
+
+    return API.script;
+});
+        </textarea>
+</div>
+
+
+<script>
+    (function(filename){
+        var win, section;
+        var section = document.getElementById('pg-' + filename);
+
+        var el = section.querySelector('.code-mirror');
+        var cm = CodeMirror.fromTextArea(el,{ theme:'monokai' });
+
+        cm.setSize(null, 500);
+
+        section.querySelector('.pg-download').addEventListener('click', function(){
+            var blob = new Blob([cm.getValue()], { type: 'text/javascript' });
+
+            if (window.navigator.msSaveOrOpenBlob) window.navigator.msSaveBlob(blob, filename);
+            else {
+                var elem = window.document.createElement('a');
+                elem.href = window.URL.createObjectURL(blob);
+                elem.download = filename;
+                document.body.appendChild(elem);
+                elem.click();
+                document.body.removeChild(elem);
+            }
+        });
+
+        section.querySelector('.pg-play').addEventListener('click', function(){
+            var runminnoUrl = '\/runminno.html';
+            if (win) win.close();
+            win = window.open(runminnoUrl, 'Playground');
+            win.onload = function(){
+                win.addEventListener('unload', function() {
+                    window.focus();
+                });
+                win.activate(cm.getValue());
+            };
+        });
+    })('time.js');
+</script>
+
+    </div>
+
+			
+		</div>
+	</div>
+</section>
+
+
+
+
+
+ 
+<a id="td-block-5" class="td-offset-anchor"></a>
+<section class="row td-box td-box--light td-box--gradient td-box--height-auto">
+	<div class="col">
+		<div class="row justify-content-center">
+			
+				
+    <div class="col-6">
+        <h2>Minno-quest</h2>
+        <p> 
+            Minno-quest is the questionnaire creator within the minno-suite.
+            It gives you the power to easily compose questionnaires, using a variety of built-in question types,
+            all while keeping the highly dynamic control provided by MinnoJS.
+            <a href="/docsite/docsite/docs/quest/">Read more</a>
+        </p>
+        
+
+
+
+
+    
+
+
+
+
+
+<div class="pg-section" id="pg-quest.js">
+    <p>
+    <a class="pg-play btn btn-secondary"><i class="fas fa-play"></i> Run </a>
+    <a class="pg-download btn btn-outline-secondary"><i class="fas fa-download"></i> Download </a>
+    </p>
+
+    <textarea class="code-mirror" rows="40">
+define(['questAPI'], function(Quest){
+
+    var API = new Quest();
+
+    API.addSequence([
+        {
+            header: 'Hello World',
+            questions: [
+                {
+                    type: 'selectOne',
+                    stem: 'What is you favorite color?',
+                    answers: ['red', 'blue', 'green']
+                }
+            ]
+        }
+    ]);
+
+    return API.script;
+});
+        </textarea>
+</div>
+
+
+<script>
+    (function(filename){
+        var win, section;
+        var section = document.getElementById('pg-' + filename);
+
+        var el = section.querySelector('.code-mirror');
+        var cm = CodeMirror.fromTextArea(el,{ theme:'monokai' });
+
+        cm.setSize(null, 500);
+
+        section.querySelector('.pg-download').addEventListener('click', function(){
+            var blob = new Blob([cm.getValue()], { type: 'text/javascript' });
+
+            if (window.navigator.msSaveOrOpenBlob) window.navigator.msSaveBlob(blob, filename);
+            else {
+                var elem = window.document.createElement('a');
+                elem.href = window.URL.createObjectURL(blob);
+                elem.download = filename;
+                document.body.appendChild(elem);
+                elem.click();
+                document.body.removeChild(elem);
+            }
+        });
+
+        section.querySelector('.pg-play').addEventListener('click', function(){
+            var runminnoUrl = '\/runminno.html';
+            if (win) win.close();
+            win = window.open(runminnoUrl, 'Playground');
+            win.onload = function(){
+                win.addEventListener('unload', function() {
+                    window.focus();
+                });
+                win.activate(cm.getValue());
+            };
+        });
+    })('quest.js');
+</script>
+
+    </div>
+
+			
+		</div>
+	</div>
+</section>
+
+
+
+
+
+ 
+<a id="td-block-6" class="td-offset-anchor"></a>
+<section class="row td-box td-box--white td-box--gradient td-box--height-auto">
+	<div class="col">
+		<div class="row justify-content-center">
+			
+				
+    <div class="col-6">
+        <h2>Minno-manager</h2>
+        <p> 
+            Minno manager is responsible for orchestrating multiple Minno tasks together.
+            It gives you control over the sequence of tasks presented to your participants
+            and alows you to coordinate between your various tasks.
+            <a href="/docsite/docsite/docs/manager/">Read more</a>
+        </p>
+        
+
+
+
+
+    
+
+
+
+
+
 <div class="pg-section" id="pg-manager.js">
     <p>
     <a class="pg-play btn btn-secondary"><i class="fas fa-play"></i> Run </a>
     <a class="pg-download btn btn-outline-secondary"><i class="fas fa-download"></i> Download </a>
     </p>
 
-    <textarea class="code-mirror" rows="40">define(['managerAPI'], function(Manager){
+    <textarea class="code-mirror" rows="40">
+define(['managerAPI'], function(Manager){
 
     var API = new Manager();
 
@@ -307,7 +534,7 @@ It was carefuly crafted by social scientists for social scientists with an empha
             piTemplate: true,
             template:'Click space for examples of a self-esteem questionnaire and a Stroop task', keys: ' '
         }, 
-		{
+        {
             type:'message',
             piTemplate: true,
             template:'Click space to finish the study', keys: ' '
@@ -316,7 +543,7 @@ It was carefuly crafted by social scientists for social scientists with an empha
 
     return API.script;
 });
-</textarea>
+        </textarea>
 </div>
 
 
@@ -358,7 +585,7 @@ It was carefuly crafted by social scientists for social scientists with an empha
     })('manager.js');
 </script>
 
-</div>
+    </div>
 
 			
 		</div>

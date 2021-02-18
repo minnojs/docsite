@@ -22,7 +22,7 @@ After completing the task, the global property `longOrShort` will be set with `t
 This value can be used later within the player in order to branch or within templates.
 
 Note that the value recorded is **not** posted to the server.
-(If you are interested in posting it to the server, you may want to look into the [post](./post.html) task).
+(If you are interested in posting it to the server, you may want to look into the [post](../post) task).
 
 The API is as follows:
 

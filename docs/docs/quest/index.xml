@@ -205,8 +205,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
         
         
         &lt;p&gt;miQuest keeps record of user responses using plain js objects.
-These objects are both kept locally (see &lt;a href=&#34;#variables&#34;&gt;variables&lt;/a&gt;) and sent to the server.&lt;/p&gt;
-&lt;p&gt;The data logs are available as properties of the &lt;code&gt;questsion&lt;/code&gt; object  in &lt;code&gt;current&lt;/code&gt;:&lt;/p&gt;
+These objects are both kept locally and sent to the server.&lt;/p&gt;
+&lt;p&gt;Localy, the data logs are available as properties of the &lt;code&gt;questions&lt;/code&gt; object  in &lt;a href=&#34;/docsite/docs/sequencer/variables/current/&#34;&gt;&lt;code&gt;current&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;current&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;questions&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 	&lt;span style=&#34;color:#000&#34;&gt;questionName1&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{...},&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// log object
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#000&#34;&gt;questionName2&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{...}&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// log object
@@ -243,8 +243,8 @@ These objects are both kept locally (see &lt;a href=&#34;#variables&#34;&gt;vari
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The response for questionName1 can be accessed using &lt;code&gt;current.questions.questionName1.response&lt;/code&gt;.
-You can use this data within &lt;a href=&#34;../basics/sequencer.html#templates&#34;&gt;templates&lt;/a&gt;
-or from within &lt;a href=&#34;../basics/sequencer.html#conditions&#34;&gt;branches&lt;/a&gt;.&lt;/p&gt;
+You can use this data within &lt;a href=&#34;/docsite/docs/sequencer/templates/&#34;&gt;templates&lt;/a&gt;
+or from within &lt;a href=&#34;/docsite/docs/sequencer/mixer/#conditions&#34;&gt;branches&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>

@@ -15,7 +15,7 @@
     
     
     <item>
-      <title>Docs: AllowLeaving</title>
+      <title>Docs: Allow Leaving</title>
       <link>/docsite/docs/manager/tasks/allowleaving/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -113,7 +113,7 @@ not know which of these the user &lt;em&gt;prefers&lt;/em&gt; to use.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;isTouch&lt;/code&gt; is a task that allows you to identify users that are using touch interfaces.
 It detects whether the user device has a device capable of touch interactions and if so
 explicitly asks if they whish to use these capabilities.&lt;/p&gt;
-&lt;p&gt;The interface for this task is similar to the interface of the &lt;code&gt;yesNo&lt;/code&gt; &lt;a href=&#34;./yesno.md&#34;&gt;task&lt;/a&gt;.
+&lt;p&gt;The interface for this task is similar to the interface of the &lt;code&gt;yesNo&lt;/code&gt; &lt;a href=&#34;../yesno&#34;&gt;task&lt;/a&gt;.
 With the following differences; first, &lt;code&gt;path&lt;/code&gt; has a default value of &lt;code&gt;$isTouch&lt;/code&gt;, and second the default values for the texts are differnt.&lt;/p&gt;
 &lt;p&gt;A typical &lt;code&gt;isTouch&lt;/code&gt; task may simply look like the following.
 It would set the response to the question into &lt;code&gt;global.$isTouch&lt;/code&gt;.&lt;/p&gt;
@@ -362,7 +362,7 @@ You can fine tune the way feedback is collected and displayed using the followin
 You can use it to either send data that has been saved in the Global object or directly set the data that you want to send.
 This is a good way to keep track of conditions within your tasks.&lt;/p&gt;
 &lt;h3 id=&#34;save-from-the-global-object&#34;&gt;Save from the Global object&lt;/h3&gt;
-&lt;p&gt;In your code, you can save data to the &lt;a href=&#34;../basics/variables.md#global&#34;&gt;Global object&lt;/a&gt;. For instance, you might randomly select a condition and save the condition to the Global object.&lt;/p&gt;
+&lt;p&gt;In your code, you can save data to the &lt;a href=&#34;/docsite/docs/sequencer/variables/global/&#34;&gt;Global object&lt;/a&gt;. For instance, you might randomly select a condition and save the condition to the Global object.&lt;/p&gt;
 &lt;p&gt;For example, the following code randomly assigns participants to the experimental or the control group:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addGlobal&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;condition&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;shuffle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;([&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;experimental&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;control&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;])[&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In your code, you can then use that condition to provide your participants different tasks or show them different stimuli. However, adding a variable to global does not mean that it would be logged to the server. In order to log that variable to the server, you need to add a &amp;lsquo;post&amp;rsquo; task to the sequence of tasks that you define in the manager file. For example:&lt;/p&gt;
@@ -372,8 +372,9 @@ This is a good way to keep track of conditions within your tasks.&lt;/p&gt;
     &lt;span style=&#34;color:#000&#34;&gt;variableName&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;condition&amp;#39;&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This code saves the variable &amp;lsquo;condition&amp;rsquo; and its content to the server, under the task name &amp;lsquo;cond&amp;rsquo;.&lt;/p&gt;
-&lt;p&gt;In each task, you can use the &lt;a href=&#34;../basics/variables.md#the-task-object-current&#34;&gt;&lt;code&gt;current&lt;/code&gt; object&lt;/a&gt; to save variables.
-You can access the current variable from the global, using the task&amp;rsquo;s name. For instance, if your study has a task named &lt;code&gt;iat&lt;/code&gt;, and in that task you saved a variable called &lt;code&gt;randomization&lt;/code&gt; you will have a variable that can be accessed with &lt;code&gt;global.iat.randomization&lt;/code&gt;. You will use that to send the &lt;code&gt;randomization&lt;/code&gt; variable to the server:&lt;/p&gt;
+&lt;p&gt;In each task, you can use the &lt;a href=&#34;/docsite/docs/sequencer/variables/current/&#34;&gt;&lt;code&gt;current&lt;/code&gt; object&lt;/a&gt; to save variables.
+You can access the current variable from the global, using the task&amp;rsquo;s name.
+For instance, if your study has a task named &lt;code&gt;iat&lt;/code&gt;, and in that task you saved a variable called &lt;code&gt;randomization&lt;/code&gt; you will have a variable that can be accessed with &lt;code&gt;global.iat.randomization&lt;/code&gt;. You will use that to send the &lt;code&gt;randomization&lt;/code&gt; variable to the server:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;post&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;primaryRandomization&amp;#39;&lt;/span&gt;
@@ -398,7 +399,8 @@ The following task sends &lt;code&gt;global.iat.randomization&lt;/code&gt; and &
         &lt;span style=&#34;color:#000&#34;&gt;condition&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;experimental&amp;#39;&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;One example for the usefulness of this feature is when the randomization in your task is done using a mixer (e.g., a &lt;a href=&#34;../basics/mixer.md#choose&#34;&gt;choose mixer&lt;/a&gt;). Consider this code:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;One example for the usefulness of this feature is when the randomization in your task is done using a mixer (e.g., a &lt;a href=&#34;/docsite/docs/sequencer/mixer/#choose&#34;&gt;choose mixer&lt;/a&gt;).
+Consider this code:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;mixer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;choose&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
@@ -432,7 +434,7 @@ The following task sends &lt;code&gt;global.iat.randomization&lt;/code&gt; and &
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note that you can use &lt;a href=&#34;../basics/templates.md&#34;&gt;templates&lt;/a&gt; as strings within the data object.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note that you can use &lt;a href=&#34;/docsite/docs/sequencer/templates/&#34;&gt;templates&lt;/a&gt; as strings within the data object.
 This way you can pull information from different parts of &lt;code&gt;global&lt;/code&gt; to the same place.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;data&lt;/code&gt; can also be a function. In that case, it will recieve the arguments &lt;code&gt;global&lt;/code&gt; and&lt;code&gt;task&lt;/code&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;{
@@ -458,7 +460,7 @@ This way you can pull information from different parts of &lt;code&gt;global&lt;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;settings&lt;/td&gt;
-&lt;td&gt;Optional settings that overide the logger settings &lt;a href=&#34;./API.md#logger&#34;&gt;as defined&lt;/a&gt; in the manager.&lt;/td&gt;
+&lt;td&gt;Optional settings that overide the logger settings &lt;a href=&#34;../../api/settings#logger&#34;&gt;as defined&lt;/a&gt; in the manager.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;variableName&lt;/td&gt;
@@ -508,7 +510,7 @@ Any properties of the task object are merged into the logger settings (so you ca
       <description>
         
         
-        &lt;p&gt;The quest task activates a &lt;a href=&#34;../quest&#34;&gt;minno-quest&lt;/a&gt; task.
+        &lt;p&gt;The quest task activates a &lt;a href=&#34;/docsite/docs/quest/&#34;&gt;minno-quest&lt;/a&gt; task.
 These are tasks allow you to create complex questionnaires for your experiments.
 You will probably load the task from a file (use &lt;code&gt;scriptUrl&lt;/code&gt;).
 Note that it is almost always imperative to use the &lt;code&gt;name&lt;/code&gt; property, as it is used to refer to
@@ -529,7 +531,7 @@ data gathered by the task, and to identify it in the results.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;script&lt;/td&gt;
-&lt;td&gt;(Object) The full task object generated by &lt;a href=&#34;../basics/create.html&#34;&gt;&lt;code&gt;questAPI&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;(Object) The full task object (as generated by the questAPI constructor)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -584,7 +586,7 @@ data gathered by the task, and to identify it in the results.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Docs: setValue</title>
+      <title>Docs: Set Value</title>
       <link>/docsite/docs/manager/tasks/setvalue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -592,12 +594,7 @@ data gathered by the task, and to identify it in the results.&lt;/p&gt;
       <description>
         
         
-        &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#api&#34;&gt;API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#basic-use&#34;&gt;Basic use&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#experiment-conditions&#34;&gt;Experiment conditions&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The &lt;code&gt;setValue&lt;/code&gt; task allows setting a value to &lt;a href=&#34;../basics/variables.md&#34;&gt;environmental variables&lt;/a&gt; (e.g., variables stored in the global object).
+        &lt;p&gt;The &lt;code&gt;setValue&lt;/code&gt; task allows setting a value to &lt;a href=&#34;/docsite/docs/sequencer/variables/&#34;&gt;environmental variables&lt;/a&gt; (e.g., variables stored in the global object).
 It is useful for implementing experiment conditions.&lt;/p&gt;
 &lt;h3 id=&#34;api&#34;&gt;API&lt;/h3&gt;
 &lt;table&gt;
@@ -630,7 +627,7 @@ It is useful for implementing experiment conditions.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;settings&lt;/td&gt;
-&lt;td&gt;Optional settings that overide the logger settings &lt;a href=&#34;./API.md#logger&#34;&gt;as defined&lt;/a&gt; in the manager.&lt;/td&gt;
+&lt;td&gt;Optional settings that overide the logger settings &lt;a href=&#34;/docsite/docs/manager/api/settings/#logger&#34;&gt;as defined&lt;/a&gt; in the manager.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;path&lt;/td&gt;
@@ -726,7 +723,7 @@ We then use a branch mixer in order to choose the appropriate instructions.&lt;/
       <description>
         
         
-        &lt;p&gt;The time task activates a &lt;a href=&#34;../time&#34;&gt;minno-time&lt;/a&gt; task.
+        &lt;p&gt;The time task activates a &lt;a href=&#34;/docsite/docs/time/&#34;&gt;minno-time&lt;/a&gt; task.
 These are tasks focused on time-sensitive activities.
 You will probably load the task from a file (use &lt;code&gt;scriptUrl&lt;/code&gt;).
 Note that it is almost always imperative to use the &lt;code&gt;name&lt;/code&gt; property, as it is used to refer to
@@ -747,7 +744,7 @@ data gathered by the task, and to identify it in the results.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;script&lt;/td&gt;
-&lt;td&gt;(Object) The full task object generated by &lt;a href=&#34;../basics/create.html&#34;&gt;&lt;code&gt;timeAPI&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;(Object) The full task object (as generated by the timeAPI constructor)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -777,7 +774,7 @@ data gathered by the task, and to identify it in the results.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After completing the task, the global property &lt;code&gt;longOrShort&lt;/code&gt; will be set with &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; according to the response of the user.
 This value can be used later within the player in order to branch or within templates.&lt;/p&gt;
 &lt;p&gt;Note that the value recorded is &lt;strong&gt;not&lt;/strong&gt; posted to the server.
-(If you are interested in posting it to the server, you may want to look into the &lt;a href=&#34;./post.html&#34;&gt;post&lt;/a&gt; task).&lt;/p&gt;
+(If you are interested in posting it to the server, you may want to look into the &lt;a href=&#34;../post&#34;&gt;post&lt;/a&gt; task).&lt;/p&gt;
 &lt;p&gt;The API is as follows:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;

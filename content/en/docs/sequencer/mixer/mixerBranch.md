@@ -1,6 +1,6 @@
 ---
 title: mixerBranch
-description: mixerBranch
+description:
 ---
 
 {{< playground filename=mixerBranch.md >}}

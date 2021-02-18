@@ -1,6 +1,6 @@
 ---
 title: mixerWrapper
-description: mixerWrapper
+description:
 ---
 
 {{< playground filename=mixerWrapper.md >}}

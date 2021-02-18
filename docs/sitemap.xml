@@ -34,7 +34,7 @@
   
   <url>
     <loc>/docsite/docs/manager/api/tasks/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -59,12 +59,12 @@
   
   <url>
     <loc>/docsite/docs/quest/api/pages/</loc>
-    <lastmod>2021-02-01T21:41:16+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/quest/api/questions/</loc>
-    <lastmod>2021-02-01T21:41:16+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -94,7 +94,7 @@
   
   <url>
     <loc>/docsite/docs/core/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -113,13 +113,18 @@
   </url>
   
   <url>
+    <loc>/docsite/docs/sequencer/introduction/</loc>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/docsite/docs/core/javascript/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/time/api/settings/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -149,17 +154,17 @@
   
   <url>
     <loc>/docsite/docs/core/create/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/quest/data/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/time/data/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -179,7 +184,7 @@
   
   <url>
     <loc>/docsite/docs/sequencer/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -189,7 +194,7 @@
   
   <url>
     <loc>/docsite/docs/time/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -209,17 +214,17 @@
   
   <url>
     <loc>/docsite/docs/quest/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/time/api/stimuli/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/docsite/docs/sequencer/template/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <loc>/docsite/docs/sequencer/templates/</loc>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -263,38 +268,18 @@
   </url>
   
   <url>
-    <loc>/docsite/blog/2021/01/28/using-minnojs-with-pavlovia/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docsite/blog/news/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docsite/blog/tutorials/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/docsite/about/</loc>
     <lastmod>2021-01-28T14:08:28+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/manager/tasks/allowleaving/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/time/api/</loc>
     <lastmod>2021-02-10T21:07:19+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docsite/blog/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
   </url>
   
   <url>
@@ -319,7 +304,7 @@
   
   <url>
     <loc>/docsite/docs/sequencer/variables/current/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -344,12 +329,12 @@
   
   <url>
     <loc>/docsite/docs/sequencer/variables/global/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/quest/api/questions/grid/</loc>
-    <lastmod>2021-02-01T21:41:16+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -359,7 +344,7 @@
   
   <url>
     <loc>/docsite/docs/time/tutorials/hello/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -374,7 +359,7 @@
   
   <url>
     <loc>/docsite/docs/sequencer/inheritance/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -448,13 +433,8 @@
   </url>
   
   <url>
-    <loc>/docsite/docs/sequencer/introduction/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/docsite/docs/manager/tasks/istouch/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -464,7 +444,7 @@
   
   <url>
     <loc>/docsite/docs/sequencer/variables/local/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -474,52 +454,52 @@
   
   <url>
     <loc>/docsite/</loc>
-    <lastmod>2021-02-01T21:41:16+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/sequencer/mixer/mixerbranch/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/sequencer/mixer/mixerchoose/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/sequencer/mixer/mixermultibranch/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/sequencer/mixer/mixerrandom/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/sequencer/mixer/mixerrepeat/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/sequencer/mixer/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/sequencer/mixer/mixerweightedrandom/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/sequencer/mixer/mixerwrapper/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/docs/quest/api/questions/multigrid/</loc>
-    <lastmod>2021-02-01T21:41:16+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -544,7 +524,7 @@
   
   <url>
     <loc>/docsite/docs/manager/tasks/post/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -559,7 +539,7 @@
   
   <url>
     <loc>/docsite/docs/manager/tasks/quest/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -589,6 +569,7 @@
   
   <url>
     <loc>/docsite/search/</loc>
+    <lastmod>2021-02-11T01:58:29+02:00</lastmod>
   </url>
   
   <url>
@@ -607,13 +588,13 @@
   </url>
   
   <url>
-    <loc>/docsite/docs/time/examples/settings/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <loc>/docsite/docs/manager/tasks/setvalue/</loc>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/docsite/docs/manager/tasks/setvalue/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
+    <loc>/docsite/docs/time/examples/settings/</loc>
+    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
   </url>
   
   <url>
@@ -623,7 +604,7 @@
   
   <url>
     <loc>/docsite/docs/time/tutorials/slideshow/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -683,7 +664,7 @@
   
   <url>
     <loc>/docsite/docs/manager/tasks/time/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -718,7 +699,7 @@
   
   <url>
     <loc>/docsite/docs/sequencer/variables/</loc>
-    <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -728,7 +709,7 @@
   
   <url>
     <loc>/docsite/docs/manager/tasks/yesno/</loc>
-    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
 </urlset>

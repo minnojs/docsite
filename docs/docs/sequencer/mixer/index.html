@@ -79,16 +79,6 @@
 				<a  class="nav-link active" href="/docsite/docs/" ><span class="active">Documentation</span></a>
 			</li>
 			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
-				<a  class="nav-link" href="/docsite/blog/" ><span>Blog</span></a>
-			</li>
-			
 			
 			
 		</ul>
@@ -217,6 +207,14 @@
       
         
           
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docssequencerintroduction" href="/docsite/docs/sequencer/introduction/">Introduction</a>
+        
+      
+      
+      
+        
+          
 
 
 
@@ -225,10 +223,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docsite/docs/sequencer/template/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Templates</a>
+    <a  href="/docsite/docs/sequencer/templates/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Templates</a>
   </li>
   <ul>
-    <li class="collapse " id="docssequencertemplate">
+    <li class="collapse " id="docssequencertemplates">
       
       
       
@@ -325,14 +323,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docssequencerintroduction" href="/docsite/docs/sequencer/introduction/">Introduction</a>
         
       
       
@@ -1275,7 +1265,7 @@
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertasksallowleaving" href="/docsite/docs/manager/tasks/allowleaving/">AllowLeaving</a>
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertasksallowleaving" href="/docsite/docs/manager/tasks/allowleaving/">Allow Leaving</a>
         
       
       
@@ -1339,7 +1329,7 @@
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertaskssetvalue" href="/docsite/docs/manager/tasks/setvalue/">setValue</a>
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertaskssetvalue" href="/docsite/docs/manager/tasks/setvalue/">Set Value</a>
         
       
       
@@ -1721,7 +1711,7 @@
     <a href="https://github.com/minnojs/docsite/issues/new?title=Mixers" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
     
       
-      <a href="https://github.com/minnojs/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+      <a href="https://github.com/minnojs/minno-quest/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
     
 
   
@@ -1750,19 +1740,6 @@
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             
   
-  
-  
-  
-  <div class="pageinfo pageinfo-primary">
-    <p>Version temporary of the
-      documentation is no longer actively maintained. The site that you are
-      currently viewing is an archived snapshot. 
-      For up-to-date documentation, see the 
-        <a href="https://minnojs.github.io/minno-quest/0.3/manager/overview.html" target="_blank">latest version</a>.</p>
-      
-    
-  </div>
-
 
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	<ol class="breadcrumb spb-1">
@@ -1835,7 +1812,7 @@
 </ul>
 <h3 id="introduction">Introduction</h3>
 <p>Mixers allow you to control the flow of your sequences within the PI tasks.
-In particular they allow you to repeat, randomize and even branch sections of your sequence according to <a href="./variables.html">environmental variables</a>.</p>
+In particular they allow you to repeat, randomize and even branch sections of your sequence according to <a href="../variables">environmental variables</a>.</p>
 <h4 id="syntax">Syntax</h4>
 <p>Each one of the PI tasks is composed of a sequence of elements that is presented sequentially.
 For example, the sequence in miManager is composed of elements that each represent a task.
@@ -2152,7 +2129,7 @@ This will look like this:</p>
 <span style="color:#000;font-weight:bold">}</span>
 </code></pre></div><h4 id="branch">branch</h4>
 <p>The branch mixer allows you to choose the flow of your sequence according to environmental conditions.
-You can learn about environmental conditions <a href="./variables.html">here</a> and about how to create conditions <a href="#conditions">here</a>.
+You can learn about environmental conditions <a href="../variables">here</a> and about how to create conditions <a href="#conditions">here</a>.
 This section will deal only with the stucture and use of the <code>branch</code> mixer itself.</p>
 <p>The branch mixer evaluates the <code>conditions</code> if they are true it returns the sequence in <code>data</code>, if they are false it returns the sequence in <code>elseData</code>.
 If <code>elseData</code> is not defined, or is left empty, then nothing happen in case the conditions are not true (see <a href="#conditions">conditions</a> to learn more about how conditions work).</p>
@@ -2200,7 +2177,7 @@ You can either use them to create your elments or create elements arbitrarily.</
     <span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">}</span>
 </code></pre></div><h3 id="conditions">Conditions</h3>
-<p>The conditional mixers (<a href="#branch"><code>branch</code></a> &amp; <a href="#multibranch"><code>multiBranch</code></a>) allow you to change the content of your sequence depending on <a href="./variables.html">environmental variables</a>.
+<p>The conditional mixers (<a href="#branch"><code>branch</code></a> &amp; <a href="#multibranch"><code>multiBranch</code></a>) allow you to change the content of your sequence depending on <a href="../variables">environmental variables</a>.
 This is done by settings <code>conditions</code>.
 A condition is a statement that is evaluated either as <code>true</code> or <code>false</code>.
 We choose the branch we advance to according to the result.
@@ -2357,7 +2334,7 @@ The following condition will only be true if <code>cond1</code> and <code>cond2<
 </code></pre></div><h4 id="debugging">Debugging</h4>
 <p>Conditions are notoriously difficult to get just right.
 If they aren&rsquo;t working as you expected, you might want to see exactly which values you are getting for each of your conditions.
-The mixer provides you with an easy way to do this. Just set <code>DEBUG=true</code> on your condition, and you will see all the said values being printed into your <a href="../basics/javascript.html#errors-and-debugging">console</a>.</p>
+The mixer provides you with an easy way to do this. Just set <code>DEBUG=true</code> on your condition, and you will see all the said values being printed into your <a href="../../core/javascript#errors-and-debugging">console</a>.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">API</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addGlobal</span><span style="color:#000;font-weight:bold">({</span>
     <span style="color:#000">value</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">123</span><span style="color:#000;font-weight:bold">,</span>
     <span style="color:#000">otherVar</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">345</span>
@@ -2561,7 +2538,7 @@ The mixer provides you with an easy way to do this. Just set <code>DEBUG=true</c
                     <h5>
                         <a href="/docsite/docs/sequencer/mixer/mixerbranch/">mixerBranch</a>
                     </h5>
-                    <p>mixerBranch</p>
+                    <p></p>
                 </div>
             
         
@@ -2570,7 +2547,7 @@ The mixer provides you with an easy way to do this. Just set <code>DEBUG=true</c
                     <h5>
                         <a href="/docsite/docs/sequencer/mixer/mixerchoose/">mixerChoose</a>
                     </h5>
-                    <p>mixerChoose</p>
+                    <p></p>
                 </div>
             
         
@@ -2579,7 +2556,7 @@ The mixer provides you with an easy way to do this. Just set <code>DEBUG=true</c
                     <h5>
                         <a href="/docsite/docs/sequencer/mixer/mixermultibranch/">mixerMultiBranch</a>
                     </h5>
-                    <p>mixerMultiBranch</p>
+                    <p></p>
                 </div>
             
         
@@ -2588,7 +2565,7 @@ The mixer provides you with an easy way to do this. Just set <code>DEBUG=true</c
                     <h5>
                         <a href="/docsite/docs/sequencer/mixer/mixerrandom/">mixerRandom</a>
                     </h5>
-                    <p>mixerRandom</p>
+                    <p></p>
                 </div>
             
         
@@ -2597,7 +2574,7 @@ The mixer provides you with an easy way to do this. Just set <code>DEBUG=true</c
                     <h5>
                         <a href="/docsite/docs/sequencer/mixer/mixerrepeat/">mixerRepeat</a>
                     </h5>
-                    <p>mixerRepeat</p>
+                    <p></p>
                 </div>
             
         
@@ -2608,7 +2585,7 @@ The mixer provides you with an easy way to do this. Just set <code>DEBUG=true</c
                     <h5>
                         <a href="/docsite/docs/sequencer/mixer/mixerweightedrandom/">mixerWeightedRandom</a>
                     </h5>
-                    <p>mixerWeightedRandom</p>
+                    <p></p>
                 </div>
             
         
@@ -2617,7 +2594,7 @@ The mixer provides you with an easy way to do this. Just set <code>DEBUG=true</c
                     <h5>
                         <a href="/docsite/docs/sequencer/mixer/mixerwrapper/">mixerWrapper</a>
                     </h5>
-                    <p>mixerWrapper</p>
+                    <p></p>
                 </div>
             
         
@@ -2710,7 +2687,7 @@ The mixer provides you with an easy way to do this. Just set <code>DEBUG=true</c
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified February 10, 2021: <a  href="https://github.com/minnojs/docsite/commit/deea01387ff27252f141110d2125c77a4c6846e9">time docs init (deea013)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified February 18, 2021: <a  href="https://github.com/minnojs/docsite/commit/01bad7c89ee9ab3a3c943211994cb2f73d55081a">fixed links in docs (01bad7c)</a>
 </div>
 </div>
 

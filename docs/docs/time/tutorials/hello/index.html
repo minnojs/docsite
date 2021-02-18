@@ -21,11 +21,11 @@
 <meta property="og:description" content="hello" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docsite/docs/time/tutorials/hello/" />
-<meta property="article:modified_time" content="2021-02-10T21:07:19+02:00" /><meta property="og:site_name" content="Minno Suite" />
+<meta property="article:modified_time" content="2021-02-18T15:07:56+02:00" /><meta property="og:site_name" content="Minno Suite" />
 <meta itemprop="name" content="Hello world">
 <meta itemprop="description" content="hello">
-<meta itemprop="dateModified" content="2021-02-10T21:07:19+02:00" />
-<meta itemprop="wordCount" content="1903">
+<meta itemprop="dateModified" content="2021-02-18T15:07:56+02:00" />
+<meta itemprop="wordCount" content="1828">
 
 
 
@@ -82,16 +82,6 @@
 				
 				
 				<a  class="nav-link active" href="/docsite/docs/" ><span class="active">Documentation</span></a>
-			</li>
-			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
-				<a  class="nav-link" href="/docsite/blog/" ><span>Blog</span></a>
 			</li>
 			
 			
@@ -222,6 +212,14 @@
       
         
           
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docssequencerintroduction" href="/docsite/docs/sequencer/introduction/">Introduction</a>
+        
+      
+      
+      
+        
+          
 
 
 
@@ -230,10 +228,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docsite/docs/sequencer/template/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Templates</a>
+    <a  href="/docsite/docs/sequencer/templates/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Templates</a>
   </li>
   <ul>
-    <li class="collapse " id="docssequencertemplate">
+    <li class="collapse " id="docssequencertemplates">
       
       
       
@@ -330,14 +328,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docssequencerintroduction" href="/docsite/docs/sequencer/introduction/">Introduction</a>
         
       
       
@@ -1280,7 +1270,7 @@
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertasksallowleaving" href="/docsite/docs/manager/tasks/allowleaving/">AllowLeaving</a>
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertasksallowleaving" href="/docsite/docs/manager/tasks/allowleaving/">Allow Leaving</a>
         
       
       
@@ -1344,7 +1334,7 @@
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertaskssetvalue" href="/docsite/docs/manager/tasks/setvalue/">setValue</a>
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertaskssetvalue" href="/docsite/docs/manager/tasks/setvalue/">Set Value</a>
         
       
       
@@ -1726,7 +1716,7 @@
     <a href="https://github.com/minnojs/docsite/issues/new?title=Hello%20world" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
     
       
-      <a href="https://github.com/minnojs/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+      <a href="https://github.com/minnojs/minno-quest/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
     
 
   
@@ -1743,7 +1733,11 @@
       <ul>
         <li><a href="#the-wrapper">The wrapper</a></li>
         <li><a href="#the-task-structure">The task structure</a></li>
-        <li><a href="#hello-world">Hello world</a></li>
+        <li><a href="#a-simple-trial">A simple trial</a></li>
+        <li><a href="#input">Input</a></li>
+        <li><a href="#layout">Layout</a></li>
+        <li><a href="#interactions">Interactions</a></li>
+        <li><a href="#play-ground">Play ground</a></li>
         <li><a href="#epilogue-of-sorts">Epilogue (of sorts)</a></li>
       </ul>
     </li>
@@ -1756,19 +1750,6 @@
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             
   
-  
-  
-  
-  <div class="pageinfo pageinfo-primary">
-    <p>Version temporary of the
-      documentation is no longer actively maintained. The site that you are
-      currently viewing is an archived snapshot. 
-      For up-to-date documentation, see the 
-        <a href="https://minnojs.github.io/minno-quest/0.3/manager/overview.html" target="_blank">latest version</a>.</p>
-      
-    
-  </div>
-
 
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	<ol class="breadcrumb spb-1">
@@ -1820,7 +1801,7 @@
     <div class="lead">hello</div>
 	       
 	<p>We will create a simple task that says &ldquo;Hello world&rdquo;. As we go, we will comment on several of the player&rsquo;s features and explain some of the ways you can customize your task.</p>
-<p>You can follow along and play around with the code right <a href="./helloPlay.js">here</a>.</p>
+<p>You can follow along and play around with the code right <a href="#play-ground">here</a>.</p>
 <h3 id="the-wrapper">The wrapper</h3>
 <p>miTime&rsquo;s scripts are usually a single JavaScript file. The script is wrapped within a define function (You don&rsquo;t have to understand what it does, but if you are interested look up <a href="http://requirejs.org/">requirejs</a>).</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#8f5902;font-style:italic">/* The script wrapper */</span>
@@ -1836,7 +1817,8 @@
 <span style="color:#8f5902;font-style:italic">/* don&#39;t forget to close the wrapper */</span>
 </code></pre></div><p>The wrapper creates the <code>API</code> object for you. The <code>API</code> object is the instrument that we will use to create and run tasks. The whole task is written by creating a bunch of objects and arrays. The API object has functions that accept those objects and arrays and know how to create a task from them.</p>
 <h3 id="the-task-structure">The task structure</h3>
-<p>Each task is composed of one or more trials, that are activated sequentially. We set trials into the player using a function called <a href="./API.html#add-sequence"><code>API.addSequence</code></a> that accepts an array of trials as its argument. After adding any trials that you like all that is left is activating the player by calling <a href="API.html#play"><code>API.play</code></a>:</p>
+<p>Each task is composed of one or more trials, that are activated sequentially.
+We set trials into the player using a function called <a href="/docsite/docs/core/api/#add-sequence"><code>API.addSequence</code></a> that accepts an array of trials as its argument.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">define</span><span style="color:#000;font-weight:bold">([</span><span style="color:#4e9a06">&#39;timeAPI&#39;</span><span style="color:#000;font-weight:bold">],</span> <span style="color:#204a87;font-weight:bold">function</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">APIconstructor</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
 
 	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">API</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">APIconstructor</span><span style="color:#000;font-weight:bold">();</span>
@@ -1850,9 +1832,11 @@
 
 	<span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">API</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">script</span><span style="color:#000;font-weight:bold">;</span>
 <span style="color:#000;font-weight:bold">});</span>
-</code></pre></div><p>In the following section we will see how to populate the trial sequence. Later, we will see that <code>API</code> provides many additional functions that allow us to further customize the player.</p>
-<h3 id="hello-world">Hello world</h3>
-<p>Let&rsquo;s populate the sequence with a simple trial. The following trial displays the words &ldquo;Hello world&rdquo; at the center of the screen, and ends when you press <code>space</code>.</p>
+</code></pre></div><p>In the following section we will see how to populate the trial sequence.
+Later, we will see that <code>API</code> provides many additional functions that allow us to further customize the player.</p>
+<h3 id="a-simple-trial">A simple trial</h3>
+<p>Let&rsquo;s populate the sequence with a simple trial.
+The following trial displays the words &ldquo;Hello world&rdquo; at the center of the screen, and ends when you press <code>space</code>.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000;font-weight:bold">{</span>
 	<span style="color:#000">input</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 		<span style="color:#8f5902;font-style:italic">// What input to accept from the participant (user)
@@ -1878,7 +1862,7 @@
 	<span style="color:#000;font-weight:bold">]</span>
 <span style="color:#000;font-weight:bold">}</span>
 </code></pre></div><p>What we see above is a definition of a trial. A trial is a JavaScript object. Inside that object, there are three other objects: <code>input</code>, <code>layout</code> and <code>interaction</code>. Each of these objects defines a different aspect in the trial. Let&rsquo;s learn about these three objects, one by one.</p>
-<h4 id="input"><strong>input</strong></h4>
+<h3 id="input">Input</h3>
 <p>The <code>input</code> object is an array of objects that define the input we expect the participant to use. Each object in the<code>input</code> array defines one input element (full documentation <a href="./API.html#input">here</a>).</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000;font-weight:bold">[</span><span style="color:#8f5902;font-style:italic">//Open the array of input objects.
 </span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">//An input object that defines what to do when the user hits space.
@@ -1892,7 +1876,7 @@
 <span style="color:#000;font-weight:bold">]</span>
 </code></pre></div><p>Note that the event type is now <code>keypressed</code> and we added an additional property to the object, <code>key</code> which defines what type of keypressed triggers this event.
 Note also that the name that we give the event is absolutely arbitrary, so we can leave the handle as <code>'space'</code> and it still works. However, it is generally a good practice to use meaningful names (e.g., <code>'key_e'</code>). You can try replacing the old input object with this one, and see what happens. Then try creating an object that responds to the <code>'i'</code> key being pressed.</p>
-<h4 id="layout"><strong>layout</strong></h4>
+<h3 id="layout">Layout</h3>
 <p>The <code>layout</code> object is responsible for stimuli that are presented during the whole trial. All the stimuli that are set into the <code>layout</code> array will be displayed automatically from the beginning of the trial until its end. (We use a different object, named <code>stimuli</code> to define stimuli that are displayed only for a part of the trial. We will learn about the <code>stimuli</code> object in more advanced examples).</p>
 <p>The layout is an array of objects. Each object represents a stimulus. The <a href="./API.html#stimuli">stimulus object</a> is a complex objects, and we&rsquo;ll learn more about it in more advanced examples. For now, let&rsquo;s start with a simple example:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000;font-weight:bold">[</span><span style="color:#8f5902;font-style:italic">//This opens an array of stimulus objects to show in the layout.
@@ -1906,8 +1890,8 @@ Note also that the name that we give the event is absolutely arbitrary, so we ca
 <p>The font size of this stimulus is set to <code>2em</code>. <code>em</code> is a css size unit, <code>1em</code> is the standard (default) font size, <code>2em</code> is twice that size and so on (you can use fractions too: e.g., <code>1.3em</code>). So that the text displayed by this stimulus is double the default text size.</p>
 <p>The color attribute accepts any valid css color. You can try the following: <code>'#0000FF'</code>, <code>'#FFFFFF'</code>, <code>'#00FF00'</code> or use <a href="http://html-color-codes.info/">this</a> site to find additional colors.</p>
 <p>The <code>css</code> object can do far more than this. If you want to know more you can check out the full API  <a href="http://api.jquery.com/css/#css2"><code>here</code></a></p>
-<h4 id="interactions"><strong>interactions</strong></h4>
-<p><a href="./API.html#interactions">Interactions</a> are a grouping of <a href="./API.html#interactions-conditions"><code>conditions</code></a> (statements of truth) and <a href="./API.html#interactions-actions"><code>actions</code></a> to perform if (and only if) all conditions are true. We won&rsquo;t really get into interactions here, but these are the basics:</p>
+<h3 id="interactions">Interactions</h3>
+<p><a href="../../api/trial/interactions">Interactions</a> are a grouping of <a href="../../api/trial/condtions"><code>conditions</code></a> (statements of truth) and <a href="../../api/trial/actions"><code>actions</code></a> to perform if (and only if) all conditions are true. We won&rsquo;t really get into interactions here, but these are the basics:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000;font-weight:bold">[</span>
 	<span style="color:#000;font-weight:bold">{</span>
 		<span style="color:#000">conditions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
@@ -1918,11 +1902,15 @@ Note also that the name that we give the event is absolutely arbitrary, so we ca
 		<span style="color:#000;font-weight:bold">]</span>
 	<span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">]</span>
-</code></pre></div><p>Each interaction object has a <code>conditions</code> property and an <code>actions</code> property. The <code>conditions</code> property is an array of condition objects. Each condition objects defines a condition that can be true of false. For instance, the condition in the example above is that the name (i.e., handle) of currently active input is &lsquo;space&rsquo;. This condition is true only when the participant hits space (that is what we defined in the input section). There are a few other possible conditions that can be defined, and we will learn about them in more advanced examples (to see the full list of conditions, see <a href="./API.html#interactions-conditions">here</a>).
+</code></pre></div><p>Each interaction object has a <code>conditions</code> property and an <code>actions</code> property. The <code>conditions</code> property is an array of condition objects.
+Each condition objects defines a condition that can be true of false.
+For instance, the condition in the example above is that the name (i.e., handle) of currently active input is &lsquo;space&rsquo;.
+This condition is true only when the participant hits space (that is what we defined in the input section).
+There are a few other possible conditions that can be defined, and we will learn about them in more advanced examples (to see the full list of conditions, see <a href="../../api/trial/conditions">here</a>).
 If all the condition objects in the conditions array are true, then all the actions in the <code>actions</code> array are executed.</p>
-<p>The <code>actions</code> array holds an array of actions to perform if all <code>conditions</code> are evaluated as true. In this case the only action is to end this trial. We will learn about other forms of actions in more advanced examples (to see the full list of conditions, see <a href="./API.html#interactions-actions">here</a>).</p>
-<p>###Detailed recap
-Here is the whole code again, with comments that explain each and every line. Before you read those comments, it might be good to look at the simple not-commented code <a href="hello.js">here</a>, and try again to understand what you see. Whenever you have a question about a line in the code, have a look at that line in the heavily commented code below:</p>
+<p>The <code>actions</code> array holds an array of actions to perform if all <code>conditions</code> are evaluated as true. In this case the only action is to end this trial. We will learn about other forms of actions in more advanced examples (to see the full list of conditions, see <a href="../../api/trial/actions">here</a>).</p>
+<h3 id="play-ground">Play ground</h3>
+<p>Here is the whole code again, with comments that explain each and every line.</p>
 
 
 
@@ -1940,7 +1928,7 @@ Here is the whole code again, with comments that explain each and every line. Be
     
 
 
-<div class="pg-section" id="pg-touch.js">
+<div class="pg-section" id="pg-hello.js">
     <p>
     <a class="pg-play btn btn-secondary"><i class="fas fa-play"></i> Run </a>
     <a class="pg-download btn btn-outline-secondary"><i class="fas fa-download"></i> Download </a>
@@ -2048,16 +2036,15 @@ define([&#39;timeAPI&#39;], function(APIconstructor) {
                 win.activate(cm.getValue());
             };
         });
-    })('touch.js');
+    })('hello.js');
 </script>
 
 <h3 id="epilogue-of-sorts">Epilogue (of sorts)</h3>
 <p>You&rsquo;ve learned how to create a single trial, and the different elements that compose it. The next stage is seeing how different trials come together to form a task.</p>
-<p>We will now go on to creating a simple slide-show.</p>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified February 10, 2021: <a  href="https://github.com/minnojs/docsite/commit/deea01387ff27252f141110d2125c77a4c6846e9">time docs init (deea013)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified February 18, 2021: <a  href="https://github.com/minnojs/docsite/commit/01bad7c89ee9ab3a3c943211994cb2f73d55081a">fixed links in docs (01bad7c)</a>
 </div>
 </div>
 

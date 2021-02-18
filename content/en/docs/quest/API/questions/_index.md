@@ -17,10 +17,10 @@ description 	| (text; default: '') Any additional text you want in order to exte
 maxWidth 		| Force question inputs to have this maximum width. The `maxWidth` must include an explicit measuring unit (for example '800px' or '50%').
 help			| (true or false;  (default: false)) Whether to display the question help text.
 helpText		| (text) The question help text. (Some questions have default help texts, some don't).
-lognow 			| (true or false) Whether to log this questions when the page is submitted. This option is useful when you know that the question will not be accessed any more. It allows you to use the `pulse` option from the [logger](#logger) to send questions as they are being answered instead of sending only at the end of the task. (default: false)
+lognow 			| (true or false) Whether to log this questions when the page is submitted. This option is useful when you know that the question will not be accessed any more. It allows you to use the `pulse` option from the [logger](../settings#logger) to send questions as they are being answered instead of sending only at the end of the task. (default: false)
 errorMsg		| (Object: {}) This object has a property for each validation type. Setting the appropriate type changes the validation message. For instance setting the `required` property will change the validation message for instances where no response was given.
 
-You may want to debug questions by setting the [debug level in the manager](../manager/API.md#debug) to `verbose`.
+You may want to debug questions by setting the [debug level in the manager]({{< relref "docs/manager/api/settings#debug" >}}) to `verbose`.
 You will then be warned in the console if a question name is reused 
 (note: sometimes a question is supposed to be reused, if this warning pops up just make sure the use case is correct).
 

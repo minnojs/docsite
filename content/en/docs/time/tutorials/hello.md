@@ -5,7 +5,7 @@ description: hello
 
 We will create a simple task that says "Hello world". As we go, we will comment on several of the player's features and explain some of the ways you can customize your task.
 
-You can follow along and play around with the code right [here](./helloPlay.js).
+You can follow along and play around with the code right [here](#play-ground).
 
 ### The wrapper
 miTime's scripts are usually a single JavaScript file. The script is wrapped within a define function (You don't have to understand what it does, but if you are interested look up [requirejs](http://requirejs.org/)).
@@ -27,7 +27,8 @@ define(['timeAPI'], function(APIconstructor) {
 The wrapper creates the `API` object for you. The `API` object is the instrument that we will use to create and run tasks. The whole task is written by creating a bunch of objects and arrays. The API object has functions that accept those objects and arrays and know how to create a task from them. 
 
 ### The task structure
-Each task is composed of one or more trials, that are activated sequentially. We set trials into the player using a function called [`API.addSequence`](./API.html#add-sequence) that accepts an array of trials as its argument. After adding any trials that you like all that is left is activating the player by calling [`API.play`](API.html#play):
+Each task is composed of one or more trials, that are activated sequentially.
+We set trials into the player using a function called [`API.addSequence`]({{< relref "docs/core/api#add-sequence" >}}) that accepts an array of trials as its argument. 
 
 ```javascript
 define(['timeAPI'], function(APIconstructor) {
@@ -45,11 +46,13 @@ define(['timeAPI'], function(APIconstructor) {
 });
 ```
 
-In the following section we will see how to populate the trial sequence. Later, we will see that `API` provides many additional functions that allow us to further customize the player.
+In the following section we will see how to populate the trial sequence.
+Later, we will see that `API` provides many additional functions that allow us to further customize the player.
 
 
-### Hello world
-Let's populate the sequence with a simple trial. The following trial displays the words "Hello world" at the center of the screen, and ends when you press `space`.
+### A simple trial
+Let's populate the sequence with a simple trial. 
+The following trial displays the words "Hello world" at the center of the screen, and ends when you press `space`.
 
 ```javascript
 {
@@ -80,7 +83,7 @@ Let's populate the sequence with a simple trial. The following trial displays th
 
 What we see above is a definition of a trial. A trial is a JavaScript object. Inside that object, there are three other objects: `input`, `layout` and `interaction`. Each of these objects defines a different aspect in the trial. Let's learn about these three objects, one by one.
 
-#### **input**
+### Input
 
 The `input` object is an array of objects that define the input we expect the participant to use. Each object in the`input` array defines one input element (full documentation [here](./API.html#input)).
 
@@ -106,7 +109,7 @@ The player supports [many](./API.html#input) types of input. For now, let's lear
 Note that the event type is now `keypressed` and we added an additional property to the object, `key` which defines what type of keypressed triggers this event. 
 Note also that the name that we give the event is absolutely arbitrary, so we can leave the handle as `'space'` and it still works. However, it is generally a good practice to use meaningful names (e.g., `'key_e'`). You can try replacing the old input object with this one, and see what happens. Then try creating an object that responds to the `'i'` key being pressed.
 
-#### **layout**
+### Layout
 
 The `layout` object is responsible for stimuli that are presented during the whole trial. All the stimuli that are set into the `layout` array will be displayed automatically from the beginning of the trial until its end. (We use a different object, named `stimuli` to define stimuli that are displayed only for a part of the trial. We will learn about the `stimuli` object in more advanced examples).
 
@@ -131,9 +134,9 @@ The color attribute accepts any valid css color. You can try the following: `'#0
 
 The `css` object can do far more than this. If you want to know more you can check out the full API  [`here`](http://api.jquery.com/css/#css2)
 
-#### **interactions**
+### Interactions
 
-[Interactions](./API.html#interactions) are a grouping of [`conditions`](./API.html#interactions-conditions) (statements of truth) and [`actions`](./API.html#interactions-actions) to perform if (and only if) all conditions are true. We won't really get into interactions here, but these are the basics:
+[Interactions](../../api/trial/interactions) are a grouping of [`conditions`](../../api/trial/condtions) (statements of truth) and [`actions`](../../api/trial/actions) to perform if (and only if) all conditions are true. We won't really get into interactions here, but these are the basics:
 
 ```javascript
 [
@@ -148,15 +151,19 @@ The `css` object can do far more than this. If you want to know more you can che
 ]
 ```
 
-Each interaction object has a `conditions` property and an `actions` property. The `conditions` property is an array of condition objects. Each condition objects defines a condition that can be true of false. For instance, the condition in the example above is that the name (i.e., handle) of currently active input is 'space'. This condition is true only when the participant hits space (that is what we defined in the input section). There are a few other possible conditions that can be defined, and we will learn about them in more advanced examples (to see the full list of conditions, see [here](./API.html#interactions-conditions)).
+Each interaction object has a `conditions` property and an `actions` property. The `conditions` property is an array of condition objects. 
+Each condition objects defines a condition that can be true of false. 
+For instance, the condition in the example above is that the name (i.e., handle) of currently active input is 'space'. 
+This condition is true only when the participant hits space (that is what we defined in the input section). 
+There are a few other possible conditions that can be defined, and we will learn about them in more advanced examples (to see the full list of conditions, see [here](../../api/trial/conditions)).
 If all the condition objects in the conditions array are true, then all the actions in the `actions` array are executed. 
 
-The `actions` array holds an array of actions to perform if all `conditions` are evaluated as true. In this case the only action is to end this trial. We will learn about other forms of actions in more advanced examples (to see the full list of conditions, see [here](./API.html#interactions-actions)).
+The `actions` array holds an array of actions to perform if all `conditions` are evaluated as true. In this case the only action is to end this trial. We will learn about other forms of actions in more advanced examples (to see the full list of conditions, see [here](../../api/trial/actions)).
 
-###Detailed recap
-Here is the whole code again, with comments that explain each and every line. Before you read those comments, it might be good to look at the simple not-commented code [here](hello.js), and try again to understand what you see. Whenever you have a question about a line in the code, have a look at that line in the heavily commented code below:
+### Play ground
+Here is the whole code again, with comments that explain each and every line.
 
-{{< playground filename=touch.js >}}
+{{< playground filename=hello.js >}}
 /* The script wrapper */
 define(['timeAPI'], function(APIconstructor) {
 
@@ -223,5 +230,3 @@ define(['timeAPI'], function(APIconstructor) {
 
 ### Epilogue (of sorts)
 You've learned how to create a single trial, and the different elements that compose it. The next stage is seeing how different trials come together to form a task.
-
-We will now go on to creating a simple slide-show.

@@ -25,7 +25,7 @@
         
         &lt;p&gt;The basic unit in miManager is the &lt;strong&gt;task&lt;/strong&gt;.
 There are many &lt;a href=&#34;../tasks&#34;&gt;types of tasks&lt;/a&gt; available,
-and you can also create &lt;a href=&#34;#custom-tasks&#34;&gt;custom tasks&lt;/a&gt; of your own.
+and you can also create &lt;a href=&#34;../api/custom-tasks&#34;&gt;custom tasks&lt;/a&gt; of your own.
 Tasks are defined within the sequence just like any other element,
 and you can use mixers, inheritance, and templates to control their flow.&lt;/p&gt;
 &lt;p&gt;For example, following is a manager sequence with two subsequent tasks - first a questionnaire, then a time-sensitive tasks.&lt;/p&gt;
@@ -66,7 +66,7 @@ Following is a list of such properties and a description of their behaviour.&lt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;canvas&lt;/td&gt;
-&lt;td&gt;A canvas object (as defined under &lt;a href=&#34;#canvas&#34;&gt;settings&lt;/a&gt;) to invoke at the beginning of the task and remove&lt;/td&gt;
+&lt;td&gt;A canvas object (as defined under &lt;a href=&#34;../settings#canvas&#34;&gt;settings&lt;/a&gt;) to invoke at the beginning of the task and remove&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;title&lt;/td&gt;

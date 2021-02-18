@@ -23,7 +23,7 @@
       <description>
         
         
-        &lt;p&gt;The player sends all the data it has gathered to the url defined in the settings &lt;a href=&#34;#logger&#34;&gt;logger&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;The player sends all the data it has gathered to the url defined in the settings &lt;a href=&#34;../api/settings#logger&#34;&gt;logger&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Logs are accumulated in an array (which can be found in &lt;code&gt;current.logs&lt;/code&gt; or &lt;code&gt;API.getLogs&lt;/code&gt;).
 Each log is an object including the following fields:&lt;/p&gt;
 &lt;table&gt;

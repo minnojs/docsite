@@ -18,7 +18,7 @@ define(['taskAPI'],function(taskAPI){
 });
 ```
 
-Here `taskAPI` should be replaced with whatever type of task you are creating, be it `pipAPI`, `questAPI` or any other API available within the system.
+Here `taskAPI` should be replaced with whatever type of task you are creating, be it `timeAPI`, `questAPI` or any other API available within the system.
 
 The APIs for each of the tasks are constructors, so in order to use the API you always have to create a new API object first (API is an arbitrary name of course, you can call it however you like...):
 
@@ -66,7 +66,7 @@ API.addSequence([
 
 This will tell miQuest to first activate page 1 and then activate page 2. The sequence works in a similar way for all of our tasks, just add in objects and they'll be activated one after another.
 
-Of course a simple sequential sequence is rarely what you'll need. All sequences support some powerful tools for enriching the way your sequence works. These are described in detail in the [sequencer section](sequencer.html), here we'll only touch on some basic randomization (using the mixer) and abstraction (using inheritance). 
+Of course a simple sequential sequence is rarely what you'll need. All sequences support some powerful tools for enriching the way your sequence works. These are described in detail in the [sequencer section](../../sequencer), here we'll only touch on some basic randomization (using the mixer) and abstraction (using inheritance). 
 
 # Basic Randomization
 All sequences support a special type of object called a mixer. A mixer holds several regular objects and control the way they are activated. A mixer can reorder the objects, chose among them and even skip them. To illustrate how a mixer works, let's learn more about the mixer used for randomization.
@@ -101,7 +101,7 @@ API.addSequence([
 ]); 
 ```
 
-Instead of always presenting page 2 after page 1, the sequencer will now randomize their order. Page 2 will appear first half of the time. The full documentation for the mixer is [right here](sequencer.html#mixer).
+Instead of always presenting page 2 after page 1, the sequencer will now randomize their order. Page 2 will appear first half of the time. The full documentation for the mixer is [right here](../../sequencer/mixer).
 
 # Basic abstraction
 Many times we want to create several objects with mostly similar properties. For instance we may want to create a set of questions that have the same response options, and only change the text used for each question. 
@@ -143,3 +143,4 @@ API.addSequence([
 ```
 
 Each of the questions in this questionnaire inherits the likert set, and therefore has all the properties already defined into the likert object. This is useful because it saves time and space. In this example, you define the basic properties of all the questions you want to use in one place, and then you don't need to repeat it. It is also very easy to modify the questionnaire. For instance, if you want to use a 7-point agreement scale, you only need to change it in the `'likert'` set, and it will apply to all the questions that inherit `'likert'`.
+The full documentation for inheritance is [right here](../../sequencer/inheritance).

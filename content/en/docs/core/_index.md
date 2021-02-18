@@ -7,7 +7,7 @@ description: >
 ---
 
 The tasks we use are created in a simplified Javascript environment.
-So we first introduce some very basic [Javascript](javascript) to get you started.
+So we first introduce some very basic [Javascript](./javascript) to get you started.
 
 Structurally, each task is composed of frames (each defined using Javascript).
 For instance, the basic frame for miQuest (our questionnaires component) is the page, which holds several sub-frames: the questions.

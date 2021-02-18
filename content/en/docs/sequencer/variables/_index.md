@@ -13,5 +13,5 @@ Then we will get down to variables variables that are available only in specific
 
 ### Accessing variables
 There are many ways to use variables within the PI tasks.
-You can learn about them in their respective documentation, check out [conditions](mixer.html#conditions) and [templates](templates.html).
+You can learn about them in their respective documentation, check out [conditions](../mixer#conditions) and [templates](../templates).
 In addition, some of the variables can be accessed directly from your JavaScript, in cases that this is possible it will be mentioned in the description of the variable.

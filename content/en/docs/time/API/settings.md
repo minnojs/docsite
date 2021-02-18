@@ -53,7 +53,7 @@ An object that is used to extend each logged row. This is useful in case you wan
 
 `logger`:
 Accepts a function to replace the existing logging function. (don't touch this if you don't **realy** know what you're doing).
-The logger function is called each time a log action is triggered (see interactions: actions [log](#interactions-actions)).
+The logger function is called each time a log action is triggered (see interactions: actions [log](../trial/actions/#log)).
 It is responsible for adding a logging row to be sent to the server.
 
 ```javascript

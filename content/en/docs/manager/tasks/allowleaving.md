@@ -1,5 +1,5 @@
 ---
-title: AllowLeaving
+title: Allow Leaving
 description: Control the mechanism preventing users from leaving the task by mistake
 ---
 

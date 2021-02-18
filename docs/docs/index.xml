@@ -735,7 +735,7 @@ In case the setting is an object, subsequent objects will extend each other so t
         
         &lt;p&gt;The basic unit in miManager is the &lt;strong&gt;task&lt;/strong&gt;.
 There are many &lt;a href=&#34;../tasks&#34;&gt;types of tasks&lt;/a&gt; available,
-and you can also create &lt;a href=&#34;#custom-tasks&#34;&gt;custom tasks&lt;/a&gt; of your own.
+and you can also create &lt;a href=&#34;../api/custom-tasks&#34;&gt;custom tasks&lt;/a&gt; of your own.
 Tasks are defined within the sequence just like any other element,
 and you can use mixers, inheritance, and templates to control their flow.&lt;/p&gt;
 &lt;p&gt;For example, following is a manager sequence with two subsequent tasks - first a questionnaire, then a time-sensitive tasks.&lt;/p&gt;
@@ -776,7 +776,7 @@ Following is a list of such properties and a description of their behaviour.&lt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;canvas&lt;/td&gt;
-&lt;td&gt;A canvas object (as defined under &lt;a href=&#34;#canvas&#34;&gt;settings&lt;/a&gt;) to invoke at the beginning of the task and remove&lt;/td&gt;
+&lt;td&gt;A canvas object (as defined under &lt;a href=&#34;../settings#canvas&#34;&gt;settings&lt;/a&gt;) to invoke at the beginning of the task and remove&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;title&lt;/td&gt;
@@ -990,11 +990,11 @@ The format is fairly simple though you probably need at least some experience wi
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;questions&lt;/td&gt;
-&lt;td&gt;(Array or Object) an array of &lt;a href=&#34;#questions&#34;&gt;questions&lt;/a&gt; to be displayed in the page. Note that the questions may be randomized and chosen conditionally using a &lt;a href=&#34;#mixer&#34;&gt;mixer&lt;/a&gt;. This property also accepts a single question object if you want to present only a single question per page.&lt;/td&gt;
+&lt;td&gt;(Array or Object) an array of &lt;a href=&#34;questions&#34;&gt;questions&lt;/a&gt; to be displayed in the page. Note that the questions may be randomized and chosen conditionally using a &lt;a href=&#34;/docsite/docs/sequencer/mixer/&#34;&gt;mixer&lt;/a&gt;. This property also accepts a single question object if you want to present only a single question per page.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;lognow&lt;/td&gt;
-&lt;td&gt;(true or false) Whether to log the questions on this page. This option is useful when you know that the page will not be accessed any more. It allows you to use the &lt;code&gt;pulse&lt;/code&gt; option from the &lt;a href=&#34;#logger&#34;&gt;logger&lt;/a&gt; to send questions as they are being answered instead of sending only at the end of the task. (default: false)&lt;/td&gt;
+&lt;td&gt;(true or false) Whether to log the questions on this page. This option is useful when you know that the page will not be accessed any more. It allows you to use the &lt;code&gt;pulse&lt;/code&gt; option from the &lt;a href=&#34;../settings#logger&#34;&gt;logger&lt;/a&gt; to send questions as they are being answered instead of sending only at the end of the task. (default: false)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;animate&lt;/td&gt;
@@ -1065,7 +1065,7 @@ The format is fairly simple though you probably need at least some experience wi
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;page-messages&#34;&gt;Page Messages&lt;/h2&gt;
+&lt;h3 id=&#34;timer-message&#34;&gt;Timer Message&lt;/h3&gt;
 &lt;p&gt;You may want to display a message to the users when they run out of time at the end of a timer. Messages can be simple strings, or if you want finer control over the content of the message you can use the object API, that may be used as follows:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1609,6 +1609,66 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     </item>
     
     <item>
+      <title>Docs: Introduction</title>
+      <link>/docsite/docs/sequencer/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docsite/docs/sequencer/introduction/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#mixers&#34;&gt;Mixers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#inheritance&#34;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#templates&#34;&gt;Templates&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The sequencer is an overarching term for all of the features that allow you to dynamically change the flow of your tasks.
+It has three critical components: The mixer, templating and inheritance.&lt;/p&gt;
+&lt;p&gt;Throughout the sequencer documentation we will use &lt;a href=&#34;../../manager/tasks/messages&#34;&gt;messages&lt;/a&gt; as examples because they are the simplest element type.&lt;/p&gt;
+&lt;h3 id=&#34;mixers&#34;&gt;Mixers&lt;/h3&gt;
+&lt;p&gt;Each PI task is composed of a series of elements which are presented to the users sequentially
+(i.e. trials for miTime, pages for miQuest and tasks for miManager).
+The sequence &lt;a href=&#34;../mixer&#34;&gt;&lt;strong&gt;mixer&lt;/strong&gt;&lt;/a&gt; is responsible for the order  that these elements are presented to the users.
+It allows you to randomize the order of your elements.
+It also allows you to repeat a task multiple times and randomly assign participants to experimental conditions.&lt;/p&gt;
+&lt;p&gt;For example, the following mixer randomizes the order of two tasks in &lt;em&gt;miManager&lt;/em&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addSequence&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;([&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;mixer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;randomize&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;message&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;template&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Task 1&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;keys&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;message&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;template&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Task 2&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;keys&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;inheritance&#34;&gt;Inheritance&lt;/h3&gt;
+&lt;p&gt;The element is the basic unit that is used across all tasks.
+You can use the &lt;a href=&#34;../inheritance&#34;&gt;inheritance&lt;/a&gt; system in order to compose elements and base themselves one upon another, as well as grouping them into distinct sets.
+This is useful both as a tool to improve the readability of you scripts (for instance keep code away from structure), and to allow another level of randomization and control.&lt;/p&gt;
+&lt;p&gt;The following is an example of inheritance that improves the readability of a task sequence.
+It uses a message defined within the &amp;ldquo;simpleMessage&amp;rdquo; &lt;code&gt;set&lt;/code&gt; as the base for the element within the sequence.
+This allows the sequence to be less cluttered, and thus more readable.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addTasksSet&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;simpleMessage&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;message&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;template&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Task 1&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;keys&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addSequence&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;([&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;inherit&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;simpleMessage&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;templates&#34;&gt;Templates&lt;/h3&gt;
+&lt;p&gt;Finally you have fine control down to the level of individual element properties using &lt;a href=&#34;../template&#34;&gt;templates&lt;/a&gt;.
+Templates allow you to use &lt;a href=&#34;../variables&#34;&gt;Environmental Variables&lt;/a&gt; in order to customize you elements.&lt;/p&gt;
+&lt;p&gt;The following code will display a message that says &amp;ldquo;Hello Randall Munroe&amp;rdquo;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addCurrent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;userName&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Randall Munroe&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addSequence&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;([&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;message&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;template&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Hello &amp;lt;%= current.userName %&amp;gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;keys&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Javascript</title>
       <link>/docsite/docs/core/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1717,7 +1777,7 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 &lt;p&gt;When developing scripts things don&amp;rsquo;t always go as expected.
 Sometimes you might make a syntactical error, sometime you might misspell a keyword.
 The browser always logs these errors and it is useful to see them.
-All modern browsers have a console that allows you to see the errors (if you are using firefox you should check out &lt;a href=&#34;https://getfirebug.com/&#34;&gt;firebug&lt;/a&gt;).
+All modern browsers have a console that allows you to see the errors.
 Most browsers use &lt;code&gt;F12&lt;/code&gt; as a shortcut for displaying the console.
 If that doesn&amp;rsquo;t work for you search your browsers menus: look for a &lt;strong&gt;Web Developer&lt;/strong&gt; or &lt;strong&gt;Developer Tools&lt;/strong&gt; menu under tools or options.&lt;/p&gt;
 &lt;p&gt;In case your script does not load, or freezes at a certain point, open your console and see if you have any errors.&lt;/p&gt;
@@ -1771,7 +1831,7 @@ When using the media path to log media elements (for images and templates), shou
 An object that is used to extend each logged row. This is useful in case you want to add some global data to the posts (such as server generated user id, or task name).&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;logger&lt;/code&gt;:
 Accepts a function to replace the existing logging function. (don&amp;rsquo;t touch this if you don&amp;rsquo;t &lt;strong&gt;realy&lt;/strong&gt; know what you&amp;rsquo;re doing).
-The logger function is called each time a log action is triggered (see interactions: actions &lt;a href=&#34;#interactions-actions&#34;&gt;log&lt;/a&gt;).
+The logger function is called each time a log action is triggered (see interactions: actions &lt;a href=&#34;../trial/actions/#log&#34;&gt;log&lt;/a&gt;).
 It is responsible for adding a logging row to be sent to the server.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;trialData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;inputData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;actionData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;logStack&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;){&lt;/span&gt;
     &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// trialData: the data object from this trial
@@ -2028,7 +2088,7 @@ In order to create a post with three keys: json, session_id and task_id - you wo
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;define&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;([&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;taskAPI&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;taskAPI&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;){&lt;/span&gt;
     &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// all sorts of code...
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here &lt;code&gt;taskAPI&lt;/code&gt; should be replaced with whatever type of task you are creating, be it &lt;code&gt;pipAPI&lt;/code&gt;, &lt;code&gt;questAPI&lt;/code&gt; or any other API available within the system.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here &lt;code&gt;taskAPI&lt;/code&gt; should be replaced with whatever type of task you are creating, be it &lt;code&gt;timeAPI&lt;/code&gt;, &lt;code&gt;questAPI&lt;/code&gt; or any other API available within the system.&lt;/p&gt;
 &lt;p&gt;The APIs for each of the tasks are constructors, so in order to use the API you always have to create a new API object first (API is an arbitrary name of course, you can call it however you like&amp;hellip;):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;taskAPI&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After creating the API, you can start putting your task together, we&amp;rsquo;ll see how to do that in a moment. But before getting to the creation of the task itself, we&amp;rsquo;ll note that at the very end of the task you need to return the &lt;code&gt;API.script&lt;/code&gt;. This exports the task you have created and allows the the task to be registered. It looks something like this:&lt;/p&gt;
@@ -2056,7 +2116,7 @@ In order to create a post with three keys: json, session_id and task_id - you wo
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will tell miQuest to first activate page 1 and then activate page 2. The sequence works in a similar way for all of our tasks, just add in objects and they&amp;rsquo;ll be activated one after another.&lt;/p&gt;
-&lt;p&gt;Of course a simple sequential sequence is rarely what you&amp;rsquo;ll need. All sequences support some powerful tools for enriching the way your sequence works. These are described in detail in the &lt;a href=&#34;sequencer.html&#34;&gt;sequencer section&lt;/a&gt;, here we&amp;rsquo;ll only touch on some basic randomization (using the mixer) and abstraction (using inheritance).&lt;/p&gt;
+&lt;p&gt;Of course a simple sequential sequence is rarely what you&amp;rsquo;ll need. All sequences support some powerful tools for enriching the way your sequence works. These are described in detail in the &lt;a href=&#34;../../sequencer&#34;&gt;sequencer section&lt;/a&gt;, here we&amp;rsquo;ll only touch on some basic randomization (using the mixer) and abstraction (using inheritance).&lt;/p&gt;
 &lt;h1 id=&#34;basic-randomization&#34;&gt;Basic Randomization&lt;/h1&gt;
 &lt;p&gt;All sequences support a special type of object called a mixer. A mixer holds several regular objects and control the way they are activated. A mixer can reorder the objects, chose among them and even skip them. To illustrate how a mixer works, let&amp;rsquo;s learn more about the mixer used for randomization.&lt;/p&gt;
 &lt;p&gt;The randomization mixer has the following structure:&lt;/p&gt;
@@ -2082,7 +2142,7 @@ In order to create a post with three keys: json, session_id and task_id - you wo
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Instead of always presenting page 2 after page 1, the sequencer will now randomize their order. Page 2 will appear first half of the time. The full documentation for the mixer is &lt;a href=&#34;sequencer.html#mixer&#34;&gt;right here&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Instead of always presenting page 2 after page 1, the sequencer will now randomize their order. Page 2 will appear first half of the time. The full documentation for the mixer is &lt;a href=&#34;../../sequencer/mixer&#34;&gt;right here&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;basic-abstraction&#34;&gt;Basic abstraction&lt;/h1&gt;
 &lt;p&gt;Many times we want to create several objects with mostly similar properties. For instance we may want to create a set of questions that have the same response options, and only change the text used for each question.&lt;/p&gt;
 &lt;p&gt;In order to share properties among several objects, we use the concept of inheritance. Each object that we use can inherit some of its properties from an object we created previously.&lt;/p&gt;
@@ -2111,7 +2171,8 @@ In order to create a post with three keys: json, session_id and task_id - you wo
         &lt;span style=&#34;color:#000&#34;&gt;questions&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;stem&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;I like chicken.&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;inherit&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;likert&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}]&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Each of the questions in this questionnaire inherits the likert set, and therefore has all the properties already defined into the likert object. This is useful because it saves time and space. In this example, you define the basic properties of all the questions you want to use in one place, and then you don&amp;rsquo;t need to repeat it. It is also very easy to modify the questionnaire. For instance, if you want to use a 7-point agreement scale, you only need to change it in the &lt;code&gt;&#39;likert&#39;&lt;/code&gt; set, and it will apply to all the questions that inherit &lt;code&gt;&#39;likert&#39;&lt;/code&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Each of the questions in this questionnaire inherits the likert set, and therefore has all the properties already defined into the likert object. This is useful because it saves time and space. In this example, you define the basic properties of all the questions you want to use in one place, and then you don&amp;rsquo;t need to repeat it. It is also very easy to modify the questionnaire. For instance, if you want to use a 7-point agreement scale, you only need to change it in the &lt;code&gt;&#39;likert&#39;&lt;/code&gt; set, and it will apply to all the questions that inherit &lt;code&gt;&#39;likert&#39;&lt;/code&gt;.
+The full documentation for inheritance is &lt;a href=&#34;../../sequencer/inheritance&#34;&gt;right here&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -2126,8 +2187,8 @@ In order to create a post with three keys: json, session_id and task_id - you wo
         
         
         &lt;p&gt;miQuest keeps record of user responses using plain js objects.
-These objects are both kept locally (see &lt;a href=&#34;#variables&#34;&gt;variables&lt;/a&gt;) and sent to the server.&lt;/p&gt;
-&lt;p&gt;The data logs are available as properties of the &lt;code&gt;questsion&lt;/code&gt; object  in &lt;code&gt;current&lt;/code&gt;:&lt;/p&gt;
+These objects are both kept locally and sent to the server.&lt;/p&gt;
+&lt;p&gt;Localy, the data logs are available as properties of the &lt;code&gt;questions&lt;/code&gt; object  in &lt;a href=&#34;/docsite/docs/sequencer/variables/current/&#34;&gt;&lt;code&gt;current&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;current&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;questions&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 	&lt;span style=&#34;color:#000&#34;&gt;questionName1&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{...},&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// log object
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#000&#34;&gt;questionName2&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{...}&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// log object
@@ -2164,8 +2225,8 @@ These objects are both kept locally (see &lt;a href=&#34;#variables&#34;&gt;vari
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The response for questionName1 can be accessed using &lt;code&gt;current.questions.questionName1.response&lt;/code&gt;.
-You can use this data within &lt;a href=&#34;../basics/sequencer.html#templates&#34;&gt;templates&lt;/a&gt;
-or from within &lt;a href=&#34;../basics/sequencer.html#conditions&#34;&gt;branches&lt;/a&gt;.&lt;/p&gt;
+You can use this data within &lt;a href=&#34;/docsite/docs/sequencer/templates/&#34;&gt;templates&lt;/a&gt;
+or from within &lt;a href=&#34;/docsite/docs/sequencer/mixer/#conditions&#34;&gt;branches&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -2179,7 +2240,7 @@ or from within &lt;a href=&#34;../basics/sequencer.html#conditions&#34;&gt;branc
       <description>
         
         
-        &lt;p&gt;The player sends all the data it has gathered to the url defined in the settings &lt;a href=&#34;#logger&#34;&gt;logger&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;The player sends all the data it has gathered to the url defined in the settings &lt;a href=&#34;../api/settings#logger&#34;&gt;logger&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Logs are accumulated in an array (which can be found in &lt;code&gt;current.logs&lt;/code&gt; or &lt;code&gt;API.getLogs&lt;/code&gt;).
 Each log is an object including the following fields:&lt;/p&gt;
 &lt;table&gt;
@@ -2456,7 +2517,7 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
 &lt;p&gt;Each trial may have multiple stimuli, and they are refered to by &lt;code&gt;handle&lt;/code&gt;.
 This is how refer to this specific stimulus inside the player (i.e. if we want to hide or show it).
 If more than one stimulus (per trial) has the same handle, all actions targeted at that handle will affect all stimuli.
-You can set a stimulus handle either by setting the &lt;code&gt;handle&lt;/code&gt; property, or by setting &lt;code&gt;handle&lt;/code&gt; into the &lt;a href=&#34;/docsite/minno-quest/0.1/basics/variables.html#local-variables-local-&amp;amp;-meta&#34;&gt;data object&lt;/a&gt;.
+You can set a stimulus handle either by setting the &lt;code&gt;handle&lt;/code&gt; property, or by setting &lt;code&gt;handle&lt;/code&gt; into the &lt;a href=&#34;/docsite/docs/sequencer/variables/local/&#34;&gt;data object&lt;/a&gt;.
 Alternatively, if a stimulus is inherited from a set, the handle is defined by default as the set that the stimulus was inherited from.&lt;/p&gt;
 &lt;h2 id=&#34;size&#34;&gt;size&lt;/h2&gt;
 &lt;p&gt;The size of the stimulus in percentage of the player canvas. By default, size is set to {height:&amp;lsquo;auto&amp;rsquo;,width:&amp;lsquo;auto&amp;rsquo;}.&lt;/p&gt;
@@ -3108,7 +3169,7 @@ You can find the instructions for using them right &lt;a href=&#34;https://git.i
     </item>
     
     <item>
-      <title>Docs: AllowLeaving</title>
+      <title>Docs: Allow Leaving</title>
       <link>/docsite/docs/manager/tasks/allowleaving/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3912,8 +3973,8 @@ You can extend it however you like using &lt;code&gt;API.addCurrent&lt;/code&gt;
     &lt;span style=&#34;color:#000&#34;&gt;variable&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;While a task is running, its task object is available as &lt;code&gt;current&lt;/code&gt;.
-Even when the task is not active it is available from within the &lt;a href=&#34;#global&#34;&gt;&lt;code&gt;global&lt;/code&gt;&lt;/a&gt; object, as &lt;code&gt;global.&amp;lt;taskName&amp;gt;&lt;/code&gt;,
-where &lt;code&gt;&amp;lt;taskName&amp;gt;&lt;/code&gt; stands for the &lt;a href=&#34;../manager/API.html#tasks&#34;&gt;task name&lt;/a&gt; as defined within the task manager.&lt;/p&gt;
+Even when the task is not active it is available from within the &lt;a href=&#34;../global&#34;&gt;&lt;code&gt;global&lt;/code&gt;&lt;/a&gt; object, as &lt;code&gt;global.&amp;lt;taskName&amp;gt;&lt;/code&gt;,
+where &lt;code&gt;&amp;lt;taskName&amp;gt;&lt;/code&gt; stands for the &lt;a href=&#34;/docsite/docs/manager/api/tasks/&#34;&gt;task name&lt;/a&gt; as defined within the task manager.&lt;/p&gt;
 &lt;p&gt;For your convenience, here is a table describing some of the data available within the different task objects.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -4173,7 +4234,7 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
         
         
         &lt;p&gt;The PI tasks expose one central object that serves as the hub of all of you tasks.
-The [task objects][current] get automatically registered on the &lt;code&gt;global&lt;/code&gt; object, so that you can access them all from here.
+The [task objects][../current] get automatically registered on the &lt;code&gt;global&lt;/code&gt; object, so that you can access them all from here.
 In addition, you can register any data that you want shared between your tasks onto &lt;code&gt;global&lt;/code&gt;.
 This options is useful in various cases of branching, as well as when you want a common theme to appear in multiple tasks.&lt;/p&gt;
 &lt;p&gt;The following snippet sets &lt;code&gt;global.value&lt;/code&gt; to 123, and &lt;code&gt;global.variable&lt;/code&gt; to [1,2,3].&lt;/p&gt;
@@ -4412,7 +4473,7 @@ The global object exposes the url query string in a dedicated object called &lt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;dropdown&lt;/td&gt;
-&lt;td&gt;Display a dropdown input. Use the &lt;code&gt;answers&lt;/code&gt; property to set the options for the dropdown. For example &lt;code&gt;{type:&#39;text&#39;, answers: [&#39;Male&#39;, &#39;Female&#39;]}&#39;. See the [dropdown](#dropdown) question for more &lt;/code&gt;answers` options.&lt;/td&gt;
+&lt;td&gt;Display a dropdown input. Use the &lt;code&gt;answers&lt;/code&gt; property to set the options for the dropdown. For example &lt;code&gt;{type:&#39;text&#39;, answers: [&#39;Male&#39;, &#39;Female&#39;]}&lt;/code&gt;. See the &lt;a href=&#34;../dropdown&#34;&gt;dropdown&lt;/a&gt; question for more &lt;code&gt;answers&lt;/code&gt; options.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;input&lt;/td&gt;
@@ -4761,7 +4822,7 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
         
         
         &lt;p&gt;We will create a simple task that says &amp;ldquo;Hello world&amp;rdquo;. As we go, we will comment on several of the player&amp;rsquo;s features and explain some of the ways you can customize your task.&lt;/p&gt;
-&lt;p&gt;You can follow along and play around with the code right &lt;a href=&#34;./helloPlay.js&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can follow along and play around with the code right &lt;a href=&#34;#play-ground&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;the-wrapper&#34;&gt;The wrapper&lt;/h3&gt;
 &lt;p&gt;miTime&amp;rsquo;s scripts are usually a single JavaScript file. The script is wrapped within a define function (You don&amp;rsquo;t have to understand what it does, but if you are interested look up &lt;a href=&#34;http://requirejs.org/&#34;&gt;requirejs&lt;/a&gt;).&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;/* The script wrapper */&lt;/span&gt;
@@ -4777,7 +4838,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;/* don&amp;#39;t forget to close the wrapper */&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The wrapper creates the &lt;code&gt;API&lt;/code&gt; object for you. The &lt;code&gt;API&lt;/code&gt; object is the instrument that we will use to create and run tasks. The whole task is written by creating a bunch of objects and arrays. The API object has functions that accept those objects and arrays and know how to create a task from them.&lt;/p&gt;
 &lt;h3 id=&#34;the-task-structure&#34;&gt;The task structure&lt;/h3&gt;
-&lt;p&gt;Each task is composed of one or more trials, that are activated sequentially. We set trials into the player using a function called &lt;a href=&#34;./API.html#add-sequence&#34;&gt;&lt;code&gt;API.addSequence&lt;/code&gt;&lt;/a&gt; that accepts an array of trials as its argument. After adding any trials that you like all that is left is activating the player by calling &lt;a href=&#34;API.html#play&#34;&gt;&lt;code&gt;API.play&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Each task is composed of one or more trials, that are activated sequentially.
+We set trials into the player using a function called &lt;a href=&#34;/docsite/docs/core/api/#add-sequence&#34;&gt;&lt;code&gt;API.addSequence&lt;/code&gt;&lt;/a&gt; that accepts an array of trials as its argument.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;define&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;([&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;timeAPI&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;APIconstructor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;APIconstructor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
@@ -4791,9 +4853,11 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;script&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In the following section we will see how to populate the trial sequence. Later, we will see that &lt;code&gt;API&lt;/code&gt; provides many additional functions that allow us to further customize the player.&lt;/p&gt;
-&lt;h3 id=&#34;hello-world&#34;&gt;Hello world&lt;/h3&gt;
-&lt;p&gt;Let&amp;rsquo;s populate the sequence with a simple trial. The following trial displays the words &amp;ldquo;Hello world&amp;rdquo; at the center of the screen, and ends when you press &lt;code&gt;space&lt;/code&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In the following section we will see how to populate the trial sequence.
+Later, we will see that &lt;code&gt;API&lt;/code&gt; provides many additional functions that allow us to further customize the player.&lt;/p&gt;
+&lt;h3 id=&#34;a-simple-trial&#34;&gt;A simple trial&lt;/h3&gt;
+&lt;p&gt;Let&amp;rsquo;s populate the sequence with a simple trial.
+The following trial displays the words &amp;ldquo;Hello world&amp;rdquo; at the center of the screen, and ends when you press &lt;code&gt;space&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 	&lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
 		&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// What input to accept from the participant (user)
@@ -4819,7 +4883,7 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 	&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What we see above is a definition of a trial. A trial is a JavaScript object. Inside that object, there are three other objects: &lt;code&gt;input&lt;/code&gt;, &lt;code&gt;layout&lt;/code&gt; and &lt;code&gt;interaction&lt;/code&gt;. Each of these objects defines a different aspect in the trial. Let&amp;rsquo;s learn about these three objects, one by one.&lt;/p&gt;
-&lt;h4 id=&#34;input&#34;&gt;&lt;strong&gt;input&lt;/strong&gt;&lt;/h4&gt;
+&lt;h3 id=&#34;input&#34;&gt;Input&lt;/h3&gt;
 &lt;p&gt;The &lt;code&gt;input&lt;/code&gt; object is an array of objects that define the input we expect the participant to use. Each object in the&lt;code&gt;input&lt;/code&gt; array defines one input element (full documentation &lt;a href=&#34;./API.html#input&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Open the array of input objects.
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//An input object that defines what to do when the user hits space.
@@ -4833,7 +4897,7 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note that the event type is now &lt;code&gt;keypressed&lt;/code&gt; and we added an additional property to the object, &lt;code&gt;key&lt;/code&gt; which defines what type of keypressed triggers this event.
 Note also that the name that we give the event is absolutely arbitrary, so we can leave the handle as &lt;code&gt;&#39;space&#39;&lt;/code&gt; and it still works. However, it is generally a good practice to use meaningful names (e.g., &lt;code&gt;&#39;key_e&#39;&lt;/code&gt;). You can try replacing the old input object with this one, and see what happens. Then try creating an object that responds to the &lt;code&gt;&#39;i&#39;&lt;/code&gt; key being pressed.&lt;/p&gt;
-&lt;h4 id=&#34;layout&#34;&gt;&lt;strong&gt;layout&lt;/strong&gt;&lt;/h4&gt;
+&lt;h3 id=&#34;layout&#34;&gt;Layout&lt;/h3&gt;
 &lt;p&gt;The &lt;code&gt;layout&lt;/code&gt; object is responsible for stimuli that are presented during the whole trial. All the stimuli that are set into the &lt;code&gt;layout&lt;/code&gt; array will be displayed automatically from the beginning of the trial until its end. (We use a different object, named &lt;code&gt;stimuli&lt;/code&gt; to define stimuli that are displayed only for a part of the trial. We will learn about the &lt;code&gt;stimuli&lt;/code&gt; object in more advanced examples).&lt;/p&gt;
 &lt;p&gt;The layout is an array of objects. Each object represents a stimulus. The &lt;a href=&#34;./API.html#stimuli&#34;&gt;stimulus object&lt;/a&gt; is a complex objects, and we&amp;rsquo;ll learn more about it in more advanced examples. For now, let&amp;rsquo;s start with a simple example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//This opens an array of stimulus objects to show in the layout.
@@ -4847,8 +4911,8 @@ Note also that the name that we give the event is absolutely arbitrary, so we ca
 &lt;p&gt;The font size of this stimulus is set to &lt;code&gt;2em&lt;/code&gt;. &lt;code&gt;em&lt;/code&gt; is a css size unit, &lt;code&gt;1em&lt;/code&gt; is the standard (default) font size, &lt;code&gt;2em&lt;/code&gt; is twice that size and so on (you can use fractions too: e.g., &lt;code&gt;1.3em&lt;/code&gt;). So that the text displayed by this stimulus is double the default text size.&lt;/p&gt;
 &lt;p&gt;The color attribute accepts any valid css color. You can try the following: &lt;code&gt;&#39;#0000FF&#39;&lt;/code&gt;, &lt;code&gt;&#39;#FFFFFF&#39;&lt;/code&gt;, &lt;code&gt;&#39;#00FF00&#39;&lt;/code&gt; or use &lt;a href=&#34;http://html-color-codes.info/&#34;&gt;this&lt;/a&gt; site to find additional colors.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;css&lt;/code&gt; object can do far more than this. If you want to know more you can check out the full API  &lt;a href=&#34;http://api.jquery.com/css/#css2&#34;&gt;&lt;code&gt;here&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;interactions&#34;&gt;&lt;strong&gt;interactions&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;./API.html#interactions&#34;&gt;Interactions&lt;/a&gt; are a grouping of &lt;a href=&#34;./API.html#interactions-conditions&#34;&gt;&lt;code&gt;conditions&lt;/code&gt;&lt;/a&gt; (statements of truth) and &lt;a href=&#34;./API.html#interactions-actions&#34;&gt;&lt;code&gt;actions&lt;/code&gt;&lt;/a&gt; to perform if (and only if) all conditions are true. We won&amp;rsquo;t really get into interactions here, but these are the basics:&lt;/p&gt;
+&lt;h3 id=&#34;interactions&#34;&gt;Interactions&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../api/trial/interactions&#34;&gt;Interactions&lt;/a&gt; are a grouping of &lt;a href=&#34;../../api/trial/condtions&#34;&gt;&lt;code&gt;conditions&lt;/code&gt;&lt;/a&gt; (statements of truth) and &lt;a href=&#34;../../api/trial/actions&#34;&gt;&lt;code&gt;actions&lt;/code&gt;&lt;/a&gt; to perform if (and only if) all conditions are true. We won&amp;rsquo;t really get into interactions here, but these are the basics:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
 	&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 		&lt;span style=&#34;color:#000&#34;&gt;conditions&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
@@ -4859,11 +4923,15 @@ Note also that the name that we give the event is absolutely arbitrary, so we ca
 		&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 	&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Each interaction object has a &lt;code&gt;conditions&lt;/code&gt; property and an &lt;code&gt;actions&lt;/code&gt; property. The &lt;code&gt;conditions&lt;/code&gt; property is an array of condition objects. Each condition objects defines a condition that can be true of false. For instance, the condition in the example above is that the name (i.e., handle) of currently active input is &amp;lsquo;space&amp;rsquo;. This condition is true only when the participant hits space (that is what we defined in the input section). There are a few other possible conditions that can be defined, and we will learn about them in more advanced examples (to see the full list of conditions, see &lt;a href=&#34;./API.html#interactions-conditions&#34;&gt;here&lt;/a&gt;).
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Each interaction object has a &lt;code&gt;conditions&lt;/code&gt; property and an &lt;code&gt;actions&lt;/code&gt; property. The &lt;code&gt;conditions&lt;/code&gt; property is an array of condition objects.
+Each condition objects defines a condition that can be true of false.
+For instance, the condition in the example above is that the name (i.e., handle) of currently active input is &amp;lsquo;space&amp;rsquo;.
+This condition is true only when the participant hits space (that is what we defined in the input section).
+There are a few other possible conditions that can be defined, and we will learn about them in more advanced examples (to see the full list of conditions, see &lt;a href=&#34;../../api/trial/conditions&#34;&gt;here&lt;/a&gt;).
 If all the condition objects in the conditions array are true, then all the actions in the &lt;code&gt;actions&lt;/code&gt; array are executed.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;actions&lt;/code&gt; array holds an array of actions to perform if all &lt;code&gt;conditions&lt;/code&gt; are evaluated as true. In this case the only action is to end this trial. We will learn about other forms of actions in more advanced examples (to see the full list of conditions, see &lt;a href=&#34;./API.html#interactions-actions&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;###Detailed recap
-Here is the whole code again, with comments that explain each and every line. Before you read those comments, it might be good to look at the simple not-commented code &lt;a href=&#34;hello.js&#34;&gt;here&lt;/a&gt;, and try again to understand what you see. Whenever you have a question about a line in the code, have a look at that line in the heavily commented code below:&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;actions&lt;/code&gt; array holds an array of actions to perform if all &lt;code&gt;conditions&lt;/code&gt; are evaluated as true. In this case the only action is to end this trial. We will learn about other forms of actions in more advanced examples (to see the full list of conditions, see &lt;a href=&#34;../../api/trial/actions&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;h3 id=&#34;play-ground&#34;&gt;Play ground&lt;/h3&gt;
+&lt;p&gt;Here is the whole code again, with comments that explain each and every line.&lt;/p&gt;
 
 
 
@@ -4881,7 +4949,7 @@ Here is the whole code again, with comments that explain each and every line. Be
     
 
 
-&lt;div class=&#34;pg-section&#34; id=&#34;pg-touch.js&#34;&gt;
+&lt;div class=&#34;pg-section&#34; id=&#34;pg-hello.js&#34;&gt;
     &lt;p&gt;
     &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
     &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
@@ -4989,12 +5057,11 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
                 win.activate(cm.getValue());
             };
         });
-    })(&#39;touch.js&#39;);
+    })(&#39;hello.js&#39;);
 &lt;/script&gt;
 
 &lt;h3 id=&#34;epilogue-of-sorts&#34;&gt;Epilogue (of sorts)&lt;/h3&gt;
 &lt;p&gt;You&amp;rsquo;ve learned how to create a single trial, and the different elements that compose it. The next stage is seeing how different trials come together to form a task.&lt;/p&gt;
-&lt;p&gt;We will now go on to creating a simple slide-show.&lt;/p&gt;
 
       </description>
     </item>
@@ -5587,111 +5654,6 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
             };
         });
     })(&#39;inheritanceByData.md&#39;);
-&lt;/script&gt;
-
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: inheritanceCustom</title>
-      <link>/docsite/docs/sequencer/inheritance/inheritancecustom/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docsite/docs/sequencer/inheritance/inheritancecustom/</guid>
-      <description>
-        
-        
-        
-
-
-
-
-    
-
-
-
-
-    &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/codemirror@5.59.2/lib/codemirror.css&#34; integrity=&#34;sha256-ylWkFzi+pmuVQm80SJjUJvNjzXmRc6+naSkH2xWL5+8=&#34; crossorigin=&#34;anonymous&#34;&gt;
-    &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/codemirror@5.59.2/theme/monokai.css&#34; integrity=&#34;sha256-JGPcb9kgGaDHyiqqAdAxFrKA+nxq4BvyHffBB9m2g+g=&#34; crossorigin=&#34;anonymous&#34;&gt;
-    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/codemirror@5.59.2/lib/codemirror.min.js&#34;&gt;&lt;/script&gt;
-    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/codemirror@5.59.2/mode/javascript/javascript.js&#34; integrity=&#34;sha256-XxB90cNdnOuUFQjAE56w4OBTdMu5SHChSz02/Ki3oAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
-    
-
-
-&lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritanceCustom.md&#34;&gt;
-    &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
-    &lt;/p&gt;
-
-    &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
-// Custom inheritance is only for advanced users. It allows you to pick objects by any criteria that you like.
-define([&amp;#39;managerAPI&amp;#39;], function(Manager){
-
-  var API = new Manager();
-
-  API.addTasksSet(&amp;#39;default&amp;#39;, [
-  	{
-  		type:&amp;#39;message&amp;#39;,
-  		keys: &amp;#39; &amp;#39;
-  	}
-  ]);
-
-  API.addTasksSet(&amp;#39;tasks&amp;#39;,[
-    {inherit:&amp;#39;default&amp;#39;, template:&amp;#39;Task 1&amp;#39;},
-    {inherit:&amp;#39;default&amp;#39;, template:&amp;#39;Task 2&amp;#39;},
-    {inherit:&amp;#39;default&amp;#39;, template:&amp;#39;Task 3&amp;#39;}
-  ]);
-
-  API.addSequence([
-    {inherit:function(collection){
-        return collection.at(2);
-    }}
-  ]);
-
-  return API.script;
-});
-&lt;/textarea&gt;
-&lt;/div&gt;
-
-
-&lt;script&gt;
-    (function(filename){
-        var win, section;
-        var section = document.getElementById(&#39;pg-&#39; + filename);
-
-        var el = section.querySelector(&#39;.code-mirror&#39;);
-        var cm = CodeMirror.fromTextArea(el,{ theme:&#39;monokai&#39; });
-
-        cm.setSize(null, 500);
-
-        section.querySelector(&#39;.pg-download&#39;).addEventListener(&#39;click&#39;, function(){
-            var blob = new Blob([cm.getValue()], { type: &#39;text/javascript&#39; });
-
-            if (window.navigator.msSaveOrOpenBlob) window.navigator.msSaveBlob(blob, filename);
-            else {
-                var elem = window.document.createElement(&#39;a&#39;);
-                elem.href = window.URL.createObjectURL(blob);
-                elem.download = filename;
-                document.body.appendChild(elem);
-                elem.click();
-                document.body.removeChild(elem);
-            }
-        });
-
-        section.querySelector(&#39;.pg-play&#39;).addEventListener(&#39;click&#39;, function(){
-            var runminnoUrl = &#39;\/runminno.html&#39;;
-            if (win) win.close();
-            win = window.open(runminnoUrl, &#39;Playground&#39;);
-            win.onload = function(){
-                win.addEventListener(&#39;unload&#39;, function() {
-                    window.focus();
-                });
-                win.activate(cm.getValue());
-            };
-        });
-    })(&#39;inheritanceCustom.md&#39;);
 &lt;/script&gt;
 
 

@@ -34,9 +34,9 @@ var page = {
 }
 ```
 
-There are plenty of additional features that [pages have](API.html#pages), but this is the very minimum that you'll need.
+There are plenty of additional features that [pages have](api/pages), but this is the very minimum that you'll need.
 
-You also need to define the questions. There are several [types of questions](API.html#questions). All share a few basic properties.
+You also need to define the questions. There are several [types of questions](api/questions). All share a few basic properties.
 
 ```javascript
 var question = {
@@ -100,7 +100,7 @@ var sequence = [
 ]
 ```
 
-The sequence also supports randomization and branching. Read about it [here](API.html#mixer).
+The sequence also supports randomization and branching. Read about it [here]({{< relref "docs/sequencer/mixer" >}}).
 
 Now that we've created the sequence, let's put it into the player. The first and last two lines are the same for all scripts (they have to do with the way Javascript works), you can simply ignore them. The `API` object assists you in putting your script together, you will [eventually](API.html#API) learn more about its functionality, but for now we only need to know that the `addSequence` function is responsible for adding pages into the sequence. You may call it as many times as you like.
 
@@ -137,4 +137,4 @@ define(['questAPI'], function(quest){
 ```
 
 That's it! PIquest has loads of additional features (as you can read below), but this was the very basic information that you must know first. 
-(by the way, if you want to log the responses to your questions you should learn about the [ logger setting ](API.html#settings)).
+(by the way, if you want to log the responses to your questions you should learn about the [ logger setting ](api/settings#logger)).

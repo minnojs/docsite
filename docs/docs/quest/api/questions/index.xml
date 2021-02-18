@@ -193,7 +193,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;dropdown&lt;/td&gt;
-&lt;td&gt;Display a dropdown input. Use the &lt;code&gt;answers&lt;/code&gt; property to set the options for the dropdown. For example &lt;code&gt;{type:&#39;text&#39;, answers: [&#39;Male&#39;, &#39;Female&#39;]}&#39;. See the [dropdown](#dropdown) question for more &lt;/code&gt;answers` options.&lt;/td&gt;
+&lt;td&gt;Display a dropdown input. Use the &lt;code&gt;answers&lt;/code&gt; property to set the options for the dropdown. For example &lt;code&gt;{type:&#39;text&#39;, answers: [&#39;Male&#39;, &#39;Female&#39;]}&lt;/code&gt;. See the &lt;a href=&#34;../dropdown&#34;&gt;dropdown&lt;/a&gt; question for more &lt;code&gt;answers&lt;/code&gt; options.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;input&lt;/td&gt;
@@ -510,7 +510,7 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;dropdown&lt;/td&gt;
-&lt;td&gt;Display a dropdown input. Use the &lt;code&gt;answers&lt;/code&gt; property to set the options for the dropdown. For example &lt;code&gt;{type:&#39;text&#39;, answers: [&#39;Male&#39;, &#39;Female&#39;]}&#39;. See the [dropdown](#dropdown) question for more &lt;/code&gt;answers` options.&lt;/td&gt;
+&lt;td&gt;Display a dropdown input. Use the &lt;code&gt;answers&lt;/code&gt; property to set the options for the dropdown. For example &lt;code&gt;{type:&#39;text&#39;, answers: [&#39;Male&#39;, &#39;Female&#39;]}&lt;/code&gt;. See the &lt;a href=&#34;../dropdown&#34;&gt;dropdown&lt;/a&gt; question for more &lt;code&gt;answers&lt;/code&gt; options.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;input&lt;/td&gt;

@@ -190,11 +190,11 @@ In case the setting is an object, subsequent objects will extend each other so t
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;questions&lt;/td&gt;
-&lt;td&gt;(Array or Object) an array of &lt;a href=&#34;#questions&#34;&gt;questions&lt;/a&gt; to be displayed in the page. Note that the questions may be randomized and chosen conditionally using a &lt;a href=&#34;#mixer&#34;&gt;mixer&lt;/a&gt;. This property also accepts a single question object if you want to present only a single question per page.&lt;/td&gt;
+&lt;td&gt;(Array or Object) an array of &lt;a href=&#34;questions&#34;&gt;questions&lt;/a&gt; to be displayed in the page. Note that the questions may be randomized and chosen conditionally using a &lt;a href=&#34;/docsite/docs/sequencer/mixer/&#34;&gt;mixer&lt;/a&gt;. This property also accepts a single question object if you want to present only a single question per page.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;lognow&lt;/td&gt;
-&lt;td&gt;(true or false) Whether to log the questions on this page. This option is useful when you know that the page will not be accessed any more. It allows you to use the &lt;code&gt;pulse&lt;/code&gt; option from the &lt;a href=&#34;#logger&#34;&gt;logger&lt;/a&gt; to send questions as they are being answered instead of sending only at the end of the task. (default: false)&lt;/td&gt;
+&lt;td&gt;(true or false) Whether to log the questions on this page. This option is useful when you know that the page will not be accessed any more. It allows you to use the &lt;code&gt;pulse&lt;/code&gt; option from the &lt;a href=&#34;../settings#logger&#34;&gt;logger&lt;/a&gt; to send questions as they are being answered instead of sending only at the end of the task. (default: false)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;animate&lt;/td&gt;
@@ -265,7 +265,7 @@ In case the setting is an object, subsequent objects will extend each other so t
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;page-messages&#34;&gt;Page Messages&lt;/h2&gt;
+&lt;h3 id=&#34;timer-message&#34;&gt;Timer Message&lt;/h3&gt;
 &lt;p&gt;You may want to display a message to the users when they run out of time at the end of a timer. Messages can be simple strings, or if you want finer control over the content of the message you can use the object API, that may be used as follows:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -347,7 +347,7 @@ In case the setting is an object, subsequent objects will extend each other so t
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;lognow&lt;/td&gt;
-&lt;td&gt;(true or false) Whether to log this questions when the page is submitted. This option is useful when you know that the question will not be accessed any more. It allows you to use the &lt;code&gt;pulse&lt;/code&gt; option from the &lt;a href=&#34;#logger&#34;&gt;logger&lt;/a&gt; to send questions as they are being answered instead of sending only at the end of the task. (default: false)&lt;/td&gt;
+&lt;td&gt;(true or false) Whether to log this questions when the page is submitted. This option is useful when you know that the question will not be accessed any more. It allows you to use the &lt;code&gt;pulse&lt;/code&gt; option from the &lt;a href=&#34;../settings#logger&#34;&gt;logger&lt;/a&gt; to send questions as they are being answered instead of sending only at the end of the task. (default: false)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;errorMsg&lt;/td&gt;
@@ -355,7 +355,7 @@ In case the setting is an object, subsequent objects will extend each other so t
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;You may want to debug questions by setting the &lt;a href=&#34;../manager/API.md#debug&#34;&gt;debug level in the manager&lt;/a&gt; to &lt;code&gt;verbose&lt;/code&gt;.
+&lt;p&gt;You may want to debug questions by setting the &lt;a href=&#34;/docsite/docs/manager/api/settings/#debug&#34;&gt;debug level in the manager&lt;/a&gt; to &lt;code&gt;verbose&lt;/code&gt;.
 You will then be warned in the console if a question name is reused
 (note: sometimes a question is supposed to be reused, if this warning pops up just make sure the use case is correct).&lt;/p&gt;
 &lt;h1 id=&#34;hooks&#34;&gt;Hooks&lt;/h1&gt;

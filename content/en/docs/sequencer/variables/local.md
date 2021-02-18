@@ -9,9 +9,9 @@ These variables are called *Data* and *Meta*.
 
 ## Data
 The *Data* variables allow you to manually set useful information into each element. 
-Their behaviour is described fully within as part of element [inheritance](./inheritance.html#data).
+Their behaviour is described fully within as part of element [inheritance](../../inheritance#data).
 
-In the following example, the data set in the 'default' task, is used from within a [template](../template) in the sequence.
+In the following example, the data set in the 'default' task, is used from within a [template](../../templates) in the sequence.
 
 {{< playground filename=templateData.md >}}
 define(['managerAPI'], function(Manager){

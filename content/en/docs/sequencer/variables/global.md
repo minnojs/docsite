@@ -4,7 +4,7 @@ description: The global variable serves as the state of your whole study.
 ---
 
 The PI tasks expose one central object that serves as the hub of all of you tasks.
-The [task objects][current] get automatically registered on the `global` object, so that you can access them all from here.
+The [task objects][../current] get automatically registered on the `global` object, so that you can access them all from here.
 In addition, you can register any data that you want shared between your tasks onto `global`.
 This options is useful in various cases of branching, as well as when you want a common theme to appear in multiple tasks.
 

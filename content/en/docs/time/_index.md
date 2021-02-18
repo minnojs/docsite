@@ -28,17 +28,11 @@ There cannot be more than one trial at a time, and each trial can change just ab
 
 ### Creating a Task
 
-When creating a task you first create your building blocks. You create prototypes for each trial type you intend to use and create sets of stimuli for later use. Next, you drop the building blocks into the sequence; at this stage you decide on the global structure of your task and create the exact randomization that you want.
+When creating a task you first create your building blocks. You create prototypes for each trial type you intend to use and create sets of stimuli for later use. 
+Next, you drop the building blocks into the sequence; at this stage you decide on the global structure of your task and create the exact randomization that you want.
 
 Once your script is ready all you have to do is to call it from within the player index page.
 
 ### Collecting the data
-All the data that is recorded by the player is sent to a URL of your choosing. Tasks may vary greatly so we give you the flexibility to send whatever data you need and process it however you see fit.
-
-### Learn how to use miTime
-This was only a short overview of the player. There are many ways to learn how to use it.
-We recommend you first see some code examples. Start with the [hello world example](./hello.html). Then, to understand better the syntax used in that example, read a little about [Javascript objects](./javascript.html). Next, go back to the [hello world example](./hello.html) or continue to the [slideshow example](./slideshow.html) to see that you understand miTime code more clearly.
-
-Next, we recommend that you read and experience our Stroop tutorial, which will take you from [setup](./stroop-setupDocco.html) to the [complete task](./stroop-taskDocco.html) in a few steps.
-
-While reading the tutorials, we recommend that you tinker with the files yourself, and see if you can create your own version of each of the scripts you'll see throughout that tutorial. The scripts are all available within the playgrounds (click the <span class="glyphicon glyphicon-play-circle"></span> button beside the tutorial link). Try to make minor changes in each step. This will help you make sure that you understand what each part of the code does.
+All the data that is recorded by the player is sent to a URL of your choosing. 
+Tasks may vary greatly so we give you the flexibility to send whatever data you need and process it however you see fit.

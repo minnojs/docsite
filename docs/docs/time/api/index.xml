@@ -60,7 +60,7 @@ When using the media path to log media elements (for images and templates), shou
 An object that is used to extend each logged row. This is useful in case you want to add some global data to the posts (such as server generated user id, or task name).&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;logger&lt;/code&gt;:
 Accepts a function to replace the existing logging function. (don&amp;rsquo;t touch this if you don&amp;rsquo;t &lt;strong&gt;realy&lt;/strong&gt; know what you&amp;rsquo;re doing).
-The logger function is called each time a log action is triggered (see interactions: actions &lt;a href=&#34;#interactions-actions&#34;&gt;log&lt;/a&gt;).
+The logger function is called each time a log action is triggered (see interactions: actions &lt;a href=&#34;../trial/actions/#log&#34;&gt;log&lt;/a&gt;).
 It is responsible for adding a logging row to be sent to the server.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;trialData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;inputData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;actionData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;logStack&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;){&lt;/span&gt;
     &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// trialData: the data object from this trial
@@ -200,7 +200,7 @@ The folowing two media definitions have the same outcome:&lt;code&gt;&#39;Wiki&#
 &lt;p&gt;Each trial may have multiple stimuli, and they are refered to by &lt;code&gt;handle&lt;/code&gt;.
 This is how refer to this specific stimulus inside the player (i.e. if we want to hide or show it).
 If more than one stimulus (per trial) has the same handle, all actions targeted at that handle will affect all stimuli.
-You can set a stimulus handle either by setting the &lt;code&gt;handle&lt;/code&gt; property, or by setting &lt;code&gt;handle&lt;/code&gt; into the &lt;a href=&#34;/docsite/minno-quest/0.1/basics/variables.html#local-variables-local-&amp;amp;-meta&#34;&gt;data object&lt;/a&gt;.
+You can set a stimulus handle either by setting the &lt;code&gt;handle&lt;/code&gt; property, or by setting &lt;code&gt;handle&lt;/code&gt; into the &lt;a href=&#34;/docsite/docs/sequencer/variables/local/&#34;&gt;data object&lt;/a&gt;.
 Alternatively, if a stimulus is inherited from a set, the handle is defined by default as the set that the stimulus was inherited from.&lt;/p&gt;
 &lt;h2 id=&#34;size&#34;&gt;size&lt;/h2&gt;
 &lt;p&gt;The size of the stimulus in percentage of the player canvas. By default, size is set to {height:&amp;lsquo;auto&amp;rsquo;,width:&amp;lsquo;auto&amp;rsquo;}.&lt;/p&gt;

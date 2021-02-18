@@ -18,21 +18,21 @@
 <link rel="icon" type="image/png" href="/docsite/favicons/android-192x192.png" sizes="192x192">
 
 <title>Slide show | Minno Suite</title><meta property="og:title" content="Slide show" />
-<meta property="og:description" content="slideshow" />
+<meta property="og:description" content="Create a simple slide show with minno-time. Learn the basics of inheritance." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docsite/docs/time/tutorials/slideshow/" />
-<meta property="article:modified_time" content="2021-02-10T21:07:19+02:00" /><meta property="og:site_name" content="Minno Suite" />
+<meta property="article:modified_time" content="2021-02-18T15:07:56+02:00" /><meta property="og:site_name" content="Minno Suite" />
 <meta itemprop="name" content="Slide show">
-<meta itemprop="description" content="slideshow">
-<meta itemprop="dateModified" content="2021-02-10T21:07:19+02:00" />
-<meta itemprop="wordCount" content="1074">
+<meta itemprop="description" content="Create a simple slide show with minno-time. Learn the basics of inheritance.">
+<meta itemprop="dateModified" content="2021-02-18T15:07:56+02:00" />
+<meta itemprop="wordCount" content="1186">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Slide show"/>
-<meta name="twitter:description" content="slideshow"/>
+<meta name="twitter:description" content="Create a simple slide show with minno-time. Learn the basics of inheritance."/>
 
 
 
@@ -82,16 +82,6 @@
 				
 				
 				<a  class="nav-link active" href="/docsite/docs/" ><span class="active">Documentation</span></a>
-			</li>
-			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
-				<a  class="nav-link" href="/docsite/blog/" ><span>Blog</span></a>
 			</li>
 			
 			
@@ -222,6 +212,14 @@
       
         
           
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docssequencerintroduction" href="/docsite/docs/sequencer/introduction/">Introduction</a>
+        
+      
+      
+      
+        
+          
 
 
 
@@ -230,10 +228,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docsite/docs/sequencer/template/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Templates</a>
+    <a  href="/docsite/docs/sequencer/templates/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Templates</a>
   </li>
   <ul>
-    <li class="collapse " id="docssequencertemplate">
+    <li class="collapse " id="docssequencertemplates">
       
       
       
@@ -330,14 +328,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docssequencerintroduction" href="/docsite/docs/sequencer/introduction/">Introduction</a>
         
       
       
@@ -1280,7 +1270,7 @@
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertasksallowleaving" href="/docsite/docs/manager/tasks/allowleaving/">AllowLeaving</a>
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertasksallowleaving" href="/docsite/docs/manager/tasks/allowleaving/">Allow Leaving</a>
         
       
       
@@ -1344,7 +1334,7 @@
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertaskssetvalue" href="/docsite/docs/manager/tasks/setvalue/">setValue</a>
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanagertaskssetvalue" href="/docsite/docs/manager/tasks/setvalue/">Set Value</a>
         
       
       
@@ -1726,7 +1716,7 @@
     <a href="https://github.com/minnojs/docsite/issues/new?title=Slide%20show" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
     
       
-      <a href="https://github.com/minnojs/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+      <a href="https://github.com/minnojs/minno-quest/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
     
 
   
@@ -1739,10 +1729,11 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#a-simple-slide-show">A simple slide show</a></li>
+    <li><a href="#basic-inheritance">Basic inheritance</a>
       <ul>
-        <li><a href="#a-simple-slide-show">A simple slide show</a></li>
-        <li><a href="#basic-inheritance">Basic inheritance</a></li>
+        <li><a href="#sets">Sets</a></li>
+        <li><a href="#extending">Extending</a></li>
       </ul>
     </li>
   </ul>
@@ -1754,19 +1745,6 @@
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             
   
-  
-  
-  
-  <div class="pageinfo pageinfo-primary">
-    <p>Version temporary of the
-      documentation is no longer actively maintained. The site that you are
-      currently viewing is an archived snapshot. 
-      For up-to-date documentation, see the 
-        <a href="https://minnojs.github.io/minno-quest/0.3/manager/overview.html" target="_blank">latest version</a>.</p>
-      
-    
-  </div>
-
 
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	<ol class="breadcrumb spb-1">
@@ -1815,14 +1793,14 @@
             
 <div class="td-content">
 	<h1>Slide show</h1>
-    <div class="lead">slideshow</div>
+    <div class="lead">Create a simple slide show with minno-time. Learn the basics of inheritance.</div>
 	       
 	<p>This section of the tutorial will walk you through creating a slide show. We will create a simple task that displays a series of stimuli.
 In this tutorial we will learn how to utilize the sequence, and the very basics of inheritance.</p>
-<h3 id="a-simple-slide-show">A simple slide show</h3>
+<h2 id="a-simple-slide-show">A simple slide show</h2>
 <p>Tasks normally include more than one trial.
 The sequence holds an array: the trials in the array will be activated sequentially.</p>
-<p>This is the trial that we already know from the <em>Hello world</em> tutorial:</p>
+<p>This is the trial that we already know from the <a href="../hello"><em>Hello world</em></a> tutorial:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000;font-weight:bold">{</span>
 	<span style="color:#000">input</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">handle</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">on</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">}],</span>
 	<span style="color:#000">layout</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span>
@@ -1834,49 +1812,131 @@ The sequence holds an array: the trials in the array will be activated sequentia
 		<span style="color:#000">actions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;endTrial&#39;</span><span style="color:#000;font-weight:bold">}]</span>
 	<span style="color:#000;font-weight:bold">}]</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><p>We will now duplicate this trial a few times for a simple slide show:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">API</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addSequence</span><span style="color:#000;font-weight:bold">([</span>
-	<span style="color:#000;font-weight:bold">{</span>
-		<span style="color:#000">input</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">handle</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">on</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">}],</span>
-		<span style="color:#000">layout</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span>
-			<span style="color:#000">media</span> <span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#000;font-weight:bold">{</span><span style="color:#000">word</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;Is\&#39;nt&#39;</span><span style="color:#000;font-weight:bold">},</span>
-			<span style="color:#000">css</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#000;font-weight:bold">{</span><span style="color:#000">fontSize</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;2em&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">color</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;#D7685A&#39;</span><span style="color:#000;font-weight:bold">}</span>
-		<span style="color:#000;font-weight:bold">}],</span>
-		<span style="color:#000">interactions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span>
-			<span style="color:#000">conditions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;inputEquals&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">value</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">}],</span>
-			<span style="color:#000">actions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;endTrial&#39;</span><span style="color:#000;font-weight:bold">}]</span>
-		<span style="color:#000;font-weight:bold">}]</span>
-	<span style="color:#000;font-weight:bold">},</span>
-	<span style="color:#000;font-weight:bold">{</span>
-		<span style="color:#000">input</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">handle</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">on</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">}],</span>
-		<span style="color:#000">layout</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span>
-			<span style="color:#000">media</span> <span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#000;font-weight:bold">{</span><span style="color:#000">word</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;this&#39;</span><span style="color:#000;font-weight:bold">},</span>
-			<span style="color:#000">css</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#000;font-weight:bold">{</span><span style="color:#000">fontSize</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;2em&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">color</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;#D7685A&#39;</span><span style="color:#000;font-weight:bold">}</span>
-		<span style="color:#000;font-weight:bold">}],</span>
-		<span style="color:#000">interactions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span>
-			<span style="color:#000">conditions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;inputEquals&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">value</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">}],</span>
-			<span style="color:#000">actions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;endTrial&#39;</span><span style="color:#000;font-weight:bold">}]</span>
-		<span style="color:#000;font-weight:bold">}]</span>
-	<span style="color:#000;font-weight:bold">},</span>
-	<span style="color:#000;font-weight:bold">{</span>
-		<span style="color:#000">input</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">handle</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">on</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">}],</span>
-		<span style="color:#000">layout</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span>
-			<span style="color:#000">media</span> <span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#000;font-weight:bold">{</span><span style="color:#000">word</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;cool?&#39;</span><span style="color:#000;font-weight:bold">},</span>
-			<span style="color:#000">css</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#000;font-weight:bold">{</span><span style="color:#000">fontSize</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;2em&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">color</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;#D7685A&#39;</span><span style="color:#000;font-weight:bold">}</span>
-		<span style="color:#000;font-weight:bold">}],</span>
-		<span style="color:#000">interactions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span>
-			<span style="color:#000">conditions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;inputEquals&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">value</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">}],</span>
-			<span style="color:#000">actions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;endTrial&#39;</span><span style="color:#000;font-weight:bold">}]</span>
-		<span style="color:#000;font-weight:bold">}]</span>
-	<span style="color:#000;font-weight:bold">}</span>
-<span style="color:#000;font-weight:bold">]);</span>
-</code></pre></div><p>You should try it (don&rsquo;t forget the wrapper, and the activation function at the end (<code>API.play()</code>)). Try adding another trial. Try changing the media or style of the stimuli.</p>
-<p>Download <a href="slideshow1.js">here</a>. You can see it in action right <a href="./slideshow1Play.html">here</a>.</p>
-<h3 id="basic-inheritance">Basic inheritance</h3>
-<p>Our task is becoming longer and harder to maintain. Imagine a slide show with 50 slides, it will need more than 500 lines of code. If we would want to make any changes that apply to all the trials (e.g., increase the font size), we will have to go through each trial individually and make the same change. This is where the concept of inheritance comes in. Inheritance allows you to create a prototype of a trial (or stimulus or media object), and re-use it whenever you want. To understand how this works, we need to first learn a bit about sets.</p>
-<h4 id="sets"><strong>Sets</strong></h4>
-<p><a href="./API.html#sets">Set</a> is a list of one or more miTime objects (trials, stimuli or media objects). After defining a set of objects (e.g., trials), we can re-use those objects. Therefore, if we want to create a basic trial and re-use it a few times, we create a one-trial set, and then re-use it in a sequence. We will focus here on trial sets, but everything that applies to the trials sets also applies to stimuli sets or media sets as well.</p>
-<p>We create trial sets using the <code>API.addTrialSets()</code> function. The simplest use of the function involves two arguments; the first is the set name, and the second is an array of objects to add to the set. The following code creates a trial set called <em>slide</em> and populates it with one trial: our &ldquo;Hello world&rdquo; trial.</p>
+</code></pre></div><p>We will now duplicate this trial a few times for a simple slide show.
+You should try it out. Try adding another trial. Try changing the media or style of the stimuli.
+Use the <a href="/docsite/docs/time/api/">docs</a>!</p>
+
+
+
+
+
+    
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.59.2/lib/codemirror.css" integrity="sha256-ylWkFzi+pmuVQm80SJjUJvNjzXmRc6+naSkH2xWL5+8=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.59.2/theme/monokai.css" integrity="sha256-JGPcb9kgGaDHyiqqAdAxFrKA+nxq4BvyHffBB9m2g+g=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.59.2/lib/codemirror.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.59.2/mode/javascript/javascript.js" integrity="sha256-XxB90cNdnOuUFQjAE56w4OBTdMu5SHChSz02/Ki3oAQ=" crossorigin="anonymous"></script>
+    
+
+
+<div class="pg-section" id="pg-slideshow1.js">
+    <p>
+    <a class="pg-play btn btn-secondary"><i class="fas fa-play"></i> Run </a>
+    <a class="pg-download btn btn-outline-secondary"><i class="fas fa-download"></i> Download </a>
+    </p>
+
+    <textarea class="code-mirror" rows="40">
+define([&#39;timeAPI&#39;], function(APIconstructor) {
+
+	var API = new APIconstructor();
+
+    API.addSequence([
+        {
+            input: [{handle:&#39;space&#39;,on:&#39;space&#39;}],
+            layout: [{
+                media :{word:&#39;Is\&#39;nt&#39;},
+                css:{fontSize:&#39;2em&#39;,color:&#39;#D7685A&#39;}
+            }],
+            interactions: [{
+                conditions: [{type:&#39;inputEquals&#39;,value:&#39;space&#39;}],
+                actions: [{type:&#39;endTrial&#39;}]
+            }]
+        },
+        {
+            input: [{handle:&#39;space&#39;,on:&#39;space&#39;}],
+            layout: [{
+                media :{word:&#39;this&#39;},
+                css:{fontSize:&#39;2em&#39;,color:&#39;#D7685A&#39;}
+            }],
+            interactions: [{
+                conditions: [{type:&#39;inputEquals&#39;,value:&#39;space&#39;}],
+                actions: [{type:&#39;endTrial&#39;}]
+            }]
+        },
+        {
+            input: [{handle:&#39;space&#39;,on:&#39;space&#39;}],
+            layout: [{
+                media :{word:&#39;cool?&#39;},
+                css:{fontSize:&#39;2em&#39;,color:&#39;#D7685A&#39;}
+            }],
+            interactions: [{
+                conditions: [{type:&#39;inputEquals&#39;,value:&#39;space&#39;}],
+                actions: [{type:&#39;endTrial&#39;}]
+            }]
+        }
+    ]);
+	return API.script;
+}); 
+</textarea>
+</div>
+
+
+<script>
+    (function(filename){
+        var win, section;
+        var section = document.getElementById('pg-' + filename);
+
+        var el = section.querySelector('.code-mirror');
+        var cm = CodeMirror.fromTextArea(el,{ theme:'monokai' });
+
+        cm.setSize(null, 500);
+
+        section.querySelector('.pg-download').addEventListener('click', function(){
+            var blob = new Blob([cm.getValue()], { type: 'text/javascript' });
+
+            if (window.navigator.msSaveOrOpenBlob) window.navigator.msSaveBlob(blob, filename);
+            else {
+                var elem = window.document.createElement('a');
+                elem.href = window.URL.createObjectURL(blob);
+                elem.download = filename;
+                document.body.appendChild(elem);
+                elem.click();
+                document.body.removeChild(elem);
+            }
+        });
+
+        section.querySelector('.pg-play').addEventListener('click', function(){
+            var runminnoUrl = '\/runminno.html';
+            if (win) win.close();
+            win = window.open(runminnoUrl, 'Playground');
+            win.onload = function(){
+                win.addEventListener('unload', function() {
+                    window.focus();
+                });
+                win.activate(cm.getValue());
+            };
+        });
+    })('slideshow1.js');
+</script>
+
+<h2 id="basic-inheritance">Basic inheritance</h2>
+<p>Our task is becoming longer and harder to maintain.
+Imagine a slide show with 50 slides, it will need more than 500 lines of code.
+If we would want to make any changes that apply to all the trials (e.g., increase the font size), we will have to go through each trial individually and make the same change.
+This is where the concept of inheritance comes in.
+Inheritance allows you to create a prototype of a trial (or stimulus or media object), and re-use it whenever you want.
+To understand how this works, we need to first learn a bit about sets.</p>
+<h3 id="sets">Sets</h3>
+<p>A <a href="/docsite/docs/sequencer/inheritance/#sets">set</a> is a list of one or more miTime objects (trials, stimuli or media objects).
+After defining a set of objects (e.g., trials), we can re-use those objects.
+Therefore, if we want to create a basic trial and re-use it a few times, we create a one-trial set, and then re-use it in a sequence.
+We will focus here on trial sets, but everything that applies to the trials sets also applies to stimuli sets or media sets as well.</p>
+<p>We create trial sets using the <code>API.addTrialSets()</code> function.
+The simplest use of the function involves two arguments; the first is the set name, and the second is an array of objects to add to the set.
+The following code creates a trial set called <em>slide</em> and populates it with one trial: our &ldquo;Hello world&rdquo; trial.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">API</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addTrialSets</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;slide&#39;</span><span style="color:#000;font-weight:bold">,[{</span>
 	<span style="color:#000">input</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">handle</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">on</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">}],</span>
 	<span style="color:#000">layout</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">media</span> <span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#000;font-weight:bold">{</span><span style="color:#000">word</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;Hello world&#39;</span><span style="color:#000;font-weight:bold">}}],</span>
@@ -1885,19 +1945,26 @@ The sequence holds an array: the trials in the array will be activated sequentia
 		<span style="color:#000">actions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;endTrial&#39;</span><span style="color:#000;font-weight:bold">}]</span>
 	<span style="color:#000;font-weight:bold">}]</span>
 <span style="color:#000;font-weight:bold">}])</span>
-</code></pre></div><p>Now, we can refer to this trial in the future with the name we gave it (&lsquo;slide&rsquo;), and re-use it over and over again in a sequence. We re-use trials (and media and stimulus objects) using inheritance.</p>
+</code></pre></div><p>Now, we can refer to this trial in the future with the name we gave it (&lsquo;slide&rsquo;), and re-use it over and over again in a sequence.
+We re-use trials (and media and stimulus objects) using inheritance.</p>
 <h4 id="inheritance"><strong>Inheritance</strong></h4>
 <p>Inheritance allows us to re-use trials: new trials can be created by inheriting a trial from a set. If there is only one trial in the set, we simply inherit the whole set.</p>
-<p>Trials (and stimuli and media too) have a special property called <a href="./API.html#inheriting">inherit</a> that allows them to specify a specific set to inherit from. This allows trials to be significantly shorter. The following code activates our slide three times:</p>
+<p>Trials (and stimuli and media too) have a special property called <a href="/docsite/docs/sequencer/inheritance/#syntax">inherit</a> that allows them to specify a specific set to inherit from.
+This allows trials to be significantly shorter.
+The following code activates our slide three times:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">API</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addSequence</span><span style="color:#000;font-weight:bold">([</span> <span style="color:#8f5902;font-style:italic">//Our sequence is an array of trials.
 </span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000;font-weight:bold">{</span><span style="color:#000">inherit</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;slide&#39;</span><span style="color:#000;font-weight:bold">},</span> <span style="color:#8f5902;font-style:italic">//Each object is a trial. 
 </span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000;font-weight:bold">{</span><span style="color:#000">inherit</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;slide&#39;</span><span style="color:#000;font-weight:bold">},</span>
 	<span style="color:#000;font-weight:bold">{</span><span style="color:#000">inherit</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;slide&#39;</span><span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">]);</span>
 </code></pre></div><p>This sequence will present the Hello World trial three times, one after the other.</p>
-<h4 id="extending"><strong>Extending</strong></h4>
-<p>But repeating slides is pretty boring. Our slideshow should display different text in each trial. So, blind inheritance is not enough for, we need also to extend.</p>
-<p>When we inherit a trial, we can extend it by simply adding properties or overriding existing ones. Let&rsquo;s call the trial that inherits a <code>child</code>, and the trial that is inherited a <code>parent</code>. A child inherits all of its parent&rsquo;s properties. Any property that is added to it overrides the parent&rsquo;s properties.</p>
+<h3 id="extending">Extending</h3>
+<p>But repeating slides is pretty boring.
+Our slideshow should display different text in each trial.
+So, blind inheritance is not enough for us, we need also to extend each trial.</p>
+<p>When we inherit a trial, we can extend it by simply adding properties or overriding existing ones.
+Let&rsquo;s call the trial that inherits a <code>child</code>, and the trial that is inherited a <code>parent</code>.
+A child inherits all of its parent&rsquo;s properties. Any property that is added to it overrides the parent&rsquo;s properties.</p>
 <p>For example, let&rsquo;s say the following object resides in the &ldquo;parent&rdquo; set.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000;font-weight:bold">{</span>
 	<span style="color:#000">family</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;Smith&#39;</span>
@@ -1931,7 +1998,102 @@ The sequence holds an array: the trials in the array will be activated sequentia
 		<span style="color:#000">layout</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">media</span> <span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#000;font-weight:bold">{</span><span style="color:#000">word</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;Cooler!!&#39;</span><span style="color:#000;font-weight:bold">}}]</span>
 	<span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">]);</span>
-</code></pre></div><p>Download <a href="slideshow2.js">here</a>. You can see it in action right <a href="slideshow2Play.html">here</a>.</p>
+</code></pre></div>
+
+
+
+
+    
+
+
+
+
+
+<div class="pg-section" id="pg-slideshow2.js">
+    <p>
+    <a class="pg-play btn btn-secondary"><i class="fas fa-play"></i> Run </a>
+    <a class="pg-download btn btn-outline-secondary"><i class="fas fa-download"></i> Download </a>
+    </p>
+
+    <textarea class="code-mirror" rows="40">
+define([&#39;timeAPI&#39;], function(APIconstructor) {
+
+	var API = new APIconstructor();
+
+	// Create a trial set with the hello world trial
+	API.addTrialSets(&#39;slide&#39;,[{
+		input: [{handle:&#39;space&#39;,on:&#39;space&#39;}],
+        layout: [{media :{word:&#39;Hello world&#39;}}],
+		interactions: [{
+			conditions: [{type:&#39;inputEquals&#39;,value:&#39;space&#39;}],
+			actions: [{type:&#39;endTrial&#39;}]
+		}]
+	}]);
+
+	// Create the sequence (Each trial extends the slide and overwrites the layout property)
+	API.addSequence([
+		{
+			inherit:&#39;slide&#39;,
+			layout: [{media :{word:&#39;This&#39;}}]
+		},
+		{
+			inherit:&#39;slide&#39;,
+			layout: [{media :{word:&#39;is&#39;}}]
+		},
+		{
+			inherit:&#39;slide&#39;,
+			layout: [{media :{word:&#39;even&#39;}}]
+		},
+		{
+			inherit:&#39;slide&#39;,
+			layout: [{media :{word:&#39;Cooler!!&#39;}}]
+		}
+	]);
+
+	return API.script;
+});
+</textarea>
+</div>
+
+
+<script>
+    (function(filename){
+        var win, section;
+        var section = document.getElementById('pg-' + filename);
+
+        var el = section.querySelector('.code-mirror');
+        var cm = CodeMirror.fromTextArea(el,{ theme:'monokai' });
+
+        cm.setSize(null, 500);
+
+        section.querySelector('.pg-download').addEventListener('click', function(){
+            var blob = new Blob([cm.getValue()], { type: 'text/javascript' });
+
+            if (window.navigator.msSaveOrOpenBlob) window.navigator.msSaveBlob(blob, filename);
+            else {
+                var elem = window.document.createElement('a');
+                elem.href = window.URL.createObjectURL(blob);
+                elem.download = filename;
+                document.body.appendChild(elem);
+                elem.click();
+                document.body.removeChild(elem);
+            }
+        });
+
+        section.querySelector('.pg-play').addEventListener('click', function(){
+            var runminnoUrl = '\/runminno.html';
+            if (win) win.close();
+            win = window.open(runminnoUrl, 'Playground');
+            win.onload = function(){
+                win.addEventListener('unload', function() {
+                    window.focus();
+                });
+                win.activate(cm.getValue());
+            };
+        });
+    })('slideshow2.js');
+</script>
+
 <h4 id="defaults"><strong>Defaults</strong></h4>
 <p>Let&rsquo;s take this one step further. What if we want to centralize the way stimuli look? Let&rsquo;s use inheritance to control that too. First, we create the basic stimulus (we&rsquo;ll call it &lsquo;default&rsquo;):</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">API</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addStimulusSets</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;default&#39;</span><span style="color:#000;font-weight:bold">,[</span>
@@ -1940,15 +2102,13 @@ The sequence holds an array: the trials in the array will be activated sequentia
 </code></pre></div><p>Then, when we create the stimulus object for the layout in each trial, that stimulus can inherit from our &lsquo;default&rsquo; stimulus:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">API</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addSequence</span><span style="color:#000;font-weight:bold">([</span>
 	<span style="color:#000;font-weight:bold">{</span>
-		<span style="color:#000">inherit</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;slide&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#8f5902;font-style:italic">//Inherit the slide trial.
-</span><span style="color:#8f5902;font-style:italic"></span>		<span style="color:#000">layout</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#8f5902;font-style:italic">//override the layout object of the slide trial.
-</span><span style="color:#8f5902;font-style:italic"></span>			<span style="color:#000">inherit</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;default&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#8f5902;font-style:italic">//Inherit the default stimulus.
-</span><span style="color:#8f5902;font-style:italic"></span>			<span style="color:#000">media</span> <span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#000;font-weight:bold">{</span><span style="color:#000">word</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;This&#39;</span><span style="color:#000;font-weight:bold">}</span> <span style="color:#8f5902;font-style:italic">//Add a media to the default stimulus.
-</span><span style="color:#8f5902;font-style:italic"></span>		<span style="color:#000;font-weight:bold">}]</span>
+		<span style="color:#000">inherit</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;slide&#39;</span><span style="color:#000;font-weight:bold">,</span>
+		<span style="color:#000">layout</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#000">inherit</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;default&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">media</span> <span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#000;font-weight:bold">{</span><span style="color:#000">word</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;This&#39;</span><span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">}]</span>
 	<span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">]);</span>
-</code></pre></div><p>Download the slideshow example <a href="slideshow3.js">here</a>. You can see it in action right <a href="slideshow3Play.html">here</a>.</p>
-<p>Note that the default stimulus had no media. It means that each stimulus that will inherit this stimulus will need to add a media object. We could have done the same thing with a basic slide trial: create a trial without any layout.</p>
+</code></pre></div><p>Note that the default stimulus had no media.
+It means that each stimulus that will inherit this stimulus will need to add a media object.
+We could have done the same thing with a basic slide trial: create a trial without any layout.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">API</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addTrialSets</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;slide&#39;</span><span style="color:#000;font-weight:bold">,[{</span>
 	<span style="color:#000">input</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span><span style="color:#000">handle</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">on</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#39;space&#39;</span><span style="color:#000;font-weight:bold">}],</span>
 	<span style="color:#000">interactions</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span>
@@ -1957,13 +2117,11 @@ The sequence holds an array: the trials in the array will be activated sequentia
 	<span style="color:#000;font-weight:bold">}]</span>
 <span style="color:#000;font-weight:bold">}])</span>
 </code></pre></div><p>It means that each trial that will inherit &lsquo;slide&rsquo; will need to add layout stimulus.</p>
-<p>There is much more to learn about inheritance. You will learn about it in the <a href="./stroop-setupDocco.html">Stroop</a> example.<br>
-For instance, what happens when there are a few different objects in a set? We can use that in order to randomly choose a trial (or a stimulus or a media object). We can put three different trials in a set and then inherit the set in a way that will choose one of those trials <a href="./stroop-inheritanceDocco.html">randomly</a>.
-You can also try to learn all that there is to know about inheritance straight from the <a href="./API.html#inheritance">API documentation</a>.</p>
+<p>Try this out for yourself. Can you add the default stimulus? Can you change it&rsquo;s appearance?</p>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified February 10, 2021: <a  href="https://github.com/minnojs/docsite/commit/deea01387ff27252f141110d2125c77a4c6846e9">time docs init (deea013)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified February 18, 2021: <a  href="https://github.com/minnojs/docsite/commit/01bad7c89ee9ab3a3c943211994cb2f73d55081a">fixed links in docs (01bad7c)</a>
 </div>
 </div>
 

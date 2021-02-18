@@ -1,6 +1,6 @@
 ---
 title: mixerRandom
-description: mixerRandom
+description:
 ---
 
 {{< playground filename=mixerRandom.md >}}

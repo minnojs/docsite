@@ -114,7 +114,7 @@ console.log(square(9))			// prints 81
 When developing scripts things don't always go as expected.
 Sometimes you might make a syntactical error, sometime you might misspell a keyword. 
 The browser always logs these errors and it is useful to see them.
-All modern browsers have a console that allows you to see the errors (if you are using firefox you should check out [firebug](https://getfirebug.com/)).
+All modern browsers have a console that allows you to see the errors.
 Most browsers use `F12` as a shortcut for displaying the console.
 If that doesn't work for you search your browsers menus: look for a **Web Developer** or **Developer Tools** menu under tools or options.
 

@@ -34,34 +34,132 @@ It was carefuly crafted by social scientists for social scientists with an empha
 {{% /blocks/lead %}}
 
 {{< blocks/section color="dark" >}}
-{{% blocks/feature icon="fa-stopwatch" title="Time sensitive tasks" %}}
+{{% blocks/feature icon="fa-stopwatch" title="Time sensitive tasks" url="docs/time" %}}
 MinnoJS excels at running complex time-sensitive tasks.
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fa-question" title="Questionnaires" %}}
+{{% blocks/feature icon="fa-question" title="Questionnaires" url="docs/quest" %}}
 Easily create questionnaires with full control over content randomization and interactivity.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-server" title="Minno server" %}}
+{{% blocks/feature icon="fa-server" title="Minno server" url="docs/server" %}}
 Manage study creation, data logging, multiple users and collaboration and much much more.
 {{% /blocks/feature %}}
 
 {{< /blocks/section >}}
 
-{{< blocks/section color=white type=justify-content-center >}}
+{{< blocks/lead type=justify-content-center >}}
+    <h1 class="text-center">There is no need to install</h1>
+    <h3 class="text-center">Try it out right now</h2>
+{{< /blocks/lead >}}
 
-<div class="col-6">
-        <h1 class="text-center">There is no need to install</h1>
-        <h3 class="text-center">Try it right now</h2>
+{{< blocks/section type=justify-content-center >}}
+    <div class="col-6">
+        <h2>Minno-time</h2>
+        <p> 
+            Minno-time allows you to create rich and flexible time sensitive tasks.
+            It is fast, accurate, and extremely flexible.
+            <a href="{{< ref "docs/time" >}}">Read more</a>
+        </p>
 
-        <h2>Manager</h2>
+        {{< playground filename=time.js >}}
+define(['timeAPI'], function(APIconstructor) {
+
+    var API = new APIconstructor();
+
+    API.addSequence([
+        {
+            input: [
+                {handle:'space',on:'space'}
+            ],
+            layout: [
+                {
+                    media :{word:'Hello world'},
+                    css:{fontSize:'2em',color:'#D7685A'}
+                }
+            ],
+            interactions: [
+                {
+                    conditions: [
+                        {type:'inputEquals',value:'space'}
+                    ],
+                    actions: [
+                        {type:'endTrial'}
+                    ]
+                }
+            ]
+        }
+    ]);
+
+    return API.script;
+});
+        {{< /playground >}}
+    </div>
+{{< /blocks/section >}}
+
+{{< blocks/section color="light" type=justify-content-center >}}
+    <div class="col-6">
+        <h2>Minno-quest</h2>
+        <p> 
+            Minno-quest is the questionnaire creator within the minno-suite.
+            It gives you the power to easily compose questionnaires, using a variety of built-in question types,
+            all while keeping the highly dynamic control provided by MinnoJS.
+            <a href="{{< ref "docs/quest" >}}">Read more</a>
+        </p>
+        {{< playground filename=quest.js >}}
+define(['questAPI'], function(Quest){
+
+    var API = new Quest();
+
+    API.addSequence([
+        {
+            header: 'Hello World',
+            questions: [
+                {
+                    type: 'selectOne',
+                    stem: 'What is you favorite color?',
+                    answers: ['red', 'blue', 'green']
+                }
+            ]
+        }
+    ]);
+
+    return API.script;
+});
+        {{< /playground >}}
+    </div>
+{{< /blocks/section >}}
+
+{{< blocks/section color="white" type=justify-content-center >}}
+    <div class="col-6">
+        <h2>Minno-manager</h2>
         <p> 
             Minno manager is responsible for orchestrating multiple Minno tasks together.
             It gives you control over the sequence of tasks presented to your participants
             and alows you to coordinate between your various tasks.
             <a href="{{< ref "docs/manager" >}}">Read more</a>
         </p>
-        {{< playground filename=manager.js />}}
-</div>
+        {{< playground filename=manager.js >}}
+define(['managerAPI'], function(Manager){
+
+    var API = new Manager();
+
+    API.addSequence([
+        {
+            type:'message', 
+            piTemplate: true,
+            template:'Click space for examples of a self-esteem questionnaire and a Stroop task', keys: ' '
+        }, 
+        {
+            type:'message',
+            piTemplate: true,
+            template:'Click space to finish the study', keys: ' '
+        }
+    ]);
+
+    return API.script;
+});
+        {{< /playground >}}
+    </div>
 {{< /blocks/section >}}

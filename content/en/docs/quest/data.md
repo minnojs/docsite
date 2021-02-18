@@ -5,9 +5,9 @@ description: How minno-quest stores data
 ---
 
 miQuest keeps record of user responses using plain js objects.
-These objects are both kept locally (see [variables](#variables)) and sent to the server.
+These objects are both kept locally and sent to the server.
 
-The data logs are available as properties of the `questsion` object  in `current`:
+Localy, the data logs are available as properties of the `questions` object  in [`current`]({{< relref "docs/sequencer/variables/current">}}):
 
 ```javascript
 current.questions = {
@@ -27,5 +27,5 @@ latency 		| The time (from question presentation) to the last change of this res
 submitLatency	| The time (from question presentation) to the time this page was submitted.
 
 The response for questionName1 can be accessed using `current.questions.questionName1.response`. 
-You can use this data within [templates](../basics/sequencer.html#templates)
-or from within [branches](../basics/sequencer.html#conditions).
+You can use this data within [templates]({{< relref "docs/sequencer/templates">}})
+or from within [branches]({{< relref "docs/sequencer/mixer#conditions">}}).
