@@ -42,8 +42,8 @@
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-helloPlay.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -155,8 +155,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritance.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -405,8 +405,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-input.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -581,8 +581,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-interactions.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -999,8 +999,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-sequence.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -1328,8 +1328,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-settings.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -1508,8 +1508,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-stimulus.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -1673,8 +1673,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-stroop-block.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -1983,8 +1983,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-stroop-inheritance.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -2242,8 +2242,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-stroop-interactions.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -2492,8 +2492,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-stroop-setup.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -2677,8 +2677,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-stroop-task.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -2938,8 +2938,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-touch.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -3072,8 +3072,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-trial.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;

@@ -45,8 +45,8 @@ After reading the documentation feel free to download the file and modify it acc
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-weight.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -599,8 +599,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-bodyAwareness.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -836,8 +836,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-buttons.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -994,8 +994,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-buttonsAdvanced.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -1188,8 +1188,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-buttonsOnePage.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -1345,8 +1345,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-dependency.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -1507,8 +1507,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-gridExample.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -1667,8 +1667,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-liveDependency.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -1812,8 +1812,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-nfc.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -2020,8 +2020,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-openEnded.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -2154,8 +2154,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-openEndedLong.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -2299,8 +2299,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-playground.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -2397,8 +2397,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-rateImages.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -2549,8 +2549,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-rateImagesSizes.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -2701,8 +2701,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-scaleWithFeedback.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -2939,8 +2939,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-sliderExample.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -3088,8 +3088,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-timer.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -3202,8 +3202,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-userPrevResp.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -3342,8 +3342,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-usingImages.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;

@@ -42,8 +42,8 @@
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritanceAbstraction.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -147,8 +147,8 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritanceByData.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -254,8 +254,8 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritanceCustom.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -359,8 +359,8 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritanceExRandom.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -465,8 +465,8 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritanceRandom.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -571,8 +571,8 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritanceRepeat.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -688,8 +688,8 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritanceSeed.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -798,8 +798,8 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritanceSequential.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;

@@ -94,8 +94,8 @@ This options is useful in various cases of branching, as well as when you want a
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-templateGlobal.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -226,8 +226,8 @@ Their behaviour is described fully within as part of element &lt;a href=&#34;../
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-templateData.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -325,8 +325,8 @@ The meta objects have two properties &lt;code&gt;number&lt;/code&gt; and &lt;cod
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-templateMeta.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;

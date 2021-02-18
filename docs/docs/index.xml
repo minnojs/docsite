@@ -66,8 +66,8 @@ After reading the documentation feel free to download the file and modify it acc
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-weight.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -1524,8 +1524,8 @@ In our case we want to simply present a single page with a single question so we
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -3237,8 +3237,8 @@ It makes debugging a bit easier as well.&lt;/p&gt;
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-bodyAwareness.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -3474,8 +3474,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-buttons.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -3632,8 +3632,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-buttonsAdvanced.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -3826,8 +3826,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-buttonsOnePage.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -4026,8 +4026,8 @@ where &lt;code&gt;&amp;lt;taskName&amp;gt;&lt;/code&gt; stands for the &lt;a hre
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-dependency.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -4261,8 +4261,8 @@ This options is useful in various cases of branching, as well as when you want a
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-templateGlobal.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -4560,8 +4560,8 @@ The global object exposes the url query string in a dedicated object called &lt;
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-grid.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -4680,8 +4680,8 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-gridExample.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -4951,8 +4951,8 @@ If all the condition objects in the conditions array are true, then all the acti
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-hello.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -5094,8 +5094,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-helloPlay.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -5226,8 +5226,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritance.js&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -5476,8 +5476,8 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritanceAbstraction.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
@@ -5581,8 +5581,8 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
 
 &lt;div class=&#34;pg-section&#34; id=&#34;pg-inheritanceByData.md&#34;&gt;
     &lt;p&gt;
-    &lt;a class=&#34;pg-play btn btn-secondary&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
-    &lt;a class=&#34;pg-download btn btn-outline-secondary&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
+    &lt;a class=&#34;pg-play btn btn-warning&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt; Run &lt;/a&gt;
+    &lt;a class=&#34;pg-download btn btn-outline-warning&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Download &lt;/a&gt;
     &lt;/p&gt;
 
     &lt;textarea class=&#34;code-mirror&#34; rows=&#34;40&#34;&gt;
