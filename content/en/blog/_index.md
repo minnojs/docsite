@@ -1,7 +1,7 @@
 ---
 title: "MinnoJS Blog"
 linkTitle: "Blog"
-draft: true
+draft: false
 menu:
   main:
     weight: 30

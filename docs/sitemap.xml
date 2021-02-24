@@ -268,6 +268,56 @@
   </url>
   
   <url>
+    <loc>/docsite/blog/news/</loc>
+    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/tutorials/</loc>
+    <lastmod>2021-01-28T14:08:28+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/2020/08/07/running-the-evaluative-priming-task-on-qulatrics/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/2020/07/27/running-the-amp-on-qulatrics/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/2020/07/10/running-the-st-iat-on-qualtrics/</loc>
+    <lastmod>2020-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/2020/07/09/running-a-brief-iat-on-qualtrics/</loc>
+    <lastmod>2020-07-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/2020/03/12/simple-csv-server/</loc>
+    <lastmod>2020-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/2020/03/05/running-project-implicits-iat-from-qualtrics/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/2019/12/17/creating-a-custom-logger/</loc>
+    <lastmod>2019-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/2019/11/28/fullscreen-mode-in-minnojs/</loc>
+    <lastmod>2019-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/docsite/about/</loc>
     <lastmod>2021-01-28T14:08:28+02:00</lastmod>
   </url>
@@ -280,6 +330,11 @@
   <url>
     <loc>/docsite/docs/time/api/</loc>
     <lastmod>2021-02-10T21:07:19+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/</loc>
+    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
   </url>
   
   <url>
@@ -310,6 +365,10 @@
   <url>
     <loc>/docsite/docs/quest/examples/dependency/</loc>
     <lastmod>2021-02-01T21:41:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/1/01/01/develop-localy-with-minnojs/</loc>
   </url>
   
   <url>
@@ -448,13 +507,17 @@
   </url>
   
   <url>
+    <loc>/docsite/blog/1/01/01/manually-activating-minnojs/</loc>
+  </url>
+  
+  <url>
     <loc>/docsite/docs/manager/tasks/messages/</loc>
     <lastmod>2021-01-28T14:08:28+02:00</lastmod>
   </url>
   
   <url>
     <loc>/docsite/</loc>
-    <lastmod>2021-02-18T15:07:56+02:00</lastmod>
+    <lastmod>2021-02-18T16:01:17+02:00</lastmod>
   </url>
   
   <url>
@@ -693,6 +756,10 @@
   </url>
   
   <url>
+    <loc>/docsite/blog/1/01/01/using-minno-with-qualtrics/</loc>
+  </url>
+  
+  <url>
     <loc>/docsite/docs/quest/examples/usingimages/</loc>
     <lastmod>2021-02-01T21:41:16+02:00</lastmod>
   </url>
@@ -710,6 +777,10 @@
   <url>
     <loc>/docsite/docs/manager/tasks/yesno/</loc>
     <lastmod>2021-02-18T15:07:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docsite/blog/1/01/01/yoking-participants-seeded-randomization/</loc>
   </url>
   
 </urlset>
