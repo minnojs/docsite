@@ -1,5 +1,5 @@
 ---
-title: Core
+title: Core concepts
 weight: 10
 description: >
     The very basics of approaching a MinnoJS task.

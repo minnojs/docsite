@@ -11,11 +11,11 @@ credit: <span>Photo by <a href="https://unsplash.com/@nknezevic?utm_source=unspl
 
 {{< blocks/cover title="Welcome to Minno Suite" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
-		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs/start" >}}">
+		Gettings started<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
-	<a class="btn btn-lg btn-warning mr-3 mb-4" href="https://github.com/minnojs/">
-		Download <i class="fab fa-github ml-2 "></i>
+    <a class="btn btn-lg btn-info mr-3 mb-4" href="{{< relref "/docs" >}}">
+		Documentation <i class="fas fa-book ml-2 "></i>
 	</a>
 	<p class="lead mt-5">A platform for online studies!</p>
 	{{< blocks/link-down color="primary" >}}
@@ -28,8 +28,8 @@ credit: <span>Photo by <a href="https://unsplash.com/@nknezevic?utm_source=unspl
 **Syndarin**. *Verb*. Enter! (lit. to the inside!)
 
 Welcome!
-Minno Suite is a platform for running behaviour studies online.
-It was carefuly crafted by social scientists for social scientists with an emphasis on usability and flexability.
+Minno Suite is a free platform for running behaviour studies online.
+It was carefuly crafted by social scientists for social scientists with an emphasis on usability and flexibility.
 
 {{% /blocks/lead %}}
 
@@ -43,7 +43,7 @@ MinnoJS excels at running complex time-sensitive tasks.
 Easily create questionnaires with full control over content randomization and interactivity.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-server" title="Minno server" url="docs/server" %}}
+{{% blocks/feature icon="fa-server" title="Minno server" url="docs/start/server" %}}
 Manage study creation, data logging, multiple users and collaboration and much much more.
 {{% /blocks/feature %}}
 
@@ -60,6 +60,7 @@ Manage study creation, data logging, multiple users and collaboration and much m
         <p> 
             Minno-time allows you to create rich and flexible time sensitive tasks.
             It is fast, accurate, and extremely flexible.
+            Following is an implementation of the Race IAT (Nosek, Greenwald, & Banaji, 2005).
             <a href="{{< ref "docs/time" >}}">Read more</a>
         </p>
 
@@ -120,21 +121,41 @@ define(['timeAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat8
             Minno-quest is the questionnaire creator within the minno-suite.
             It gives you the power to easily compose questionnaires, using a variety of built-in question types,
             all while keeping the highly dynamic control provided by MinnoJS.
+            Following is simple implementation of the Rosenberg Self-Esteem Scale (Rosenberg, 1965).
             <a href="{{< ref "docs/quest" >}}">Read more</a>
         </p>
         {{< playground filename=quest.js >}}
 define(['questAPI'], function(Quest){
-
     var API = new Quest();
+
+    API.addQuestionsSet('basicSelect', {
+        type: 'selectOne',
+        style:'multiButtons',
+        errorMsg: { required: "Please select an answer, or click 'decline to answer'" },
+        answers : ['Strongly Disagree', 'Disagree', 'Agree', 'Strongly Agree']
+    });
+
+    API.addQuestionsSet('item', [
+        {inherit : 'basicSelect', name:'item1', stem : 'On the whole, I am satisfied with myself.'},
+        {inherit : 'basicSelect', name:'item2', stem : 'At times I think I am no good at all.'},
+        {inherit : 'basicSelect', name:'item3', stem : 'I feel that I have a number of good qualities.'},
+        {inherit : 'basicSelect', name:'item4', stem : 'I am able to do things as well as most other people.'},
+        {inherit : 'basicSelect', name:'item5', stem : 'I feel I do not have much to be proud of.'},
+        {inherit : 'basicSelect', name:'item6', stem : 'I certainly feel useless at times.'},
+        {inherit : 'basicSelect', name:'item7', stem : 'I wish I could have more respect for myself.'},
+        {inherit : 'basicSelect', name:'item8', stem : 'All in all, I am inclined to feel that I am a failure.'},
+        {inherit : 'basicSelect', name:'item9', stem : 'I take a positive attitude toward myself.'},
+        {inherit : 'basicSelect', name:'item10', stem : "I feel that I'm a person of worth, at least on an equal plane with others."}
+    ]);
 
     API.addSequence([
         {
-            header: 'Hello World',
-            questions: [
+            mixer: 'repeat',
+            times: 10,
+            data: [
                 {
-                    type: 'selectOne',
-                    stem: 'What is you favorite color?',
-                    answers: ['red', 'blue', 'green']
+                    progressBar: '<%= pagesMeta.number %> out of 10',
+                    questions : {inherit:{set:'item', type:'exRandom'}}
                 }
             ]
         }
@@ -142,39 +163,7 @@ define(['questAPI'], function(Quest){
 
     return API.script;
 });
-        {{< /playground >}}
-    </div>
-{{< /blocks/section >}}
 
-{{< blocks/section color="white" type=justify-content-center >}}
-    <div class="col-xl-6">
-        <h2>Minno-manager</h2>
-        <p> 
-            Minno manager is responsible for orchestrating multiple Minno tasks together.
-            It gives you control over the sequence of tasks presented to your participants
-            and alows you to coordinate between your various tasks.
-            <a href="{{< ref "docs/manager" >}}">Read more</a>
-        </p>
-        {{< playground filename=manager.js >}}
-define(['managerAPI'], function(Manager){
-
-    var API = new Manager();
-
-    API.addSequence([
-        {
-            type:'message', 
-            piTemplate: true,
-            template:'Click space for examples of a self-esteem questionnaire and a Stroop task', keys: ' '
-        }, 
-        {
-            type:'message',
-            piTemplate: true,
-            template:'Click space to finish the study', keys: ' '
-        }
-    ]);
-
-    return API.script;
-});
         {{< /playground >}}
     </div>
 {{< /blocks/section >}}

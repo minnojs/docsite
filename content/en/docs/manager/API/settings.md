@@ -110,35 +110,13 @@ API.addSettings('rtl', true);
 
 ## logger
 The logger allows control of logging activities.
-
-Folowing are the properties available for the logger:
-
-property    | description 
------------ | -----------
-url         | The url to send to. If it is not set, data will not be sent.
-type        | The strategy to use for sending logs to the server. See options below.
-pulse       | Allows you to post your data in pulses of "pulse" logs instead of all at the end of the task (Does not work for csv logger).
+See full details in the [core section](/docs/core/logger).
 
 ```javascript
 API.addSettings('logger', {
-    url: '/manager/data',
-    type:'new',
-    pulse: 20
+    type:'debug',
 });
 ```
-
-By deafault the logger posts according to the Project Implicit server rules (old).
-You can change the logging style by setting the logger `type` as follows:
-
-type    | description
-------- | -----------
-old     | Uses the post strategy implemented by the old PI server
-new     | Uses the post strategy implemented by the new server  
-csv     | Posts all data as CSV at the end of the manager. If you are creating a manager that does not fully complete (for instance, when you have a message as your last page), use the postCSV task in addition to settings the log type to csv.
-debug   | Logs all posts to the console. Do not do this in production! These logs aren't posted to the server at all!
-
-You can change the logging strategy or even create new strategies.
-Doing this is rather advanced and is documented [here](https://github.com/minnojs/minno-quest/blob/0.2/src/taskManager/logger/readme.md).
 
 ## DEBUG
 The `DEBUG` settings allows you to control the debug messages produced by the player.

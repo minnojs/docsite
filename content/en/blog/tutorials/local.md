@@ -1,6 +1,7 @@
 ---
 title: Develop localy with MinnoJS
-date: 2020-02
+linkTitle: Local development
+date: 2020-02-01
 author: Elad Zlotnick
 ---
 

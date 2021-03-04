@@ -1,5 +1,6 @@
 ---
 title: Yoking participants (seeded randomization)
+linkTitle: Yoking participants
 date: 2019-12
 author: Elad Zlotnick
 ---

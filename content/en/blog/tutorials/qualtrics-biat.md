@@ -1,5 +1,6 @@
 ---
 title: Running a Brief-IAT on Qualtrics
+linkTitle: Qualtrics Brief-IAT
 date: 2020-07-09
 author: Gal Maimon
 ---
@@ -17,7 +18,7 @@ The script that we created for building BIATs is an extension, implemented as a 
 ### Into Qualtrics
 The BIAT will run from a single question in your survey, separated from any other question by a Page Break, like this:
 
-{{< figure src="blog/tutorials/images/quiat1.png" >}}
+{{< figure src="/blog/tutorials/images/quiat1.png" >}}
 
 Please [Don't forgot](https://minnojs.github.io/minnojs-blog/qualtrics/): The question's type should be “Text Entry”, and you would need to set it up as a multiline question (in the setting box on the right). We need a multiline question because we are going to use a CSV format to save the data, and single line questions do not save new lines. 
 
@@ -211,7 +212,7 @@ If you don’t feel comfortable using R, here is how to create a csv file with t
 9. You can open that csv file to make sure that it is fine. 
 
 The steps in an animated gif:
-{{< figure src="blog/tutorials/images/processiat.gif" title="Data image" >}}
+{{< figure src="/blog/tutorials/images/processiat.gif" title="Data image" >}}
 
 
 ### Any questions?

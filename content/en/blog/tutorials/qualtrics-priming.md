@@ -1,5 +1,6 @@
 ---
 title: Running the Evaluative Priming Task on Qulatrics
+linkTitle: Qualtrics priming
 date: 2020-08-07
 author: Gal Maimon
 ---
@@ -17,7 +18,7 @@ The script that we created for building an Evaluative Priming Task is an extensi
 ### Into Qualtrics
 The Evaluative Priming Task will run from a single question in your survey, separated from any other question by a Page Break, like this:
 
-{{< figure src="blog/tutorials/images/quiat1.png" >}}
+{{< figure src="/blog/tutorials/images/quiat1.png" >}}
 
 Please [Don't forgot](https://minnojs.github.io/minnojs-blog/qualtrics/): The question's type should be “Text Entry”, and you would need to set it up as a multiline question (in the setting box on the right). We need a multiline question because we are going to use a CSV format to save the data, and single line questions do not save new lines. 
 
@@ -164,7 +165,7 @@ If you don’t feel comfortable using R, here is how to create a csv file with t
 
 The steps in an animated gif:
 
-{{< figure src="blog/tutorials/images/processiat.gif" title="Data image" >}}
+{{< figure src="/blog/tutorials/images/processiat.gif" title="Data image" >}}
 
 ### Any questions?
 

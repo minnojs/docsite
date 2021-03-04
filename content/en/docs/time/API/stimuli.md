@@ -29,7 +29,7 @@ Alternatively, if a stimulus is inherited from a set, the handle is defined by d
 ## size
 The size of the stimulus in percentage of the player canvas. By default, size is set to {height:'auto',width:'auto'}.
 
-`location`:
+## location
 The location to display the stimulus, in percentage of the player canvas. Where `left:20` means that the left border of the stimulus should be 20% from the left of the canvas. You may define any of `left`/`right`/`top`/`bottom` attributes.
 
 Instead of specifying percentages you may use the keyword `center` in order to center the stimulus, or the keyword `auto` in order to override any previous settings.
@@ -49,5 +49,7 @@ In addition to the basic attributes of the stimulus you may add any attribute yo
 
 ## nolog
 If this attribute is set to true, this stimulus (and its associated media) will not be logged.
+This is usefull for example for focus stimuli and feedback that are identical for all trials and do not need to be logged.
+
 By default nolog is set to false.
 

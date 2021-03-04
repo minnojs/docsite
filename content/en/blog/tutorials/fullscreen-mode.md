@@ -1,5 +1,6 @@
 ---
 title: Fullscreen mode in MinnoJS
+linkTitle: Fullscreen
 date: 2019-11-28
 author: Elad Zlotnick
 ---

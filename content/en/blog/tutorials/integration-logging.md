@@ -1,5 +1,6 @@
 ---
 title: Creating a custom logger
+linkTitle: Custom Loggers
 date: 2019-12-17
 author: Elad Zlotnick
 ---

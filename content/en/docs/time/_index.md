@@ -1,5 +1,5 @@
 ---
-title: Time sensitive
+title: Time sensitive tasks
 weight: 20
 description: How to run time sensitive tasks in MinnoJS
 ---

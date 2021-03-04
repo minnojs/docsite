@@ -1,5 +1,6 @@
 ---
 title: Manually activating MinnoJS
+linkTitle: Manual activation
 date: 2019-12
 author: Elad Zlotnick
 ---
