@@ -27,7 +27,7 @@ jobs:
         with:
           personal_token: ${{ secrets.TOKEN }}
           external_repository: minnojs/minnojs.github.io
-          publish_dir: ./docs
+          publish_dir: ./public
           #   keep_files: true
           user_name: <username>
           user_email: <username@email.com>
