@@ -7,7 +7,7 @@ defaultContentLanguageInSubdir= true
 search = true
 #uglyURLs = true
 canonifyURLs = true
-publishDir = "docs"
+publishDir = "public"
 
 [Languages]
 [Languages.en]
