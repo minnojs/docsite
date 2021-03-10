@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Study manager</title>
-    <link>/docsite/docs/manager/</link>
+    <link>/docs/manager/</link>
     <description>Recent content in Study manager on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="/docsite/docs/manager/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/manager/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Playground</title>
-      <link>/docsite/docs/manager/playground/</link>
+      <link>/docs/manager/playground/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/manager/playground/</guid>
+      <guid>/docs/manager/playground/</guid>
       <description>
         
         
@@ -30,10 +30,10 @@
     
     <item>
       <title>Docs: API</title>
-      <link>/docsite/docs/manager/api/</link>
+      <link>/docs/manager/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/manager/api/</guid>
+      <guid>/docs/manager/api/</guid>
       <description>
         
         
@@ -43,10 +43,10 @@
     
     <item>
       <title>Docs: Task types</title>
-      <link>/docsite/docs/manager/tasks/</link>
+      <link>/docs/manager/tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/manager/tasks/</guid>
+      <guid>/docs/manager/tasks/</guid>
       <description>
         
         
@@ -59,10 +59,10 @@ Following is a list of tasks types, follow the link to learn how to use them.&lt
     
     <item>
       <title>Docs: Examples</title>
-      <link>/docsite/docs/manager/examples/</link>
+      <link>/docs/manager/examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/manager/examples/</guid>
+      <guid>/docs/manager/examples/</guid>
       <description>
         
         

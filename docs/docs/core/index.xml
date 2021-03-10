@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minno Suite – Core</title>
-    <link>/docsite/docs/core/</link>
-    <description>Recent content in Core on Minno Suite</description>
+    <title>Minno Suite – Core concepts</title>
+    <link>/docs/core/</link>
+    <description>Recent content in Core concepts on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="/docsite/docs/core/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/core/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Javascript</title>
-      <link>/docsite/docs/core/javascript/</link>
+      <link>/docs/core/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/core/javascript/</guid>
+      <guid>/docs/core/javascript/</guid>
       <description>
         
         
@@ -133,10 +133,10 @@ If that doesn&amp;rsquo;t work for you search your browsers menus: look for a &l
     
     <item>
       <title>Docs: Creating a task</title>
-      <link>/docsite/docs/core/create/</link>
+      <link>/docs/core/create/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/core/create/</guid>
+      <guid>/docs/core/create/</guid>
       <description>
         
         
@@ -238,10 +238,10 @@ The full documentation for inheritance is &lt;a href=&#34;../../sequencer/inheri
     
     <item>
       <title>Docs: Deploying a task</title>
-      <link>/docsite/docs/core/deploy/</link>
+      <link>/docs/core/deploy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/core/deploy/</guid>
+      <guid>/docs/core/deploy/</guid>
       <description>
         
         
@@ -321,39 +321,15 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
     
     <item>
       <title>Docs: API</title>
-      <link>/docsite/docs/core/api/</link>
+      <link>/docs/core/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/core/api/</guid>
+      <guid>/docs/core/api/</guid>
       <description>
         
         
-        &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#task-creation&#34;&gt;Task creation&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#setnamename&#34;&gt;setName(name)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#addsettingsname-setting&#34;&gt;addSettings(name, setting)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#addsequencesequence&#34;&gt;addSequence(sequence)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#addsetsetname-setarray&#34;&gt;addSet(setName, setArray)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#environmental-variables&#34;&gt;Environmental variables&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#addglobalobj&#34;&gt;addGlobal(obj)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#getglobal&#34;&gt;getGlobal()&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#addcurrentobj&#34;&gt;addCurrent(obj)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#getcurrent&#34;&gt;getCurrent()&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#convenience-methods&#34;&gt;Convenience methods&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#posturl-object&#34;&gt;post(url, object)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#shufflecollection&#34;&gt;shuffle(collection)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;task-creation&#34;&gt;Task creation&lt;/h3&gt;
-&lt;h4 id=&#34;setnamename&#34;&gt;setName(name)&lt;/h4&gt;
+        &lt;h2 id=&#34;task-creation&#34;&gt;Task creation&lt;/h2&gt;
+&lt;h3 id=&#34;setnamename&#34;&gt;setName(name)&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -370,11 +346,11 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;returns&#34;&gt;returns:&lt;/h5&gt;
+&lt;h4 id=&#34;returns&#34;&gt;returns:&lt;/h4&gt;
 &lt;p&gt;(&lt;em&gt;Object&lt;/em&gt;) this &lt;code&gt;API&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;example&#34;&gt;example:&lt;/h5&gt;
+&lt;h4 id=&#34;example&#34;&gt;example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;setName&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;taskName&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;addsettingsname-setting&#34;&gt;addSettings(name, setting)&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;addsettingsname-setting&#34;&gt;addSettings(name, setting)&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -396,9 +372,9 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;returns-1&#34;&gt;returns:&lt;/h5&gt;
+&lt;h4 id=&#34;returns-1&#34;&gt;returns:&lt;/h4&gt;
 &lt;p&gt;(&lt;em&gt;Object&lt;/em&gt;) this &lt;code&gt;API&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;example-1&#34;&gt;example:&lt;/h5&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addSettings&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;onEnd&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(){&lt;/span&gt;
     &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// something to do at the end of the task    
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
@@ -419,14 +395,14 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;returns-2&#34;&gt;returns:&lt;/h5&gt;
+&lt;h4 id=&#34;returns-2&#34;&gt;returns:&lt;/h4&gt;
 &lt;p&gt;(&lt;em&gt;Object&lt;/em&gt;) this &lt;code&gt;API&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;example-2&#34;&gt;example:&lt;/h5&gt;
+&lt;h4 id=&#34;example-2&#34;&gt;example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addSequence&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;([&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;trial1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;trial2&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;addsetsetname-setarray&#34;&gt;addSet(setName, setArray)&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;addsetsetname-setarray&#34;&gt;addSet(setName, setArray)&lt;/h3&gt;
 &lt;p&gt;Each task API has one or more &amp;ldquo;addSet&amp;rdquo; functions. These function take the form &lt;code&gt;add&amp;lt;*SetName*&amp;gt;Set&lt;/code&gt; so that, for instance pages use the &lt;code&gt;API.addPagesSet&lt;/code&gt; function and tasks use the &lt;code&gt;API.addTaskSet&lt;/code&gt; function. They are used in order to register prototypes of objects for the sequencer &lt;a href=&#34;sequencer.html#inheritance&#34;&gt;inheritance&lt;/a&gt; system.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -507,9 +483,9 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;returns-3&#34;&gt;returns:&lt;/h5&gt;
+&lt;h4 id=&#34;returns-3&#34;&gt;returns:&lt;/h4&gt;
 &lt;p&gt;&amp;lsquo;undefined&amp;rsquo;&lt;/p&gt;
-&lt;h5 id=&#34;examples&#34;&gt;examples:&lt;/h5&gt;
+&lt;h4 id=&#34;examples&#34;&gt;examples:&lt;/h4&gt;
 &lt;p&gt;First notation:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addTrialSet&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;set1&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;trial1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addTrialSet&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;set2&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;trial2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;trial3&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
@@ -518,8 +494,8 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
     &lt;span style=&#34;color:#000&#34;&gt;set1&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;trial1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;set2&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;trial2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;trial3&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;environmental-variables&#34;&gt;Environmental variables&lt;/h3&gt;
-&lt;h4 id=&#34;addglobalobj&#34;&gt;addGlobal(obj)&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;environmental-variables&#34;&gt;Environmental variables&lt;/h2&gt;
+&lt;h3 id=&#34;addglobalobj&#34;&gt;addGlobal(obj)&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -536,17 +512,17 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;returns-4&#34;&gt;returns:&lt;/h5&gt;
+&lt;h4 id=&#34;returns-4&#34;&gt;returns:&lt;/h4&gt;
 &lt;p&gt;(&lt;em&gt;Object&lt;/em&gt;) &lt;code&gt;global&lt;/code&gt; object.&lt;/p&gt;
-&lt;h5 id=&#34;example-3&#34;&gt;example:&lt;/h5&gt;
+&lt;h4 id=&#34;example-3&#34;&gt;example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addGlobal&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;myFlag&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;getglobal&#34;&gt;getGlobal()&lt;/h4&gt;
-&lt;h5 id=&#34;returns-5&#34;&gt;returns:&lt;/h5&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;getglobal&#34;&gt;getGlobal()&lt;/h3&gt;
+&lt;h4 id=&#34;returns-5&#34;&gt;returns:&lt;/h4&gt;
 &lt;p&gt;(&lt;em&gt;Object&lt;/em&gt;) &lt;code&gt;global&lt;/code&gt; object.&lt;/p&gt;
-&lt;h5 id=&#34;example-4&#34;&gt;example:&lt;/h5&gt;
+&lt;h4 id=&#34;example-4&#34;&gt;example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;getGlobal&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;myFlag&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;addcurrentobj&#34;&gt;addCurrent(obj)&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;addcurrentobj&#34;&gt;addCurrent(obj)&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -563,18 +539,18 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;returns-6&#34;&gt;returns:&lt;/h5&gt;
+&lt;h4 id=&#34;returns-6&#34;&gt;returns:&lt;/h4&gt;
 &lt;p&gt;(&lt;em&gt;Object&lt;/em&gt;) &lt;code&gt;current&lt;/code&gt; object.&lt;/p&gt;
-&lt;h5 id=&#34;example-5&#34;&gt;example:&lt;/h5&gt;
+&lt;h4 id=&#34;example-5&#34;&gt;example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addCurrent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;myFlag&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;getcurrent&#34;&gt;getCurrent()&lt;/h4&gt;
-&lt;h5 id=&#34;returns-7&#34;&gt;returns:&lt;/h5&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;getcurrent&#34;&gt;getCurrent()&lt;/h3&gt;
+&lt;h4 id=&#34;returns-7&#34;&gt;returns:&lt;/h4&gt;
 &lt;p&gt;(&lt;em&gt;Object&lt;/em&gt;) &lt;code&gt;current&lt;/code&gt; object.&lt;/p&gt;
-&lt;h5 id=&#34;example-6&#34;&gt;example:&lt;/h5&gt;
+&lt;h4 id=&#34;example-6&#34;&gt;example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;current&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;getCurrent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;current&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;myFlag&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;convenience-methods&#34;&gt;Convenience methods&lt;/h3&gt;
-&lt;h4 id=&#34;posturl-object&#34;&gt;post(url, object)&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;convenience-methods&#34;&gt;Convenience methods&lt;/h2&gt;
+&lt;h3 id=&#34;posturl-object&#34;&gt;post(url, object)&lt;/h3&gt;
 &lt;p&gt;Posts JSONified data to the server.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -597,11 +573,11 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;returns-8&#34;&gt;returns:&lt;/h5&gt;
+&lt;h4 id=&#34;returns-8&#34;&gt;returns:&lt;/h4&gt;
 &lt;p&gt;(&lt;em&gt;Promise&lt;/em&gt;) a promise to be resolved when the post completes.&lt;/p&gt;
-&lt;h5 id=&#34;example-7&#34;&gt;example:&lt;/h5&gt;
+&lt;h4 id=&#34;example-7&#34;&gt;example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;post&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;my/server/url&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;my&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;data&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;shufflecollection&#34;&gt;shuffle(collection)&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;shufflecollection&#34;&gt;shuffle(collection)&lt;/h3&gt;
 &lt;p&gt;Returns an array of shuffled values, using a version of the Fisher-Yates shuffle (Uses &lt;a href=&#34;https://lodash.com/docs#shuffle&#34;&gt;lodash shuffle&lt;/a&gt;).&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -619,12 +595,12 @@ The way that we do this, is by setting the data into the &lt;a href=&#34;./varia
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;returns-9&#34;&gt;returns:&lt;/h5&gt;
+&lt;h4 id=&#34;returns-9&#34;&gt;returns:&lt;/h4&gt;
 &lt;p&gt;(&lt;em&gt;Array&lt;/em&gt;) The new shuffled array.&lt;/p&gt;
-&lt;h5 id=&#34;example-8&#34;&gt;example:&lt;/h5&gt;
+&lt;h4 id=&#34;example-8&#34;&gt;example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;shuffled&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;shuffle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;([&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;console&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;shuffled&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// prints [4, 1, 3, 2] for example
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;saveobject&#34;&gt;save(object)&lt;/h4&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;saveobject&#34;&gt;save(object)&lt;/h3&gt;
 &lt;p&gt;This function is available only on the project implicit build.
 Posts JSONified data to the server.&lt;/p&gt;
 &lt;table&gt;
@@ -643,11 +619,182 @@ Posts JSONified data to the server.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;returns-10&#34;&gt;returns:&lt;/h5&gt;
+&lt;h4 id=&#34;returns-10&#34;&gt;returns:&lt;/h4&gt;
 &lt;p&gt;(&lt;em&gt;Promise&lt;/em&gt;) a promise to be resolved when the post completes.&lt;/p&gt;
-&lt;h5 id=&#34;example-9&#34;&gt;example:&lt;/h5&gt;
+&lt;h4 id=&#34;example-9&#34;&gt;example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;save&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;my&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;data&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Advanced logging techniques</title>
+      <link>/docs/core/logger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/core/logger/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The logger controls the way(s) that you save the data your study collects.
+You can define the logging method for any of your tasks (manager, time, and quest) within its settings.
+If you do not define a logger for a task, it will default to the logger defined in your manager.&lt;/p&gt;
+&lt;h2 id=&#34;syntax&#34;&gt;Syntax&lt;/h2&gt;
+&lt;p&gt;Folowing are the properties available for the logger:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;property&lt;/th&gt;
+&lt;th&gt;description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td&gt;The url to send to. If it is not set, data will not be sent.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;type&lt;/td&gt;
+&lt;td&gt;The strategy to use for sending logs to the server. See options below.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pulse&lt;/td&gt;
+&lt;td&gt;Allows you to post your data in pulses of &amp;ldquo;pulse&amp;rdquo; logs instead of all at the end of the task (Does not work for csv logger).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addSettings&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;logger&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/manager/data&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;new&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;pulse&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;20&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By deafault the logger posts according to the Project Implicit server rules (old).
+You can change the logging style by setting the logger &lt;code&gt;type&lt;/code&gt; as follows:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;type&lt;/th&gt;
+&lt;th&gt;description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;old&lt;/td&gt;
+&lt;td&gt;Uses the post strategy implemented by the old PI server&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;new&lt;/td&gt;
+&lt;td&gt;Uses the post strategy implemented by the new server&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;csv&lt;/td&gt;
+&lt;td&gt;Posts all data as CSV at the end of the manager. If you are creating a manager that does not fully complete (for instance, when you have a message as your last page), use the postCSV task in addition to settings the log type to csv.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;debug&lt;/td&gt;
+&lt;td&gt;Logs all posts to the console. Do not do this in production! These logs aren&amp;rsquo;t posted to the server at all!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;You can change the logging strategy or even create new strategies.
+Doing this is rather advanced and is documented below.&lt;/p&gt;
+&lt;h2 id=&#34;advanced-use&#34;&gt;Advanced use&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+
+    Following is a technical account of how the logger works.
+It is useful for people interested in modifying existing loggers, or creating loggers for additional environments.
+This description is fairly technical, and designed for advanced users only.
+
+&lt;/div&gt;
+
+&lt;p&gt;The logger is responsible for managing multiple streams of logs and allowing easy fine tuning of posting them to a server.
+Each logger can create named log streams that can then be used to manage your data.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Logger&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;./logger&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;noop&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(){};&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;onRow&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;console&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt; 
+    &lt;span style=&#34;color:#000&#34;&gt;onEnd&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()=&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;console&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;The end&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt; 
+    &lt;span style=&#34;color:#000&#34;&gt;serialize&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;noop&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; 
+    &lt;span style=&#34;color:#000&#34;&gt;send&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;noop&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;};&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;logger&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Logger&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;managerLog&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;createLog&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;manager&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;managerLog&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;first log&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// logs &amp;#39;first log&amp;#39;
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;managerLog&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;second log&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// logs &amp;#39;second log&amp;#39;
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;managerLog&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;end&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// logs &amp;#39;The end&amp;#39;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The raw logger takes a settings object with four properties:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Property&lt;/th&gt;
+&lt;th&gt;Signature&lt;/th&gt;
+&lt;th&gt;Descritpion&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;onRow&lt;/td&gt;
+&lt;td&gt;(logName, log, settings, ctx) =&amp;gt; Any|undefined&lt;/td&gt;
+&lt;td&gt;Maps over the log stream, return any value in order to pass it to &lt;code&gt;serialize&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;onEnd&lt;/td&gt;
+&lt;td&gt;(logName, settings, ctx) =&amp;gt; Any|undefined&lt;/td&gt;
+&lt;td&gt;Gets called when a stream ends, return any value in order to pass it to &lt;code&gt;serialize&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;serialize&lt;/td&gt;
+&lt;td&gt;(logName, logs, settings, ctx) =&amp;gt; Any&lt;/td&gt;
+&lt;td&gt;Transforms the logs returned by onRow/onEnd before sending them&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;send&lt;/td&gt;
+&lt;td&gt;(logName, serialized, settings, ctx) =&amp;gt; void&lt;/td&gt;
+&lt;td&gt;Sends serialized data to server (or whatever&amp;hellip;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The arguments for the logging functions are as follows:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Argument&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;logName&lt;/td&gt;
+&lt;td&gt;The name for this log group - the name of the task producing these logs.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;log/logs/serialized&lt;/td&gt;
+&lt;td&gt;The data piped down to this function.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;settings&lt;/td&gt;
+&lt;td&gt;The settings object + some meta data. See below for some additional details.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctx&lt;/td&gt;
+&lt;td&gt;The context object of the logger. You can assign any values you like into it. This is a good place to keep state across logging actions.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;The settings object here is rather dynamic. It is composed of
+(a) The defalut settings as defined by the &lt;code&gt;type&lt;/code&gt; settings.
+(b) The manager logger settings.
+(c) The task logger settings.
+(d) If the log was created by API.save &lt;code&gt;settings.isManual&lt;/code&gt; is set to true.
+(e) The task type is set into &lt;code&gt;settings.is&amp;lt;Type&amp;gt;&lt;/code&gt; so that quest tasks will have &lt;code&gt;settings.isQuest&lt;/code&gt; set to true.&lt;/li&gt;
+&lt;/ul&gt;
+
       </description>
     </item>
     

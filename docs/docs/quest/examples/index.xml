@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Examples</title>
-    <link>/docsite/docs/quest/examples/</link>
+    <link>/docs/quest/examples/</link>
     <description>Recent content in Examples on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="/docsite/docs/quest/examples/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/quest/examples/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Body weight</title>
-      <link>/docsite/docs/quest/examples/weight/</link>
+      <link>/docs/quest/examples/weight/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/weight/</guid>
+      <guid>/docs/quest/examples/weight/</guid>
       <description>
         
         
@@ -573,10 +573,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: bodyAwareness</title>
-      <link>/docsite/docs/quest/examples/bodyawareness/</link>
+      <link>/docs/quest/examples/bodyawareness/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/bodyawareness/</guid>
+      <guid>/docs/quest/examples/bodyawareness/</guid>
       <description>
         
         
@@ -810,10 +810,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: buttons</title>
-      <link>/docsite/docs/quest/examples/buttons/</link>
+      <link>/docs/quest/examples/buttons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/buttons/</guid>
+      <guid>/docs/quest/examples/buttons/</guid>
       <description>
         
         
@@ -968,10 +968,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: buttonsAdvanced</title>
-      <link>/docsite/docs/quest/examples/buttonsadvanced/</link>
+      <link>/docs/quest/examples/buttonsadvanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/buttonsadvanced/</guid>
+      <guid>/docs/quest/examples/buttonsadvanced/</guid>
       <description>
         
         
@@ -1162,10 +1162,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: buttonsOnePage</title>
-      <link>/docsite/docs/quest/examples/buttonsonepage/</link>
+      <link>/docs/quest/examples/buttonsonepage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/buttonsonepage/</guid>
+      <guid>/docs/quest/examples/buttonsonepage/</guid>
       <description>
         
         
@@ -1319,10 +1319,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: dependency</title>
-      <link>/docsite/docs/quest/examples/dependency/</link>
+      <link>/docs/quest/examples/dependency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/dependency/</guid>
+      <guid>/docs/quest/examples/dependency/</guid>
       <description>
         
         
@@ -1481,10 +1481,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: gridExample</title>
-      <link>/docsite/docs/quest/examples/gridexample/</link>
+      <link>/docs/quest/examples/gridexample/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/gridexample/</guid>
+      <guid>/docs/quest/examples/gridexample/</guid>
       <description>
         
         
@@ -1641,10 +1641,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: liveDependency</title>
-      <link>/docsite/docs/quest/examples/livedependency/</link>
+      <link>/docs/quest/examples/livedependency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/livedependency/</guid>
+      <guid>/docs/quest/examples/livedependency/</guid>
       <description>
         
         
@@ -1786,10 +1786,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: nfc</title>
-      <link>/docsite/docs/quest/examples/nfc/</link>
+      <link>/docs/quest/examples/nfc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/nfc/</guid>
+      <guid>/docs/quest/examples/nfc/</guid>
       <description>
         
         
@@ -1994,10 +1994,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: openEnded</title>
-      <link>/docsite/docs/quest/examples/openended/</link>
+      <link>/docs/quest/examples/openended/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/openended/</guid>
+      <guid>/docs/quest/examples/openended/</guid>
       <description>
         
         
@@ -2128,10 +2128,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: openEndedLong</title>
-      <link>/docsite/docs/quest/examples/openendedlong/</link>
+      <link>/docs/quest/examples/openendedlong/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/openendedlong/</guid>
+      <guid>/docs/quest/examples/openendedlong/</guid>
       <description>
         
         
@@ -2273,10 +2273,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: playground</title>
-      <link>/docsite/docs/quest/examples/playground/</link>
+      <link>/docs/quest/examples/playground/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/playground/</guid>
+      <guid>/docs/quest/examples/playground/</guid>
       <description>
         
         
@@ -2371,10 +2371,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: rateImages</title>
-      <link>/docsite/docs/quest/examples/rateimages/</link>
+      <link>/docs/quest/examples/rateimages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/rateimages/</guid>
+      <guid>/docs/quest/examples/rateimages/</guid>
       <description>
         
         
@@ -2523,10 +2523,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: rateImagesSizes</title>
-      <link>/docsite/docs/quest/examples/rateimagessizes/</link>
+      <link>/docs/quest/examples/rateimagessizes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/rateimagessizes/</guid>
+      <guid>/docs/quest/examples/rateimagessizes/</guid>
       <description>
         
         
@@ -2675,10 +2675,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: scaleWithFeedback</title>
-      <link>/docsite/docs/quest/examples/scalewithfeedback/</link>
+      <link>/docs/quest/examples/scalewithfeedback/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/scalewithfeedback/</guid>
+      <guid>/docs/quest/examples/scalewithfeedback/</guid>
       <description>
         
         
@@ -2913,10 +2913,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: sliderExample</title>
-      <link>/docsite/docs/quest/examples/sliderexample/</link>
+      <link>/docs/quest/examples/sliderexample/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/sliderexample/</guid>
+      <guid>/docs/quest/examples/sliderexample/</guid>
       <description>
         
         
@@ -3062,10 +3062,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: timer</title>
-      <link>/docsite/docs/quest/examples/timer/</link>
+      <link>/docs/quest/examples/timer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/timer/</guid>
+      <guid>/docs/quest/examples/timer/</guid>
       <description>
         
         
@@ -3176,10 +3176,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: userPrevResp</title>
-      <link>/docsite/docs/quest/examples/userprevresp/</link>
+      <link>/docs/quest/examples/userprevresp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/userprevresp/</guid>
+      <guid>/docs/quest/examples/userprevresp/</guid>
       <description>
         
         
@@ -3316,10 +3316,10 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: usingImages</title>
-      <link>/docsite/docs/quest/examples/usingimages/</link>
+      <link>/docs/quest/examples/usingimages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/usingimages/</guid>
+      <guid>/docs/quest/examples/usingimages/</guid>
       <description>
         
         

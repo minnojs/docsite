@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – API</title>
-    <link>/docsite/docs/quest/api/</link>
+    <link>/docs/quest/api/</link>
     <description>Recent content in API on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="/docsite/docs/quest/api/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/quest/api/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Settings</title>
-      <link>/docsite/docs/quest/api/settings/</link>
+      <link>/docs/quest/api/settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/api/settings/</guid>
+      <guid>/docs/quest/api/settings/</guid>
       <description>
         
         
@@ -116,10 +116,10 @@ In case the setting is an object, subsequent objects will extend each other so t
     
     <item>
       <title>Docs: Pages</title>
-      <link>/docsite/docs/quest/api/pages/</link>
+      <link>/docs/quest/api/pages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/api/pages/</guid>
+      <guid>/docs/quest/api/pages/</guid>
       <description>
         
         
@@ -190,7 +190,7 @@ In case the setting is an object, subsequent objects will extend each other so t
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;questions&lt;/td&gt;
-&lt;td&gt;(Array or Object) an array of &lt;a href=&#34;questions&#34;&gt;questions&lt;/a&gt; to be displayed in the page. Note that the questions may be randomized and chosen conditionally using a &lt;a href=&#34;/docsite/docs/sequencer/mixer/&#34;&gt;mixer&lt;/a&gt;. This property also accepts a single question object if you want to present only a single question per page.&lt;/td&gt;
+&lt;td&gt;(Array or Object) an array of &lt;a href=&#34;questions&#34;&gt;questions&lt;/a&gt; to be displayed in the page. Note that the questions may be randomized and chosen conditionally using a &lt;a href=&#34;/docs/sequencer/mixer/&#34;&gt;mixer&lt;/a&gt;. This property also accepts a single question object if you want to present only a single question per page.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;lognow&lt;/td&gt;
@@ -296,10 +296,10 @@ In case the setting is an object, subsequent objects will extend each other so t
     
     <item>
       <title>Docs: Questions</title>
-      <link>/docsite/docs/quest/api/questions/</link>
+      <link>/docs/quest/api/questions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/api/questions/</guid>
+      <guid>/docs/quest/api/questions/</guid>
       <description>
         
         
@@ -355,7 +355,7 @@ In case the setting is an object, subsequent objects will extend each other so t
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;You may want to debug questions by setting the &lt;a href=&#34;/docsite/docs/manager/api/settings/#debug&#34;&gt;debug level in the manager&lt;/a&gt; to &lt;code&gt;verbose&lt;/code&gt;.
+&lt;p&gt;You may want to debug questions by setting the &lt;a href=&#34;/docs/manager/api/settings/#debug&#34;&gt;debug level in the manager&lt;/a&gt; to &lt;code&gt;verbose&lt;/code&gt;.
 You will then be warned in the console if a question name is reused
 (note: sometimes a question is supposed to be reused, if this warning pops up just make sure the use case is correct).&lt;/p&gt;
 &lt;h1 id=&#34;hooks&#34;&gt;Hooks&lt;/h1&gt;

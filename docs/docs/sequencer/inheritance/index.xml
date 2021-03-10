@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Inheritance</title>
-    <link>/docsite/docs/sequencer/inheritance/</link>
+    <link>/docs/sequencer/inheritance/</link>
     <description>Recent content in Inheritance on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="/docsite/docs/sequencer/inheritance/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/sequencer/inheritance/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: inheritanceAbstraction</title>
-      <link>/docsite/docs/sequencer/inheritance/inheritanceabstraction/</link>
+      <link>/docs/sequencer/inheritance/inheritanceabstraction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/inheritance/inheritanceabstraction/</guid>
+      <guid>/docs/sequencer/inheritance/inheritanceabstraction/</guid>
       <description>
         
         
@@ -121,10 +121,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: inheritanceByData</title>
-      <link>/docsite/docs/sequencer/inheritance/inheritancebydata/</link>
+      <link>/docs/sequencer/inheritance/inheritancebydata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/inheritance/inheritancebydata/</guid>
+      <guid>/docs/sequencer/inheritance/inheritancebydata/</guid>
       <description>
         
         
@@ -228,10 +228,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: inheritanceCustom</title>
-      <link>/docsite/docs/sequencer/inheritance/inheritancecustom/</link>
+      <link>/docs/sequencer/inheritance/inheritancecustom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/inheritance/inheritancecustom/</guid>
+      <guid>/docs/sequencer/inheritance/inheritancecustom/</guid>
       <description>
         
         
@@ -333,10 +333,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: inheritanceExRandom</title>
-      <link>/docsite/docs/sequencer/inheritance/inheritanceexrandom/</link>
+      <link>/docs/sequencer/inheritance/inheritanceexrandom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/inheritance/inheritanceexrandom/</guid>
+      <guid>/docs/sequencer/inheritance/inheritanceexrandom/</guid>
       <description>
         
         
@@ -439,10 +439,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: inheritanceRandom</title>
-      <link>/docsite/docs/sequencer/inheritance/inheritancerandom/</link>
+      <link>/docs/sequencer/inheritance/inheritancerandom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/inheritance/inheritancerandom/</guid>
+      <guid>/docs/sequencer/inheritance/inheritancerandom/</guid>
       <description>
         
         
@@ -545,10 +545,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: inheritanceRepeat</title>
-      <link>/docsite/docs/sequencer/inheritance/inheritancerepeat/</link>
+      <link>/docs/sequencer/inheritance/inheritancerepeat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/inheritance/inheritancerepeat/</guid>
+      <guid>/docs/sequencer/inheritance/inheritancerepeat/</guid>
       <description>
         
         
@@ -662,10 +662,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: inheritanceSeed</title>
-      <link>/docsite/docs/sequencer/inheritance/inheritanceseed/</link>
+      <link>/docs/sequencer/inheritance/inheritanceseed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/inheritance/inheritanceseed/</guid>
+      <guid>/docs/sequencer/inheritance/inheritanceseed/</guid>
       <description>
         
         
@@ -772,10 +772,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: inheritanceSequential</title>
-      <link>/docsite/docs/sequencer/inheritance/inheritancesequential/</link>
+      <link>/docs/sequencer/inheritance/inheritancesequential/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/inheritance/inheritancesequential/</guid>
+      <guid>/docs/sequencer/inheritance/inheritancesequential/</guid>
       <description>
         
         

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Questionnaires</title>
-    <link>/docsite/docs/quest/</link>
+    <link>/docs/quest/</link>
     <description>Recent content in Questionnaires on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="/docsite/docs/quest/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/quest/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Introduction</title>
-      <link>/docsite/docs/quest/introduction/</link>
+      <link>/docs/quest/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/introduction/</guid>
+      <guid>/docs/quest/introduction/</guid>
       <description>
         
         
@@ -197,16 +197,16 @@ define([&amp;#39;questAPI&amp;#39;], function(Quest){
     
     <item>
       <title>Docs: Data</title>
-      <link>/docsite/docs/quest/data/</link>
+      <link>/docs/quest/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/data/</guid>
+      <guid>/docs/quest/data/</guid>
       <description>
         
         
         &lt;p&gt;miQuest keeps record of user responses using plain js objects.
 These objects are both kept locally and sent to the server.&lt;/p&gt;
-&lt;p&gt;Localy, the data logs are available as properties of the &lt;code&gt;questions&lt;/code&gt; object  in &lt;a href=&#34;/docsite/docs/sequencer/variables/current/&#34;&gt;&lt;code&gt;current&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Localy, the data logs are available as properties of the &lt;code&gt;questions&lt;/code&gt; object  in &lt;a href=&#34;/docs/sequencer/variables/current/&#34;&gt;&lt;code&gt;current&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;current&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;questions&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 	&lt;span style=&#34;color:#000&#34;&gt;questionName1&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{...},&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// log object
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#000&#34;&gt;questionName2&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{...}&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// log object
@@ -243,18 +243,18 @@ These objects are both kept locally and sent to the server.&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The response for questionName1 can be accessed using &lt;code&gt;current.questions.questionName1.response&lt;/code&gt;.
-You can use this data within &lt;a href=&#34;/docsite/docs/sequencer/templates/&#34;&gt;templates&lt;/a&gt;
-or from within &lt;a href=&#34;/docsite/docs/sequencer/mixer/#conditions&#34;&gt;branches&lt;/a&gt;.&lt;/p&gt;
+You can use this data within &lt;a href=&#34;/docs/sequencer/templates/&#34;&gt;templates&lt;/a&gt;
+or from within &lt;a href=&#34;/docs/sequencer/mixer/#conditions&#34;&gt;branches&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: API</title>
-      <link>/docsite/docs/quest/api/</link>
+      <link>/docs/quest/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/api/</guid>
+      <guid>/docs/quest/api/</guid>
       <description>
         
         
@@ -264,10 +264,10 @@ or from within &lt;a href=&#34;/docsite/docs/sequencer/mixer/#conditions&#34;&gt
     
     <item>
       <title>Docs: Examples</title>
-      <link>/docsite/docs/quest/examples/</link>
+      <link>/docs/quest/examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/quest/examples/</guid>
+      <guid>/docs/quest/examples/</guid>
       <description>
         
         

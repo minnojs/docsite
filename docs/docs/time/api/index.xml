@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – API</title>
-    <link>/docsite/docs/time/api/</link>
+    <link>/docs/time/api/</link>
     <description>Recent content in API on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="/docsite/docs/time/api/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/time/api/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,27 +16,17 @@
     
     <item>
       <title>Docs: Settings</title>
-      <link>/docsite/docs/time/api/settings/</link>
+      <link>/docs/time/api/settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/api/settings/</guid>
+      <guid>/docs/time/api/settings/</guid>
       <description>
         
         
-        &lt;p&gt;Player wide settings are set within the &amp;ldquo;settings&amp;rdquo; property of the task JSON.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#000&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;your/target/url&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-        &lt;span style=&#34;color:#000&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(){&lt;/span&gt;
-            &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// do your mojo here :)
-&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
-    &lt;span style=&#34;color:#000&#34;&gt;canvas&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#000&#34;&gt;maxWidth&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;800&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-        &lt;span style=&#34;color:#000&#34;&gt;proportions&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;
-    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;logger&#34;&gt;Logger&lt;/h4&gt;
+        &lt;p&gt;Settings that apply to the whole task may be changed using &lt;code&gt;API.addSettings&lt;/code&gt;
+(see &lt;a href=&#34;/docs/core/api&#34;&gt;documentation&lt;/a&gt;).
+Following are the available settings.&lt;/p&gt;
+&lt;h4 id=&#34;logger&#34;&gt;Logger&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;your/target/url&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;pulse&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -60,7 +50,7 @@ When using the media path to log media elements (for images and templates), shou
 An object that is used to extend each logged row. This is useful in case you want to add some global data to the posts (such as server generated user id, or task name).&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;logger&lt;/code&gt;:
 Accepts a function to replace the existing logging function. (don&amp;rsquo;t touch this if you don&amp;rsquo;t &lt;strong&gt;realy&lt;/strong&gt; know what you&amp;rsquo;re doing).
-The logger function is called each time a log action is triggered (see interactions: actions &lt;a href=&#34;../trial/actions/#log&#34;&gt;log&lt;/a&gt;).
+The logger function is called each time a log action is triggered (see interactions: actions &lt;a href=&#34;../task/actions&#34;&gt;log&lt;/a&gt;).
 It is responsible for adding a logging row to be sent to the server.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;trialData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;inputData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;actionData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;logStack&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;){&lt;/span&gt;
     &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// trialData: the data object from this trial
@@ -89,24 +79,33 @@ It is responsible for adding a logging row to be sent to the server.&lt;/p&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;};&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;};&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;canvas&#34;&gt;Canvas&lt;/h4&gt;
-&lt;p&gt;The canvas section is responsible for the overall look of the player.
-It controls the shape and appearance of the canvas.&lt;/p&gt;
+&lt;p&gt;The canvas is the visable part of the player.
+This section in the settings controls the shape and appearance of the canvas.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;canvas&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;maxWidth&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;800&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;proportions&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.8&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;width&lt;/code&gt;:
-If width is set, then the canvas size is set to a constant width (set the hight using the &lt;code&gt;proportions&lt;/code&gt; property).&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;maxWidth&lt;/code&gt;:
-The maximum width (in pixels) that the canvas may reach. By default it is set to 500px (note that if &lt;code&gt;width&lt;/code&gt;  is set, then this property is ignored and the canvas size stays static).&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By default Minno attempts to keep the canvas size proportional so that the relationship between stimuli stays consistent.
+Therefore it attempts to take up as much screen space as posible while staying true to the &lt;strong&gt;proportion&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;proportions&lt;/code&gt;:
-Responsible for the shape of the canvas. You can set it either as a number or an object. By default it is set to &lt;code&gt;0.8&lt;/code&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;{width:2,height:3}&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;1.5&lt;/code&gt; calculated as height/width&lt;/li&gt;
-&lt;/ul&gt;
+The proportion settings describes the relationship between the height and width of the canvas
+(&lt;em&gt;proportion = height/width&lt;/em&gt;).
+You can set it either directly as a number (i.e. &lt;code&gt;0.8&lt;/code&gt;) or more explicitly as an object (i.e. &lt;code&gt;{width:5,height:4}&lt;/code&gt;).&lt;br&gt;
+By default it is set to &lt;code&gt;0.8&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;maxWidth&lt;/code&gt;:
+The maximum width (in pixels) that the canvas may reach.
+This value must be a plain number (i.e. &lt;code&gt;800&lt;/code&gt; and not &lt;code&gt;&#39;800px&#39;&lt;/code&gt;).
+Note that if &lt;code&gt;width&lt;/code&gt; is set, then this property is ignored and the canvas size stays static.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;width&lt;/code&gt;:
+If width is set, then the canvas size is set to a constant width
+(control the hight using the &lt;code&gt;proportions&lt;/code&gt; property).
+This value must be a plain number (i.e. &lt;code&gt;800&lt;/code&gt; and not &lt;code&gt;&#39;800px&#39;&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;textSize&lt;/code&gt;:
-Controls the default font size in the canvas. It takes a single number that represents font size in percentage of the canvas height (similar to the CSS3 &lt;code&gt;vh&lt;/code&gt; unit). By default it is set to 3. Any fontSize within your script that uses a relative unit (percent/em) will be relative to this size. Any fontSize that uses an absolute unit (px/pt) will ignore it.&lt;/p&gt;
+Controls the default font size in the canvas.
+It takes a single number that represents font size in percentage of the canvas height (similar to the CSS3 &lt;code&gt;vh&lt;/code&gt; unit).
+By default it is set to 3.
+Any stimulus that sets font-size using a relative unit (percent/em) will be relative to this size.
+Any stimulus that sets font-size using an absolute unit (px/pt) will be displayed according to the absolute unit.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;background&lt;/code&gt;:
 Controls the background color of the whole screen.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;canvasBackground&lt;/code&gt;:
@@ -134,16 +133,14 @@ By default, the player simply refreshes the current page.
 This option is not used if the endTask hook is set.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;redirect&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;//my.domain.edu&amp;#39;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;hooks&#34;&gt;Hooks&lt;/h4&gt;
-&lt;p&gt;Hooks are functions that are to be run at predefined points throughout the player.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;hooks&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#000&#34;&gt;endTask&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(){}&lt;/span&gt;
-&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;endTask&lt;/code&gt;:
-Called at the end of the task instead of the default redirect.&lt;/p&gt;
+&lt;p&gt;This option is deprecated, please use &lt;a href=&#34;#onend&#34;&gt;&lt;code&gt;onEnd&lt;/code&gt;&lt;/a&gt; instead.&lt;/p&gt;
 &lt;h4 id=&#34;onend&#34;&gt;onEnd&lt;/h4&gt;
-&lt;p&gt;Called at the end of the task instead of the default redirect.
-This function is a more standart complient version of &lt;code&gt;hooks.endTask&lt;/code&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;meta-data&#34;&gt;Meta data&lt;/h4&gt;
+&lt;p&gt;A function to be called at the end of the task.
+For example, the following setting logs the task logs to the console.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;API.addSettings(`onEnd`, function(){
+    console.log(API.getCurrent().logs);
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;meta-data&#34;&gt;Meta data&lt;/h4&gt;
 &lt;p&gt;Meta data is data that should be returned with every request to the server.
 Any key value pair in the meta data is added to every post the player makes to the server.
 In order to create a post with three keys: json, session_id and task_id - you would write something like this:&lt;/p&gt;
@@ -152,16 +149,21 @@ In order to create a post with three keys: json, session_id and task_id - you wo
     &lt;span style=&#34;color:#000&#34;&gt;task_id&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;43BTW78&amp;#39;&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(the json field is the field that holds the player data it is created automaticaly)&lt;/p&gt;
-
+&lt;h4 id=&#34;preloadimages&#34;&gt;preloadImages&lt;/h4&gt;
+&lt;p&gt;There are times when you want to preload images manually, without relying on minno-time to recognize all your media automatically.
+This can be if you are using complex &lt;code&gt;html&lt;/code&gt; type media that include images, or if you are using templates to set images.
+In these cases there is a convenience setting that allows you to add your images to the preloading queue.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addSettings&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;preloadImages&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;img1.jpg&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;img2.jpg&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;img3.jpg&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
       </description>
     </item>
     
     <item>
       <title>Docs: Media</title>
-      <link>/docsite/docs/time/api/media/</link>
+      <link>/docs/time/api/media/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/api/media/</guid>
+      <guid>/docs/time/api/media/</guid>
       <description>
         
         
@@ -179,10 +181,10 @@ The folowing two media definitions have the same outcome:&lt;code&gt;&#39;Wiki&#
     
     <item>
       <title>Docs: Stimulus</title>
-      <link>/docsite/docs/time/api/stimuli/</link>
+      <link>/docs/time/api/stimuli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/api/stimuli/</guid>
+      <guid>/docs/time/api/stimuli/</guid>
       <description>
         
         
@@ -200,12 +202,12 @@ The folowing two media definitions have the same outcome:&lt;code&gt;&#39;Wiki&#
 &lt;p&gt;Each trial may have multiple stimuli, and they are refered to by &lt;code&gt;handle&lt;/code&gt;.
 This is how refer to this specific stimulus inside the player (i.e. if we want to hide or show it).
 If more than one stimulus (per trial) has the same handle, all actions targeted at that handle will affect all stimuli.
-You can set a stimulus handle either by setting the &lt;code&gt;handle&lt;/code&gt; property, or by setting &lt;code&gt;handle&lt;/code&gt; into the &lt;a href=&#34;/docsite/docs/sequencer/variables/local/&#34;&gt;data object&lt;/a&gt;.
+You can set a stimulus handle either by setting the &lt;code&gt;handle&lt;/code&gt; property, or by setting &lt;code&gt;handle&lt;/code&gt; into the &lt;a href=&#34;/docs/sequencer/variables/local/&#34;&gt;data object&lt;/a&gt;.
 Alternatively, if a stimulus is inherited from a set, the handle is defined by default as the set that the stimulus was inherited from.&lt;/p&gt;
 &lt;h2 id=&#34;size&#34;&gt;size&lt;/h2&gt;
 &lt;p&gt;The size of the stimulus in percentage of the player canvas. By default, size is set to {height:&amp;lsquo;auto&amp;rsquo;,width:&amp;lsquo;auto&amp;rsquo;}.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;location&lt;/code&gt;:
-The location to display the stimulus, in percentage of the player canvas. Where &lt;code&gt;left:20&lt;/code&gt; means that the left border of the stimulus should be 20% from the left of the canvas. You may define any of &lt;code&gt;left&lt;/code&gt;/&lt;code&gt;right&lt;/code&gt;/&lt;code&gt;top&lt;/code&gt;/&lt;code&gt;bottom&lt;/code&gt; attributes.&lt;/p&gt;
+&lt;h2 id=&#34;location&#34;&gt;location&lt;/h2&gt;
+&lt;p&gt;The location to display the stimulus, in percentage of the player canvas. Where &lt;code&gt;left:20&lt;/code&gt; means that the left border of the stimulus should be 20% from the left of the canvas. You may define any of &lt;code&gt;left&lt;/code&gt;/&lt;code&gt;right&lt;/code&gt;/&lt;code&gt;top&lt;/code&gt;/&lt;code&gt;bottom&lt;/code&gt; attributes.&lt;/p&gt;
 &lt;p&gt;Instead of specifying percentages you may use the keyword &lt;code&gt;center&lt;/code&gt; in order to center the stimulus, or the keyword &lt;code&gt;auto&lt;/code&gt; in order to override any previous settings.
 By default, location is set to &lt;code&gt;{left:&#39;center&#39;, right:&#39;center&#39;,top:&#39;center&#39;, bottom:&#39;center&#39;}&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;css&#34;&gt;css&lt;/h2&gt;
@@ -218,17 +220,18 @@ By default, location is set to &lt;code&gt;{left:&#39;center&#39;, right:&#39;ce
 &lt;p&gt;In addition to the basic attributes of the stimulus you may add any attribute you like as meta deta that will be available from within the player&lt;/p&gt;
 &lt;h2 id=&#34;nolog&#34;&gt;nolog&lt;/h2&gt;
 &lt;p&gt;If this attribute is set to true, this stimulus (and its associated media) will not be logged.
-By default nolog is set to false.&lt;/p&gt;
+This is usefull for example for focus stimuli and feedback that are identical for all trials and do not need to be logged.&lt;/p&gt;
+&lt;p&gt;By default nolog is set to false.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: Trial</title>
-      <link>/docsite/docs/time/api/trial/</link>
+      <link>/docs/time/api/trial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/api/trial/</guid>
+      <guid>/docs/time/api/trial/</guid>
       <description>
         
         
@@ -242,10 +245,10 @@ and define the &lt;a href=&#34;interactions&#34;&gt;interactions&lt;/a&gt; that 
     
     <item>
       <title>Docs: Scorer</title>
-      <link>/docsite/docs/time/api/scorer/</link>
+      <link>/docs/time/api/scorer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/api/scorer/</guid>
+      <guid>/docs/time/api/scorer/</guid>
       <description>
         
         

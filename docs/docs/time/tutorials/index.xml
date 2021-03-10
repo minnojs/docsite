@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Tutorials</title>
-    <link>/docsite/docs/time/tutorials/</link>
+    <link>/docs/time/tutorials/</link>
     <description>Recent content in Tutorials on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="/docsite/docs/time/tutorials/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/time/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Hello world</title>
-      <link>/docsite/docs/time/tutorials/hello/</link>
+      <link>/docs/time/tutorials/hello/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/tutorials/hello/</guid>
+      <guid>/docs/time/tutorials/hello/</guid>
       <description>
         
         
@@ -41,7 +41,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The wrapper creates the &lt;code&gt;API&lt;/code&gt; object for you. The &lt;code&gt;API&lt;/code&gt; object is the instrument that we will use to create and run tasks. The whole task is written by creating a bunch of objects and arrays. The API object has functions that accept those objects and arrays and know how to create a task from them.&lt;/p&gt;
 &lt;h3 id=&#34;the-task-structure&#34;&gt;The task structure&lt;/h3&gt;
 &lt;p&gt;Each task is composed of one or more trials, that are activated sequentially.
-We set trials into the player using a function called &lt;a href=&#34;/docsite/docs/core/api/#add-sequence&#34;&gt;&lt;code&gt;API.addSequence&lt;/code&gt;&lt;/a&gt; that accepts an array of trials as its argument.&lt;/p&gt;
+We set trials into the player using a function called &lt;a href=&#34;/docs/core/api/#add-sequence&#34;&gt;&lt;code&gt;API.addSequence&lt;/code&gt;&lt;/a&gt; that accepts an array of trials as its argument.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;define&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;([&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;timeAPI&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;APIconstructor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;APIconstructor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
@@ -270,10 +270,10 @@ define([&amp;#39;timeAPI&amp;#39;], function(APIconstructor) {
     
     <item>
       <title>Docs: Slide show</title>
-      <link>/docsite/docs/time/tutorials/slideshow/</link>
+      <link>/docs/time/tutorials/slideshow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/tutorials/slideshow/</guid>
+      <guid>/docs/time/tutorials/slideshow/</guid>
       <description>
         
         
@@ -296,7 +296,7 @@ The sequence holds an array: the trials in the array will be activated sequentia
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We will now duplicate this trial a few times for a simple slide show.
 You should try it out. Try adding another trial. Try changing the media or style of the stimuli.
-Use the &lt;a href=&#34;/docsite/docs/time/api/&#34;&gt;docs&lt;/a&gt;!&lt;/p&gt;
+Use the &lt;a href=&#34;/docs/time/api/&#34;&gt;docs&lt;/a&gt;!&lt;/p&gt;
 
 
 
@@ -412,7 +412,7 @@ This is where the concept of inheritance comes in.
 Inheritance allows you to create a prototype of a trial (or stimulus or media object), and re-use it whenever you want.
 To understand how this works, we need to first learn a bit about sets.&lt;/p&gt;
 &lt;h3 id=&#34;sets&#34;&gt;Sets&lt;/h3&gt;
-&lt;p&gt;A &lt;a href=&#34;/docsite/docs/sequencer/inheritance/#sets&#34;&gt;set&lt;/a&gt; is a list of one or more miTime objects (trials, stimuli or media objects).
+&lt;p&gt;A &lt;a href=&#34;/docs/sequencer/inheritance/#sets&#34;&gt;set&lt;/a&gt; is a list of one or more miTime objects (trials, stimuli or media objects).
 After defining a set of objects (e.g., trials), we can re-use those objects.
 Therefore, if we want to create a basic trial and re-use it a few times, we create a one-trial set, and then re-use it in a sequence.
 We will focus here on trial sets, but everything that applies to the trials sets also applies to stimuli sets or media sets as well.&lt;/p&gt;
@@ -431,7 +431,7 @@ The following code creates a trial set called &lt;em&gt;slide&lt;/em&gt; and pop
 We re-use trials (and media and stimulus objects) using inheritance.&lt;/p&gt;
 &lt;h4 id=&#34;inheritance&#34;&gt;&lt;strong&gt;Inheritance&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;Inheritance allows us to re-use trials: new trials can be created by inheriting a trial from a set. If there is only one trial in the set, we simply inherit the whole set.&lt;/p&gt;
-&lt;p&gt;Trials (and stimuli and media too) have a special property called &lt;a href=&#34;/docsite/docs/sequencer/inheritance/#syntax&#34;&gt;inherit&lt;/a&gt; that allows them to specify a specific set to inherit from.
+&lt;p&gt;Trials (and stimuli and media too) have a special property called &lt;a href=&#34;/docs/sequencer/inheritance/#syntax&#34;&gt;inherit&lt;/a&gt; that allows them to specify a specific set to inherit from.
 This allows trials to be significantly shorter.
 The following code activates our slide three times:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;API&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addSequence&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;([&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Our sequence is an array of trials.

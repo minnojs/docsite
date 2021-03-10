@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Mixers</title>
-    <link>/docsite/docs/sequencer/mixer/</link>
+    <link>/docs/sequencer/mixer/</link>
     <description>Recent content in Mixers on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="/docsite/docs/sequencer/mixer/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/sequencer/mixer/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: mixerBranch</title>
-      <link>/docsite/docs/sequencer/mixer/mixerbranch/</link>
+      <link>/docs/sequencer/mixer/mixerbranch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/mixer/mixerbranch/</guid>
+      <guid>/docs/sequencer/mixer/mixerbranch/</guid>
       <description>
         
         
@@ -128,10 +128,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: mixerChoose</title>
-      <link>/docsite/docs/sequencer/mixer/mixerchoose/</link>
+      <link>/docs/sequencer/mixer/mixerchoose/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/mixer/mixerchoose/</guid>
+      <guid>/docs/sequencer/mixer/mixerchoose/</guid>
       <description>
         
         
@@ -239,10 +239,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: mixerMultiBranch</title>
-      <link>/docsite/docs/sequencer/mixer/mixermultibranch/</link>
+      <link>/docs/sequencer/mixer/mixermultibranch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/mixer/mixermultibranch/</guid>
+      <guid>/docs/sequencer/mixer/mixermultibranch/</guid>
       <description>
         
         
@@ -353,10 +353,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: mixerRandom</title>
-      <link>/docsite/docs/sequencer/mixer/mixerrandom/</link>
+      <link>/docs/sequencer/mixer/mixerrandom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/mixer/mixerrandom/</guid>
+      <guid>/docs/sequencer/mixer/mixerrandom/</guid>
       <description>
         
         
@@ -467,10 +467,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: mixerRepeat</title>
-      <link>/docsite/docs/sequencer/mixer/mixerrepeat/</link>
+      <link>/docs/sequencer/mixer/mixerrepeat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/mixer/mixerrepeat/</guid>
+      <guid>/docs/sequencer/mixer/mixerrepeat/</guid>
       <description>
         
         
@@ -577,10 +577,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: mixerWeightedRandom</title>
-      <link>/docsite/docs/sequencer/mixer/mixerweightedrandom/</link>
+      <link>/docs/sequencer/mixer/mixerweightedrandom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/mixer/mixerweightedrandom/</guid>
+      <guid>/docs/sequencer/mixer/mixerweightedrandom/</guid>
       <description>
         
         
@@ -687,10 +687,10 @@ define([&amp;#39;managerAPI&amp;#39;], function(Manager){
     
     <item>
       <title>Docs: mixerWrapper</title>
-      <link>/docsite/docs/sequencer/mixer/mixerwrapper/</link>
+      <link>/docs/sequencer/mixer/mixerwrapper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/sequencer/mixer/mixerwrapper/</guid>
+      <guid>/docs/sequencer/mixer/mixerwrapper/</guid>
       <description>
         
         

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minno Suite – Trial</title>
-    <link>/docsite/docs/time/api/trial/</link>
+    <link>/docs/time/api/trial/</link>
     <description>Recent content in Trial on Minno Suite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	  <atom:link href="/docsite/docs/time/api/trial/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/time/api/trial/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Input</title>
-      <link>/docsite/docs/time/api/trial/input/</link>
+      <link>/docs/time/api/trial/input/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/api/trial/input/</guid>
+      <guid>/docs/time/api/trial/input/</guid>
       <description>
         
         
@@ -104,26 +104,29 @@ If it is set to &lt;code&gt;false&lt;/code&gt; then the input will be used only 
     
     <item>
       <title>Docs: Interactions</title>
-      <link>/docsite/docs/time/api/trial/interactions/</link>
+      <link>/docs/time/api/trial/interactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/api/trial/interactions/</guid>
+      <guid>/docs/time/api/trial/interactions/</guid>
       <description>
         
         
         &lt;p&gt;This is where you will have to carefully describe exactly what you want MinnoJS to &lt;em&gt;do&lt;/em&gt;.
 You can treat it as a set of if-then pairs that drive the trial.
+Each interaction is composed of &lt;a href=&#34;../conditions&#34;&gt;conditions&lt;/a&gt; and &lt;a href=&#34;../actions&#34;&gt;actions&lt;/a&gt;.
 For example, you can define an interaction so that &amp;ldquo;&lt;strong&gt;if&lt;/strong&gt; the space key is pressed&amp;rdquo; (condition), &amp;ldquo;&lt;strong&gt;then&lt;/strong&gt; display target stimulus&amp;rdquo; (action).
 Or another one so that &amp;ldquo;&lt;strong&gt;if&lt;/strong&gt; a timer triggers&amp;rdquo; (condition), &amp;ldquo;&lt;strong&gt;then&lt;/strong&gt; end the trial&amp;rdquo; (action).&lt;/p&gt;
+&lt;p&gt;Each trial has an array with one or more &lt;code&gt;interactions&lt;/code&gt;.
+It MUST have at least one interaction, otherwise it will never complete.
+The array can look something like the following:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#000&#34;&gt;interaction&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;interactions&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;interaction1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;interaction2&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;interactions&lt;/code&gt; array interaction-objects.
-Each of these objects has two properties: &lt;code&gt;conditions&lt;/code&gt; and &lt;code&gt;actions&lt;/code&gt;.
-&lt;code&gt;conditions&lt;/code&gt; are a set of propositions that have to &lt;em&gt;all&lt;/em&gt; be true in order for respective set of &lt;code&gt;actions&lt;/code&gt; to be executed.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Each individual interaction is an object with two properties: &lt;code&gt;conditions&lt;/code&gt; and &lt;code&gt;actions&lt;/code&gt;.
+&lt;a href=&#34;../conditions&#34;&gt;&lt;code&gt;conditions&lt;/code&gt;&lt;/a&gt; are a set of propositions that have to &lt;em&gt;all&lt;/em&gt; be true in order for respective set of &lt;a href=&#34;../actions&#34;&gt;&lt;code&gt;actions&lt;/code&gt;&lt;/a&gt; to be executed.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;conditions&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;condition1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -140,28 +143,29 @@ Each of these objects has two properties: &lt;code&gt;conditions&lt;/code&gt; an
     
     <item>
       <title>Docs: Interactions - actions</title>
-      <link>/docsite/docs/time/api/trial/actions/</link>
+      <link>/docs/time/api/trial/actions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/api/trial/actions/</guid>
+      <guid>/docs/time/api/trial/actions/</guid>
       <description>
         
         
         &lt;p&gt;If all the conditions in a row of interactions are true, its actions will be executed.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;showStim&lt;/strong&gt;:
-Display a stimulus, takes a stimulus &lt;code&gt;handle&lt;/code&gt;. Use &amp;lsquo;All&amp;rsquo; for all stimuli.&lt;/p&gt;
+&lt;h2 id=&#34;action-types&#34;&gt;Action types&lt;/h2&gt;
+&lt;h3 id=&#34;showstim&#34;&gt;showStim&lt;/h3&gt;
+&lt;p&gt;Display a stimulus, takes a stimulus &lt;code&gt;handle&lt;/code&gt;. Use &amp;lsquo;All&amp;rsquo; for all stimuli.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;showStim&#39;,handle:&#39;myStim&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;showStim&#39;,handle:&#39;All&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;hideStim&lt;/strong&gt;:
-Hide a stimulus, takes a stimulus &lt;code&gt;handle&lt;/code&gt;. Use &amp;lsquo;All&amp;rsquo; for all stimuli.&lt;/p&gt;
+&lt;h3 id=&#34;hidestim&#34;&gt;hideStim&lt;/h3&gt;
+&lt;p&gt;Hide a stimulus, takes a stimulus &lt;code&gt;handle&lt;/code&gt;. Use &amp;lsquo;All&amp;rsquo; for all stimuli.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;hideStim&#39;,handle:&#39;myStim&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;hideStim&#39;,handle:&#39;All&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;setStimAttr&lt;/strong&gt;:
-Set a stimulus.data attribute, takes a stimulus &lt;code&gt;handle&lt;/code&gt; and a &lt;code&gt;setter&lt;/code&gt; object or function.
+&lt;h3 id=&#34;setstimattr&#34;&gt;setStimAttr&lt;/h3&gt;
+&lt;p&gt;Set a stimulus.data attribute, takes a stimulus &lt;code&gt;handle&lt;/code&gt; and a &lt;code&gt;setter&lt;/code&gt; object or function.
 Any attributes in the setter object will be coppied to the stimulus.data object.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -175,8 +179,8 @@ Any attributes in the setter object will be coppied to the stimulus.data object.
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;setTrialAttr&lt;/strong&gt;:
-Set a trial.data attribute, takes a &lt;code&gt;setter&lt;/code&gt; object or function.
+&lt;h3 id=&#34;settrialattr&#34;&gt;setTrialAttr&lt;/h3&gt;
+&lt;p&gt;Set a trial.data attribute, takes a &lt;code&gt;setter&lt;/code&gt; object or function.
 Any attributes in the setter object will be coppied to the trial.data object.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -192,8 +196,8 @@ Any attributes in the setter object will be coppied to the trial.data object.&lt
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;setGlobalAttr&lt;/strong&gt;:
-Set a global object property, takes a &lt;code&gt;setter&lt;/code&gt; object or function.
+&lt;h3 id=&#34;setglobalattr&#34;&gt;setGlobalAttr&lt;/h3&gt;
+&lt;p&gt;Set a global object property, takes a &lt;code&gt;setter&lt;/code&gt; object or function.
 Any attributes in the setter object will be coppied into the global object.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -207,54 +211,131 @@ Any attributes in the setter object will be coppied into the global object.&lt;/
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;trigger&lt;/strong&gt;:
-Activate the input &lt;code&gt;handle&lt;/code&gt;. If duration is set, the activation happens after the duration. By default the input &lt;code&gt;handle&lt;/code&gt; is triggered immediately.&lt;/p&gt;
+&lt;h3 id=&#34;trigger&#34;&gt;trigger&lt;/h3&gt;
+&lt;p&gt;Activate the input &lt;code&gt;handle&lt;/code&gt;. If duration is set, the activation happens after the duration. By default the input &lt;code&gt;handle&lt;/code&gt; is triggered immediately.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;{type:&#39;trigger&#39;,handle:&#39;now&#39;}&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;{type:&#39;trigger&#39;,handle:&#39;later&#39;,duration:250}&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;{type:&#39;trigger&#39;,handle:&#39;time&#39;,on:&#39;timeout&#39;,duration:[300,600,900]]}&lt;/code&gt;            pick a random value from an array&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;{type:&#39;trigger&#39;,handle:&#39;time&#39;,on:&#39;timeout&#39;,duration:{min:300, max: 900}}}&lt;/code&gt;      randomly pick from within a range&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;{type:&#39;trigger&#39;,handle:&#39;time&#39;,on:&#39;timeout&#39;,duration:function(){return 630}}&lt;/code&gt;    use a custom function to pick duration&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{type:&#39;trigger&#39;,handle : &#39;now&#39;}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{type:&#39;trigger&#39;,handle : &#39;later&#39;,duration:250}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;setInput&lt;/strong&gt;:
-Set input listener (useful for adding timeouts), takes an &lt;code&gt;input&lt;/code&gt; &lt;a href=&#34;#input&#34;&gt;object&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;setinput&#34;&gt;setInput&lt;/h3&gt;
+&lt;p&gt;Set input listener (useful for adding timeouts), takes an &lt;code&gt;input&lt;/code&gt; &lt;a href=&#34;#input-&#34;&gt;object&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;setInput&#39;,input:{handle:&#39;time&#39;,on:&#39;timeout&#39;,duration:300}}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;removeInput&lt;/strong&gt;:
-Remove input listener, takes an input &lt;code&gt;handle&lt;/code&gt; or an array of input handles. The special keyword &lt;code&gt;All&lt;/code&gt; removes all listeners. &lt;strong&gt;Warning&lt;/strong&gt; you must add listeners after using removeInput:All, or else the player will get stuck. This command removes triggers as well as regular input listeners.&lt;/p&gt;
+&lt;h3 id=&#34;removeinput&#34;&gt;removeInput&lt;/h3&gt;
+&lt;p&gt;Remove input listener, takes an input &lt;code&gt;handle&lt;/code&gt; or an array of input handles. The special keyword &lt;code&gt;All&lt;/code&gt; removes all listeners. &lt;strong&gt;Warning&lt;/strong&gt; you must add listeners after using removeInput:All, or else the player will get stuck. This command removes triggers as well as regular input listeners.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;removeInput&#39;,handle : &#39;time&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;removeInput&#39;,handle : [&#39;time&#39;,&#39;left&#39;]}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;removeInput&#39;,handle : &#39;All&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;resetTimer&lt;/strong&gt;:
-Resets trial timer. The latency of any events from here on (including the current one) will be calculated back to the reset instead of the begining of the trial.&lt;/p&gt;
+&lt;h3 id=&#34;resettimer&#34;&gt;resetTimer&lt;/h3&gt;
+&lt;p&gt;Resets trial timer. The latency of any events from here on (including the current one) will be calculated back to the reset instead of the begining of the trial.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;resetTimer&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;endTrial&lt;/strong&gt;:
-End this trial (note that any actions that come after this is called may not work properly).&lt;/p&gt;
+&lt;h3 id=&#34;endtrial&#34;&gt;endTrial&lt;/h3&gt;
+&lt;p&gt;Speaks for itself (note that any actions that come after this is called may not work properly).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;endTrial&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;canvas&lt;/strong&gt;:
-Change canvas style using any of the following properties (see &lt;a href=&#34;#canvas&#34;&gt;settings&lt;/a&gt;): &lt;code&gt;background&lt;/code&gt;, &lt;code&gt;canvasBackground&lt;/code&gt;, &lt;code&gt;borderColor&lt;/code&gt;, &lt;code&gt;borderWidth&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;canvas&#34;&gt;canvas&lt;/h3&gt;
+&lt;p&gt;Change canvas style using any of the following properties (see &lt;a href=&#34;#canvas&#34;&gt;settings&lt;/a&gt;): &lt;code&gt;background&lt;/code&gt;, &lt;code&gt;canvasBackground&lt;/code&gt;, &lt;code&gt;borderColor&lt;/code&gt;, &lt;code&gt;borderWidth&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;canvas&#39;, background:&#39;blue&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;log&lt;/strong&gt;:
-Log this action. Pushes this action into the logging stack so that it is later sent to the server (you can set how the player logs an action using the &lt;a href=&#34;#logger&#34;&gt;logger settings&lt;/a&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;startmousetracking&#34;&gt;startMouseTracking&lt;/h3&gt;
+&lt;p&gt;Starts mouse tracking. Mouse tracking logs all measurements into an array in &lt;code&gt;data&lt;/code&gt;.
+It stops when you call the &lt;code&gt;stopMouseTracking&lt;/code&gt; action or automatically at the end of the trial.
+Calling &lt;code&gt;startMouseTracking&lt;/code&gt; when it is already running does not do anything.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;{type:&#39;startMouseTracking&#39;}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{type:&#39;startMouseTracking&#39;, logAs:&#39;tracking&#39;, logRate: 150, logStimulusLocation: [&#39;myHandle&#39;]}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;property&lt;/th&gt;
+&lt;th&gt;description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;logAs&lt;/td&gt;
+&lt;td&gt;Set the property within &lt;code&gt;data&lt;/code&gt; to which the tracking data is logged (default: &amp;lsquo;mousetracking&amp;rsquo;).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;logRate&lt;/td&gt;
+&lt;td&gt;The minmum time between measurements in miliseconds (default: 15).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;logStimulusLocation&lt;/td&gt;
+&lt;td&gt;An array of stimulus handles for which location data should be logged. You can use this to save the location of the stimuli you&amp;rsquo;re using as response options.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The tracking data is logged as an array of Objects with the following structure:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;property&lt;/th&gt;
+&lt;th&gt;description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;time&lt;/td&gt;
+&lt;td&gt;Time in ms from the initiation of mouseTracking.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mouseX&lt;/td&gt;
+&lt;td&gt;The horizontal location of the mouse relative to the canvas.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mouseY&lt;/td&gt;
+&lt;td&gt;The vertical location of the mouse relative to the canvas.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;handle&amp;amp;gth;X&lt;/td&gt;
+&lt;td&gt;(optional) The horizontal location of the &amp;lt;handle&amp;amp;gth; elment relative to the canvas.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;handle&amp;amp;gth;Y&lt;/td&gt;
+&lt;td&gt;(optional) The vertical location of the &amp;lt;handle&amp;amp;gth; elment relative to the canvas.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;handle&amp;amp;gth;Width&lt;/td&gt;
+&lt;td&gt;(optional) The width of the &amp;lt;handle&amp;amp;gth; elment.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;handle&amp;amp;gth;Height&lt;/td&gt;
+&lt;td&gt;(optional) The height of the &amp;lt;handle&amp;amp;gth; elment.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that each row in the log represents a mouse movement, and not a point in time.
+This means that if the mouse does not move, there can be long stretches of time without movement recording.
+When analyzing the data, make sure you use the time property in order to identify movement timing, and do not assume that measurements occur at a pretedermined frequency.&lt;/p&gt;
+&lt;h3 id=&#34;stopmousetracking&#34;&gt;stopMouseTracking&lt;/h3&gt;
+&lt;p&gt;Stops ongoing mousetracking.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;{type:&#39;stopMouseTracking&#39;}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;log&#34;&gt;log&lt;/h3&gt;
+&lt;p&gt;Log this action. Pushes this action into the logging stack so that it is later sent to the server (you can set how the player logs an action using the &lt;a href=&#34;#logger&#34;&gt;logger settings&lt;/a&gt;)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;log&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;custom&lt;/strong&gt;
-Run a custom function. This action is intended to for use by experienced users that want to tinker with the inner workings of the player - use at your own risk! The &lt;code&gt;fn&lt;/code&gt; property takes a custom function. The function takes two arguments: options is the action object itself, the second is the event data object.&lt;/p&gt;
+&lt;h3 id=&#34;custo&#34;&gt;custo&lt;/h3&gt;
+&lt;p&gt;Run a custom function. This action is intended to for use by experienced users that want to tinker with the inner workings of the player - use at your own risk!
+The &lt;code&gt;fn&lt;/code&gt; property takes a custom function.
+The function takes three arguments: &lt;code&gt;action&lt;/code&gt; is the action object itself, the &lt;code&gt;eventData&lt;/code&gt; is an object holding information about the triggering event, &lt;code&gt;trial&lt;/code&gt; is an the implementation of the trial object.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;{type:&#39;custom&#39;,fn:function(options,eventData){}}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{type:&#39;custom&#39;,fn:function(action,eventData,trial){}}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;goto&lt;/strong&gt;:
-Responsible for the next trial we go to. This action will be executed only after the trial ends, you will probably want to follow it with an endTrial action.&lt;/p&gt;
+&lt;p&gt;You can checkout some examples of the syntax in the &lt;a href=&#34;https://github.com/minnojs/minno-time/blob/0.5/src/app/trial/interactions/actionList.js&#34;&gt;plaer code&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;goto&#34;&gt;goto&lt;/h3&gt;
+&lt;p&gt;Responsible for the next trial we go to. This action will be executed only after the trial ends, you will probably want to follow it with an endTrial action.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;destination&lt;/code&gt; property defines what type of goto this is (default is &amp;ldquo;next&amp;rdquo;).&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;properties&lt;/code&gt; property is an object to compare to the trial data. Note that the properties will only compare to properties present in the raw sequence before inheritance!&lt;/p&gt;
 &lt;ul&gt;
@@ -272,98 +353,99 @@ Responsible for the next trial we go to. This action will be executed only after
     
     <item>
       <title>Docs: Interactions - conditions</title>
-      <link>/docsite/docs/time/api/trial/conditions/</link>
+      <link>/docs/time/api/trial/conditions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/api/trial/conditions/</guid>
+      <guid>/docs/time/api/trial/conditions/</guid>
       <description>
         
         
-        &lt;p&gt;Notably the &lt;code&gt;begin&lt;/code&gt; event at the begining of each trial only evaluates interactions that have a &lt;code&gt;{type:&#39;begin&#39;}&lt;/code&gt; condition.&lt;/p&gt;
-&lt;p&gt;Each condition object has a &lt;code&gt;type&lt;/code&gt; property that defines what type of evaluation to perform.&lt;/p&gt;
+        &lt;p&gt;Each condition object has a &lt;code&gt;type&lt;/code&gt; property that defines what type of evaluation to perform.&lt;/p&gt;
 &lt;p&gt;In addition, it has a &lt;code&gt;negate&lt;/code&gt; property (false by default) that determines whether to activate the condition when the evaluation is true or when it is false.&lt;/p&gt;
-&lt;p&gt;It is possible to create complex conditions, the following condition, for instance, is activated in case there is an input that is not equal to trial.data.customAttribute, and the input handle is not &amp;ldquo;time&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Notably the &lt;code&gt;begin&lt;/code&gt; event at the begining of each trial only evaluates interactions that have a &lt;code&gt;{type:&#39;begin&#39;}&lt;/code&gt; condition.&lt;/p&gt;
+&lt;p&gt;It is possible to create complex conditions.
+The following condition, for example, is activated in case there is an input that is not equal to trial.data.customAttribute,
+and the input handle is not &amp;ldquo;time&amp;rdquo;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;inputEqualsTrial&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;property&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;customAttribute&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;negate&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;inputEquals&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;time&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;negate&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;begin&lt;/strong&gt;:
-Automatically activated at the beginning of the trial, and is never fired again.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;condition-types&#34;&gt;Condition Types&lt;/h2&gt;
+&lt;h3 id=&#34;begin&#34;&gt;begin&lt;/h3&gt;
+&lt;p&gt;Automatically activated at the beginning of the trial, and is never fired again.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;begin&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;inputEquals&lt;/strong&gt;:
-Check if the input &lt;code&gt;handle&lt;/code&gt; equals to a static value, &lt;code&gt;value&lt;/code&gt; may be either a string or an array strings.&lt;/p&gt;
+&lt;h3 id=&#34;inputequals&#34;&gt;inputEquals&lt;/h3&gt;
+&lt;p&gt;Check if the input &lt;code&gt;handle&lt;/code&gt; equals to a static value, &lt;code&gt;value&lt;/code&gt; may be either a string or an array strings.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;inputEquals&#39;,value:&#39;enter&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;inputEquals&#39;,value:[&#39;left&#39;,&#39;right&#39;]}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;inputEqualsTrial&lt;/strong&gt;:
-Check if the input &lt;code&gt;handle&lt;/code&gt; equals to the &lt;code&gt;property&lt;/code&gt; property of trial.data&lt;/p&gt;
+&lt;h3 id=&#34;inputequalstrial&#34;&gt;inputEqualsTrial&lt;/h3&gt;
+&lt;p&gt;Check if the input &lt;code&gt;handle&lt;/code&gt; equals to the &lt;code&gt;property&lt;/code&gt; property of trial.data&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;inputEqualsTrial&#39;,property:&#39;customAttribute&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;inputEqualsStim&lt;/strong&gt;:
-Check if the input &lt;code&gt;handle&lt;/code&gt; equals to the &lt;code&gt;property&lt;/code&gt; property of any one of the stimulus.data in this trial.
+&lt;h3 id=&#34;inputequalsstim&#34;&gt;inputEqualsStim&lt;/h3&gt;
+&lt;p&gt;Check if the input &lt;code&gt;handle&lt;/code&gt; equals to the &lt;code&gt;property&lt;/code&gt; property of any one of the stimulus.data in this trial.
 The optional property &lt;code&gt;handle&lt;/code&gt; narrows the search down to stimuli fitting the &lt;code&gt;handle&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;inputEqualsTrial&#39;,property:&amp;quot;customAttribute&amp;quot;}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;inputEqualsTrial&#39;,property:&amp;quot;customAttribute&amp;quot;,handle:&#39;myStimHandle&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;trialEquals&lt;/strong&gt;:
-Check if the &lt;code&gt;property&lt;/code&gt; property of the trial.data object equals to &lt;code&gt;value&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;trialequals&#34;&gt;trialEquals&lt;/h3&gt;
+&lt;p&gt;Check if the &lt;code&gt;property&lt;/code&gt; property of the trial.data object equals to &lt;code&gt;value&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;trialEquals&#39;,property:&#39;customProperty&#39;, value:&#39;someValue&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;inputEqualsGlobal&lt;/strong&gt;
-Check if the input &lt;code&gt;handle&lt;/code&gt; equals to the &lt;code&gt;property&lt;/code&gt; property of the global object.&lt;/p&gt;
+&lt;h3 id=&#34;inputequalsglobal&#34;&gt;inputEqualsGlobal&lt;/h3&gt;
+&lt;p&gt;Check if the input &lt;code&gt;handle&lt;/code&gt; equals to the &lt;code&gt;property&lt;/code&gt; property of the global object.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;inputEqualsGlobal&#39;,property:&#39;customAttribute&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;globalEquals&lt;/strong&gt;:
-Check if the &lt;code&gt;property&lt;/code&gt; property of the global object equals to &lt;code&gt;value&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;globalequals&#34;&gt;globalEquals&lt;/h3&gt;
+&lt;p&gt;Check if the &lt;code&gt;property&lt;/code&gt; property of the global object equals to &lt;code&gt;value&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;globalEquals&#39;,property:&#39;customProperty&#39;, value:&#39;someValue&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;globalEqualsTrial&lt;/strong&gt;:
-Check if the global property &lt;code&gt;globalProp&lt;/code&gt; equals to the trial.data property &lt;code&gt;trialProp&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;globalequalstrial&#34;&gt;globalEqualsTrial&lt;/h3&gt;
+&lt;p&gt;Check if the global property &lt;code&gt;globalProp&lt;/code&gt; equals to the trial.data property &lt;code&gt;trialProp&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;globalEqualsTrial&#39;,globalProp:&#39;customAttribute&#39;, trialProp:&#39;otherCustomAttribute&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;globalEqualsStim&lt;/strong&gt;:
-Check if the global property &lt;code&gt;globalProp&lt;/code&gt; equals to the &lt;code&gt;stimProp&lt;/code&gt; property of any one of the stimulus.data in this trial.
+&lt;h3 id=&#34;globalequalsstim&#34;&gt;globalEqualsStim&lt;/h3&gt;
+&lt;p&gt;Check if the global property &lt;code&gt;globalProp&lt;/code&gt; equals to the &lt;code&gt;stimProp&lt;/code&gt; property of any one of the stimulus.data in this trial.
 The optional property &lt;code&gt;handle&lt;/code&gt; narrows the search down to stimuli fitting the &lt;code&gt;handle&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;globalEqualsTrial&#39;,globalProp:&#39;customAttribute&#39;, stimProp:&#39;otherCustomAttribute&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;globalEqualsTrial&#39;,globalProp:&#39;customAttribute&#39;, stimProp:&#39;otherCustomAttribute&#39;, handle:&#39;myStimHandle&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;inputEqualsCurrent&lt;/strong&gt;
-Check if the input &lt;code&gt;handle&lt;/code&gt; equals to the &lt;code&gt;property&lt;/code&gt; property of the current object.&lt;/p&gt;
+&lt;h3 id=&#34;inputequalscurrent&#34;&gt;inputEqualsCurrent&lt;/h3&gt;
+&lt;p&gt;Check if the input &lt;code&gt;handle&lt;/code&gt; equals to the &lt;code&gt;property&lt;/code&gt; property of the current object.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;inputEqualsCurrent&#39;,property:&#39;customAttribute&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;currentEquals&lt;/strong&gt;:
-Check if the &lt;code&gt;property&lt;/code&gt; property of the current object equals to &lt;code&gt;value&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;currentequals&#34;&gt;currentEquals&lt;/h3&gt;
+&lt;p&gt;Check if the &lt;code&gt;property&lt;/code&gt; property of the current object equals to &lt;code&gt;value&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;currentEquals&#39;,property:&#39;customProperty&#39;, value:&#39;someValue&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;currentEqualsTrial&lt;/strong&gt;:
-Check if the current property &lt;code&gt;currentProp&lt;/code&gt; equals to the trial.data property &lt;code&gt;trialProp&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;currentequalstrial&#34;&gt;currentEqualsTrial&lt;/h3&gt;
+&lt;p&gt;Check if the current property &lt;code&gt;currentProp&lt;/code&gt; equals to the trial.data property &lt;code&gt;trialProp&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;currentEqualsTrial&#39;,currentProp:&#39;customAttribute&#39;, trialProp:&#39;otherCustomAttribute&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;currentEqualsStim&lt;/strong&gt;:
-Check if the current property &lt;code&gt;currentProp&lt;/code&gt; equals to the &lt;code&gt;stimProp&lt;/code&gt; property of any one of the stimulus.data in this trial.
+&lt;h3 id=&#34;currentequalsstim&#34;&gt;currentEqualsStim&lt;/h3&gt;
+&lt;p&gt;Check if the current property &lt;code&gt;currentProp&lt;/code&gt; equals to the &lt;code&gt;stimProp&lt;/code&gt; property of any one of the stimulus.data in this trial.
 The optional property &lt;code&gt;handle&lt;/code&gt; narrows the search down to stimuli fitting the &lt;code&gt;handle&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;currentEqualsTrial&#39;,currentProp:&#39;customAttribute&#39;, stimProp:&#39;otherCustomAttribute&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;{type:&#39;currentEqualsTrial&#39;,currentProp:&#39;customAttribute&#39;, stimProp:&#39;otherCustomAttribute&#39;, handle:&#39;myStimHandle&#39;}&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;function&lt;/strong&gt;:
-This options is deprecated. use &lt;strong&gt;custom&lt;/strong&gt; instead.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;custom&lt;/strong&gt;:
-It is also possible to create a custom condition:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;custom&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;condtion&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;inputData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;trial&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;){&lt;/span&gt;
+&lt;h3 id=&#34;custom&#34;&gt;custom&lt;/h3&gt;
+&lt;p&gt;It is also possible to create a custom condition:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;custom&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;fn&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;condtion&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;inputData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;trial&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;){&lt;/span&gt;
     &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// do your mojo here and return true or false
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -372,14 +454,14 @@ It is also possible to create a custom condition:&lt;/p&gt;
     
     <item>
       <title>Docs: Stimuli \ Layout</title>
-      <link>/docsite/docs/time/api/trial/stimuli/</link>
+      <link>/docs/time/api/trial/stimuli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docsite/docs/time/api/trial/stimuli/</guid>
+      <guid>/docs/time/api/trial/stimuli/</guid>
       <description>
         
         
-        &lt;p&gt;The &lt;code&gt;layout&lt;/code&gt; and &lt;code&gt;stimuli&lt;/code&gt; are arrays that list the stimuli associated with this trial.
+        &lt;p&gt;The &lt;code&gt;layout&lt;/code&gt; and &lt;code&gt;stimuli&lt;/code&gt; are arrays that list the &lt;a href=&#34;../../stimuli&#34;&gt;stimuli&lt;/a&gt; associated with this trial.
 Stimuli in &lt;code&gt;layout&lt;/code&gt; will be automatically displayed throughout the trial, and will not be affected by any &lt;a href=&#34;../actions&#34;&gt;actions&lt;/a&gt;.
 Stimuli within &lt;code&gt;stimuli&lt;/code&gt; are not displayed automatically and may be dynamically interacted with during the trial (see &lt;a href=&#34;../actions&#34;&gt;interactions&lt;/a&gt;).&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
