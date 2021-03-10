@@ -17,7 +17,15 @@ jobs:
           hugo-version: "0.74.3"
           extended: true
 
-      - name: Build
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: v14.x
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build site
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
         run: hugo -t docsy
