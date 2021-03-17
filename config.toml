@@ -126,6 +126,7 @@ url_latest_version = "https://minnojs.github.io/minno-quest/0.3/manager/overview
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/minnojs/docsite"
+github_branch = "hugo-source"
 
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 github_project_repo = "https://github.com/minnojs/minno-quest"
